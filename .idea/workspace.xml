@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="I have changed the file path to css file and to images">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilisateur/Capteur_Temperature/Capteur_Temperature.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/Capteur_Temperature/Capteur_Temperature.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilisateur/Capteurs/Capteurs.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/Capteurs/Capteurs.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilisateur/FAQ/FAQ.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/FAQ/FAQ.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilisateur/Forum/Forum.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/Forum/Forum.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilisateur/Profil/Profil.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/Profil/Profil.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilisateur/Réinitialiser mdp/Reinitialiser_mdp.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/Réinitialiser mdp/Reinitialiser_mdp.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilisateur/Suppression du compte/Suppression_du_compte.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/Suppression du compte/Suppression_du_compte.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utilisateur/Tableau de bord/Tableau_de_Bord.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/Tableau de bord/Tableau_de_Bord.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestionnaire/Supression du compte/Suppression_du_compte.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Supression du compte/Suppression_du_compte.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679407080511</updated>
       <workItem from="1679407081644" duration="3306000" />
-      <workItem from="1679662824730" duration="4216000" />
+      <workItem from="1679662824730" duration="4670000" />
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -98,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679670676481</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="I have changed the file path to css file and to images">
+      <created>1679672425286</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679672425286</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

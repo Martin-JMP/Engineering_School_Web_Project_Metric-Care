@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="I have changed the file path to css file">
+    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="I have changed the file path to css file and to images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilisateur/Capteur_CO2/Capteur_CO2.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/Capteur_CO2/Capteur_CO2.PHP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utilisateur/Capteur_Cardiaque/Capteur_Cardiaque.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Utilisateur/Capteur_Cardiaque/Capteur_Cardiaque.PHP" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +16,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679407080511</updated>
       <workItem from="1679407081644" duration="3306000" />
-      <workItem from="1679662824730" duration="735000" />
+      <workItem from="1679662824730" duration="2599000" />
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -55,7 +57,35 @@
       <option name="project" value="LOCAL" />
       <updated>1679410743347</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="I have changed the file path to css file">
+      <created>1679668730405</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679668730405</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I have changed the file path to css file">
+      <created>1679668855806</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679668855806</updated>
+    </task>
+    <task id="LOCAL-00004" summary="I have changed the file path to css file and to images">
+      <created>1679669391837</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679669391837</updated>
+    </task>
+    <task id="LOCAL-00005" summary="I have changed the file path to css file and to images">
+      <created>1679669480741</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679669480741</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I have changed the file path to css file" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have changed the file path to css file" />
+    <MESSAGE value="I have changed the file path to css file and to images" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have changed the file path to css file and to images" />
   </component>
 </project>

@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="I have changed the file path to css file and to images">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestionnaire/Gestion_des_données/Gestionnaire_des_données.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Gestion_des_données/Gestionnaire_des_données.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestionnaire/Gestion_des_tickets/Gestion_des_tickets.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Gestion_des_tickets/Gestion_des_tickets.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gestionnaire/Supression du compte/Suppression_du_compte.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Supression du compte/Suppression_du_compte.PHP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" afterDir="false" />
     </list>
@@ -47,7 +51,8 @@
       <option name="presentableId" value="Default" />
       <updated>1679407080511</updated>
       <workItem from="1679407081644" duration="3306000" />
-      <workItem from="1679662824730" duration="4670000" />
+      <workItem from="1679662824730" duration="5044000" />
+      <workItem from="1679907468086" duration="1283000" />
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -98,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679672425286</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I have changed the file path to css file and to images">
+      <created>1679673039131</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679673039131</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

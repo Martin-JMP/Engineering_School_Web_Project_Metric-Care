@@ -29,6 +29,16 @@
         <div class="rectangle-connecter">
             <a>Se Connecter</a>
         </div>
+        <div class = "Pas_compte">
+            <div>
+                <div><a>Pas de</a></div>
+                <div><a>compte ?</a></div>
+            </div>
+            <div class="Inscrivez-vous" href="#">
+                <div><a href="Connexion.css">Inscrivez</a></div>
+                <div><a href="Connexion.css">vous</a></div>
+            </div>
+        </div>
     </main>
   </body>
 </html>

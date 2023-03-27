@@ -28,7 +28,7 @@ top: 15px; }
     color: #36706D;
 }
 
-.Connexion a{
+.MDP a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +39,21 @@ top: 15px; }
     font-weight: 400;
     font-size: 48px;
     line-height: 58px;
+    text-align: center;
+
+    color: #36706D;
+}
+
+.MDP_nouveau a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%; 
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
     text-align: center;
 
     color: #36706D;
@@ -63,35 +78,7 @@ input[type="email"] {
     font-style: normal;
   }
 
-input[type="password"] {
-    display: block;
-    width: 400px;
-    padding: 10px;
-    border: 3px solid #000000;
-    border-radius: 360px;
-    font-size: 16px;
-    font-family: 'Carme';
-    font-style: normal;
-}
-
-.MDP_OUBLIE a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px; 
-
-    font-family: 'Carme';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
-    text-decoration-line: underline;
-
-    color: #00A8F0;
-}
-
-.rectangle-connecter {
+.rectangle-envoye {
     position: relative;
     width: 300px;
     height: 50px;
@@ -104,7 +91,7 @@ input[type="password"] {
     margin: auto;
 }
   
-.rectangle-connecter a {
+.rectangle-envoye a {
     font-family: 'Carme';
     font-style: normal;
     font-weight: 400;
@@ -112,34 +99,4 @@ input[type="password"] {
     line-height: 1;
     text-align: center;
     color: #FFFFFF;
-}
-
-.Pas_compte {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: calc(50% + 20px); /* décalage de 10 pixels */
-}
-
-.Inscrivez-vous {
-    padding-left: 10%;
-}
-
-.Pas_compte a {
-    font-family: 'Carme';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1;
-    text-align: center;
-}
-
-.Inscrivez-vous a {
-    text-decoration-line: underline;
-    color: #00A8F0;
 }

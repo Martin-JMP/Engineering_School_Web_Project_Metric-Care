@@ -28,7 +28,7 @@ top: 15px; }
     color: #36706D;
 }
 
-.Connexion a{
+.Inscription a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +51,26 @@ top: 15px; }
     flex-direction: column;
     align-items: center;
 }
+
+.Prenom_Nom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.email {
+    padding: 5px;
+}
+
+.mdp {
+    padding: 5px;
+}
+
+.mdp_Confirme {
+    padding: 5px;
+}
+
   
 input[type="email"] {
     display: block;
@@ -61,6 +81,7 @@ input[type="email"] {
     font-size: 16px;
     font-family: 'Carme';
     font-style: normal;
+    color: #000000;
   }
 
 input[type="password"] {
@@ -72,39 +93,70 @@ input[type="password"] {
     font-size: 16px;
     font-family: 'Carme';
     font-style: normal;
+    color: #000000;
 }
 
-.MDP_OUBLIE a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px; 
+input[type="text"] {
+    display: block;
+    width: 185px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 360px;
+    font-size: 16px;
+    font-family: 'Carme';
+    font-style: normal;
+    margin: 5PX;
+    color: #000000;
+}
 
+input[type="number"] {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 360px;
+    font-size: 16px;
+    font-family: 'Carme';
+    font-style: normal;
+    margin: 5PX;
+    color: #000000;
+}
+
+.CGU {
+    position: absolute;
+    left: 20%;
+}
+
+.CGU a{
     font-family: 'Carme';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1;
     text-align: center;
-    text-decoration-line: underline;
+}
 
+.CGU_CLICK a{
+    text-decoration-line: underline;
     color: #00A8F0;
 }
 
-.rectangle-connecter {
-    position: relative;
+
+.rectangle-creer {
+    position: absolute;
+    top: 580px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 300px;
     height: 50px;
     background: #82BBBA;
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    margin: auto;
 }
   
-.rectangle-connecter a {
+.rectangle-creer a {
     font-family: 'Carme';
     font-style: normal;
     font-weight: 400;
@@ -112,34 +164,4 @@ input[type="password"] {
     line-height: 1;
     text-align: center;
     color: #FFFFFF;
-}
-
-.Pas_compte {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: calc(50% + 20px); /* décalage de 10 pixels */
-}
-
-.Inscrivez-vous {
-    padding-left: 10%;
-}
-
-.Pas_compte a {
-    font-family: 'Carme';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1;
-    text-align: center;
-}
-
-.Inscrivez-vous a {
-    text-decoration-line: underline;
-    color: #00A8F0;
 }

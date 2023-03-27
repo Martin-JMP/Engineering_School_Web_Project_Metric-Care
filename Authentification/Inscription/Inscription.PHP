@@ -37,11 +37,12 @@
                 <input type="password" placeholder="Confirmer le mot de passe">
             </div>    
         </div>
+        <br></br>
         <div class="CGU">
-            <div> <a>J'accepte les</a> </div>
-            <div class = "CGU_CLICK">
-                <a>conditions générales d'utilisation</a>
-            </div>
+            <input type="checkbox" name="cgu" id="cgu">
+            <label for="cgu">J'accepte les <span><a href="#">conditions générales d'utilisation</a></span></label>
+        </div>
+
         </div>
         <div class="rectangle-creer">
             <a>Créer mon compte</a>

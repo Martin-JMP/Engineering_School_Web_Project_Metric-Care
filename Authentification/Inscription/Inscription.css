@@ -123,23 +123,33 @@ input[type="number"] {
 }
 
 .CGU {
-    position: absolute;
-    left: 20%;
-}
-
-.CGU a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .CGU input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .CGU label {
     font-family: 'Carme';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1;
     text-align: center;
-}
-
-.CGU_CLICK a{
-    text-decoration-line: underline;
+  }
+  
+  .CGU a {
+    text-decoration: none;
     color: #00A8F0;
-}
+  }
+  
+  .CGU span {
+    display: inline-block;
+  }
 
 
 .rectangle-creer {

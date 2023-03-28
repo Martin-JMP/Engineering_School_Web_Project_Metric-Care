@@ -30,6 +30,11 @@
     </header>
     <main>
     
+
+    <!-- <img id="MainPageImage" src="Origine/Image_main_accueil/Main_page.jpeg" alt="Photo_bus_driver", width=100%, height="702"> -->
+    <div class="Rectangle_blanc_1">
+
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

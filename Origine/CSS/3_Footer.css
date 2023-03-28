@@ -10,7 +10,7 @@
 
 @media only screen and (min-width: 1170px) {
     .Footer_contenu_texte a {
-        color: #867E7E;;
+        color: #dddddd;;
         font-family: 'Carme';
         font-style: normal;
         font-weight: 400;
@@ -45,7 +45,7 @@
     }
     
     .Footer_contenu_Logo p {
-        color:#867E7E;
+        color: #dddddd;;
         font-family: 'Carme';
         font-style: normal;
         font-size: 16px;

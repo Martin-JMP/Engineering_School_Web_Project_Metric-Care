@@ -9,21 +9,23 @@
 body {
     margin: 0;
     padding-bottom: 80px; /* height of the footer */
-    padding-top: 80px;
     min-height: 100%;
     background:#FBFCFA;
   }
 
-  #Rectangle_Blanc_1{
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    left: 0px;
-    top: 20px;
-    background: #8715bc;
+  .Titre_CGU{
+    color: #000;;
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    text-align: middle;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #MainPageImage{
-    position:relative;
+    position: fixed;
     margin-left:0px;
 }

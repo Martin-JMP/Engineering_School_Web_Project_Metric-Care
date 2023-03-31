@@ -15,19 +15,20 @@ body {
     overflow-x: hidden;
   }
 
-  #Rectangle_Blanc_1{
+#Rectangle_Blanc_1{
     position: relative;
     width: 1042.72px;
     height: 411.55px;
-    left: 550px;
-    top: -600px;
+    left: 560px;
+    top: -610px;
     background: #FBFCFA;
-    transform: rotate(27.5deg);
+    transform: rotate(26deg);
     z-index: 1;
 }
 
 #MainPageImage{
     position:static;
+    width: 105%;
     margin-left:-50px;
     margin-top: 100px;
 }
@@ -36,18 +37,36 @@ body {
     position: relative;
     width: 514px;
     height: 77px;
-    left: calc(50% - 514px/2 + 58px);
-    top: 100px;
+    left: calc(50% - 514px/2 + 427px);
+    top: -0px;
     
     font-family: 'Carme';
     font-style: normal;
     font-weight: 400;
     font-size: 88px;
     line-height: 106px;
+    display: flex;
+    align-items: center;
     text-align: center;
     
     color: #36706D;
-    display: block;
-    transform: rotate(-27.5deg);
-    writing-mode: horizontal-tb;
+    z-index: 2;
+}
+
+#Texte_Pres_MetricMetro{
+    position: absolute;
+    width: 494px;
+    height: 105px;
+    left: calc(50% - 514px/2 + 10px);
+    top: 110px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: right;
+
+    color: #36706D;
+    z-index: 2;
 }

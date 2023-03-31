@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="Tableau_de_Bord_Gestionniare.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -29,9 +30,11 @@
       </div>
     </header>
     <main>
-        <div class="main-container">
-            <button class="main-button">Gestion des données </button>
-            <button class="main-button">Profil</button>
+        <p>Hello</p>
+        <div class="main-container>
+            <h1>Gestionnaire</h1>
+            <button type="button" class="main-button">Gestion des données</button>
+            <button type="button" class="main-button">Profil</button>
         </div>
     </main>
     <footer class = "Footer">

@@ -1,0 +1,13 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+}
+.main-button{
+    border-radius: 32px;
+    background: #85c1c0;
+    box-shadow:  20px 20px 60px #71a4a3,
+    -20px -20px 60px #99dedd;
+}

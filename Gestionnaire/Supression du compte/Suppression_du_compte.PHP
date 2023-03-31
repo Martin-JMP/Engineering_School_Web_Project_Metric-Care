@@ -29,7 +29,8 @@
       </div>
     </header>
     <main>
-    
+        <h1>Hello</h1>
+        <button type="button">Click Me!</button>
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

@@ -26,8 +26,12 @@
             <input type="email" placeholder="Email"><br></br>
         </div>
         <div class="rectangle-envoye">
-            <a>Envoyer</a>
+            <a id="myButton">Envoyer</a>
         </div>
+        <div class="popup" id="myPopup">
+		    <p>Vous avez cliqué sur le bouton "mybutton"!</p>
+		    <button id="closeButton">Fermer</button>
+	    </div>
     </main>
   </body>
 </html>

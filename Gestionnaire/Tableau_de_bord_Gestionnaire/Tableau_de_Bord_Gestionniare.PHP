@@ -29,7 +29,10 @@
       </div>
     </header>
     <main>
-    
+        <div class="main-container">
+            <button class="main-button">Gestion des données </button>
+            <button class="main-button">Profil</button>
+        </div>
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

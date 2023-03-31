@@ -31,9 +31,8 @@
     <main>
     
 
-    <div>
-      <a> class="Titre_CGU" </a>
-      <a>Conditions Générales d'utilisation (CGU)</a>
+    <div class="Titre_CGU">
+      <a>Conditions Générales d'Utilisation (CGU)</a>
     </div>
 
 

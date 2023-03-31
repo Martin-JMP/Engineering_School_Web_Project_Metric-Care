@@ -15,7 +15,7 @@ body {
   }
 
   #Rectangle_Blanc_1{
-    position: absolute;
+    position: relative;
     width: 1042.72px;
     height: 411.55px;
     left: 550px;
@@ -32,7 +32,7 @@ body {
 }
 
 #Title_Metric_Care{
-    position: absolute;
+    position: relative;
     width: 514px;
     height: 77px;
     left: calc(50% - 514px/2 + 427px);

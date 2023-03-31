@@ -9,6 +9,7 @@
 body {
     margin: 0;
     padding-top: 80px; /* height of the footer */
+    padding-bottom: 80px;
     min-height: 100%;
     background:#FBFCFA;
   }

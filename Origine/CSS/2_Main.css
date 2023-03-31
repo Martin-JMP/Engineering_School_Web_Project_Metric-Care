@@ -8,10 +8,11 @@
 
 body {
     margin: 0;
-    padding-bottom: 80px; /* height of the footer */
+    /* height of the footer */
     padding-top: 80px;
     min-height: 100%;
     background:#FBFCFA;
+    overflow-x: hidden;
   }
 
   #Rectangle_Blanc_1{
@@ -19,7 +20,7 @@ body {
     width: 1042.72px;
     height: 411.55px;
     left: 550px;
-    top: 32px;
+    top: -600px;
     background: #FBFCFA;
     transform: rotate(27.5deg);
     z-index: 1;
@@ -31,12 +32,12 @@ body {
     margin-top: 100px;
 }
 
-#Title_Metric_Care{
+#Title_Metric_Metro{
     position: relative;
     width: 514px;
     height: 77px;
-    left: calc(50% - 514px/2 + 427px);
-    top: 224px;
+    left: calc(50% - 514px/2 + 58px);
+    top: 100px;
     
     font-family: 'Carme';
     font-style: normal;

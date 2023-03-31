@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="Origine/CSS/1_Header.css">
+    <link rel="stylesheet" type="text/css" href="../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
@@ -31,16 +31,10 @@
     <main>
     
 
-    <img id="MainPageImage" src="Origine/Image_main_accueil/Main_page.jpeg" alt="Photo_bus_driver", width=100%, height="448">
-    <div id="Rectangle_Blanc_1"></div>
-    <div id="Metric_Metro_Container">
-      <div id="Title_Metric_Metro">
-        <a>Metric Metro</a>
-      <div>
-      <div id="Texte_Pres_MetricMetro">
-        <a>Capteur de monitoring de température, qualité de l’air, niveau sonore et rythme cardiaque</a>
-      <div>
-    <div>
+
+
+
+
 
 
     </main>

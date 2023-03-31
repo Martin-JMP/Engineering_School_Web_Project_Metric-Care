@@ -10,7 +10,7 @@
 
 @media only screen and (min-width: 1170px) {
     .Footer_contenu_texte a {
-        color:#867E7E;
+        color: #dddddd;;
         font-family: 'Carme';
         font-style: normal;
         font-weight: 400;
@@ -27,9 +27,10 @@
         padding-top: 15px;
     }
     
-    
-    .Footer {
-        position: relative;
+   
+
+    Footer {
+        position:relative;
         bottom: 0;
         left:0;
         right: 0;
@@ -39,13 +40,13 @@
     }
       
     .contenu_Footer {
-        display: flex;
+        display:flex;
         align-items: center;
         justify-content:space-between;
     }
     
     .Footer_contenu_Logo p {
-        color:#867E7E;
+        color: #dddddd;;
         font-family: 'Carme';
         font-style: normal;
         font-size: 16px;

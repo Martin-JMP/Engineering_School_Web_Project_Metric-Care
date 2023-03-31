@@ -29,17 +29,18 @@
 }
 
 #Rectangle_Debut{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 7px;
     left: 0px;
     top: 0px;
     background: #82BBBA;
+    z-index: 2;
 }
 
 
 nav {
-    position: absolute;
+    position:fixed;
     width: 100%;
     height: 70px;
     left: 0px;

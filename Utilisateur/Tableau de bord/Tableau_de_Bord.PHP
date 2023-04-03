@@ -34,8 +34,8 @@
       <div class="box">
         <p style="font-size:30px;">Tableau de bord<p>
         <p><button onclick="window.location.href = '../Capteurs/Capteurs.PHP';">Capteurs</button><p>
-        <p><button onclick="window.location.href = '../Profil/Profil.PHP';">Profil</button><p>
-        <p><button onclick="window.location.href = '../Forum/Forum.PHP';">Forum</button><p>
+        <p><button onclick="window.location.href = '../Profil/Profil.PHP';">Forum</button><p>
+        <p><button onclick="window.location.href = '../Forum/Forum.PHP';">Profil</button><p>
       </div>
     </main>
     <footer class = "Footer">

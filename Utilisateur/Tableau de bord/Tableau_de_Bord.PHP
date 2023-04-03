@@ -7,17 +7,18 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <link rel="stylesheet" type="text/css" href="../../Utilisateur/Tableau de bord/Tableau_de_Bord.css">
     <title>Metric Care</title>
+    
+
   </head>
   <body>
     <header>
       <div id="Rectangle_Debut">
         <nav>
           <div>
-            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro" width="75" height="40">
-            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro" width="200" height="50">
+            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
+            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
             <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-              <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures" width="60" height="60">
-            </a>
+            <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
@@ -30,21 +31,20 @@
       </div>
     </header>
     <main>
-      <div class="title">
-        <h1>Tableau de bord</h1>
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Capteurs</button>
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Profil.PHP';">Profil</button>
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Forum/Forum.PHP';">Forum</button>
+      <div class="box">
+        <p style="font-size:30px;">Tableau de bord<p>
+        <p><button onclick="window.location.href = '../Capteurs/Capteurs.PHP';">Capteurs</button><p>
+        <p><button onclick="window.location.href = '../Profil/Profil.PHP';">Profil</button><p>
+        <p><button onclick="window.location.href = '../Forum/Forum.PHP';">Forum</button><p>
       </div>
     </main>
-    <footer class="Footer">
-      <div class="contenu_Footer">
+    <footer class = "Footer">
+      <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
-          <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro" width="80" height="80">
+          <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
           <p>Metric Care © 2023 - Tous droits réservés</p>
           <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-            <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures" width="60" height="60">
-          </a>
+          <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
           <a>CGU</a> <a>|</a>

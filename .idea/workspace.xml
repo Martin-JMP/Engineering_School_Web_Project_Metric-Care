@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Working on tableau de bord">
+    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Working on tableau de bord de gestionnaire">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.css" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.css" afterDir="false" />
@@ -72,7 +72,7 @@
       <workItem from="1679662824730" duration="5044000" />
       <workItem from="1679907468086" duration="1283000" />
       <workItem from="1680266246980" duration="5582000" />
-      <workItem from="1680610583362" duration="1230000" />
+      <workItem from="1680610583362" duration="2660000" />
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -158,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680270925638</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Working on tableau de bord de gestionnaire">
+      <created>1680611983082</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680611983082</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
     <MESSAGE value="I have changed the file path to css file" />
     <MESSAGE value="I have changed the file path to css file and to images" />
     <MESSAGE value="Working on tableau de bord" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on tableau de bord" />
+    <MESSAGE value="Working on tableau de bord de gestionnaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on tableau de bord de gestionnaire" />
   </component>
 </project>

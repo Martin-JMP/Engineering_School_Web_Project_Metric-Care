@@ -15,7 +15,12 @@
     color: #36706D;
 }
 .main-container input{
-
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    order-color: #007bff;
 }
 .main-container button {
     display: block;

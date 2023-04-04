@@ -1,13 +1,16 @@
 .main-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: end;
     width: 60%;
+    height: auto;
     margin: auto;
 }
-.main-button{
-    border-radius: 32px;
-    background: #85c1c0;
-    box-shadow:  20px 20px 60px #71a4a3,
-    -20px -20px 60px #99dedd;
+.main-button {
+    border: 10px solid transparent;
+    background: #BAE6E4;
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
 }

@@ -30,11 +30,10 @@
       </div>
     </header>
     <main>
-        <p>Hello</p>
-        <div class="main-container>
+        <div class="main-container">
             <h1>Gestionnaire</h1>
-            <button type="button" class="main-button">Gestion des données</button>
-            <button type="button" class="main-button">Profil</button>
+            <button type="button" class="main-button" onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Gestion_des_donn%c3%a9es/Gestionnaire_des_donn%c3%a9es.PHP';">Gestion des données</button>
+            <button type="button" class="main-button" onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP';">Profil</button>
         </div>
     </main>
     <footer class = "Footer">

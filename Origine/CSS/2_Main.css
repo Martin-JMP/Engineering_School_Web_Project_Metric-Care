@@ -5,15 +5,19 @@
     font-weight: 400;
 }
 
+.conteneur-page {
+    position: relative;
+    min-height: 100vh;
+  }
 
 body {
     margin: 0;
     /* height of the footer */
     padding-top: 80px;
+    padding-bottom: 80px;
 
     min-height: 100%;
     background:#FBFCFA;
-    overflow-x: hidden;
   }
 
 #Rectangle_Blanc_1{
@@ -34,11 +38,11 @@ body {
     margin-top: 100px;
 }
 
-#Title_Metric_Metro{
+/*#Title_Metric_Metro{
     position: relative;
     width: 514px;
     height: 77px;
-    left: calc(50% - 514px/2 + 427px);
+    left: calc(50% - 514px/2 + 100px);
     top: -0px;
     
     font-family: 'Carme';
@@ -52,7 +56,7 @@ body {
     
     color: #36706D;
     z-index: 2;
-}
+}*/
 
 #Texte_Pres_MetricMetro{
     position: absolute;

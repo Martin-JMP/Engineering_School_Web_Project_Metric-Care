@@ -36,11 +36,35 @@
     <div id="Metric_Metro_Container">
       <div id="Title_Metric_Metro">
         <a>Metric Metro</a>
-      <div>
+      </div>
       <div id="Texte_Pres_MetricMetro">
         <a>Capteur de monitoring de température, qualité de l’air, niveau sonore et rythme cardiaque</a>
-      <div>
-    <div>
+      </div>
+    </div>
+
+    <div id="Product_Description_Container">
+      <div id="Description_Sentence_1">
+        <a>Metric Metro, le produit par Metric Care qui va révolutionner l’étude des conditions de vie de ses utilsateurs</a>
+      </div>
+      <div id="Separation_description"></div>
+      <div id="Description_Sentence_2">
+        <a>Un boîtier tout en un, composé de 4 capteurs permettant à l’utilisateur d’évaluer ses conditions de travail et donc sa qualité de vie.<br>
+          Notre produit Metric Mtero est spécialement conçu pour les conducteurs/trices des bus, tramways et métros.</a>
+      </div>
+    </div>
+
+    <div id="Expertise_Container">
+      <div id="Notre_Expertise">
+        <a>Notre expertise</a>
+      </div>
+      <div id="Bloc_1_Température">
+        <img id="Logo_Température" src="Origine/Image_main_accueil/temperature-sensor.png" alt="Logo Capteur Température", width="512", height="512">
+        <div id="Fond_gris_Bloc_1">
+        <a>Mesures de température et humidité en temps réel</a>
+        </div>
+      </div>
+    </div>
+        
 
 
     </main>

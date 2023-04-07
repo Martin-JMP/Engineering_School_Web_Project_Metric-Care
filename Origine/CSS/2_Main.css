@@ -13,7 +13,7 @@ body {
     min-height: 100%;
     background:#FBFCFA;
     overflow-x: hidden;
-  }
+}
 
 #Rectangle_Blanc_1{
     position: relative;
@@ -27,18 +27,18 @@ body {
 }
 
 #MainPageImage{
-    position:static;
+    position:relative;
     width: 105%;
     margin-left:-50px;
     margin-top: 100px;
 }
 
 #Title_Metric_Metro{
-    position: relative;
+    position: absolute;
     width: 514px;
-    height: 77px;
+    height: 100px;
     left: calc(50% - 514px/2 + 427px);
-    top: -0px;
+    top: 190px;
     
     font-family: 'Carme';
     font-style: normal;
@@ -50,15 +50,15 @@ body {
     text-align: center;
     
     color: #36706D;
-    z-index: 2;
+    z-index: 1;
 }
 
 #Texte_Pres_MetricMetro{
     position: absolute;
     width: 494px;
-    height: 105px;
-    left: calc(50% - 514px/2 + 10px);
-    top: 110px;
+    height: 150px;
+    left: calc(50% - 514px/2 + 438px);
+    top: 285px;
 
     font-family: 'Carme';
     font-style: normal;
@@ -68,5 +68,115 @@ body {
     text-align: right;
 
     color: #36706D;
-    z-index: 2;
+    z-index: 1;
+}
+
+#Description_Sentence_1{
+    position: absolute;
+    width: 1278px;
+    height: 125px;
+    left: calc(50% - 1278px/2);
+    top: 674px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #36706D;
+
+}
+
+#Separation_description{
+    position: absolute;
+    width: 118px;
+    height: 0px;
+    left: 660px;
+    top: 798px;
+
+    border: 1.5px solid #36706D;
+}
+
+#Description_Sentence_2{
+    position: absolute;
+    width: 1183px;
+    height: 75px;
+    left: calc(50% - 1183px/2 - 2.5px);
+    top: 830px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #36706D;
+}
+
+#Expertise_Container {
+    position: relative;
+    min-height: 130vh;
+}
+
+#Notre_Expertise{
+    position: absolute;
+    width: 514px;
+    height: 77px;
+    left: calc(50% - 514px/2 + -4px);
+    top: 0px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    text-align: center;
+
+    color: #36706D;
+}
+
+#Fond_gris_Bloc_1{
+    position: absolute;
+    width: 276.67px;
+    height: 106.16px;
+    left: 20px;
+    top: 20px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+}
+
+#Bloc_1_Température{
+    position: absolute;
+    width: 191px;
+    height: 40px;
+    left: calc(50% - 191px/2 - 438.83px);
+    top: 150px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+}
+
+#Logo_Température{
+    position: absolute;
+    width: 64px;
+    height: 63px;
+    left: 119.67px;
+    top: 150px;
+
+    background: url(temperature-sensor.png);
 }

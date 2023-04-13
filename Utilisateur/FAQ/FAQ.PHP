@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="../../Utilisateur/FAQ/FAQ.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -17,7 +18,7 @@
             <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
             <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
-          </div>      
+          </div>
           <div class="contenuNav">
             <a>🌐Français</a>
             <a>Contact</a>
@@ -29,9 +30,42 @@
       </div>
     </header>
     <main>
-  <div> tozihtz</div>
+  <h2 id = "retour">◄ Tableau de bord</h2>
 
-    
+  <p id = "FAQ"> FAQ </p>
+
+  <div id = "Question">
+    <h1 id = "Text_Question">Quelle est votre Question ?  </h1>
+    <div class="searchbar">
+     <div class="searchbar-wrapper">
+        <div class="searchbar-center">
+            <div class="searchbar-input-spacer"></div>
+            <input type="text" class="searchbar-input" maxlength="2048" name="q" autocapitalize="off" autocomplete="off" title="Search" role="combobox" placeholder="Posez votre question...">
+        </div>
+        <div class="searchbar-right">
+            <div class="search-icon-wrapper">
+                <span class="search-icon searchbar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                        </path>
+                    </svg>
+                </span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <h1 id = "oui">
+     Catégories
+    </h1>
+  
+    <div id = "Rubrique1">
+    <h2 id = "text_rubrique">Compte et information de connexion</h2>
+    </div>
+
+
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

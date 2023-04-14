@@ -69,7 +69,6 @@
       </div>
     </div>
     <div id = "valider"><button onclick="changeColor('white')">Valider</button> </div>
-    
 
 
     </main>

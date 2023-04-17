@@ -15,21 +15,9 @@ body {
     overflow-x: hidden;
 }
 
-#Rectangle_Blanc_1{
-    position: relative;
-    width: 1042.72px;
-    height: 411.55px;
-    left: 560px;
-    top: -610px;
-    background: #FBFCFA;
-    transform: rotate(26deg);
-    z-index: 1;
-}
-
 #MainPageImage{
     position:relative;
-    width: 105%;
-    margin-left:-50px;
+    width: 100%;
     margin-top: 100px;
 }
 
@@ -75,8 +63,12 @@ body {
     position: absolute;
     width: 1278px;
     height: 125px;
-    left: calc(50% - 1278px/2);
     top: 674px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-family: 'Carme';
     font-style: normal;
@@ -95,8 +87,12 @@ body {
     position: absolute;
     width: 118px;
     height: 0px;
-    left: 660px;
     top: 798px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border: 1.5px solid #36706D;
 }
@@ -105,8 +101,12 @@ body {
     position: absolute;
     width: 1183px;
     height: 75px;
-    left: calc(50% - 1183px/2 - 2.5px);
     top: 830px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-family: 'Carme';
     font-style: normal;
@@ -120,6 +120,7 @@ body {
 
 #Expertise_Container {
     position: relative;
+    display: flex;
     min-height: 130vh;
 }
 
@@ -127,8 +128,12 @@ body {
     position: absolute;
     width: 514px;
     height: 77px;
-    left: calc(50% - 514px/2 + -4px);
-    top: 0px;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-family: 'Carme';
     font-style: normal;
@@ -140,24 +145,34 @@ body {
     color: #36706D;
 }
 
-#Fond_gris_Bloc_1{
-    position: absolute;
+#Blocs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+}
+#bloc1,
+#bloc2,
+#bloc3,
+#bloc4{
+    flex-basis: 25%;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+#Bloc1_Température{
+    display: flex;
     width: 276.67px;
     height: 106.16px;
-    left: 20px;
-    top: 20px;
 
     background: #EEEEEE;
     border-radius: 20px;
     transform: rotate(0.17deg);
 }
 
-#Bloc_1_Température{
-    position: absolute;
-    width: 191px;
-    height: 40px;
-    left: calc(50% - 191px/2 - 438.83px);
-    top: 150px;
+#Bloc1_Température a{
+    left: 10px;
+    align-items: center;
 
     font-family: 'Carme';
     font-style: normal;
@@ -172,11 +187,100 @@ body {
 }
 
 #Logo_Température{
-    position: absolute;
     width: 64px;
     height: 63px;
-    left: 119.67px;
-    top: 150px;
+}
 
-    background: url(temperature-sensor.png);
+#Bloc2_Sonore{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+}
+
+#Bloc2_Sonore a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+}
+
+#Logo_Sonore{
+    width: 64px;
+    height: 63px;
+}
+
+#Bloc3_Cardiaque{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+}
+
+#Bloc3_Cardiaque a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+}
+
+#Logo_Cardiaque{
+    width: 64px;
+    height: 63px;
+}
+
+#Bloc4_CO2{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+}
+
+#Bloc4_CO2 a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+}
+
+#Logo_CO2{
+    width: 64px;
+    height: 63px;
+
 }

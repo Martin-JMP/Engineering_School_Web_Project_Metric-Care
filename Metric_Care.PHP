@@ -31,7 +31,7 @@
     <main>
     
 
-    <img id="MainPageImage" src="Origine/Image_main_accueil/Main_page.jpeg" alt="Photo_bus_driver", width=100%, height="448">
+    <img id="MainPageImage" src="Origine/Image_main_accueil/Main_page.jpg" alt="Photo_bus_driver", width=100%, height="448">
     <div id="Rectangle_Blanc_1"></div>
     <div id="Metric_Metro_Container">
       <div id="Title_Metric_Metro">
@@ -57,13 +57,37 @@
       <div id="Notre_Expertise">
         <a>Notre expertise</a>
       </div>
-      <div id="Bloc_1_Température">
-        <img id="Logo_Température" src="Origine/Image_main_accueil/temperature-sensor.png" alt="Logo Capteur Température", width="512", height="512">
-        <div id="Fond_gris_Bloc_1">
-        <a>Mesures de température et humidité en temps réel</a>
+      <div id="Blocs">
+        <div id="bloc1">
+        <div id="Bloc1_Température">
+          <img id="Logo_Température" src="Origine/Image_main_accueil/temperature-sensor.png" alt="Logo Capteur Température", width="512", height="512">
+          <a>Mesures de température<br>et humidité en temps réel</a>
         </div>
       </div>
+
+        <div id="bloc2">
+        <div id="Bloc2_Sonore">
+          <img id="Logo_Sonore" src="Origine/Image_main_accueil/mic-sensor.png" alt="Logo Capteur Sonore", width="512", height="512">
+          <a>Mesures de l’environnement<br>sonore en temps réel</a>
+        </div>
+</div>
+
+        <div id="bloc3">
+        <div id="Bloc3_Cardiaque">
+          <img id="Logo_Cardiaque" src="Origine/Image_main_accueil/rythme-cardiaque-sensor.png" alt="Logo Capteur Cardiaque", width="512", height="512">
+          <a>Mesures du rythme<br>cardiaque en bpm en<br>temps réel</a>
+        </div>
+</div>
+
+        <div id="bloc4">
+        <div id="Bloc4_CO2">
+          <img id="Logo_CO2" src="Origine/Image_main_accueil/detector-CO2-sensor.png" alt="Logo Capteur CO2", width="512", height="512">
+          <a>Mesures de la qualité de l'air<br>en temps réel</a>
+        </div>
+</div>
+      </div>
     </div>
+
         
 
 

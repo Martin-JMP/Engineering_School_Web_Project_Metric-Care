@@ -108,3 +108,26 @@ input[type="number"] {
     color: #36706D;
 }
 
+
+.rectangle-envoye {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background: #82BBBA;
+    border-radius: 20px;
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column;
+    margin: auto;
+}
+  
+.rectangle-envoye a {
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+}
+

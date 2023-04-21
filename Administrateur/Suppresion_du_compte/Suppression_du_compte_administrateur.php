@@ -39,11 +39,15 @@
         <div class="container">
             <input type="number" placeholder="Numéro d'identification"><br></br>
             <input type="password" placeholder="Mot de passe"><br></br>
-            <input type="email" placeholder="Email"><br></br>
+            <div class="emailbox"><div class="emailboxbox"><input type="email" placeholder="Email"></div> 
+            <div class="rectangle-envoye">
+            <a>Envoyer Code par email</a>
+            </div></div>
+            <br></br>
             <input type="number" placeholder="Code de suppression">
         </div>
         <div>
-          <a class = "sursupr"> Etes-vous sûres de vouloir supprimer votre compte ?</a>
+          <a class = "sursupr"> Etes-vous sûres de vouloir supprimer votre compte ?</a> 
           <br><br>
         </div>
         <div class="rectangle-connecter">

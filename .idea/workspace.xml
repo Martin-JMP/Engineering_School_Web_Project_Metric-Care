@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Working on tableau de bord de gestionnaire, but I have some bugs">
+    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Working on bugs with css">
+      <change afterPath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestionnaire/Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Origine/CSS/3_Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Origine/CSS/3_Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <workItem from="1680620528996" duration="4840000" />
       <workItem from="1681476456964" duration="547000" />
       <workItem from="1681478349610" duration="236000" />
-      <workItem from="1681724301799" duration="1346000" />
+      <workItem from="1681724301799" duration="3001000" />
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -176,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680613901785</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Working on bugs with css">
+      <created>1681726467146</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681726467146</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +218,7 @@
     <MESSAGE value="Working on tableau de bord" />
     <MESSAGE value="Working on tableau de bord de gestionnaire" />
     <MESSAGE value="Working on tableau de bord de gestionnaire, but I have some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on tableau de bord de gestionnaire, but I have some bugs" />
+    <MESSAGE value="Working on bugs with css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on bugs with css" />
   </component>
 </project>

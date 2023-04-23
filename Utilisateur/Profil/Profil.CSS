@@ -551,3 +551,7 @@ color: #368A86;
 
 
 }
+a {
+  text-decoration: none;
+  color: white; /*par exemple*/
+ }

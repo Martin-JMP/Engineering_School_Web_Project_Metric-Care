@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Working on bugs with css">
-      <change afterPath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentification/Connexion/Connexion.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Authentification/Connexion/Connexion.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestionnaire/Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +78,9 @@
       <workItem from="1681476456964" duration="547000" />
       <workItem from="1681478349610" duration="236000" />
       <workItem from="1681724301799" duration="3001000" />
+      <workItem from="1682089417758" duration="555000" />
+      <workItem from="1682238326222" duration="3162000" />
+      <workItem from="1682268941184" duration="3767000" />
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -183,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681726467146</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Working on bugs with css">
+      <created>1682089442336</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682089442336</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Working on bugs with css">
+      <created>1682089576272</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682089576272</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

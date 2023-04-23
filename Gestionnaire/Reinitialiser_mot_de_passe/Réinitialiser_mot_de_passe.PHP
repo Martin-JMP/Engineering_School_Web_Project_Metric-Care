@@ -32,9 +32,9 @@
     <main>
         <div class="main-container">
             <h1>Réinitialisation du mot de passe</h1>
-            <input type="password" id="AncienMotDePasse" name="fname"><br><br>
-            <input type="password" id="NouveauMotDePasse" name="fname"><br><br>
-            <input type="password" id="ConfirmerMotDePasse" name="fname"><br><br>
+            <input type="password" id="AncienMotDePasse" name="fname" placeholder="Ancien mot de passe"><br><br>
+            <input type="password" id="NouveauMotDePasse" name="fname" placeholder="Nouveau mot de passe"><br><br>
+            <input type="password" id="ConfirmerMotDePasse" name="fname" placeholder="Confirmer mot de passe"><br><br>
             <button>Enregistrer</button>
         </div>
     </main>

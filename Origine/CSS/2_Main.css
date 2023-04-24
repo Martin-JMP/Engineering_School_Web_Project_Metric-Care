@@ -101,7 +101,7 @@ body {
     position: absolute;
     width: 1183px;
     height: 75px;
-    top: 830px;
+    top: 835px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -149,15 +149,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10%;
+    margin: 140px 10% 0 100px;
 }
-#bloc1,
-#bloc2,
-#bloc3,
+#bloc1{
+    flex-basis: 25%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+#bloc2{
+    flex-basis: 25%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+#bloc3{
+    flex-basis: 25%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
 #bloc4{
     flex-basis: 25%;
     margin: 0 10px;
     box-sizing: border-box;
+    padding-right: 20px;
 }
 
 #Bloc1_Température{
@@ -168,6 +187,7 @@ body {
     background: #EEEEEE;
     border-radius: 20px;
     transform: rotate(0.17deg);
+    align-items: center;
 }
 
 #Bloc1_Température a{
@@ -180,15 +200,17 @@ body {
     font-size: 16px;
     line-height: 19px;
     display: flex;
-    align-items: center;
     text-align: center;
 
     color: #4B4B4B;
+
+    padding-left: 3%;
 }
 
 #Logo_Température{
     width: 64px;
     height: 63px;
+    margin-left: 3%;
 }
 
 #Bloc2_Sonore{
@@ -199,6 +221,7 @@ body {
     background: #EEEEEE;
     border-radius: 20px;
     transform: rotate(0.17deg);
+    align-items: center;
 }
 
 #Bloc2_Sonore a{
@@ -215,11 +238,12 @@ body {
     text-align: center;
 
     color: #4B4B4B;
+
+    padding-left: 1px;
 }
 
 #Logo_Sonore{
-    width: 64px;
-    height: 63px;
+    margin-left: 5px;
 }
 
 #Bloc3_Cardiaque{
@@ -230,6 +254,7 @@ body {
     background: #EEEEEE;
     border-radius: 20px;
     transform: rotate(0.17deg);
+    align-items: center;
 }
 
 #Bloc3_Cardiaque a{
@@ -242,15 +267,15 @@ body {
     font-size: 16px;
     line-height: 19px;
     display: flex;
-    align-items: center;
     text-align: center;
 
     color: #4B4B4B;
+
+    padding-left: 18px;
 }
 
 #Logo_Cardiaque{
-    width: 64px;
-    height: 63px;
+    margin-left: 13px;
 }
 
 #Bloc4_CO2{
@@ -261,6 +286,7 @@ body {
     background: #EEEEEE;
     border-radius: 20px;
     transform: rotate(0.17deg);
+    align-items: center;
 }
 
 #Bloc4_CO2 a{
@@ -273,14 +299,52 @@ body {
     font-size: 16px;
     line-height: 19px;
     display: flex;
-    align-items: center;
     text-align: center;
 
     color: #4B4B4B;
+
+    padding-left: 26px;
 }
 
 #Logo_CO2{
-    width: 64px;
-    height: 63px;
+    margin-left: 18px;
+}
 
+#Separation_tram{
+    position: absolute;
+    width: 400px;
+    height: 0px;
+    top: 660px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1.5px solid #36706D;
+}
+
+#Tram{
+    position: absolute;
+    width: 444px;
+    height: 218px;
+    left: 498px;
+    top: 670px;
+}
+
+#Last_elements a{
+    position: absolute;
+    left: 10%;
+    top: 910px;
+    
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #36706D;
 }

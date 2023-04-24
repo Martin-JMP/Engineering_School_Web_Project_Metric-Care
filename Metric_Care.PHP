@@ -59,32 +59,37 @@
       </div>
       <div id="Blocs">
         <div id="bloc1">
-        <div id="Bloc1_Température">
-          <img id="Logo_Température" src="Origine/Image_main_accueil/temperature-sensor.png" alt="Logo Capteur Température", width="512", height="512">
-          <a>Mesures de température<br>et humidité en temps réel</a>
+          <div id="Bloc1_Température">
+            <img id="Logo_Température" src="Origine/Image_main_accueil/temperature-sensor.png" alt="Logo Capteur Température", width="512", height="512">
+            <a>Mesures de température<br>et humidité en temps réel</a>
+          </div>
         </div>
-      </div>
 
         <div id="bloc2">
-        <div id="Bloc2_Sonore">
-          <img id="Logo_Sonore" src="Origine/Image_main_accueil/mic-sensor.png" alt="Logo Capteur Sonore", width="512", height="512">
-          <a>Mesures de l’environnement<br>sonore en temps réel</a>
+          <div id="Bloc2_Sonore">
+            <img id="Logo_Sonore" src="Origine/Image_main_accueil/mic-sensor.png" alt="Logo Capteur Sonore", width="60", height="59">
+            <a>Mesures de l’environnement<br>sonore en temps réel</a>
+          </div>
         </div>
-</div>
 
         <div id="bloc3">
-        <div id="Bloc3_Cardiaque">
-          <img id="Logo_Cardiaque" src="Origine/Image_main_accueil/rythme-cardiaque-sensor.png" alt="Logo Capteur Cardiaque", width="512", height="512">
-          <a>Mesures du rythme<br>cardiaque en bpm en<br>temps réel</a>
+          <div id="Bloc3_Cardiaque">
+            <img id="Logo_Cardiaque" src="Origine/Image_main_accueil/rythme-cardiaque-sensor.png" alt="Logo Capteur Cardiaque", width="72", height="74">
+            <a>Mesures du rythme<br>cardiaque en bpm en<br>temps réel</a>
+          </div>
         </div>
-</div>
 
         <div id="bloc4">
-        <div id="Bloc4_CO2">
-          <img id="Logo_CO2" src="Origine/Image_main_accueil/detector-CO2-sensor.png" alt="Logo Capteur CO2", width="512", height="512">
-          <a>Mesures de la qualité de l'air<br>en temps réel</a>
+          <div id="Bloc4_CO2">
+            <img id="Logo_CO2" src="Origine/Image_main_accueil/detector-CO2-sensor.png" alt="Logo Capteur CO2", width="54", height="53">
+            <a>Mesures de la qualité<br>de l'air en temps réel</a>
+          </div>
         </div>
-</div>
+      </div>
+      <div id="Separation_tram"></div>
+      <div id="Last_elements">
+      <img id="Tram" src="Origine/Image_main_accueil/tram.png" alt="Tram", width="679", height="337"><br><br>
+      <a>En collaborant avec les plus importantes lignes de transports publics et à grande vitesse, nous visons à<br>réduire les nuisances présentes dans l’environnement de travail des conducteurs et conductrices de métro,<br>tramway, bus et train.</a>
       </div>
     </div>
 

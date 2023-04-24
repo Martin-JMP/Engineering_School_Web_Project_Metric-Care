@@ -8,49 +8,7 @@
   </head>
   <body>
     <?php
-    // Replace with your own database credentials
-                  $host = "localhost";
-                  $creds = file(".creds");
-                  $creds_line = $creds[0];
-                  $creds_parts = explode(":", $creds_line);
-                  $username = $creds_parts[0];
-                  $password = $creds_parts[1];
-                  $dbname = "employees";
 
-                  // Connect to the database using PDO
-                  $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
-                  $options = [
-                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                    PDO::ATTR_EMULATE_PREPARES => false,
-                  ];
-                  try {
-                    $pdo = new PDO($dsn, $username, $password, $options);
-                  } catch (PDOException $e) {
-                    echo "error connecting";
-                    throw new PDOException($e->getMessage(), (int) $e->getCode());
-                  }
-
-                  // Get the email and password from the form
-                  $email = $_POST["email"];
-                  $password = $_POST["password"];
-
-                  // Prepare and execute the query to check if the user exists
-                  $sql = "SELECT password FROM creds WHERE email = :email";
-                  $stmt = $pdo->prepare($sql);
-                  $stmt->execute(["email" => $email]);
-                  if ($stmt->rowCount() > 0) {
-                    $row = $stmt->fetch();
-                    $password_hash = $row["password"];
-                    if (password_verify($password, $password_hash)) {
-                      echo "Password is valid!";
-                      echo '<script>alert("Your password is valid ! Congratulation")</script>';
-                    } else {
-                      echo "Invalid password.";
-                    }
-                  } else {
-                    echo "Error, bad credentials";
-                  }
     ?>
     <header>
         <div>

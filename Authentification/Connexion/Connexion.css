@@ -113,6 +113,9 @@ input[type="password"] {
     text-align: center;
     color: #FFFFFF;
 }
+.rectangle-connecter::hover{
+    background-color: red;
+}
 
 .Pas_compte {
     position: absolute;

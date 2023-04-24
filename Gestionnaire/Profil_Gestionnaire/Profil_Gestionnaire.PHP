@@ -107,11 +107,11 @@
               <p>Réinitialiser<p>
             </div>
           </div>
-          <div class="Tableau">
+          <div class="Tableau" onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP';">
             <p>◂ Tableau de bord<p>
           </div>
           <div>
-            <img id="Photo" src="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">
+            <img id="Photo" src="Images/photo.jpg" alt="Utilisateur" width="258" height="240">
           </div>
           <div class="Photo">
             <p>Importer une photo<p>

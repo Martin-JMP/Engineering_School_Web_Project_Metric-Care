@@ -105,7 +105,7 @@
             <a>Mot de passe oublié ?</a>
         </div>
         <div class="rectangle-connecter">
-            <a id="button">Se Connecter</a>
+            <a id="button" onclick="executePHP()">Se Connecter</a>
         </div>
         <div class = "Pas_compte">
             <div>

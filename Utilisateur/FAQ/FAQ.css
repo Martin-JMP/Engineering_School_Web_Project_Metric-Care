@@ -6,12 +6,14 @@
 }
 
 #retour {
-    font-family: 'Carme';
-    src: url('../fonts/carme-regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 400;
-    color: #36706D;
-    margin-left: 2%;
+  font-family: 'Carme';
+  src: url('../fonts/carme-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  color: #36706D;
+  margin-left: 2%;
+  font-size: 20px;
+  text-decoration : none;
 }
 
 #FAQ {
@@ -46,7 +48,7 @@
 }
 
 #oui {
-  padding-left: 100px;
+  padding-left: 10%;
   font-family: 'Carme';
   src: url('../fonts/carme-regular.ttf') format('truetype');
   font-style: normal;
@@ -54,24 +56,46 @@
   color: #36706D;
 }
 
-#Rubrique1 {
-  background-color: #EEEEEE
-  ;
-  border-radius: 10px;
-  max-width: 80%;
-  margin-left: 10%;
+#row{
+  display: flex;
+  flex-direction: row;
+}
 
+#column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+#Rubrique_1 {
+  
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 10%;
   align-content: center;
-  padding-bottom: 25px;
+  color: #36706D;
+  margin-bottom: 25px;
+}
+
+#Rubrique_2 {
+  background-color: #EEEEEE;
+  border-radius: 10px;
+  
+  width: 48%;
+  margin-left: 2%;
+  align-content: center;
+  color: #36706D;
   margin-bottom: 25px;
 }
 
 #text_rubrique{
+  background-color: #EEEEEE;
   font-family: 'Carme';
   src: url('../fonts/carme-regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
-  color: #36706D;
+  font-size: 20px;
 }
 
 .searchbar {
@@ -169,4 +193,4 @@
    
    
    
-   
+  

@@ -36,7 +36,7 @@
     </header>
     <main>
     
-    <h2 id = "retour">◄ Tableau de bord</h2>
+    <a id = "retour">◄ Tableau de bord</a>
 
     <p id = "Signaler"> Signaler un incident </p>
 

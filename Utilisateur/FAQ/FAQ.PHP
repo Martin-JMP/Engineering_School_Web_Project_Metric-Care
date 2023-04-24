@@ -30,7 +30,7 @@
       </div>
     </header>
     <main>
-  <h2 id = "retour">◄ Tableau de bord</h2>
+    <a id = "retour">◄ Tableau de bord</a>
 
   <p id = "FAQ"> FAQ </p>
 
@@ -59,12 +59,21 @@
     <h1 id = "oui">
      Catégories
     </h1>
-  
-    <div id = "Rubrique1">
-    <h2 id = "text_rubrique">Compte et information de connexion</h2>
+
+    
+  <div id = "row">
+    <div id = "Rubrique_1">
+    <a id = "text_rubrique">Compte et information de connexion</a> <br>
+    <a id = "text_rubrique">Boitiers et capteurs</a>
     </div>
-
-
+    <div id = "column">
+      <div id = "Rubrique_2">
+        <a id ="text_rubrique">Comment je peux réinitialiser mon mot de passe ? </a><br>
+        <a id ="text_rubrique">Comment accéder à mes données personnelles ? </a><br>
+        <a id ="text_rubrique">Comment je peux réinitialiser mon mot de passe ? </a><br>
+      </div>
+    </div>
+  </div>
 
     </main>
     <footer class = "Footer">

@@ -10,36 +10,23 @@ body {
     margin: 0;
     /* height of the footer */
     padding-top: 80px;
-
     min-height: 100%;
     background:#FBFCFA;
     overflow-x: hidden;
-  }
-
-#Rectangle_Blanc_1{
-    position: relative;
-    width: 1042.72px;
-    height: 411.55px;
-    left: 560px;
-    top: -610px;
-    background: #FBFCFA;
-    transform: rotate(26deg);
-    z-index: 1;
 }
 
 #MainPageImage{
-    position:static;
-    width: 105%;
-    margin-left:-50px;
+    position:relative;
+    width: 100%;
     margin-top: 100px;
 }
 
 #Title_Metric_Metro{
-    position: relative;
+    position: absolute;
     width: 514px;
-    height: 77px;
+    height: 100px;
     left: calc(50% - 514px/2 + 427px);
-    top: -0px;
+    top: 190px;
     
     font-family: 'Carme';
     font-style: normal;
@@ -51,15 +38,15 @@ body {
     text-align: center;
     
     color: #36706D;
-    z-index: 2;
+    z-index: 1;
 }
 
 #Texte_Pres_MetricMetro{
     position: absolute;
     width: 494px;
-    height: 105px;
-    left: calc(50% - 514px/2 + 10px);
-    top: 110px;
+    height: 150px;
+    left: calc(50% - 514px/2 + 438px);
+    top: 285px;
 
     font-family: 'Carme';
     font-style: normal;
@@ -69,6 +56,231 @@ body {
     text-align: right;
 
     color: #36706D;
-    z-index: 2;
+    z-index: 1;
 }
 
+#Description_Sentence_1{
+    position: absolute;
+    width: 1278px;
+    height: 125px;
+    top: 674px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #36706D;
+
+}
+
+#Separation_description{
+    position: absolute;
+    width: 118px;
+    height: 0px;
+    top: 798px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1.5px solid #36706D;
+}
+
+#Description_Sentence_2{
+    position: absolute;
+    width: 1183px;
+    height: 75px;
+    top: 830px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #36706D;
+}
+
+#Expertise_Container {
+    position: relative;
+    display: flex;
+    min-height: 130vh;
+}
+
+#Notre_Expertise{
+    position: absolute;
+    width: 514px;
+    height: 77px;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    text-align: center;
+
+    color: #36706D;
+}
+
+#Blocs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+}
+#bloc1,
+#bloc2,
+#bloc3,
+#bloc4{
+    flex-basis: 25%;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+#Bloc1_Température{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+}
+
+#Bloc1_Température a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+}
+
+#Logo_Température{
+    width: 64px;
+    height: 63px;
+}
+
+#Bloc2_Sonore{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+}
+
+#Bloc2_Sonore a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+}
+
+#Logo_Sonore{
+    width: 64px;
+    height: 63px;
+}
+
+#Bloc3_Cardiaque{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+}
+
+#Bloc3_Cardiaque a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+}
+
+#Logo_Cardiaque{
+    width: 64px;
+    height: 63px;
+}
+
+#Bloc4_CO2{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+}
+
+#Bloc4_CO2 a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+}
+
+#Logo_CO2{
+    width: 64px;
+    height: 63px;
+
+}

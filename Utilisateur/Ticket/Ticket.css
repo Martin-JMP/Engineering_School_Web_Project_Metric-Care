@@ -6,14 +6,16 @@
   }
 
 
-#retour {
+  #retour {
     font-family: 'Carme';
     src: url('../fonts/carme-regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
     color: #36706D;
     margin-left: 2%;
-}
+    font-size: 20px;
+    text-decoration : none;
+  }
 
 #Signaler {
     font-family: 'Carme';

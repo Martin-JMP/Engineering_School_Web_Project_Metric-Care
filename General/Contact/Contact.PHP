@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="Origine/CSS/1_Header.css">
-    <link rel="stylesheet" type="text/css" href="Origine/CSS/2_Main.css">
-    <link rel="stylesheet" type="text/css" href="Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
+    <link rel="stylesheet" type="text/css" href="Contact.css">
+    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="Origine/Images/Logo.png">
   </head>
@@ -33,6 +33,19 @@
 
     <div class="Titre_CGU">
       <a>Conditions Générales d'Utilisation (CGU)</a>
+
+      <div class="container">
+            <input type="text" placeholder="Prénom"><br></br>
+            <input type="text" placeholder="Nom"><br></br>
+
+            <input type="email" placeholder="Email"><br><br>
+            <div class="rectangle-envoye">
+            <a>Envoyer Code par email</a>
+            </div>
+            <br></br>
+            <input type="text" placeholder="Deamnde"><br><br>
+            
+        </div>
     </div>
 
 

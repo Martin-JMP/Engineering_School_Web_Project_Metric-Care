@@ -7,6 +7,7 @@
     <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="php implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Authentification/Connexion/Connexion.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Authentification/Connexion/Connexion.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +82,7 @@
       <workItem from="1682268941184" duration="4383000" />
       <workItem from="1682322813100" duration="9004000" />
       <workItem from="1682334345212" duration="5665000" />
+      <workItem from="1682371334765" duration="864000" />
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -215,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682339926574</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="php implementation">
+      <created>1682371348917</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1682371348917</updated>
+    </task>
+    <task id="LOCAL-00021" summary="php implementation">
+      <created>1682371368055</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1682371368055</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

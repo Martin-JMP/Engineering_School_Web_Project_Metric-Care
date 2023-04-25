@@ -8,7 +8,7 @@
   </head>
   <body>
     <?php
-
+    // INSERT INTO personnes()
     ?>
     <header>
         <div>

@@ -8,28 +8,26 @@
   </head>
   <body>
     <?php
-      function executePHP(){
-        if (isset($_POST['button'])){
-          $email = $_POST['email'];
-          $password = $_POST['password'];
+      if (isset($_POST['button'])){
+  
 
-          $host = "localhost";
-          $username = "valentyna";
-          $password = "12345";
-          $dbname = "metric_care";
-          $dsn = "mysql:host=$host;dbname=$dbname";
-          $bdd = new PDO($dsn, $username, $password);
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        
+        
+        $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+        
+            
           if (!empty($email && $password)){
             try{
-              $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password' ");
+              $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
               $post = $sth->fetch();
         
               if($post){
                 
                 session_start();
                 $_SESSION['email'] = $email;
-                //header('Location: bonjour.php');
-                echo 'ok';
+                header('Location: Connexion.css');
                 exit();
         
               }else{
@@ -45,45 +43,8 @@
           }else{
             echo 'Veuillez remplir les champs obligatoires';
           }
+        
         }
-      }
-    // Replace with your own database credentials
-                      /*
-
-                      // Connect to the database using PDO
-                      $dsn = "mysql:host=$host;dbname=$dbname";
-                      $options = [
-                        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                        PDO::ATTR_EMULATE_PREPARES => false,
-                      ];
-                      try {
-                        $pdo = new PDO($dsn, $username, $password);
-                      } catch (PDOException $e) {
-                        echo "error connecting";
-                        //throw new PDOException($e->getMessage(), (int) $e->getCode());
-                      }
-
-                      // Get the email and password from the form
-                      $email = $_GET['email'];
-                      $password = $_GET['password'];
-
-                      // Prepare and execute the query to check if the user exists
-                      $sql = "SELECT MotDePas FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = :email";
-                      $stmt = $pdo->prepare($sql);
-                      $stmt->execute(["email" => $email]);
-                      if ($stmt->rowCount() > 0) {
-                        $row = $stmt->fetch();
-                        $password_hash = $row["password"];
-                        if (password_verify($password, $password_hash)) {
-                          echo "Password is valid!";
-                          echo '<script>alert("Your password is valid ! Congratulation")</script>';
-                        } else {
-                          echo "Invalid password.";
-                        }
-                      } else {
-                        echo "Error, bad credentials";
-                      }*/
     ?>
     <header>
         <div>
@@ -93,7 +54,7 @@
             </div>
         </div>  
     </header>
-    <main>
+    <main method="post">
         <div class="Connexion">
             <a>Connexion</a>
         </div>
@@ -104,8 +65,8 @@
         <div class="MDP_OUBLIE">
             <a>Mot de passe oublié ?</a>
         </div>
-        <div class="rectangle-connecter">
-            <a id="button" onclick="executePHP()">Se Connecter</a>
+        <div class="rectangle-connecter" name="button">
+            <a>Se Connecter</a>
         </div>
         <div class = "Pas_compte">
             <div>

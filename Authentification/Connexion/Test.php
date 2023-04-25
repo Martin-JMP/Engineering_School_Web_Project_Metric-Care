@@ -22,7 +22,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
         
         session_start();
         $_SESSION['email'] = $email;
-        header('Location: ../../../Tableau_de_Bord.PHP');
+        header('Location: Connexion.css');
         exit();
 
       }else{
@@ -63,7 +63,6 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
                 <label for="Email">Email </label>
                 <input type="text" name="email">
             </div>
-
             <div class="champs">
                 <label for="Password">Password  </label>
                 <input type="Password" name="password">

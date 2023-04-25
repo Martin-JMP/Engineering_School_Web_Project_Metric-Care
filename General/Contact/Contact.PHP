@@ -31,21 +31,23 @@
     <main>
     
 
+    <div class="container">
     <div class="Titre_CGU">
-      <a>Conditions Générales d'Utilisation (CGU)</a>
+      <a>Contactez-nous</a>
+      </div>
+            <input type="text" placeholder="Prenom" required><br></br>
+            <input type="text" placeholder="Nom" required><br></br>
+            <input type="email" placeholder="Email" required><br></br>
+            <a class="titrebox"> indiquez votre demande :</a>
+            <textarea id="story" name="story" rows="5" cols="50">
+            </textarea>
 
-      <div class="container">
-            <input type="text" placeholder="Prénom"><br></br>
-            <input type="text" placeholder="Nom"><br></br>
-
-            <input type="email" placeholder="Email"><br><br>
-            <div class="rectangle-envoye">
-            <a>Envoyer Code par email</a>
-            </div>
-            <br></br>
-            <input type="text" placeholder="Deamnde"><br><br>
-            
+            <br><br>
+          <div class="rectangle-connecter">
+            <a href = "test">Envoyer</a>
+          </div>
         </div>
+            
     </div>
 
 

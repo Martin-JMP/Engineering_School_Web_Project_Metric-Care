@@ -9,6 +9,41 @@
     <title>Metric Care</title>
   </head>
   <body>
+  <?php 
+
+
+  
+
+$email = 'vbaudin@ratp.fr';
+$password = '!icgWdyuwvmcJbcj1';
+
+
+$bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
+
+    
+  if (!empty($email && $password)){
+    try{
+      $n = $bdd->query("SELECT personnes.Nom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+      $nom = $n -> fetch();
+      $p = $bdd->query("SELECT personnes.Prenom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+      $prenom = $p -> fetch();
+      $a = $bdd->query("SELECT personnes.DateDeNaissance FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+      $age = $a -> fetch();
+      $auth = $bdd->query("SELECT * from personnes, authentificationprimaire, logins where personnes.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+      $numero = $auth -> fetch();
+    }catch(PDOException $e){
+      $erreur = $e->getMessage();
+    }
+
+
+  }else{
+    echo 'Veuillez vous connecter.';
+  }
+
+
+
+?>
+
     <header>
       <div id="Rectangle_Debut">
         <nav>
@@ -38,7 +73,7 @@
           <p>Nom<p>
         </div>
         <div class="Entrée">
-          <p>DUPONT<p>
+          <p><?php echo $nom['Nom']; ?><p>
         </div>
         <div class="Editer">
           <p>Éditer<p>
@@ -49,7 +84,7 @@
           <p>Prénom<p>
         </div>
         <div class="Entrée">
-          <p>Jean<p>
+        <p><?php echo $prenom['Prenom']; ?><p>
         </div>
         <div class="Editer">
           <p>Éditer<p>
@@ -57,21 +92,10 @@
       </div>
       <div class="Age">
         <div class="Intitule">
-          <p>Âge<p>
+          <p>Naissance<p>
         </div>
         <div class="Entrée">
-          <p>28 ans<p>
-        </div>
-        <div class="Editer">
-          <p>Éditer<p>
-        </div>
-      </div>
-      <div class="Ville">
-        <div class="Intitule">
-          <p>Ville<p>
-        </div>
-        <div class="Entrée">
-          <p>Lille<p>
+        <p><?php echo $age['DateDeNaissance']; ?><p>
         </div>
         <div class="Editer">
           <p>Éditer<p>
@@ -82,7 +106,7 @@
           <p>Numéro d'identification<p>
         </div>
         <div class="Entrée">
-          <p>12345678<p>
+        <p><?php echo $numero['AuthentificationId']; ?><p>
         </div>
       </div>
       <div class="Email">
@@ -90,7 +114,7 @@
           <p>E-mail<p>
         </div>
         <div class="Entrée">
-          <p>jean.dupont@gmail.com<p>
+        <p><?php echo $email; ?><p>
         </div>
         <div class="Editer">
           <p>Éditer<p>
@@ -101,14 +125,14 @@
           <p>Mot de passe<p>
         </div>
         <div class="Entrée">
-          <p>************<p>
+        <p><?php echo $password; ?><p>
         </div>
         <div class="Reinitialiser">
           <p>Réinitialiser<p>
         </div>
       </div>
       <div class="Tableau">
-        <p>◂ Tableau de bord<p>
+        <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">◂ Tableau de bord</a><p>
       </div>
       <div>
         <img id="Photo" src="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">

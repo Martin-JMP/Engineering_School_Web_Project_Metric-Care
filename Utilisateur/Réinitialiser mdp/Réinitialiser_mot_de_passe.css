@@ -106,3 +106,19 @@
     
     transform: rotate(0.17deg);
   }
+  a:link{
+    color: #368A86;
+    text-decoration: none;  
+  }
+  a:visited{
+    color: #368A86;
+    text-decoration: none;  
+  }
+  a:hover{
+    color: #368A86;
+  }
+  a:active{
+    color: #368A86;
+    
+  }
+ 

@@ -8,7 +8,15 @@
   </head>
   <body>
     <?php
-    // INSERT INTO personnes()
+        if (isset($_POST['button'])){
+
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $prenom = $_POST['prenom'];
+            $nom = $_POST['nom'];
+            $identification = $_POST['identification'];
+
+        }
     ?>
     <header>
         <div>
@@ -28,13 +36,13 @@
         </div>
         <div class="container">
             <div class="email">
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" name="email">
             </div>
             <div class="NUM_IDENT">
-                <input type="number" placeholder="Numero d'Identification" pattern="[0-9]{6}" title="Le Numéro d'Identification doit comporter six chiffres">
+                <input type="number" name="identification" placeholder="Numero d'Identification" pattern="[0-9]{6}" title="Le Numéro d'Identification doit comporter six chiffres">
             </div> 
             <div class="mdp">
-                <input type="password" placeholder="Mot de passe">
+                <input type="password" name="password" placeholder="Mot de passe">
             </div> 
             <div class="mdp_Confirme">
                 <input type="password" placeholder="Confirmer le mot de passe">

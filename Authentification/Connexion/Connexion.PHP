@@ -17,7 +17,7 @@
         
         $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
         
-            
+           
           if (!empty($email && $password)){
             try{
               $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
@@ -54,20 +54,22 @@
             </div>
         </div>  
     </header>
-    <main method="post">
+    <main method="post" form="login-form">
         <div class="Connexion">
             <a>Connexion</a>
         </div>
-        <div class="container">
-            <input type="email" id='email' name="email" placeholder="Email"><br></br>
-            <input type="password" id='password' name="password" placeholder="Mot de passe">
-        </div>
-        <div class="MDP_OUBLIE">
-            <a>Mot de passe oublié ?</a>
-        </div>
-        <div class="rectangle-connecter" name="button">
-            <a>Se Connecter</a>
-        </div>
+        <form id="login-form"  method="post">
+          <div class="container">
+              <input type="email" id='email' name="email" placeholder="Email"><br></br>
+              <input type="password" id='password' name="password" placeholder="Mot de passe">
+          </div>
+          <div class="MDP_OUBLIE">
+              <a>Mot de passe oublié ?</a>
+          </div>
+          <div class="rectangle-connecter" name="button">
+            <button type="submit" name="button">Se Connecter</button>
+          </div>
+        </form>
         <div class = "Pas_compte">
             <div>
                 <div><a>Pas de</a></div>

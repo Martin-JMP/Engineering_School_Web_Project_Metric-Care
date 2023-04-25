@@ -104,7 +104,7 @@ input[type="password"] {
     margin: auto;
 }
   
-.rectangle-connecter a {
+.rectangle-connecter button {
     font-family: 'Carme';
     font-style: normal;
     font-weight: 400;
@@ -112,10 +112,10 @@ input[type="password"] {
     line-height: 1;
     text-align: center;
     color: #FFFFFF;
+    background-color:#82BBBA ;
+    border-color: transparent;
 }
-.rectangle-connecter::hover{
-    background-color: red;
-}
+
 
 .Pas_compte {
     position: absolute;

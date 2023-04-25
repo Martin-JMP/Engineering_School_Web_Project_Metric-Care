@@ -213,68 +213,7 @@ color: #368A86;
 transform: rotate(0.17deg);
 }
 
-.Ville{
-  display:block;
-  margin :0;
-}
-.Ville > .Intitule{
-  position: absolute;
-  width: 170.82px;
-  height: 58.48px;
-  left: 777.18px;
-  top: 140px;
-  
-  font-family: 'Carme';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 38px;
-  display: flex;
-  align-items: center;
-  
-  color: #82BBBA;
-  
-  transform: rotate(0.17deg);
-}
-.Ville > .Entrée{
-  position: absolute;
-  width: 113.94px;
-  height: 41.65px;
-  left: 777.18px;
-  top: 180px;
-  
-  font-family: 'Carme';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 38px;
-  display: flex;
-  align-items: center;
-  
-  color: #368A86;
-  
-  transform: rotate(0.17deg);
-}
-.Ville > .Editer{
-  position: absolute;
-width: 147px;
-height: 52px;
-left: 777.18px;
-top: 210px;
 
-font-family: 'Carme';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 29px;
-display: flex;
-align-items: center;
-text-decoration-line: underline;
-
-color: #368A86;
-
-transform: rotate(0.17deg);
-}
 .Numéro{
   display:block;
   margin :0;
@@ -551,7 +490,18 @@ color: #368A86;
 
 
 }
-a {
-  text-decoration: none;
-  color: white; /*par exemple*/
- }
+a:link{
+  color: #368A86;
+  text-decoration: none;  
+}
+a:visited{
+  color: #368A86;
+  text-decoration: none;  
+}
+a:hover{
+  color: #368A86;
+}
+a:active{
+  color: #368A86;
+  
+}

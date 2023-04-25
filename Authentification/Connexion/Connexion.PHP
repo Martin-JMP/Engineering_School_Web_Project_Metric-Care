@@ -27,7 +27,7 @@
                 
                 session_start();
                 $_SESSION['email'] = $email;
-                header('Location: Connexion.css');
+                header('Location: http://localhost/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP');
                 exit();
         
               }else{

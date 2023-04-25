@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Carme';
+    src: url('../fonts/carme-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+body {
+    margin: 0;
+    padding-bottom: 80px; /* height of the footer */
+    min-height: 100%;
+    background:#FBFCFA;
+  }
+
+  .Titre_CGU{
+    position: absolute;
+    width: 604px;
+    height: 114px;
+    left: 416px;
+    top: 128px;
+    
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}

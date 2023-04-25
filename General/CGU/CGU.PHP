@@ -53,6 +53,9 @@
         Les présentes conditions générales d'utilisation sont soumises au droit français. Tout litige relatif à l'utilisation du site ou du boitier sera de la compétence exclusive des tribunaux français.
       </div>
     </div>
+    <div class="Menu_principal">
+      <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
+    </div>
 
 
     </main>

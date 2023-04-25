@@ -66,3 +66,24 @@ body {
 
     color: #000000;
 }
+
+.Menu_principal a{
+    position: absolute;
+    width: 314px;
+    height: 52px;
+    left: 25px;
+    top: 88px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #36706D;
+
+    text-decoration: none; /*cette instruction permet que le texte ne soit pas souligné même avec un lien*/
+}

@@ -158,6 +158,14 @@ body {
     padding-right: 20px;
 }
 
+#bloc1:hover, #bloc2:hover, #bloc3:hover, #bloc4:hover {
+    transform: scale(1.05);
+}
+
+#bloc1, #bloc2, #bloc3, #bloc4 {
+    transition: all 0.2s ease;
+}
+
 #bloc2{
     flex-basis: 25%;
     margin: 0 10px;

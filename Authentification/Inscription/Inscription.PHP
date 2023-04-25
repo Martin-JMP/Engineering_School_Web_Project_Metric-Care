@@ -18,7 +18,7 @@
             $identification = $_POST['identification'];
 
             $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
-            $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+            $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE authentificationprimaire.AuthentificationId = '$identification'");
             if (!empty($email && $password && $prenom && $nom && $identification) && $password == $password1 ){
 
             }

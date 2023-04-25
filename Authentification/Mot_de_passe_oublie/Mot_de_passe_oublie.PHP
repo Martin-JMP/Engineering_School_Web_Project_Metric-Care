@@ -12,6 +12,7 @@
         $email = $_POST['email'];
 
         $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+        
         if (!empty($email)){
             $sth = $bdd->query("SELECT personnes.PersonneId FROM personnes  WHERE personnes.AdressMail = '$email' ");
             $post = $sth->fetch();

@@ -80,7 +80,7 @@
       <workItem from="1682334345212" duration="5665000" />
       <workItem from="1682371334765" duration="864000" />
       <workItem from="1682406110978" duration="7575000" />
-      <workItem from="1682424230750" duration="666000" />
+      <workItem from="1682424230750" duration="1271000" />
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -264,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682424267190</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Inscription.PHP implementation">
+      <created>1682430992709</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682430992709</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

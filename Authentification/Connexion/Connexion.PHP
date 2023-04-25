@@ -17,7 +17,6 @@
         
         $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
         
-           
           if (!empty($email && $password)){
             try{
               $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");

@@ -12,10 +12,16 @@
 
             $email = $_POST['email'];
             $password = $_POST['password'];
+            $password1 = $_POST['password1'];
             $prenom = $_POST['prenom'];
             $nom = $_POST['nom'];
             $identification = $_POST['identification'];
 
+            $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+            $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+            if (!empty($email && $password && $prenom && $nom && $identification) && $password == $password1 ){
+
+            }
         }
     ?>
     <header>
@@ -45,7 +51,7 @@
                 <input type="password" name="password" placeholder="Mot de passe">
             </div> 
             <div class="mdp_Confirme">
-                <input type="password" placeholder="Confirmer le mot de passe">
+                <input type="password" name="password1" placeholder="Confirmer le mot de passe">
             </div>    
         </div>
         <br></br>

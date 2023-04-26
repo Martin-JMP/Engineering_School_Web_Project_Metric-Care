@@ -6,10 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
-
+    <link rel="stylesheet" type="text/css" href="capteur_temperature.css">
     <link rel="icon" href="../../Origine/Images/Logo.png">
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Capteurs/capteur_temperature.css">
-
   </head>
   <body>
     <header>

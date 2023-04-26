@@ -6,7 +6,10 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
+
+    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Capteurs/capteur.css">
     <link rel="icon" href="../../Origine/Images/Logo.png">
+
   </head>
   <body>
     <header>
@@ -26,10 +29,25 @@
             <a>Connexion</a>
           </div>
         </nav>
-      </div>
+      </div>  
     </header>
     <main>
-    
+      
+      <title>Capteurs</title>
+      <div class="text">
+        <a class="temperature">Température</a>
+        <a class>Taux d'humidité</a>
+        <a>Niveau sonore</a>
+        <a>Rythme cardiaque</a>
+        <a>Taux de CO2</a>
+      </div>
+
+      <input class="temperatureButton" type="button" value="°C">
+      <input class="humiditeButton" type="button" value="%">
+      <input class="sonButton" type="button" value="dB">
+      <input class="cardioButton" type="button" value="bpm">
+      <input class="co2Button" type="button" value="%">
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

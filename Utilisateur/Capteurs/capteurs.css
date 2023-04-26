@@ -1,0 +1,168 @@
+title {
+    position: absolute;
+    width: 704px;
+    height: 149px;
+    left: calc(50% - 704px/2 + 0.45px);
+    top: 107px;
+    
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #36706D;
+}
+
+.temperature {
+    position: absolute;
+    left: 405px;
+    top: 305px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}
+
+text humidite {
+    position: absolute;
+    width: 229px;
+    height: 33px;
+    left: 814px;
+    top: 305px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}
+
+text son {
+    position: absolute;
+    width: 228px;
+    height: 38px;
+    left: 405px;
+    top: 474px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}
+
+text cardio {
+    position: absolute;
+    width: 229px;
+    height: 35px;
+    left: 814px;
+    top: 476px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+    
+}
+
+text co2 {
+    position: absolute;
+    width: 249px;
+    height: 33px;
+    left: 407px;
+    top: 647px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000; 
+}
+
+.temperatureButton {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 228px;
+    height: 93px;
+    left: 405px;
+    top: 338px;
+    
+    background: #EEEEEE;
+    mix-blend-mode: normal;
+    border: 1px solid #36706D;
+    border-radius: 10px;
+}
+
+.humiditeButton {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 229px;
+    height: 93px;
+    left: 814px;
+    top: 339px;
+    
+    background: #EEEEEE;
+    border: 1px solid #36706D;
+    border-radius: 10px;
+}
+
+.sonButton {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 228px;
+    height: 93px;
+    left: 405px;
+    top: 511px;
+    
+    background: #EEEEEE;
+    border: 1px solid #36706D;
+    border-radius: 10px;
+}
+
+.cardioButton {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 229px;
+    height: 93px;
+    left: 814px;
+    top: 511px;
+    
+    background: #EEEEEE;
+    border: 1px solid #36706D;
+    border-radius: 10px;    
+}
+
+.co2Button {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 229px;
+    height: 93px;
+    left: 405px;
+    top: 680px;
+    
+    background: #EEEEEE;
+    border: 1px solid #36706D;
+    border-radius: 10px; 
+}

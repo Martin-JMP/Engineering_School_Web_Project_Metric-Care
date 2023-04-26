@@ -40,7 +40,9 @@
           <a class="explication">Voici le capteur MAX4466. C'est le capteur sonore. Il mesure le niveau sonore en dB.</a>
         </div>
 
-      <input class="graph" type="button" value="Graphique">
+      <div class="graph">
+        <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/Capteur_sonore/" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
       <input class="rect0" type="button" value="ACT">
       <input class="rect1" type="button" value="MIN">
       <input class="rect2" type="button" value="MAX">

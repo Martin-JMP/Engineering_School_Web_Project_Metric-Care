@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Carme';
+    src: url('../../Origine/fonts/carme-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+#Logo{
+position: absolute;
+left: 20px;
+top: 15px; }
+
+.Langue a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;  
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 10px;
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #36706D;
+}
+
+.Inscription a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+
+    color: #36706D;
+}
+
+  
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Prenom_Nom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.email {
+    padding: 5px;
+}
+
+.mdp {
+    padding: 5px;
+}
+
+.mdp_Confirme {
+    padding: 5px;
+}
+
+  
+input[type="email"] {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 360px;
+    font-size: 16px;
+    font-family: 'Carme';
+    font-style: normal;
+    color: #000000;
+  }
+
+input[type="password"] {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 360px;
+    font-size: 16px;
+    font-family: 'Carme';
+    font-style: normal;
+    color: #000000;
+}
+
+input[type="text"] {
+    display: block;
+    width: 185px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 360px;
+    font-size: 16px;
+    font-family: 'Carme';
+    font-style: normal;
+    margin: 5PX;
+    color: #000000;
+}
+
+input[type="number"] {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 360px;
+    font-size: 16px;
+    font-family: 'Carme';
+    font-style: normal;
+    margin: 5PX;
+    color: #000000;
+}
+
+.CGU {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .CGU input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .CGU label {
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  .CGU a {
+    text-decoration: none;
+    color: #00A8F0;
+  }
+  
+  .CGU span {
+    display: inline-block;
+  }
+
+
+.rectangle-creer {
+    position: absolute;
+    top: 580px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 50px;
+    background: #82BBBA;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.rectangle-creer a {
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+}

@@ -44,6 +44,9 @@ body {
     left: 314px;
     top: -5px;
 
+    align-items: center;
+    text-align: center;
+
     background: #F5F5F5;
 }
 

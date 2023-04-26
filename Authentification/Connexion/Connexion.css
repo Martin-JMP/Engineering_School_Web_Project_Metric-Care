@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Carme';
+    src: url('../../Origine/fonts/carme-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+#Logo{
+position: absolute;
+left: 20px;
+top: 15px; }
+
+.Langue a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;  
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 10px;
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #36706D;
+}
+
+.Connexion a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+
+    color: #36706D;
+}
+
+  
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+  
+input[type="email"] {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 360px;
+    font-size: 16px;
+    font-family: 'Carme';
+    font-style: normal;
+  }
+
+input[type="password"] {
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 360px;
+    font-size: 16px;
+    font-family: 'Carme';
+    font-style: normal;
+}
+
+.MDP_OUBLIE a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; 
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #00A8F0;
+}
+
+.rectangle-connecter {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background: #82BBBA;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+  
+.rectangle-connecter a {
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Pas_compte {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% + 20px); /* décalage de 10 pixels */
+}
+
+.Inscrivez-vous {
+    padding-left: 10%;
+}
+
+.Pas_compte a {
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+}
+
+.Inscrivez-vous a {
+    text-decoration-line: underline;
+    color: #00A8F0;
+}

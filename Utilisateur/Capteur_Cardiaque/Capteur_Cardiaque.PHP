@@ -30,6 +30,22 @@
     </header>
     <main>
     
+    <title>Capteur cardiaque</title>
+      <div class="text">
+          <a class="act">Valeur actuelle</a>
+          <a class="min">Valeur minimale</a>
+          <a class="max">Valeur maximale</a>
+          <a class="moy">Valeur moyenne</a>
+          <a class="explication">Voici le capteur groove. C'est le capteur cardiaque. Il mesure le rythme cardiaque en bpm (battements par minute).</a>
+        </div>
+
+      <input class="graph" type="button" value="Graphique">
+      <input class="rect0" type="button" value="ACT">
+      <input class="rect1" type="button" value="MIN">
+      <input class="rect2" type="button" value="MAX">
+      <input class="rect3" type="button" value="MOY">
+      
+      <img id="image" src="groove.png" alt="Capteur cardiaque">
 
 
     

@@ -40,7 +40,9 @@
           <a class="explication">Voici le capteur MiCS-VZ-98-TE. C'est le capteur CO2. Il mesure le taux de CO2 en μg/m³.</a>
         </div>
 
-      <input class="graph" type="button" value="Graphique">
+      <div class="graph">
+        <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/Cap_CO2/" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
       <input class="rect0" type="button" value="ACT">
       <input class="rect1" type="button" value="MIN">
       <input class="rect2" type="button" value="MAX">

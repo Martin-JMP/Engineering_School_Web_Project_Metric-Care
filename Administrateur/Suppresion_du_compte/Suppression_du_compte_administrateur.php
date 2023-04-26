@@ -3,13 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
-    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
+    <link rel="stylesheet" type="text/css" href="Suppression_du_compte_administrateur.css"> 
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
-
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Capteurs/capteur.css">
     <link rel="icon" href="../../Origine/Images/Logo.png">
-
   </head>
   <body>
     <header>
@@ -29,26 +26,37 @@
             <a>Connexion</a>
           </div>
         </nav>
-      </div>  
-    </header>
-    <main>
-      
-    <title>Capteurs</title>
-      <div class="text">
-        <a class="temperature">Température</a>
-        <a class="humidite">Taux d'humidité</a>
-        <a class="son">Niveau sonore</a>
-        <a class="cardio">Rythme cardiaque</a>
-        <a class="co2">Taux de CO2</a>
       </div>
+    </header>
 
-      <input class="temperatureButton" type="button" value="°C">
-      <input class="humiditeButton" type="button" value="%">
-      <input class="sonButton" type="button" value="dB">
-      <input class="cardioButton" type="button" value="bpm">
-      <input class="co2Button" type="button" value="μg/m³">
-      
+    <main>
+      <div>
+        <br><br><br><br>
+        <div class="Connexion">
+            <a>Suppression du compte</a>
+        </div>
+        <br>
+        <div class="container">
+            <input type="number" placeholder="Numéro d'identification"><br></br>
+            <input type="password" placeholder="Mot de passe"><br></br>
+            <div class="emailbox"><div class="emailboxbox"><input type="email" placeholder="Email"></div> 
+            <div class="rectangle-envoye">
+            <a>Envoyer Code par email</a>
+            </div></div>
+            <br></br>
+            <input type="number" placeholder="Code de suppression">
+        </div>
+        <div>
+          <a class = "sursupr"> Etes-vous sûres de vouloir supprimer votre compte ?</a> 
+          <br><br>
+        </div>
+        <div class="rectangle-connecter">
+            <a>Valider</a>
+        </div>
+      </div>
     </main>
+
+    <!--
     <footer class = "Footer">
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
@@ -63,6 +71,6 @@
           <a>Préférences des cookies</a>
         </div>
       </div>
-    </footer>
+    </footer>-->
   </body>
 </html>

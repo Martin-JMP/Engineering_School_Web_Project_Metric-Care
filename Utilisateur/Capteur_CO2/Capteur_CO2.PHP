@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
+    <link rel="stylesheet" type="text/css" href="capteur_co2.css">
   </head>
   <body>
     <header>
@@ -30,6 +31,24 @@
     </header>
     <main>
     
+    <title>Capteur CO2</title>
+      <div class="text">
+          <a class="act">Valeur actuelle</a>
+          <a class="min">Valeur minimale</a>
+          <a class="max">Valeur maximale</a>
+          <a class="moy">Valeur moyenne</a>
+          <a class="explication">Voici le capteur MiCS-VZ-98-TE. C'est le capteur CO2. Il mesure le taux de CO2 en μg/m³.</a>
+        </div>
+
+      <input class="graph" type="button" value="Graphique">
+      <input class="rect0" type="button" value="ACT">
+      <input class="rect1" type="button" value="MIN">
+      <input class="rect2" type="button" value="MAX">
+      <input class="rect3" type="button" value="MOY">
+      
+      <img id="image" src="mics.png" alt="Capteur CO2">
+
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

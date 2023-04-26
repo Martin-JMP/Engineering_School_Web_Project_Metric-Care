@@ -93,8 +93,6 @@
       </div>
     </div>
 
-        
-
 
     </main>
     <footer class = "Footer">

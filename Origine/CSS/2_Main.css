@@ -2,15 +2,19 @@
     font-family: 'Carme';
     src: url('../fonts/carme-regular.ttf') format('truetype');
     font-style: normal;
-    font-weight: 400;
+    font-weight: 401;
+    
 }
 
+.conteneur-page {
+    position: relative;
+    min-height: 100vh;
+  }
 
 body {
     margin: 0;
     /* height of the footer */
     padding-top: 80px;
-
     min-height: 100%;
     background:#FBFCFA;
     overflow-x: hidden;
@@ -22,12 +26,15 @@ body {
     margin-top: 100px;
 }
 
+
 #Title_Metric_Metro{
     position: absolute;
     width: 514px;
     height: 100px;
     left: 61.7%;
     top: 25%;
+
+
     
     font-family: 'Carme';
     font-style: normal;
@@ -39,8 +46,10 @@ body {
     text-align: center;
     
     color: #36706D;
+
     z-index: 1;
 }
+
 
 #Texte_Pres_MetricMetro{
     position: absolute;

@@ -6,10 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
-
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Capteurs/capteur.css">
     <link rel="icon" href="../../Origine/Images/Logo.png">
-
+    <link rel="stylesheet" type="text/css" href="capteur_humidite.css">
   </head>
   <body>
     <header>
@@ -29,25 +27,27 @@
             <a>Connexion</a>
           </div>
         </nav>
-      </div>  
+      </div>
     </header>
     <main>
-      
-    <title>Capteurs</title>
-      <div class="text">
-        <a class="temperature">Température</a>
-        <a class="humidite">Taux d'humidité</a>
-        <a class="son">Niveau sonore</a>
-        <a class="cardio">Rythme cardiaque</a>
-        <a class="co2">Taux de CO2</a>
-      </div>
 
-      <input class="temperatureButton" type="button" value="°C">
-      <input class="humiditeButton" type="button" value="%">
-      <input class="sonButton" type="button" value="dB">
-      <input class="cardioButton" type="button" value="bpm">
-      <input class="co2Button" type="button" value="μg/m³">
-      
+    <title>Capteur d'humidité</title>
+        <div class="text">
+            <a class="act">Valeur actuelle</a>
+            <a class="min">Valeur minimale</a>
+            <a class="max">Valeur maximale</a>
+            <a class="moy">Valeur moyenne</a>
+            <a class="explication">Voici le capteur DHT11. C'est le capteur d'humidité. Il mesure l'humidité en %.</a>
+          </div>
+
+        <input class="graph" type="button" value="Graphique">
+        <input class="rect0" type="button" value="ACT">
+        <input class="rect1" type="button" value="MIN">
+        <input class="rect2" type="button" value="MAX">
+        <input class="rect3" type="button" value="MOY">
+        
+        <img id="image" src="dht11.png" alt="Capteur d'humidité">
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

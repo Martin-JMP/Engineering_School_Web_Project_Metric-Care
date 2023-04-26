@@ -31,21 +31,21 @@
     </header>
     <main>
       
-      <title>Capteurs</title>
+    <title>Capteurs</title>
       <div class="text">
         <a class="temperature">Température</a>
-        <a class>Taux d'humidité</a>
-        <a>Niveau sonore</a>
-        <a>Rythme cardiaque</a>
-        <a>Taux de CO2</a>
+        <a class="humidite">Taux d'humidité</a>
+        <a class="son">Niveau sonore</a>
+        <a class="cardio">Rythme cardiaque</a>
+        <a class="co2">Taux de CO2</a>
       </div>
 
       <input class="temperatureButton" type="button" value="°C">
       <input class="humiditeButton" type="button" value="%">
       <input class="sonButton" type="button" value="dB">
       <input class="cardioButton" type="button" value="bpm">
-      <input class="co2Button" type="button" value="%">
-
+      <input class="co2Button" type="button" value="μg/m³">
+      
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

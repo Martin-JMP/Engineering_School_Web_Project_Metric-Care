@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
+    <link rel="stylesheet" type="text/css" href="capteur_cardiaque.css">
   </head>
   <body>
     <header>

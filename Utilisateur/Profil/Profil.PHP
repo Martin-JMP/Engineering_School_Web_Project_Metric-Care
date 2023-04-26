@@ -98,7 +98,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
         <p><?php echo $age['DateDeNaissance']; ?><p>
         </div>
         <div class="Editer">
-          <p>Éditer<p>
+          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
         </div>
       </div>
       <div class="Numéro">
@@ -117,7 +117,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
         <p><?php echo $email; ?><p>
         </div>
         <div class="Editer">
-          <p>Éditer<p>
+          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
         </div>
       </div>
       <div class="MDP">

@@ -19,8 +19,31 @@
 
             $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
             $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE authentificationprimaire.AuthentificationId = '$identification'");
-            if (!empty($email && $password && $prenom && $nom && $identification) && $password == $password1 ){
+            $sthf = $sth->fetch();
+            if (!empty($email && $password && $prenom && $nom && $identification) /*&& $password == $password1 && $sthf.rowCount() > 0*/){
+                try{
+                    $ins1 = $bdd->query("INSERT INTO personnes(Prenom, Nom, Adressmail) VALUES ('$prenom','$nom','$email')");
+                    $ins2 = $bdd->query("INSERT INTO logins(PersonneId, MotDePas) VALUES((SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email'),'$password')");
+                    $upd = $bdd->query("UPDATE authentificationprimaire SET authentificationprimaire.PersonneId = (SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email') where authentificationprimaire.AuthentificationId = $identification"); 
+                    $post1 = $ins1->fetch();
+                    $post2 = $ins2->fetch();
+                    $pos3 = $upd->fetch();
+                    if($post1 && $post2 && $upd){
+                      
+                      header('Location: http://localhost/Metric_Care/Authentification/Connexion/Connexion.PHP');
+                      exit();
+              
+                    }
+                    else{
+                      echo "Le problème de la création";
+                    }
+                }catch(PDOException $e){
+                    $erreur = $e->getMessage();
+                }
 
+            }
+            else{
+                echo 'Veuillez remplir les champs obligatoires';
             }
         }
     ?>
@@ -32,38 +55,40 @@
             </div>
         </div>  
     </header>
-    <main>
+    <main method="post" form="inscription-form">
         <div class="Inscription">
             <a>Inscription</a>
         </div>
-        <div class="Prenom_Nom">
-            <input type="text" id="prenom" name="prenom" placeholder="Prenom">
-            <input type="text" id="nom" name="nom" placeholder="Nom">
-        </div>
-        <div class="container">
-            <div class="email">
-                <input type="email" placeholder="Email" name="email">
+        <form id="inscription-form"  method="post">
+            <div class="Prenom_Nom">
+                <input type="text" id="prenom" name="prenom" placeholder="Prenom">
+                <input type="text" id="nom" name="nom" placeholder="Nom">
             </div>
-            <div class="NUM_IDENT">
-                <input type="number" name="identification" placeholder="Numero d'Identification" pattern="[0-9]{6}" title="Le Numéro d'Identification doit comporter six chiffres">
-            </div> 
-            <div class="mdp">
-                <input type="password" name="password" placeholder="Mot de passe">
-            </div> 
-            <div class="mdp_Confirme">
-                <input type="password" name="password1" placeholder="Confirmer le mot de passe">
-            </div>    
-        </div>
-        <br></br>
-        <div class="CGU">
-            <input type="checkbox" name="cgu" id="cgu">
-            <label for="cgu">J'accepte les <span><a href="#">conditions générales d'utilisation</a></span></label>
-        </div>
-
-        </div>
-        <div class="rectangle-creer">
-            <a>Créer mon compte</a>
-        </div>
+            <div class="container">
+                <div class="email">
+                    <input type="email" placeholder="Email" name="email">
+                </div>
+                <div class="NUM_IDENT">
+                    <input type="number" name="identification" placeholder="Numero d'Identification" pattern="[0-9]{6}" title="Le Numéro d'Identification doit comporter six chiffres">
+                </div> 
+                <div class="mdp">
+                    <input type="password" name="password" placeholder="Mot de passe">
+                </div> 
+                <div class="mdp_Confirme">
+                    <input type="password" name="password1" placeholder="Confirmer le mot de passe">
+                </div>    
+            </div>
+            <br></br>
+            <div class="CGU">
+                <input type="checkbox" name="cgu" id="cgu">
+                <label for="cgu">J'accepte les <span><a href="#">conditions générales d'utilisation</a></span></label>
+            </div>
+        
+            </div>
+            <div class="rectangle-creer">
+            <button type="submit" name="button">Créer mon compte</button>
+            </div>
+        </form>
     </main>
   </body>
 </html>

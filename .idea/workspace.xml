@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Inscription.PHP implementation" />
+    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Inscription.PHP implementation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +84,7 @@
       <workItem from="1682371334765" duration="864000" />
       <workItem from="1682406110978" duration="7575000" />
       <workItem from="1682424230750" duration="1876000" />
+      <workItem from="1682534133763" duration="3102000" />
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -278,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682431738064</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Inscription.PHP implementation">
+      <created>1682534159039</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1682534159039</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

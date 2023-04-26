@@ -2,12 +2,366 @@
     font-family: 'Carme';
     src: url('../fonts/carme-regular.ttf') format('truetype');
     font-style: normal;
-    font-weight: 400;
+    font-weight: 401;
+    
 }
 
+.conteneur-page {
+    position: relative;
+    min-height: 100vh;
+  }
 
 body {
     margin: 0;
-    padding-bottom: 80px; /* height of the footer */
+    /* height of the footer */
+    padding-top: 80px;
     min-height: 100%;
-  }
+    background:#FBFCFA;
+    overflow-x: hidden;
+}
+
+#MainPageImage{
+    position:relative;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+#Title_Metric_Metro{
+    position: absolute;
+    width: 514px;
+    height: 100px;
+    left: calc(50% - 514px/2 + 427px);
+    top: 190px;
+
+    
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 106px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #36706D;
+
+    z-index: 1;
+}
+
+
+#Texte_Pres_MetricMetro{
+    position: absolute;
+    width: 494px;
+    height: 150px;
+    left: calc(50% - 514px/2 + 438px);
+    top: 285px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: right;
+
+    color: #36706D;
+    z-index: 1;
+}
+
+#Description_Sentence_1{
+    position: absolute;
+    width: 1278px;
+    height: 125px;
+    top: 674px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #36706D;
+
+}
+
+#Separation_description{
+    position: absolute;
+    width: 118px;
+    height: 0px;
+    top: 798px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1.5px solid #36706D;
+}
+
+#Description_Sentence_2{
+    position: absolute;
+    width: 1183px;
+    height: 75px;
+    top: 835px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #36706D;
+}
+
+#Expertise_Container {
+    position: relative;
+    display: flex;
+    min-height: 130vh;
+}
+
+#Notre_Expertise{
+    position: absolute;
+    width: 514px;
+    height: 77px;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    text-align: center;
+
+    color: #36706D;
+}
+
+#Blocs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 140px 10% 0 100px;
+}
+#bloc1{
+    flex-basis: 25%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+#bloc1:hover, #bloc2:hover, #bloc3:hover, #bloc4:hover {
+    transform: scale(1.05);
+}
+
+#bloc1, #bloc2, #bloc3, #bloc4 {
+    transition: all 0.2s ease;
+}
+
+#bloc2{
+    flex-basis: 25%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+#bloc3{
+    flex-basis: 25%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+#bloc4{
+    flex-basis: 25%;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+#Bloc1_Température{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+    align-items: center;
+}
+
+#Bloc1_Température a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    text-align: center;
+
+    color: #4B4B4B;
+
+    padding-left: 3%;
+}
+
+#Logo_Température{
+    width: 64px;
+    height: 63px;
+    margin-left: 3%;
+}
+
+#Bloc2_Sonore{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+    align-items: center;
+}
+
+#Bloc2_Sonore a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #4B4B4B;
+
+    padding-left: 1px;
+}
+
+#Logo_Sonore{
+    margin-left: 5px;
+}
+
+#Bloc3_Cardiaque{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+    align-items: center;
+}
+
+#Bloc3_Cardiaque a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    text-align: center;
+
+    color: #4B4B4B;
+
+    padding-left: 18px;
+}
+
+#Logo_Cardiaque{
+    margin-left: 13px;
+}
+
+#Bloc4_CO2{
+    display: flex;
+    width: 276.67px;
+    height: 106.16px;
+
+    background: #EEEEEE;
+    border-radius: 20px;
+    transform: rotate(0.17deg);
+    align-items: center;
+}
+
+#Bloc4_CO2 a{
+    left: 10px;
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    text-align: center;
+
+    color: #4B4B4B;
+
+    padding-left: 26px;
+}
+
+#Logo_CO2{
+    margin-left: 18px;
+}
+
+#Separation_tram{
+    position: absolute;
+    width: 400px;
+    height: 0px;
+    top: 660px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1.5px solid #36706D;
+}
+
+#Tram{
+    position: absolute;
+    width: 444px;
+    height: 218px;
+    left: 498px;
+    top: 670px;
+}
+
+#Last_elements a{
+    position: absolute;
+    left: 10%;
+    top: 910px;
+    
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #36706D;
+}

@@ -24,9 +24,9 @@
           <div class="contenuNav">
             <a>🌐Français</a>
             <a>Contact</a>
-            <a>FAQ</a>
+            <a href="http://localhost/Metric_Care/Utilisateur/FAQ">FAQ</a>
             <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="http://localhost/Metric_Care/Authentification/Connexion/Connexion.PHP">Deconnexion</a>
           </div>
         </nav>
       </div>

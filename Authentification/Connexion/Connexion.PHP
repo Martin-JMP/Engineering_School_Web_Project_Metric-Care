@@ -8,6 +8,9 @@
   </head>
   <body>
     <?php
+       function alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+      }
       if (isset($_POST['button'])){
   
 
@@ -30,7 +33,7 @@
                 exit();
         
               }else{
-                echo "Utilisateur inconnu";
+                alert("Utilisateur inconnu");
               }
               
         
@@ -40,7 +43,7 @@
         
         
           }else{
-            echo 'Veuillez remplir les champs obligatoires';
+            alert('Veuillez remplir les champs obligatoires');
           }
         
         }
@@ -75,8 +78,8 @@
                 <div><a>compte ?</a></div>
             </div>
             <div class="Inscrivez-vous" href="#">
-                <div><a href="Connexion.css">Inscrivez</a></div>
-                <div><a href="Connexion.css">vous</a></div>
+                <div><a href="http://localhost/Metric_Care/Authentification/Inscription/Inscription.PHP">Inscrivez</a></div>
+                <div><a href="http://localhost/Metric_Care/Authentification/Inscription/Inscription.PHP">vous</a></div>
             </div>
         </div>
     </main>

@@ -23,10 +23,10 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="#">Contact</a>
+            <a href ="http://localhost/Metric_Care/Utilisateur/FAQ/FAQ.PHP">FAQ</a>
+            <a href="#">Qui sommes nous ?</a>
+            <a href="http://localhost/Metric_Care/Authentification/Connexion/Connexion.PHP">Deconnexion</a>
           </div>
         </nav>
       </div>
@@ -64,17 +64,6 @@
             </div>
             <div class="Entrée">
               <p>28 ans<p>
-            </div>
-            <div class="Editer">
-              <p>Éditer<p>
-            </div>
-          </div>
-          <div class="Ville">
-            <div class="Intitule">
-              <p>Ville<p>
-            </div>
-            <div class="Entrée">
-              <p>Lille<p>
             </div>
             <div class="Editer">
               <p>Éditer<p>

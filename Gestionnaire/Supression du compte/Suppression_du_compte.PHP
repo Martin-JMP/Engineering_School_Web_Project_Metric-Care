@@ -20,16 +20,18 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a>Tableau de bord</a> <!--Gestion des données, gestion des tickets, gestion des contacts-->
+            <a>Forum</a>
+            <a>Profil</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
-    
+
+        <h1>Hello</h1>
+        <button type="button">Click Me!</button>
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

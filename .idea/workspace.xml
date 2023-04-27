@@ -4,23 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="I have changed the file path to css file and to images">
+    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Inscription.PHP implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestionnaire/Gestion_des_données/Gestionnaire_des_données.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Gestion_des_données/Gestionnaire_des_données.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestionnaire/Gestion_des_tickets/Gestion_des_tickets.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Gestion_des_tickets/Gestion_des_tickets.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestionnaire/Supression du compte/Suppression_du_compte.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Supression du compte/Suppression_du_compte.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="22c9fb09-3547-4ba4-af83-2ecc8e892aa2" />
+        <option name="url" value="https://github.com/Martin-JONCOURT/Metric_Care.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -35,6 +56,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Metric_Care&quot;,
+
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -53,6 +77,23 @@
       <workItem from="1679407081644" duration="3306000" />
       <workItem from="1679662824730" duration="5044000" />
       <workItem from="1679907468086" duration="1283000" />
+
+      <workItem from="1680266246980" duration="5582000" />
+      <workItem from="1680610583362" duration="4584000" />
+      <workItem from="1680620528996" duration="4840000" />
+      <workItem from="1681476456964" duration="547000" />
+      <workItem from="1681478349610" duration="236000" />
+      <workItem from="1681724301799" duration="3001000" />
+      <workItem from="1682089417758" duration="555000" />
+      <workItem from="1682238326222" duration="3162000" />
+      <workItem from="1682268941184" duration="4383000" />
+      <workItem from="1682322813100" duration="9004000" />
+      <workItem from="1682334345212" duration="5665000" />
+      <workItem from="1682371334765" duration="864000" />
+      <workItem from="1682406110978" duration="7575000" />
+      <workItem from="1682424230750" duration="1876000" />
+      <workItem from="1682534133763" duration="3102000" />
+
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -110,7 +151,155 @@
       <option name="project" value="LOCAL" />
       <updated>1679673039131</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+
+    <task id="LOCAL-00009" summary="I have changed the file path to css file and to images">
+      <created>1680266281557</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680266281557</updated>
+    </task>
+    <task id="LOCAL-00010" summary="I have changed the file path to css file and to images">
+      <created>1680266381779</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680266381779</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Working on tableau de bord">
+      <created>1680267191862</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680267191862</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Working on tableau de bord">
+      <created>1680270925638</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680270925638</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Working on tableau de bord de gestionnaire">
+      <created>1680611983082</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680611983082</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Working on tableau de bord de gestionnaire, but I have some bugs">
+      <created>1680613901785</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680613901785</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Working on bugs with css">
+      <created>1681726467146</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681726467146</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Working on bugs with css">
+      <created>1682089442336</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682089442336</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Working on bugs with css">
+      <created>1682089576272</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682089576272</updated>
+    </task>
+    <task id="LOCAL-00018" summary="php implementation">
+      <created>1682286846741</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682286846741</updated>
+    </task>
+    <task id="LOCAL-00019" summary="php implementation">
+      <created>1682339926574</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682339926574</updated>
+    </task>
+    <task id="LOCAL-00020" summary="php implementation">
+      <created>1682371348917</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1682371348917</updated>
+    </task>
+    <task id="LOCAL-00021" summary="php implementation">
+      <created>1682371368055</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1682371368055</updated>
+    </task>
+    <task id="LOCAL-00022" summary="php implementation">
+      <created>1682406130859</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682406130859</updated>
+    </task>
+    <task id="LOCAL-00023" summary="php implementation">
+      <created>1682408873243</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682408873243</updated>
+    </task>
+    <task id="LOCAL-00024" summary="php implementation">
+      <created>1682415590429</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1682415590429</updated>
+    </task>
+    <task id="LOCAL-00025" summary="php implementation">
+      <created>1682416812406</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682416812406</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Inscription.PHP implementation">
+      <created>1682424267190</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1682424267190</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Inscription.PHP implementation">
+      <created>1682430992709</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682430992709</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Inscription.PHP implementation">
+      <created>1682431738064</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1682431738064</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Inscription.PHP implementation">
+      <created>1682534159039</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1682534159039</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +331,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I have changed the file path to css file" />
     <MESSAGE value="I have changed the file path to css file and to images" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have changed the file path to css file and to images" />
+
+    <MESSAGE value="Working on tableau de bord" />
+    <MESSAGE value="Working on tableau de bord de gestionnaire" />
+    <MESSAGE value="Working on tableau de bord de gestionnaire, but I have some bugs" />
+    <MESSAGE value="Working on bugs with css" />
+    <MESSAGE value="php implementation" />
+    <MESSAGE value="Inscription.PHP" />
+    <MESSAGE value="Inscription.PHP implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inscription.PHP implementation" />
+
   </component>
 </project>

@@ -16,6 +16,8 @@ $password = '!icgWdyuwvmcJbcj1';
 #$_SESSION['email'] = $email;
 #$_SESSION['password'] = $password;
 
+$a=1;
+
 
 
 $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");

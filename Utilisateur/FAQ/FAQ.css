@@ -25,6 +25,7 @@
     text-align: center;
     font-size: 50px;
     margin-top: -5px;
+    margin-bottom: 50px;
 }
 
 #Question {
@@ -32,10 +33,9 @@
     border-radius: 10px;
     max-width: 80%;
     margin-left: 10%;
-  
     align-content: center;
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 #Text_Question {
@@ -54,6 +54,7 @@
   font-style: normal;
   font-weight: 400;
   color: #36706D;
+  margin-bottom: 15px;
 }
 
 #row{
@@ -62,6 +63,8 @@
 }
 
 #column{
+  background-color: #EEEEEE ;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,9 +72,19 @@
 }
 
 #Rubrique_1 {
-  
+  background-color: white;
   border-radius: 10px;
   width: 30%;
+  margin-left: 10%;
+  align-content: center;
+  color: #36706D;
+  margin-bottom: 25px;
+}
+
+#test{
+  background-color: white;
+  border-radius: 10px;
+  width: 40%;
   margin-left: 10%;
   align-content: center;
   color: #36706D;
@@ -81,21 +94,20 @@
 #Rubrique_2 {
   background-color: #EEEEEE;
   border-radius: 10px;
-  
-  width: 48%;
   margin-left: 2%;
-  align-content: center;
   color: #36706D;
   margin-bottom: 25px;
 }
 
 #text_rubrique{
-  background-color: #EEEEEE;
+  
   font-family: 'Carme';
   src: url('../fonts/carme-regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 .searchbar {
@@ -189,8 +201,14 @@
     margin-right: 12px
   }
    
-   
-   
-   
-   
   
+#details-question{
+  font-family: 'Carme';
+  src: url('../fonts/carme-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  background-color: #EEEEEE ;
+  color : #36706D ;
+}
+
+

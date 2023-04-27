@@ -12,7 +12,7 @@ body {
     padding-top: 80px;
     min-height: 100%;
     background:#FBFCFA;
-    overflow-x: hidden;
+    overflow-x: scroll;
     min-height: calc(100vh - 80px - 800px);
     
   }

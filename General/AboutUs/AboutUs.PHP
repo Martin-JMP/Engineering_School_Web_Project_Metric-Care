@@ -59,7 +59,7 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a href="../Metric_Care/General/CGU/CGU.PHP">CGU </a> <a>|</a>
+          <a href="../../General/CGU/CGU.PHP">CGU </a> <a>|</a>
           <a>À propos</a> <a>|</a>
           <a>Préférences des cookies</a>
         </div>

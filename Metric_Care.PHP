@@ -96,7 +96,7 @@
 
 
     </main>
-    <footer class = "Footer">
+    <footer class = "Footer" >
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
           <img id="LogoFooter" src="Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">

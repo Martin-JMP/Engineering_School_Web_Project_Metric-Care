@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Tableau de bord/Tableau_de_Bord.css">
+    <link rel="stylesheet" type="text/css" href="../../Administrateur/Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.css">
     <title>Metric Care</title>
   </head>
   <body>

@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
+
+
+    <link rel="stylesheet" type="text/css" href="capteurs.css">
+
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
@@ -20,16 +24,42 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Ticket/Ticket.PHP">Ticket</a>
+            <a href ="../Profil/Profil.PHP">Profil</a>
           </div>
         </nav>
-      </div>
+      </div>  
     </header>
     <main>
-    
+      
+    <title>Capteurs</title>
+      <div class="text">
+        <a class="temperature">Température</a>
+        <a class="humidite">Taux d'humidité</a>
+        <a class="son">Niveau sonore</a>
+        <a class="cardio">Rythme cardiaque</a>
+        <a class="co2">Taux de CO2</a>
+      </div>
+
+      <a href="../Capteur_Temperature/Capteur_Temperature.PHP">
+      <input class="temperatureButton" type="button" value="°C">
+      </a>
+      <a href="../Capteur_Humidité/Capteur_humidite.PHP">
+      <input class="humiditeButton" type="button" value="%">
+      </a>
+      <a href="../Capteur_Sonore/Capteur_Sonore.PHP">
+      <input class="sonButton" type="button" value="dB">
+      </a>
+      <a href="../Capteur_Cardiaque/Capteur_Cardiaque.PHP">
+      <input class="cardioButton" type="button" value="bpm">
+      </a>
+      <a href="../Capteur_CO2/Capteur_CO2.PHP">
+      <input class="co2Button" type="button" value="μg/m³">
+      </a>
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

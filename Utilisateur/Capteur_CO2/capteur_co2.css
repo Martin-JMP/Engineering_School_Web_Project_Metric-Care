@@ -1,0 +1,176 @@
+title {
+    position: absolute;
+    left: 45%;
+    top: 70px;
+    
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #36706D;
+}
+
+.graph{
+
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 45%;
+    height: 62.5%;
+    left: 5%;
+    top: 25%;
+    
+    background: #D9D9D9;
+    mix-blend-mode: normal;
+    border: 3px solid #36706D;
+}
+
+
+.rect0{
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 10%;
+    height: 9.5%;
+    left: 52%;
+    top: 27.5%;
+
+    background: #D9D9D9;
+    mix-blend-mode: normal;
+    border: 1px solid #36706D;
+}
+
+
+
+.rect1{
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 10%;
+    height: 9.5%;
+    left: 52%;
+    top: 44.3%;
+
+    background: #D9D9D9;
+    mix-blend-mode: normal;
+    border: 1px solid #36706D;
+}
+
+
+.rect2{
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 10%;
+    height: 9.5%;
+    left: 52%;
+    top: 61.2%;
+
+    background: #D9D9D9;
+    mix-blend-mode: normal;
+    border: 1px solid #36706D;
+}
+
+.rect3{
+
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 10%;
+    height: 9.5%;
+    left: 52%;
+    top: 78%;
+    
+    background: #D9D9D9;
+    mix-blend-mode: normal;
+    border: 1px solid #36706D;
+}
+
+
+.act {
+    position: absolute;
+    left: 52%;
+    top: 25%;
+            
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+            
+    color: #000000;
+}
+
+.min {
+    position: absolute;
+    left: 52%;
+    top: 41.8%;
+            
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+            
+    color: #000000;
+}
+
+.max {
+    position: absolute;
+    left: 52%;
+    top: 58.7%;
+            
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+            
+    color: #000000;
+}
+
+.moy {
+    position: absolute;
+    left: 52%;
+    top: 75.5%;
+            
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+            
+    color: #000000;
+}
+
+#image{
+    position: absolute;
+    left: 72%;
+    top: 25%;
+    width: 20%;
+    
+}
+
+.explication {
+    position: absolute;
+    width: 20%;
+    height: 15% ;
+    top: 75%;
+    left: 72%;
+            
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+            
+    color: #000000;
+}

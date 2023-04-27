@@ -45,40 +45,56 @@
 
   ?>
 
-      <header>
-        <div id="Rectangle_Debut">
-          <nav>
-            <div>
-              <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro" width="75" height="40">
-              <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro" width="200" height="50">
-              <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-                <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures" width="60" height="60">
-              </a>
-            </div>
-            <div class="contenuNav">
-              <a>🌐Français</a>
-              <a>Contact</a>
-              <a>FAQ</a>
-              <a>Qui sommes nous ?</a>
-              <a>Connexion</a>
-            </div>
-          </nav>
+
+    <header>
+      <div id="Rectangle_Debut">
+        <nav>
+          <div>
+            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
+            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
+            <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+            <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+          </div>      
+          <div class="contenuNav">
+            <a>🌐Français</a>
+            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Ticket/Ticket.PHP">Ticket</a>
+            <a href ="Profil.PHP">Profil</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="title">
+        <p>Gestion de profil<p>
+      </div>
+      <div class="Nom">
+        <div class="Intitule">
+          <p>Nom<p>
         </div>
-      </header>
-      <main>
-        <div class="title">
-          <p>Gestion de profil<p>
+        <div class="Entrée">
+          <p><?php echo $nom['Nom']; ?><p>
         </div>
-        <div class="Nom">
-          <div class="Intitule">
-            <p>Nom<p>
-          </div>
-          <div class="Entrée">
-            <p><?php echo $nom['Nom']; ?><p>
-          </div>
-          <div class="Editer">
-            <p>Éditer<p>
-          </div>
+        <div class="Editer">
+          <p>Éditer<p>
+        </div>
+      </div>
+      <div class="Prénom">
+        <div class="Intitule">
+          <p>Prénom<p>
+        </div>
+        <div class="Entrée">
+        <p><?php echo $prenom['Prenom']; ?><p>
+        </div>
+        <div class="Editer">
+          <p>Éditer<p>
+        </div>
+      </div>
+      <div class="Age">
+        <div class="Intitule">
+          <p>Naissance<p>
         </div>
         <div class="Prénom">
           <div class="Intitule">

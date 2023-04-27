@@ -22,7 +22,7 @@
             <a>🌐Français</a>
             <a>Contact</a>
             <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
+            <a href="../Metric_Care/General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
             <a>Connexion</a>
           </div>
         </nav>
@@ -59,6 +59,7 @@
       </div>
       <div id="Blocs">
         <div id="bloc1">
+
           <div id="Bloc1_Température">
             <img id="Logo_Température" src="Origine/Image_main_accueil/temperature-sensor.png" alt="Logo Capteur Température", width="512", height="512">
             <a>Mesures de température<br>et humidité en temps réel</a>
@@ -93,8 +94,6 @@
       </div>
     </div>
 
-        
-
 
     </main>
     <footer class = "Footer">
@@ -107,7 +106,7 @@
         </div>
         <div class="Footer_contenu_texte">
           <a href="../Metric_Care/General/CGU/CGU.PHP">CGU </a> <a>|</a>
-          <a>À propos</a> <a>|</a>
+          <a href="../Metric_Care/General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
           <a>Préférences des cookies</a>
         </div>
       </div>

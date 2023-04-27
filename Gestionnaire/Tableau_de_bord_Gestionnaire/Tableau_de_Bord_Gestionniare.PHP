@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
+
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="Tableau_de_Bord_Gestionniare.css">
+
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -20,16 +23,21 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a>Tableau de bord</a> <!--Gestion des données, gestion des tickets, gestion des contacts-->
+            <a>Forum</a>
+            <a>Profil</a>
           </div>
         </nav>
       </div>
     </header>
+
     <main>
-    
+        <div class="main-container">
+            <h1>Gestionnaire</h1>
+            <button type="button"  onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Gestion_des_donn%c3%a9es/Gestionnaire_des_donn%c3%a9es.PHP';">Gestion des données</button>
+            <button type="button"  onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP';">Profil</button>
+        </div>
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">
@@ -46,5 +54,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>

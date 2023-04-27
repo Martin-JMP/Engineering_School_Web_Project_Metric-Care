@@ -20,10 +20,11 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href ="Forum.PHP">Forum</a>
+            <a href ="../Ticket/Ticket.PHP">Ticket</a>
+            <a href ="../Profil/Profil.PHP">Profil</a>
           </div>
         </nav>
       </div>

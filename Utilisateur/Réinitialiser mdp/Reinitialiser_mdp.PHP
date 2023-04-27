@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
-    <link rel="stylesheet" type="text/css" href="Contact.css">
+    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
-    <link rel="icon" href="Origine/Images/Logo.png">
+    <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
     <header>
@@ -30,27 +30,6 @@
     </header>
     <main>
     
-
-    <div class="container">
-    <div class="Titre_CGU">
-      <a>Contactez-nous</a>
-      </div>
-            <input type="text" placeholder="Prenom" required><br></br>
-            <input type="text" placeholder="Nom" required><br></br>
-            <input type="email" placeholder="Email" required><br></br>
-            <a class="titrebox"> indiquez votre demande :</a>
-            <textarea id="story" name="story" rows="5" cols="50">
-            </textarea>
-
-            <br><br>
-          <div class="rectangle-connecter">
-            <a href = "test">Envoyer</a>
-          </div>
-        </div>
-            
-    </div>
-
-
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

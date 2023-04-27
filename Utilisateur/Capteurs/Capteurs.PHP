@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
 
-    <link rel="stylesheet" type="text/css" href="capteurs.css">
-    <link rel="icon" href="../../Origine/Images/Logo.png">
 
+    <link rel="stylesheet" type="text/css" href="capteurs.css">
+
+    <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
     <header>
@@ -48,7 +49,7 @@
       <input class="sonButton" type="button" value="dB">
       <input class="cardioButton" type="button" value="bpm">
       <input class="co2Button" type="button" value="μg/m³">
-      
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

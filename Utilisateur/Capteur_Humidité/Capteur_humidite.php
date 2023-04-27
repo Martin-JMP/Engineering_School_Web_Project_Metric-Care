@@ -41,7 +41,9 @@
             <a class="explication">Voici le capteur DHT11. C'est le capteur d'humidité. Il mesure l'humidité en %.</a>
           </div>
 
-        <input class="graph" type="button" value="Graphique">
+       <div class="graph">
+        <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/humid_capt_/" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
         <input class="rect0" type="button" value="ACT">
         <input class="rect1" type="button" value="MIN">
         <input class="rect2" type="button" value="MAX">

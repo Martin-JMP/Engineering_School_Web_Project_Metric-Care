@@ -22,7 +22,7 @@
             <a>🌐Français</a>
             <a>Contact</a>
             <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
+            <a href="../Metric_Care/General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
             <a>Connexion</a>
           </div>
         </nav>
@@ -105,7 +105,7 @@
         </div>
         <div class="Footer_contenu_texte">
           <a href="../Metric_Care/General/CGU/CGU.PHP">CGU </a> <a>|</a>
-          <a>À propos</a> <a>|</a>
+          <a href="../Metric_Care/General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
           <a>Préférences des cookies</a>
         </div>
       </div>

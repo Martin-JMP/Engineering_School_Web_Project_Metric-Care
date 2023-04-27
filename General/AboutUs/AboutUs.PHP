@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
-    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
-
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="Tableau_de_Bord_Gestionniare.css">
+    <link rel="stylesheet" type="text/css" href="../../General/CGU/CGU.css">
+    <link rel="stylesheet" type="text/css" href="../../General/AboutUs/AboutUs.css">
 
     <title>Metric Care</title>
-    <link rel="icon" href="../../Origine/Images/Logo.png">
+    <link rel="icon" href="Origine/Images/Logo.png">
   </head>
   <body>
     <header>
@@ -31,13 +30,24 @@
         </nav>
       </div>
     </header>
-
     <main>
-        <div class="main-container">
-            <h1>Gestionnaire</h1>
-            <button type="button"  onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Gestion_des_donn%c3%a9es/Gestionnaire_des_donn%c3%a9es.PHP';">Gestion des données</button>
-            <button type="button"  onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP';">Profil</button>
-        </div>
+    
+
+    <div class="Contenu_A_Propos">
+      <div class="Titre">
+        <a>Qui sommes-nous ?</a>
+      </div>
+      <div class="Notre_Mission">
+        <a>Notre mission</a>
+      </div>
+      <div class="Nos_Enjeux">
+        <a>Nos enjeux</a>
+      </div>
+    </div>
+    <div class="Menu_principal">
+      <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
+    </div>
+
 
     </main>
     <footer class = "Footer">
@@ -49,12 +59,11 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a>CGU</a> <a>|</a>
+          <a href="../Metric_Care/General/CGU/CGU.PHP">CGU </a> <a>|</a>
           <a>À propos</a> <a>|</a>
           <a>Préférences des cookies</a>
         </div>
       </div>
     </footer>
-
   </body>
 </html>

@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Carme';
+    src: url('../fonts/carme-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+body {
+    margin: 0;
+    /* height of the footer */
+    padding-top: 80px;
+    min-height: 100%;
+    background:#FBFCFA;
+    overflow-x: hidden;
+    min-height: calc(100vh - 80px - 800px);
+    
+  }
+
+
+.Titre a{
+    position: relative;
+    width: 811px;
+    height: 90px;
+    left: 97px;
+    top: 100px;
+    
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 77px;
+    
+    color: #368A86;
+}
+
+.Notre_Mission{
+    position: absolute;
+    width: 603px;
+    height: 84px;
+    left: 97px;
+    top: 338px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #368A86;
+}

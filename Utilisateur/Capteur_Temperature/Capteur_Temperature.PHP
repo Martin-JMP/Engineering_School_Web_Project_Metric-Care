@@ -6,7 +6,9 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
+
     <link rel="stylesheet" type="text/css" href="capteur_temperature.css">
+
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
@@ -32,6 +34,7 @@
     </header>
     <main>
     
+
     <title>Capteur de température</title>
         <div class="text">
             <a class="act">Valeur actuelle</a>
@@ -41,7 +44,9 @@
             <a class="explication">Voici le capteur DHT11. C'est le capteur de température. Il mesure la température en °C.</a>
           </div>
 
-        <input class="graph" type="button" value="Graphique">
+        <div class="graph">
+        <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/temp_capteur/" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
         <input class="rect0" type="button" value="ACT">
         <input class="rect1" type="button" value="MIN">
         <input class="rect2" type="button" value="MAX">
@@ -68,4 +73,6 @@
       </div>
     </footer>
   </body>
+
 </html>
+

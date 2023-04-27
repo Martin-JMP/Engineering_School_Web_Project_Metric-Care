@@ -44,11 +44,11 @@
         <a class="co2">Taux de CO2</a>
       </div>
 
-      <input class="temperatureButton" type="button" value="°C">
-      <input class="humiditeButton" type="button" value="%">
-      <input class="sonButton" type="button" value="dB">
-      <input class="cardioButton" type="button" value="bpm">
-      <input class="co2Button" type="button" value="μg/m³">
+      <input class="temperatureButton" type="button" value="15°C">
+      <input class="humiditeButton" type="button" value="80%">
+      <input class="sonButton" type="button" value="83 dB">
+      <input class="cardioButton" type="button" value="75 bpm">
+      <input class="co2Button" type="button" value="60 μg/m³">
 
     </main>
     <footer class = "Footer">

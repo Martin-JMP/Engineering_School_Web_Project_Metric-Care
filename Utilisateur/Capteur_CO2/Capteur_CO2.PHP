@@ -46,10 +46,10 @@
       <div class="graph">
         <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/Cap_CO2/" width="100%" height="100%" frameborder="0"></iframe>
       </div>
-      <input class="rect0" type="button" value="ACT">
-      <input class="rect1" type="button" value="MIN">
-      <input class="rect2" type="button" value="MAX">
-      <input class="rect3" type="button" value="MOY">
+      <input class="rect0" type="button" value="60 μg/m³">
+      <input class="rect1" type="button" value="49 μg/m³">
+      <input class="rect2" type="button" value="66 μg/m³">
+      <input class="rect3" type="button" value="58 μg/m³">
       
       <img id="image" src="mics.png" alt="Capteur CO2">
 

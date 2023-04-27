@@ -47,10 +47,10 @@
         <div class="graph">
         <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/temp_capteur/" width="100%" height="100%" frameborder="0"></iframe>
         </div>
-        <input class="rect0" type="button" value="ACT">
-        <input class="rect1" type="button" value="MIN">
-        <input class="rect2" type="button" value="MAX">
-        <input class="rect3" type="button" value="MOY">
+        <input class="rect0" type="button" value="15°C">
+        <input class="rect1" type="button" value="12°C">
+        <input class="rect2" type="button" value="19°C">
+        <input class="rect3" type="button" value="16°C">
         
         <img id="image" src="dht11.png" alt="Capteur de température et d'humidité">
 

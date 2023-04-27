@@ -7,6 +7,7 @@
     <link rel="icon" href="Origine/Images/Logo.png">
   </head>
   <body>
+
     <?php
       if (isset($_POST['button'])){
         $email = $_POST['email'];
@@ -31,6 +32,7 @@
         
       }  
     ?>
+
     <header>
         <div>
             <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="100", height="55"> 
@@ -50,7 +52,9 @@
             <input type="email" placeholder="Email"><br></br>
         </div>
         <div class="rectangle-envoye">
+
             <a id="myButton" name="button">Envoyer</a>
+
         </div>
         <div class="popup" id="myPopup">
 		    <p>Vous avez cliqué sur le bouton "mybutton"!</p>

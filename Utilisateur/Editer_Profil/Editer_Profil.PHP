@@ -7,8 +7,6 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <link rel="stylesheet" type="text/css" href="../../Utilisateur/Profil/Profil.css">
     <title>Metric Care</title>
-    <link rel="icon" href="../../Origine/Images/Logo.png">
-
   </head>
   <body>
   <?php 
@@ -46,16 +44,16 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
 
 ?>
 
-
     <header>
       <div id="Rectangle_Debut">
         <nav>
           <div>
-            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
-            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
+            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro" width="75" height="40">
+            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro" width="200" height="50">
             <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-            <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
-          </div>      
+              <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures" width="60" height="60">
+            </a>
+          </div>
           <div class="contenuNav">
             <a>🌐Français</a>
             <a>Contact</a>
@@ -68,17 +66,14 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
     </header>
     <main>
       <div class="title">
-        <p>Gestion de profil<p>
+        <p>Edition de profil<p>
       </div>
       <div class="Nom">
         <div class="Intitule">
           <p>Nom<p>
         </div>
         <div class="Entrée">
-          <p><?php echo $nom['Nom']; ?><p>
-        </div>
-        <div class="Editer">
-          <p>Éditer<p>
+          <p><input type="text" id="nom" name="nom" required size="10"><p>
         </div>
       </div>
       <div class="Prénom">
@@ -86,10 +81,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
           <p>Prénom<p>
         </div>
         <div class="Entrée">
-        <p><?php echo $prenom['Prenom']; ?><p>
-        </div>
-        <div class="Editer">
-          <p>Éditer<p>
+        <p><input type="text" id="prenom" name="prenom" required size="10"><p>
         </div>
       </div>
       <div class="Age">
@@ -97,10 +89,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
           <p>Naissance<p>
         </div>
         <div class="Entrée">
-        <p><?php echo $age['DateDeNaissance']; ?><p>
-        </div>
-        <div class="Editer">
-          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
+        <p><input type="text" id="ddn" name="ddn" required size="10"><p>
         </div>
       </div>
       <div class="Numéro">
@@ -116,25 +105,11 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
           <p>E-mail<p>
         </div>
         <div class="Entrée">
-        <p><?php echo $email; ?><p>
-        </div>
-        <div class="Editer">
-          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-        </div>
-      </div>
-      <div class="MDP">
-        <div class="Intitule">
-          <p>Mot de passe<p>
-        </div>
-        <div class="Entrée">
-        <p><?php echo $password; ?><p>
-        </div>
-        <div class="Reinitialiser">
-          <p>Réinitialiser<p>
+        <p><input type="text"  id="email" name="email" required size="10"><p>
         </div>
       </div>
       <div class="Tableau">
-        <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">◂ Tableau de bord</a><p>
+        <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Profil.PHP">◂ Profil</a><p>
       </div>
       <div>
         <img id="Photo" src="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">
@@ -145,18 +120,15 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
       <div class="Enregistrer">
       <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
       </div>
-      <div class="Supprimer">
-      <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
-      </div>
     </main>
     <footer class="Footer">
       <div class="contenu_Footer">
         <div class="Footer_contenu_Logo">
-
-          <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
+          <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro" width="80" height="80">
           <p>Metric Care © 2023 - Tous droits réservés</p>
           <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-          <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+            <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures" width="60" height="60">
+          </a>
         </div>
         <div class="Footer_contenu_texte">
           <a>CGU</a> <a>|</a>

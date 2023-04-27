@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Carme';
+    src: url('../fonts/carme-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+body {
+    margin: 0;
+    /* height of the footer */
+    padding-top: 80px;
+    min-height: 100%;
+    background:#FBFCFA;
+    overflow-x: hidden;
+    min-height: calc(100vh - 80px - 800px);
+    
+  }
+
+
+.Titre_CGU a{
+    position: relative;
+    width: 604px;
+    height: 114px;
+    align-items: center;
+    text-align: center;
+    left: 37%;
+    top: -1700px;
+    
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    
+    color: #000000;
+}
+
+.Rectangle_CGU {
+    position: relative;
+    width: 812px;
+    height: 1700px;
+    left: 314px;
+    top: -5px;
+
+    align-items: center;
+    text-align: center;
+
+    background: #F5F5F5;
+}
+
+.Contenu_CGU a{
+    position: relative;
+    width: 683px;
+    height: 772px;
+    left: 379px;
+    top: -1400px;
+
+    align-items: center;
+    align-content: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+
+    color: #000000;
+}
+
+.Menu_principal a{
+    position: absolute;
+    width: 314px;
+    height: 52px;
+    left: 25px;
+    top: 88px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #36706D;
+
+    text-decoration: none; /*cette instruction permet que le texte ne soit pas souligné même avec un lien*/
+}

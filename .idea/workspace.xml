@@ -7,12 +7,14 @@
     <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Inscription.PHP implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Authentification/Inscription/Inscription.PHP" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -20,10 +22,12 @@
       </list>
     </option>
   </component>
+
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;
@@ -37,6 +41,7 @@
       </UrlAndAccount>
     </option>
   </component>
+
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,7 +56,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Metric_Care&quot;,
+
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -70,6 +77,7 @@
       <workItem from="1679407081644" duration="3306000" />
       <workItem from="1679662824730" duration="5044000" />
       <workItem from="1679907468086" duration="1283000" />
+
       <workItem from="1680266246980" duration="5582000" />
       <workItem from="1680610583362" duration="4584000" />
       <workItem from="1680620528996" duration="4840000" />
@@ -85,6 +93,7 @@
       <workItem from="1682406110978" duration="7575000" />
       <workItem from="1682424230750" duration="1876000" />
       <workItem from="1682534133763" duration="3102000" />
+
     </task>
     <task id="LOCAL-00001" summary="I have changed the file path to css file">
       <created>1679410743347</created>
@@ -142,6 +151,7 @@
       <option name="project" value="LOCAL" />
       <updated>1679673039131</updated>
     </task>
+
     <task id="LOCAL-00009" summary="I have changed the file path to css file and to images">
       <created>1680266281557</created>
       <option name="number" value="00009" />
@@ -321,6 +331,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I have changed the file path to css file" />
     <MESSAGE value="I have changed the file path to css file and to images" />
+
     <MESSAGE value="Working on tableau de bord" />
     <MESSAGE value="Working on tableau de bord de gestionnaire" />
     <MESSAGE value="Working on tableau de bord de gestionnaire, but I have some bugs" />
@@ -329,5 +340,6 @@
     <MESSAGE value="Inscription.PHP" />
     <MESSAGE value="Inscription.PHP implementation" />
     <option name="LAST_COMMIT_MESSAGE" value="Inscription.PHP implementation" />
+
   </component>
 </project>

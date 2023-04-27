@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+
     <link rel="stylesheet" type="text/css" href="Profil_Gestionnaire.css">
+
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -30,6 +32,7 @@
       </div>
     </header>
     <main>
+
           <div class="title">
             <p>Gestion de profil<p>
           </div>
@@ -122,6 +125,7 @@
           <div class="Supprimer">
           <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
           </div>
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

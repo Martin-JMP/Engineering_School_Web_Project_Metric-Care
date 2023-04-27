@@ -5,9 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-
     <link rel="stylesheet" type="text/css" href="Réinitialiser_mot_de_passe.css">
-
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -32,14 +30,16 @@
       </div>
     </header>
     <main>
-
-        <div class="main-container">
+      <div class="Profil">
+        <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Profil.PHP">◂ Profil</a></p>
+      </div>
+      <div class="main-container">
             <h1>Réinitialisation du mot de passe</h1>
-            <input type="password" id="AncienMotDePasse" name="fname" placeholder="Ancien mot de passe"><br><br>
-            <input type="password" id="NouveauMotDePasse" name="fname" placeholder="Nouveau mot de passe"><br><br>
-            <input type="password" id="ConfirmerMotDePasse" name="fname" placeholder="Confirmer mot de passe"><br><br>
+            <input type="password" id="AncienMotDePasse" placeholder="Ancien mot de passe" name="fname"><br><br>
+            <input type="password" id="NouveauMotDePasse" placeholder="Nouveau mot de passe" name="fname"><br><br>
+            <input type="password" id="ConfirmerMotDePasse" placeholder="Confirmer votre mot de passe" name="fname"><br><br>
             <button>Enregistrer</button>
-        </div>
+      </div>
     </main>
         <footer class = "Footer">
           <div class = "contenu_Footer">
@@ -58,4 +58,3 @@
         </footer>
     </body>
   </html>
-

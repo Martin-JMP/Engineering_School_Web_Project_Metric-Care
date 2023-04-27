@@ -91,25 +91,6 @@
             <p>Éditer<p>
           </div>
         </div>
-        <div class="Age">
-          <div class="Intitule">
-            <p>Naissance<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $age['DateDeNaissance']; ?><p>
-          </div>
-          <div class="Editer">
-            <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
-        </div>
-        <div class="Numéro">
-          <div class="Intitule">
-            <p>Numéro d'identification<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $numero['AuthentificationId']; ?><p>
-          </div>
-        </div>
         <div class="Email">
           <div class="Intitule">
             <p>E-mail<p>
@@ -133,7 +114,7 @@
           </div>
         </div>
         <div class="Tableau">
-          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">◂ Tableau de bord</a><p>
+          <p><a href="http://localhost/Metric_Care/Metric_Care/Administrateur/Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.PHP">◂ Tableau de bord</a><p>
         </div>
         <div class="Deconnexion">
           <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">Déconnexion</a><p>

@@ -5,10 +5,8 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Tableau de bord/Tableau_de_Bord.css">
     <title>Metric Care</title>
-    
-
+    <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
     <header>
@@ -31,12 +29,7 @@
       </div>
     </header>
     <main>
-      <div class="box">
-        <p style="font-size:30px;">Tableau de bord<p>
-        <p><button onclick="window.location.href = '../Capteurs/Capteurs.PHP';">Capteurs</button><p>
-        <p><button onclick="window.location.href = '../Profil/Profil.PHP';">Profil</button><p>
-        <p><button onclick="window.location.href = '../Forum/Forum.PHP';">Forum</button><p>
-      </div>
+    
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

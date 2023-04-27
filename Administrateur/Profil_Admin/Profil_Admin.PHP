@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Profil/Profil.css">
+    <link rel="stylesheet" type="text/css" href="../../Administrateur/Profil_Admin/Profil_Admin.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -67,7 +68,7 @@
       </header>
       <main>
         <div class="title">
-          <p>Gestion de profil<p>
+          <p>Gestion de profil Administrateur<p>
         </div>
         <div class="Nom">
           <div class="Intitule">
@@ -89,25 +90,6 @@
           </div>
           <div class="Editer">
             <p>Éditer<p>
-          </div>
-        </div>
-        <div class="Age">
-          <div class="Intitule">
-            <p>Naissance<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $age['DateDeNaissance']; ?><p>
-          </div>
-          <div class="Editer">
-            <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
-        </div>
-        <div class="Numéro">
-          <div class="Intitule">
-            <p>Numéro d'identification<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $numero['AuthentificationId']; ?><p>
           </div>
         </div>
         <div class="Email">
@@ -133,7 +115,10 @@
           </div>
         </div>
         <div class="Tableau">
-          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">◂ Tableau de bord</a><p>
+          <p><a href="http://localhost/Metric_Care/Metric_Care/Administrateur/Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.PHP">◂ Tableau de bord</a><p>
+        </div>
+        <div class="Deconnexion">
+          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">Déconnexion</a><p>
         </div>
         <div>
           <img id="Photo" src="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">

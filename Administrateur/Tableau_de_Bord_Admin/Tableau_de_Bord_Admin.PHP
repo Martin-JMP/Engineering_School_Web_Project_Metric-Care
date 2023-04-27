@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Tableau de bord/Tableau_de_Bord.css">
+    <link rel="stylesheet" type="text/css" href="../../Administrateur/Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.css">
     <title>Metric Care</title>
   </head>
   <body>
@@ -32,9 +33,9 @@
     <main>
       <div class="title">
         <h1>Tableau de bord</h1>
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Capteurs</button>
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Profil.PHP';">Profil</button>
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Forum/Forum.PHP';">Forum</button>
+        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Administrateur/Gestion_des_utilisateurs/Gestion_des_utilisateurs.PHP';">Gestion des utilisateurs</button>
+        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Administrateur/Profil_Admin/Profil_Admin.PHP';">Profil</button>
+        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Administrateur/Forum/Forum.PHP';">Forum</button>
       </div>
     </main>
     <footer class="Footer">
@@ -54,4 +55,5 @@
       </div>
     </footer>
   </body>
+
 </html>

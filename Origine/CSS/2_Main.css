@@ -2,8 +2,7 @@
     font-family: 'Carme';
     src: url('../fonts/carme-regular.ttf') format('truetype');
     font-style: normal;
-    font-weight: 401;
-    
+    font-weight: 400;
 }
 
 .conteneur-page {
@@ -13,8 +12,7 @@
 
 body {
     margin: 0;
-    /* height of the footer */
-    padding-top: 80px;
+    padding-bottom: 80px; /* height of the footer */
     min-height: 100%;
     background:#FBFCFA;
     overflow-x: hidden;
@@ -382,4 +380,5 @@ body {
     
     color: #36706D;
 }
+
 

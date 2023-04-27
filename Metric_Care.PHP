@@ -59,6 +59,7 @@
       </div>
       <div id="Blocs">
         <div id="bloc1">
+
           <div id="Bloc1_Température">
             <img id="Logo_Température" src="Origine/Image_main_accueil/temperature-sensor.png" alt="Logo Capteur Température", width="512", height="512">
             <a>Mesures de température<br>et humidité en temps réel</a>

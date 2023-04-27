@@ -5,8 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Ticket/Ticket.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
+    <script>  
+            function changeColor(color) { 
+                document.body.style.background = color; 
+            }
+    </script> 
   </head>
   <body>
     <header>
@@ -20,17 +26,52 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Tableau de bord</a>
-            <a>FAQ</a>
-            <a>Forum</a>
-            <a>Ticket</a>
-            <a>Profil</a>
+            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Ticket/Ticket.PHP">Ticket</a>
+            <a href ="../Profil/Profil.PHP">Profil</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
     
+    <a id = "retour">◄ Tableau de bord</a>
+
+    <p id = "Signaler"> Signaler un incident </p>
+
+    <div class="searchbar">
+     <div class="searchbar-wrapper">
+        <div class="searchbar-center">
+            <div class="searchbar-input-spacer"></div>
+            <input type="text" class="searchbar-input" maxlength="2048" name="q" autocapitalize="off" autocomplete="off" role="combobox" placeholder="Email">
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <select id = "Choix">
+    <group>
+    <option value="arv">Choisir un incident</option>
+    <option value="gin">Le boitier ne communique plus les informations</option>
+    </group>
+    </select>
+
+    <div class="searchbar2">
+     <div class="searchbar-wrapper">
+        <div class="searchbar-center">
+            <div class="searchbar-input-spacer"></div>
+            <input type="text" class="searchbar-input" maxlength="2048" name="q" autocapitalize="off" autocomplete="off" role="combobox" placeholder="Message...">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id = "valider"><button onclick="changeColor('white')">Valider</button> </div>
+
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

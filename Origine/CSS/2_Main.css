@@ -31,9 +31,9 @@ body {
     position: absolute;
     width: 514px;
     height: 100px;
+
     left: 61.7%;
     top: 25%;
-
 
     
     font-family: 'Carme';
@@ -47,6 +47,7 @@ body {
     
     color: #36706D;
 
+
     z-index: 1;
 }
 
@@ -55,8 +56,10 @@ body {
     position: absolute;
     width: 494px;
     height: 150px;
+
     left: 61.7%;
     top: 38%;
+
 
     font-family: 'Carme';
     font-style: normal;
@@ -111,7 +114,9 @@ body {
     position: absolute;
     width: 1183px;
     height: 75px;
+
     top: 835px;
+
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -159,6 +164,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
     margin: 140px 10% 0 100px;
 }
 #bloc1{
@@ -198,6 +205,7 @@ body {
 }
 
 #Bloc1_Température{
+
     display: flex;
     width: 276.67px;
     height: 106.16px;
@@ -264,6 +272,7 @@ body {
     margin-left: 5px;
 }
 
+
 #Bloc3_Cardiaque{
     display: flex;
     width: 276.67px;
@@ -272,7 +281,9 @@ body {
     background: #EEEEEE;
     border-radius: 20px;
     transform: rotate(0.17deg);
+
     align-items: center;
+
 }
 
 #Bloc3_Cardiaque a{
@@ -285,6 +296,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     display: flex;
+
     text-align: center;
 
     color: #4B4B4B;
@@ -294,6 +306,7 @@ body {
 
 #Logo_Cardiaque{
     margin-left: 13px;
+
 }
 
 #Bloc4_CO2{
@@ -304,7 +317,9 @@ body {
     background: #EEEEEE;
     border-radius: 20px;
     transform: rotate(0.17deg);
+
     align-items: center;
+
 }
 
 #Bloc4_CO2 a{
@@ -317,6 +332,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     display: flex;
+
     text-align: center;
 
     color: #4B4B4B;
@@ -366,3 +382,4 @@ body {
     
     color: #36706D;
 }
+

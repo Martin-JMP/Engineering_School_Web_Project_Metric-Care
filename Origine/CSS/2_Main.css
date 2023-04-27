@@ -31,8 +31,9 @@ body {
     position: absolute;
     width: 514px;
     height: 100px;
-    left: calc(50% - 514px/2 + 427px);
-    top: 190px;
+    left: 61.7%;
+    top: 25%;
+
 
     
     font-family: 'Carme';
@@ -54,8 +55,8 @@ body {
     position: absolute;
     width: 494px;
     height: 150px;
-    left: calc(50% - 514px/2 + 438px);
-    top: 285px;
+    left: 61.7%;
+    top: 38%;
 
     font-family: 'Carme';
     font-style: normal;
@@ -168,11 +169,11 @@ body {
 }
 
 #bloc1:hover, #bloc2:hover, #bloc3:hover, #bloc4:hover {
-    transform: scale(1.05);
+    transform: scale(1.1); /*agrandir les blocs quand on passe la souris dessus*/
 }
 
 #bloc1, #bloc2, #bloc3, #bloc4 {
-    transition: all 0.2s ease;
+    transition: all 0.2s ease; /*fluidité de l'agrandissement*/
 }
 
 #bloc2{

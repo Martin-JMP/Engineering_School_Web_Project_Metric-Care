@@ -16,6 +16,9 @@
 
 $email = 'vbaudin@ratp.fr';
 $password = '!icgWdyuwvmcJbcj1';
+#$_SESSION['email'] = $email;
+#$_SESSION['password'] = $password;
+
 
 
 $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");

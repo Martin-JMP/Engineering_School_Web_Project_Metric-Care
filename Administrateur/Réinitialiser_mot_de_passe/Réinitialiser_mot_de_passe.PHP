@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
-    <link rel="stylesheet" type="text/css" href="capteur_humidite.css">
   </head>
   <body>
     <header>
@@ -21,36 +21,16 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
-            <a href ="../FAQ/FAQ.PHP">FAQ</a>
-            <a href ="../Forum/Forum.PHP">Forum</a>
-            <a href ="../Ticket/Ticket.PHP">Ticket</a>
-            <a href ="../Profil/Profil.PHP">Profil</a>
+            <a>Contact</a>
+            <a>FAQ</a>
+            <a>Qui sommes nous ?</a>
+            <a>Connexion</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
-
-    <title>Capteur d'humidité</title>
-        <div class="text">
-            <a class="act">Valeur actuelle</a>
-            <a class="min">Valeur minimale</a>
-            <a class="max">Valeur maximale</a>
-            <a class="moy">Valeur moyenne</a>
-            <a class="explication">Voici le capteur DHT11. C'est le capteur d'humidité. Il mesure l'humidité en %.</a>
-          </div>
-
-       <div class="graph">
-        <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/humid_capt_/" width="100%" height="100%" frameborder="0"></iframe>
-      </div>
-        <input class="rect0" type="button" value="80%">
-        <input class="rect1" type="button" value="76%">
-        <input class="rect2" type="button" value="82%">
-        <input class="rect3" type="button" value="79%">
-        
-        <img id="image" src="dht11.png" alt="Capteur d'humidité">
-
+    
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">
@@ -68,4 +48,5 @@
       </div>
     </footer>
   </body>
+
 </html>

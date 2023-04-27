@@ -21,26 +21,25 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
-            <a href ="../FAQ/FAQ.PHP">FAQ</a>
-            <a href ="../Forum/Forum.PHP">Forum</a>
-            <a href ="../Ticket/Ticket.PHP">Ticket</a>
-            <a href ="../Profil/Profil.PHP">Profil</a>
+            <a>Contact</a>
+            <a>FAQ</a>
+            <a>Qui sommes nous ?</a>
+            <a>Connexion</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
       <div class="Profil">
-        <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Profil.PHP">◂ Profil</a></p>
+        <p>◂ Profil<p>
       </div>
-      <div class="main-container">
+        <div class="main-container">
             <h1>Réinitialisation du mot de passe</h1>
             <input type="password" id="AncienMotDePasse" placeholder="Ancien mot de passe" name="fname"><br><br>
             <input type="password" id="NouveauMotDePasse" placeholder="Nouveau mot de passe" name="fname"><br><br>
             <input type="password" id="ConfirmerMotDePasse" placeholder="Confirmer votre mot de passe" name="fname"><br><br>
             <button>Enregistrer</button>
-      </div>
+        </div>
     </main>
         <footer class = "Footer">
           <div class = "contenu_Footer">

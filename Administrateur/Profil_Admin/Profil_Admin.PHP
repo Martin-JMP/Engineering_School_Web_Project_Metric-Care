@@ -67,7 +67,7 @@
       </header>
       <main>
         <div class="title">
-          <p>Gestion de profil<p>
+          <p>Gestion de profil Administrateur<p>
         </div>
         <div class="Nom">
           <div class="Intitule">

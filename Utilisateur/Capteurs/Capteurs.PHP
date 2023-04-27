@@ -44,11 +44,21 @@
         <a class="co2">Taux de CO2</a>
       </div>
 
+      <a href="../Capteur_Temperature/Capteur_Temperature.PHP">
       <input class="temperatureButton" type="button" value="°C">
+      </a>
+      <a href="../Capteur_Humidité/Capteur_humidite.PHP">
       <input class="humiditeButton" type="button" value="%">
+      </a>
+      <a href="../Capteur_Sonore/Capteur_Sonore.PHP">
       <input class="sonButton" type="button" value="dB">
+      </a>
+      <a href="../Capteur_Cardiaque/Capteur_Cardiaque.PHP">
       <input class="cardioButton" type="button" value="bpm">
+      </a>
+      <a href="../Capteur_CO2/Capteur_CO2.PHP">
       <input class="co2Button" type="button" value="μg/m³">
+      </a>
 
     </main>
     <footer class = "Footer">

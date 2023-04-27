@@ -39,7 +39,7 @@
         height: 80px;
         background: #333;
 
-        margin-top: 170px; /*descend un peu le footer*/
+        margin-top: 100%; /*descend un peu le footer*/
     }
 
     .contenu_Footer {

@@ -11,9 +11,6 @@
   <body>
   <?php
 
-
-  
-
 $email = 'vbaudin@ratp.fr';
 $password = '!icgWdyuwvmcJbcj1';
 #$_SESSION['email'] = $email;

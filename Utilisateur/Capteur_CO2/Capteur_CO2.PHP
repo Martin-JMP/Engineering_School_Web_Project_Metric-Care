@@ -8,6 +8,8 @@
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
     <link rel="stylesheet" type="text/css" href="capteur_co2.css">
+
+
   </head>
   <body>
     <header>
@@ -30,7 +32,7 @@
       </div>
     </header>
     <main>
-    
+
     <title>Capteur CO2</title>
       <div class="text">
           <a class="act">Valeur actuelle</a>
@@ -51,6 +53,7 @@
       <img id="image" src="mics.png" alt="Capteur CO2">
 
 
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">
@@ -68,4 +71,6 @@
       </div>
     </footer>
   </body>
+
 </html>
+

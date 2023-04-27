@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
+
     <link rel="stylesheet" type="text/css" href="capteur_cardiaque.css">
+
   </head>
   <body>
     <header>
@@ -31,6 +33,7 @@
     </header>
     <main>
     
+
     <title>Capteur cardiaque</title>
       <div class="text">
           <a class="act">Valeur actuelle</a>
@@ -51,7 +54,6 @@
       <img id="image" src="groove.png" alt="Capteur cardiaque">
 
 
-    
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">
@@ -69,4 +71,6 @@
       </div>
     </footer>
   </body>
+
 </html>
+

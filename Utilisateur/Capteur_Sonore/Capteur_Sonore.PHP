@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
+
     <link rel="stylesheet" type="text/css" href="capteur_sonore.css">
+
   </head>
   <body>
     <header>
@@ -31,6 +33,7 @@
     </header>
     <main>
 
+
     <title>Capteur sonore</title>
       <div class="text">
           <a class="act">Valeur actuelle</a>
@@ -50,6 +53,7 @@
       
       <img id="image" src="max4466.png" alt="Capteur sonore">
 
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">
@@ -67,4 +71,6 @@
       </div>
     </footer>
   </body>
+
 </html>
+

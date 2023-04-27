@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
-    <link rel="stylesheet" type="text/css" href="Tableau_de_Bord_Gestionnaire.css">
+
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="Tableau_de_Bord_Gestionniare.css">
+
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -29,14 +31,14 @@
         </nav>
       </div>
     </header>
-    <div class="conteneur-page">
+
     <main>
-      <div class="box">
-        <p style="font-size:30px;">Tableau de bord<p>
-        <p><button onclick="window.location.href = '../Gestion_des_données/Gestion_des_données.PHP';">Gestion des utilisateurs</button><p>
-        <p><button onclick="window.location.href = '../Forum/Forum.PHP';">Forum</button><p>
-        <p><button onclick="window.location.href = '../Profil_Gestionnaire/Profil_Gestionnaire.PHP';">Profil</button><p>
-      </div>
+        <div class="main-container">
+            <h1>Gestionnaire</h1>
+            <button type="button"  onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Gestion_des_donn%c3%a9es/Gestionnaire_des_donn%c3%a9es.PHP';">Gestion des données</button>
+            <button type="button"  onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP';">Profil</button>
+        </div>
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">
@@ -53,6 +55,6 @@
         </div>
       </div>
     </footer>
-    </div class="conteneur-page">
+
   </body>
 </html>

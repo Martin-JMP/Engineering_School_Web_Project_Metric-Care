@@ -1,9 +1,7 @@
 title {
     position: absolute;
-    width: 704px;
-    height: 149px;
-    left: 38.5%;
-    top: 70px;
+    left: 42%;
+    top: 14%;
     
     font-family: 'Carme';
     font-style: normal;
@@ -19,8 +17,8 @@ title {
 
 .temperature {
     position: absolute;
-    left: 31.5%;
-    top: 220px;
+    left: 30%;
+    top: 30.5%;
     
     font-family: 'Inter';
     font-style: normal;
@@ -33,10 +31,8 @@ title {
 
 .humidite {
     position: absolute;
-    width: 229px;
-    height: 33px;
-    left: 825px;
-    top: 220px;
+    left: 59.5%;
+    top: 30.5%;
     
     font-family: 'Inter';
     font-style: normal;
@@ -49,10 +45,8 @@ title {
 
 .son {
     position: absolute;
-    width: 228px;
-    height: 38px;
-    left: 31%;
-    top: 349px;
+    left: 36.75%;
+    top: 49%;
     
     font-family: 'Inter';
     font-style: normal;
@@ -65,10 +59,8 @@ title {
 
 .cardio {
     position: absolute;
-    width: 229px;
-    height: 35px;
-    left: 817px;
-    top: 349px;
+    left: 51.75%;
+    top: 49%;
     
     font-family: 'Inter';
     font-style: normal;
@@ -82,10 +74,8 @@ title {
 
 .co2 {
     position: absolute;
-    width: 249px;
-    height: 33px;
-    left: 43%;
-    top: 465px;
+    left: 44.5%;
+    top: 30.5%;
     
     font-family: 'Inter';
     font-style: normal;
@@ -100,10 +90,10 @@ title {
     box-sizing: border-box;
 
     position: absolute;
-    width: 150px;
-    height: 75px;
+    width: 10%;
+    height: 10.5%;
     left: 30%;
-    top: 253px;
+    top: 34.5%;
     
     background: #EEEEEE;
     mix-blend-mode: normal;
@@ -117,10 +107,10 @@ title {
     box-sizing: border-box;
 
     position: absolute;
-    width: 150px;
-    height: 75px;
-    left: 814px;
-    top: 253px;
+    width: 10%;
+    height: 10.5%;
+    left: 59.5%;
+    top: 34.5%;
     
     background: #EEEEEE;
     border: 1px solid #36706D;
@@ -133,10 +123,10 @@ title {
     box-sizing: border-box;
 
     position: absolute;
-    width: 150px;
-    height: 75px;
-    left: 30%;
-    top: 380px;
+    width: 10%;
+    height: 10.5%;
+    left: 36.75%;
+    top: 53%;
     
     background: #EEEEEE;
     border: 1px solid #36706D;
@@ -149,10 +139,10 @@ title {
     box-sizing: border-box;
 
     position: absolute;
-    width: 150px;
-    height: 75px;
-    left: 814px;
-    top: 380px;
+    width: 10%;
+    height: 10.5%;
+    left: 51.75%;
+    top: 53%;
     
     background: #EEEEEE;
     border: 1px solid #36706D;
@@ -165,10 +155,10 @@ title {
     box-sizing: border-box;
 
     position: absolute;
-    width: 150px;
-    height: 75px;
-    left: 41.5%;
-    top: 496px;
+    width: 10%;
+    height: 10.5%;
+    left: 44.5%;
+    top: 34.5%;
     
     background: #EEEEEE;
     border: 1px solid #36706D;

@@ -8,7 +8,8 @@
     <title>Metric Care</title>
 
 
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Capteurs/capteur.css">
+    <link rel="stylesheet" type="text/css" href="capteurs.css">
+
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
@@ -23,10 +24,11 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
+            <a>Tableau de bord</a>
             <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a>Forum</a>
+            <a>Ticket</a>
+            <a>Profil</a>
           </div>
         </nav>
       </div>  

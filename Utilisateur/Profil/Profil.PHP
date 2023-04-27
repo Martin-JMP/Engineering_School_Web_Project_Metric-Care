@@ -58,10 +58,11 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
+            <a>Tableau de bord</a>
             <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a>Forum</a>
+            <a>Ticket</a>
+            <a>Profil</a>
           </div>
         </nav>
       </div>

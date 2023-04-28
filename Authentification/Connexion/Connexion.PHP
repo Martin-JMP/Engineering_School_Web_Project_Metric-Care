@@ -63,7 +63,7 @@
               <input type="password" id='password' name="password" placeholder="Mot de passe">
           </div>
           <div class="MDP_OUBLIE">
-              <a>Mot de passe oublié ?</a>
+              <a href = "../Mot_de_passe_oublie/Mot_de_passe_oublie.PHP">Mot de passe oublié ?</a>
           </div>
           <div class="rectangle-connecter" name="button">
             <button type="submit" name="button">Se Connecter</button>
@@ -75,8 +75,8 @@
                 <div><a>compte ?</a></div>
             </div>
             <div class="Inscrivez-vous" href="#">
-                <div><a href="Connexion.css">Inscrivez</a></div>
-                <div><a href="Connexion.css">vous</a></div>
+                <div><a href="../Inscription/Inscription.PHP">Inscrivez</a></div>
+                <div><a href="../Inscription/Inscription.PHP">vous</a></div>
             </div>
         </div>
     </main>

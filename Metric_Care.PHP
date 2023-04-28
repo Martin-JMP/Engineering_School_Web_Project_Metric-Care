@@ -20,10 +20,10 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a href="../Metric_Care/General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="General/Contact/Contact.PHP.PHP">Contact</a>
+            <a href="General/FAQ/Page_FAQ.PHP">FAQ</a>
+            <a href="General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
         </nav>
       </div>

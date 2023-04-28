@@ -53,13 +53,9 @@
         </div>
         <div class="rectangle-envoye">
 
-            <a id="myButton" name="button">Envoyer</a>
+            <a id="myButton" name="button" href = "../Connexion/Connexion.PHP">Envoyer</a>
 
         </div>
-        <div class="popup" id="myPopup">
-		    <p>Vous avez cliqué sur le bouton "mybutton"!</p>
-		    <button id="closeButton">Fermer</button>
-	    </div>
     </main>
   </body>
 </html>

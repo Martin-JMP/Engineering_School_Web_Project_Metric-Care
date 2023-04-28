@@ -45,19 +45,19 @@
       </div>
 
       <a href="../Capteur_Temperature/Capteur_Temperature.PHP">
-      <input class="temperatureButton" type="button" value="°C">
+      <input class="temperatureButton" type="button" value="15°C">
       </a>
       <a href="../Capteur_Humidité/Capteur_humidite.PHP">
-      <input class="humiditeButton" type="button" value="%">
+      <input class="humiditeButton" type="button" value="80%">
       </a>
       <a href="../Capteur_Sonore/Capteur_Sonore.PHP">
-      <input class="sonButton" type="button" value="dB">
+      <input class="sonButton" type="button" value="83 dB">
       </a>
       <a href="../Capteur_Cardiaque/Capteur_Cardiaque.PHP">
-      <input class="cardioButton" type="button" value="bpm">
+      <input class="cardioButton" type="button" value="75 bpm">
       </a>
       <a href="../Capteur_CO2/Capteur_CO2.PHP">
-      <input class="co2Button" type="button" value="μg/m³">
+      <input class="co2Button" type="button" value="60 μg/m³">
       </a>
 
     </main>
@@ -70,9 +70,9 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a>CGU</a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
       </div>
     </footer>

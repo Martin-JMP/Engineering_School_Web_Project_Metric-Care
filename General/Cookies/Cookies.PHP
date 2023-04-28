@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
-    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
+    <link rel="stylesheet" type="text/css" href="Contact.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
-    <link rel="icon" href="../../Origine/Images/Logo.png">
+    <link rel="icon" href="Origine/Images/Logo.png">
   </head>
   <body>
     <header>
@@ -20,17 +19,18 @@
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
-            <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+          <a>🌐Français</a>
+            <a href="../Contact/Contact.PHP">Contact</a>
+            <a href="../FAQ/Page_FAQ.PHP">FAQ</a>
+            <a href="../AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="../../Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
-    
+
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">
@@ -48,5 +48,4 @@
       </div>
     </footer>
   </body>
-
 </html>

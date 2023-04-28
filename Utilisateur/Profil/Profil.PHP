@@ -161,10 +161,10 @@
           <p>Importer une photo<p>
         </div>
         <div class="Enregistrer">
-        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
+        <button onclick="window.location.href = 'Profil.PHP';">Enregistrer</button>
         </div>
         <div class="Supprimer">
-        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
+        <button onclick="window.location.href = '../../Utilisateur/Suppression du compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
         </div>
       </main>
       <footer class="Footer">

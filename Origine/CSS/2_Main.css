@@ -364,6 +364,11 @@ body {
     top: 670px;
 }
 
+#Last_elements {
+    display: flex;
+    justify-content: center;
+}
+
 #Last_elements a{
     position: absolute;
     left: 10%;
@@ -379,6 +384,7 @@ body {
     text-align: center;
     
     color: #36706D;
+
 }
 
 

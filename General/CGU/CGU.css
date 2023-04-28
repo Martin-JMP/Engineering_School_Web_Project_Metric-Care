@@ -48,7 +48,7 @@ body {
 
 .Contenu_CGU a{
     position: relative;
-    width: 683px;
+    width:  500px;
     height: 772px;
     
     top: 80px;
@@ -63,6 +63,8 @@ body {
     text-align: justify;
 
     color: #000000;
+    
+  
 }
 
 .Menu_principal a{

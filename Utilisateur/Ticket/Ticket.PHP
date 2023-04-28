@@ -37,7 +37,7 @@
     </header>
     <main>
     
-    <a id = "retour">◄ Tableau de bord</a>
+    <a href = "../../Utilisateur/Tableau de bord/Tableau_de_bord.PHP" id = "retour">◄ Tableau de bord</a>
 
     <p id = "Signaler"> Signaler un incident </p>
 

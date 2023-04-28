@@ -110,16 +110,16 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
         </div>
       </div>
       <div class="Tableau">
-        <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Profil.PHP">◂ Profil</a><p>
+        <p><a href="../../Utilisateur/Profil/Profil.PHP">◂ Profil</a><p>
       </div>
       <div>
-        <img id="Photo" src="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">
+        <img id="Photo" src="../../Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">
       </div>
       <div class="Photo">
         <p>Importer une photo<p>
       </div>
       <div class="Enregistrer">
-      <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
+      <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
       </div>
     </main>
     <footer class="Footer">

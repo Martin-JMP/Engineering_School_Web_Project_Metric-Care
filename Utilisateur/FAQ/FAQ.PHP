@@ -65,11 +65,11 @@
     
   <div id = "row">
     <div class="mx-auto w-2/5">
-      <details id = "details-question" class="border-2 rounded-lg mb-4 mt-4 ml-16 -mr-20">
+      <details id = "details-question" class="border-2 rounded-lg mb-4 mt-4 ml-16 -mr-15">
         <summary id ="Summary" class = "text-xl cursor-pointer p-3">Compte et informations de connexion</summary>
        <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
       </details>
-      <details id = "details-question" class="border-2 rounded-lg mb-4 ml-16 -mr-20">
+      <details id = "details-question" class="border-2 rounded-lg mb-4 ml-16 -mr-15">
         <summary id ="Summary" class = "text-xl cursor-pointer p-3">Boitiers et capteurs</summary>
         <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
       </details>
@@ -96,9 +96,9 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a>CGU</a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
       </div>
     </footer>

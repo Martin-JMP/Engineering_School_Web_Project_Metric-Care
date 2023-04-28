@@ -30,7 +30,7 @@
                     $pos3 = $upd->fetch();
                     if($post1 && $post2 && $upd){
                       
-                      header('Location: http://localhost/Metric_Care/Authentification/Connexion/Connexion.PHP');
+                      header('Location: http://localhost/METRIC_CARE/Authentification/Connexion/Connexion.PHP');
                       exit();
               
                     }
@@ -81,7 +81,7 @@
             <br></br>
             <div class="CGU">
                 <input type="checkbox" name="cgu" id="cgu">
-                <label for="cgu">J'accepte les <span><a href="#">conditions générales d'utilisation</a></span></label>
+                <label for="cgu">J'accepte les <span><a  href="../../General/CGU/CGU.PHP">conditions générales d'utilisation</a></span></label>
             </div>
         
             </div>

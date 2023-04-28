@@ -21,35 +21,47 @@
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
-            <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+          <a>🌐Français</a>
+          <a href="../Contact/Contact.PHP">Contact</a>
+            <a href="../FAQ/Page_FAQ.PHP">FAQ</a>
+            <a href="AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="../../Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
         </nav>
       </div>
     </header>
+
+
     <main>
     
 
-    <div class="Contenu_A_Propos">
       <div class="Titre">
         <a>Qui sommes-nous ?</a>
       </div>
       <div class="Notre_Mission">
         <a>Notre mission</a>
       </div>
+        <div class="Contenu_Mission">
+            <a>Metric Care vise à contribuer au bien être de ses utilisateurs.
+            <br><br>Nous voulons que les conducteurs et chauffeurs de métro,<br>bus et tram,
+            soient dans les meilleurs conditions de travail possible.
+            <br>C'est notre boîtier Metric Care qui va permettre une étude<br>de différents facteur,
+            pour mettre en place par la suite des solutions.
+        </div>
+        <div class="Image_boitier">
+            <img id="boitier" src="" alt="Boitier Metric Metro">
+        </div>
       <div class="Nos_Enjeux">
         <a>Nos enjeux</a>
       </div>
     </div>
     <div class="Menu_principal">
       <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
-    </div>
 
 
     </main>
+
+
     <footer class = "Footer">
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
@@ -59,9 +71,9 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a href="../Metric_Care/General/CGU/CGU.PHP">CGU </a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
       </div>
     </footer>

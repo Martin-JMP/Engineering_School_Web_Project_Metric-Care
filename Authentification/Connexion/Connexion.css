@@ -125,7 +125,7 @@ input[type="password"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: calc(50% + 20px); /* décalage de 10 pixels */
+    top: 450px; /* décalage de 10 pixels */
 }
 
 .Inscrivez-vous {

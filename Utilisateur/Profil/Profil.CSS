@@ -449,7 +449,7 @@ border: 2px solid #ffffff;
   position: absolute;
   width: 114.95px;
   height: 28.635px;
-  left: 454.18px;
+  left: 485.18px;
   top: 460px;
   background: #82BBBA;
   border-radius: 10px;
@@ -471,7 +471,7 @@ border: 2px solid #ffffff;
   position: absolute;
   width: 115px;
   height: 29.15px;
-left: 614.16px;
+left: 645.16px;
 top: 460px;
 background: #EEEEEE;
 border: 0.5px solid #000000;
@@ -504,4 +504,25 @@ a:hover{
 a:active{
   color: #368A86;
   
+}
+.Deconnexion{
+  position: absolute;
+  width: 270px;
+  height: 38px;
+  left: 90%;
+  top: 80px;
+  
+  font-family: 'Carme';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  justify-content: flex-start;
+  
+  color: #36706D;
+  
+  transform: rotate(0.17deg);
 }

@@ -1,7 +1,7 @@
 title {
     position: absolute;
-    left: 43%;
-    top: 70px;
+    left: 65%;
+    top: 67px;
     
     font-family: 'Carme';
     font-style: normal;
@@ -21,9 +21,9 @@ title {
     
     position: absolute;
     width: 45%;
-    height: 62.5%;
+    height: 73%;
     left: 5%;
-    top: 25%;
+    top: 14.5%;
     
     background: #D9D9D9;
     mix-blend-mode: normal;

@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
 
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Capteurs/capteur.css">
-    <link rel="icon" href="../../Origine/Images/Logo.png">
 
+    <link rel="stylesheet" type="text/css" href="capteurs.css">
+
+    <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
     <header>
@@ -23,10 +24,11 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Ticket/Ticket.PHP">Ticket</a>
+            <a href ="../Profil/Profil.PHP">Profil</a>
           </div>
         </nav>
       </div>  
@@ -42,12 +44,22 @@
         <a class="co2">Taux de CO2</a>
       </div>
 
+      <a href="../Capteur_Temperature/Capteur_Temperature.PHP">
       <input class="temperatureButton" type="button" value="°C">
+      </a>
+      <a href="../Capteur_Humidité/Capteur_humidite.PHP">
       <input class="humiditeButton" type="button" value="%">
+      </a>
+      <a href="../Capteur_Sonore/Capteur_Sonore.PHP">
       <input class="sonButton" type="button" value="dB">
+      </a>
+      <a href="../Capteur_Cardiaque/Capteur_Cardiaque.PHP">
       <input class="cardioButton" type="button" value="bpm">
+      </a>
+      <a href="../Capteur_CO2/Capteur_CO2.PHP">
       <input class="co2Button" type="button" value="μg/m³">
-      
+      </a>
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">
@@ -58,9 +70,9 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a>CGU</a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
       </div>
     </footer>

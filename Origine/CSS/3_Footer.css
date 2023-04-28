@@ -20,17 +20,16 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    
+
     .Footer_contenu_texte {
         display: block;
         padding-right: 1.5vw;
         padding-top: 15px;
     }
-
     
 
     .Footer {
-        position: scroll;
+        position: fixed;
         bottom: 0;
         left:0;
         right: 0;
@@ -38,15 +37,16 @@
         height: 80px;
         background-color: #333;
 
-        margin-top: 70%; /*descend un peu le footer/ /paramètre différent pour chaque pages*/
+        margin-top: 80px; /*descend un peu le footer*/ /*paramètre différent pour chaque pages*/
+       
     }
-      
+
     .contenu_Footer {
         display:flex;
         align-items: center;
         justify-content:space-between;
     }
-    
+
     .Footer_contenu_Logo p {
         color: #dddddd;;
         font-family: 'Carme';
@@ -59,12 +59,12 @@
         padding-top: 15px;
         position: relative;
     }
-    
+
     #LogoFooter{
         position: absolute;
         left: 100px;
     }
-    
+
     #Logo_Infinite_Measures_Footer{
         position: absolute;
         top: 10px;

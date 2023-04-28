@@ -46,3 +46,13 @@
   transition: all 0.5s;
   cursor: pointer;
 }
+
+
+body {
+  margin: 0;
+  /* height of the footer */
+  padding-top: 80px;
+  min-height: 100%;
+  background:#FBFCFA;
+  overflow-x: hidden;
+}

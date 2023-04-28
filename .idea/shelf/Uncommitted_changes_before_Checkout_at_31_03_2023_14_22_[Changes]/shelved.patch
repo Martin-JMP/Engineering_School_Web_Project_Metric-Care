@@ -1,0 +1,136 @@
+Index: Gestionnaire/Tableau_de_bord_Gestionnaire/Table_de_bord_Gestionnaire.css
+===================================================================
+diff --git a/Gestionnaire/Tableau_de_bord_Gestionnaire/Table_de_bord_Gestionnaire.css b/Gestionnaire/Tableau_de_bord_Gestionnaire/Table_de_bord_Gestionnaire.css
+--- a/Gestionnaire/Tableau_de_bord_Gestionnaire/Table_de_bord_Gestionnaire.css	
++++ b/Gestionnaire/Tableau_de_bord_Gestionnaire/Table_de_bord_Gestionnaire.css	
+@@ -1,0 +1,14 @@
++.main-container{
++    margin: auto;
++    display: flex;
++    flex-direction: column;
++    justify-content: space-between;
++    width: 50%;
++    height: 100%;
++}
++.main-button{
++    border-radius: 50px;
++    background: #82BBBA;
++    box-shadow:  5px 5px 10px #567b7b,
++    -5px -5px 10px #aefbf9;
++}
+\ No newline at end of file
+Index: Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"../../Origine/CSS/1_Header.css\">\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"../../Origine/CSS/2_Main.css\">\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"../../Origine/CSS/3_Footer.css\">\r\n    <title>Metric Care</title>\r\n    <link rel=\"icon\" href=\"../../Origine/Images/Logo.png\">\r\n  </head>\r\n  <body>\r\n    <header>\r\n      <div id=\"Rectangle_Debut\">\r\n        <nav>\r\n          <div>\r\n            <img id=\"Logo\" src=\"../../Origine/Images/Logo.png\" alt=\"Logo Metric Metro\", width=\"75\", height=\"40\">\r\n            <img id=\"Logo_Texte\" src=\"../../Origine/Images/Logo_texte.png\" alt=\"Logo Metric Metro\", width=\"200\", height=\"50\">\r\n            <a href=\"https://infinitemeasures.fr/vues/fr/index.php\" target=\"_blank\">\r\n            <img id=\"Logo_Infinite_Measures\" src=\"../../Origine/Images/Infinite_logo.png\" alt=\"Logo Infinite Measures\", width=\"60\", height=\"60\"> </a>\r\n          </div>      \r\n          <div class=\"contenuNav\">\r\n            <a>\uD83C\uDF10Français</a>\r\n            <a>Contact</a>\r\n            <a>FAQ</a>\r\n            <a>Qui sommes nous ?</a>\r\n            <a>Connexion</a>\r\n          </div>\r\n        </nav>\r\n      </div>\r\n    </header>\r\n    <main>\r\n        <h1>Tableau de bord gestionnaire</h1>\r\n        <button>Gestion de données</button>\r\n        <button>Profil</button>\r\n    </main>\r\n    <footer class = \"Footer\">\r\n      <div class = \"contenu_Footer\">\r\n        <div class=\"Footer_contenu_Logo\">\r\n          <img id=\"LogoFooter\" src=\"../../Origine/Images/image.png\" alt=\"Logo Metric Metro\", width=\"80\", height=\"80\">\r\n          <p>Metric Care © 2023 - Tous droits réservés</p>\r\n          <a href=\"https://infinitemeasures.fr/vues/fr/index.php\" target=\"_blank\">\r\n          <img id=\"Logo_Infinite_Measures_Footer\" src=\"../../Origine/Images/Infinite_logo.png\" alt=\"Logo Infinite Measures\", width=\"60\", height=\"60\"> </a>\r\n        </div>\r\n        <div class=\"Footer_contenu_texte\">\r\n          <a>CGU</a> <a>|</a>\r\n          <a>À propos</a> <a>|</a>\r\n          <a>Préférences des cookies</a>\r\n        </div>\r\n      </div>\r\n    </footer>\r\n  </body>\r\n</html>
+===================================================================
+diff --git a/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP b/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP
+--- a/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP	
++++ b/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP	
+@@ -7,6 +7,7 @@
+     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+     <title>Metric Care</title>
+     <link rel="icon" href="../../Origine/Images/Logo.png">
++    <link rel="stylesheet" type="text/css" href="Table_de_bord_Gestionnaire.css">
+   </head>
+   <body>
+     <header>
+@@ -29,9 +30,10 @@
+       </div>
+     </header>
+     <main>
+-        <h1>Tableau de bord gestionnaire</h1>
+-        <button>Gestion de données</button>
+-        <button>Profil</button>
++        <div class="main-container">
++            <button class="main-button">Gestion de données</button>
++            <button class="main-button">Profil</button>
++        <div>
+     </main>
+     <footer class = "Footer">
+       <div class = "contenu_Footer">
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f510f96b-9479-41e5-995b-54ff6c19a974\" name=\"Changes\" comment=\"I found small bug, I have fix it\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2NKJwmTS1Eyz7C8M1aKJ2ThP8bP\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Metric_Care&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f510f96b-9479-41e5-995b-54ff6c19a974\" name=\"Changes\" comment=\"\" />\r\n      <created>1679407080511</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1679407080511</updated>\r\n      <workItem from=\"1679407081644\" duration=\"3306000\" />\r\n      <workItem from=\"1679662824730\" duration=\"5044000\" />\r\n      <workItem from=\"1679907468086\" duration=\"4254000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"I have changed the file path to css file\">\r\n      <created>1679410743347</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679410743347</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"I have changed the file path to css file\">\r\n      <created>1679668730405</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679668730405</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"I have changed the file path to css file\">\r\n      <created>1679668855806</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679668855806</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"I have changed the file path to css file and to images\">\r\n      <created>1679669391837</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679669391837</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"I have changed the file path to css file and to images\">\r\n      <created>1679669480741</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679669480741</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"I have changed the file path to css file and to images\">\r\n      <created>1679670676481</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679670676481</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"I have changed the file path to css file and to images\">\r\n      <created>1679672425286</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679672425286</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"I have changed the file path to css file and to images\">\r\n      <created>1679673039131</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679673039131</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"I found small bug, I have fix it\">\r\n      <created>1679908895016</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1679908895016</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"I have changed the file path to css file\" />\r\n    <MESSAGE value=\"I have changed the file path to css file and to images\" />\r\n    <MESSAGE value=\"I found small bug, I have fix it\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"I found small bug, I have fix it\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,14 +4,22 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="I found small bug, I have fix it">
++    <list default="true" id="f510f96b-9479-41e5-995b-54ff6c19a974" name="Changes" comment="Working on Gestionnaire">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Table_de_bord_Gestionnaire.css" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Table_de_bord_Gestionnaire.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="CSS File" />
++      </list>
++    </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -31,6 +39,7 @@
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+     &quot;last_opened_file_path&quot;: &quot;C:/xampp1/htdocs/Metric_Care&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+@@ -48,7 +57,8 @@
+       <updated>1679407080511</updated>
+       <workItem from="1679407081644" duration="3306000" />
+       <workItem from="1679662824730" duration="5044000" />
+-      <workItem from="1679907468086" duration="4254000" />
++      <workItem from="1679907468086" duration="5992000" />
++      <workItem from="1680262341507" duration="2550000" />
+     </task>
+     <task id="LOCAL-00001" summary="I have changed the file path to css file">
+       <created>1679410743347</created>
+@@ -113,7 +123,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1679908895016</updated>
+     </task>
+-    <option name="localTasksCounter" value="10" />
++    <task id="LOCAL-00010" summary="Working on Gestionnaire">
++      <created>1679912959547</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1679912959547</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -130,7 +147,7 @@
+                   <entry key="branch">
+                     <value>
+                       <list>
+-                        <option value="origin/master" />
++                        <option value="origin/Valentyna-PRONINA" />
+                       </list>
+                     </value>
+                   </entry>
+@@ -146,6 +163,7 @@
+     <MESSAGE value="I have changed the file path to css file" />
+     <MESSAGE value="I have changed the file path to css file and to images" />
+     <MESSAGE value="I found small bug, I have fix it" />
+-    <option name="LAST_COMMIT_MESSAGE" value="I found small bug, I have fix it" />
++    <MESSAGE value="Working on Gestionnaire" />
++    <option name="LAST_COMMIT_MESSAGE" value="Working on Gestionnaire" />
+   </component>
+ </project>
+\ No newline at end of file

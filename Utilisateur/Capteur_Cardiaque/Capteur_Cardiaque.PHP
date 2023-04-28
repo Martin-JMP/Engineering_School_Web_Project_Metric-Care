@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
+
     <link rel="stylesheet" type="text/css" href="capteur_cardiaque.css">
+
   </head>
   <body>
     <header>
@@ -21,16 +23,18 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Ticket/Ticket.PHP">Ticket</a>
+            <a href ="../Profil/Profil.PHP">Profil</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
     
+
     <title>Capteur cardiaque</title>
       <div class="text">
           <a class="act">Valeur actuelle</a>
@@ -40,16 +44,17 @@
           <a class="explication">Voici le capteur groove. C'est le capteur cardiaque. Il mesure le rythme cardiaque en bpm (battements par minute).</a>
         </div>
 
-      <input class="graph" type="button" value="Graphique">
-      <input class="rect0" type="button" value="ACT">
-      <input class="rect1" type="button" value="MIN">
-      <input class="rect2" type="button" value="MAX">
-      <input class="rect3" type="button" value="MOY">
+      <div class="graph">
+        <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/Capteur_Cardia/" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+      <input class="rect0" type="button" value="75 bpm">
+      <input class="rect1" type="button" value="60 bpm">
+      <input class="rect2" type="button" value="85 bpm">
+      <input class="rect3" type="button" value="77 bpm">
       
       <img id="image" src="groove.png" alt="Capteur cardiaque">
 
 
-    
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">
@@ -60,11 +65,15 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a>CGU</a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+        <div class="Footer_contenu_texte">
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
+        </div>
         </div>
       </div>
     </footer>
   </body>
+
 </html>
+

@@ -21,10 +21,11 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Ticket/Ticket.PHP">Ticket</a>
+            <a href ="../Profil/Profil.PHP">Profil</a>
           </div>
         </nav>
       </div>
@@ -40,11 +41,13 @@
             <a class="explication">Voici le capteur DHT11. C'est le capteur d'humidité. Il mesure l'humidité en %.</a>
           </div>
 
-        <input class="graph" type="button" value="Graphique">
-        <input class="rect0" type="button" value="ACT">
-        <input class="rect1" type="button" value="MIN">
-        <input class="rect2" type="button" value="MAX">
-        <input class="rect3" type="button" value="MOY">
+       <div class="graph">
+        <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/humid_capt_/" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+        <input class="rect0" type="button" value="80%">
+        <input class="rect1" type="button" value="76%">
+        <input class="rect2" type="button" value="82%">
+        <input class="rect3" type="button" value="79%">
         
         <img id="image" src="dht11.png" alt="Capteur d'humidité">
 
@@ -58,9 +61,9 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a>CGU</a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
       </div>
     </footer>

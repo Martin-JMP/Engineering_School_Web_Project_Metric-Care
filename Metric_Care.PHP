@@ -20,10 +20,10 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a href="../Metric_Care/General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="General/Contact/Contact.PHP.PHP">Contact</a>
+            <a href="General/FAQ/Page_FAQ.PHP">FAQ</a>
+            <a href="General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
         </nav>
       </div>
@@ -59,6 +59,7 @@
       </div>
       <div id="Blocs">
         <div id="bloc1">
+
           <div id="Bloc1_Température">
             <img id="Logo_Température" src="Origine/Image_main_accueil/temperature-sensor.png" alt="Logo Capteur Température", width="512", height="512">
             <a>Mesures de température<br>et humidité en temps réel</a>
@@ -95,7 +96,7 @@
 
 
     </main>
-    <footer class = "Footer">
+    <footer class = "Footer" >
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
           <img id="LogoFooter" src="Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
@@ -104,9 +105,11 @@
           <img id="Logo_Infinite_Measures_Footer" src="Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a href="../Metric_Care/General/CGU/CGU.PHP">CGU </a> <a>|</a>
-          <a href="../Metric_Care/General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+        <div class="Footer_contenu_texte">
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
+        </div>
         </div>
       </div>
     </footer>

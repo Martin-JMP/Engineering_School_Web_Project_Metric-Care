@@ -20,11 +20,11 @@
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
-            <a>🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a href="../../General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
-            <a>Connexion</a>
+          <a>🌐Français</a>
+            <a href="../Contact/Contact.PHP">Contact</a>
+            <a href="../FAQ/Page_FAQ.PHP">FAQ</a>
+            <a href="../AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="../../Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
         </nav>
       </div>
@@ -32,9 +32,9 @@
     <main>
     
 
-    <div class="Titre_CGU">
-      <div class="Rectangle_CGU"> </div>
-      <a>Conditions Générales d'Utilisation (CGU)</a>
+    
+      <div class="Rectangle_CGU"> 
+      <a class="titre">Conditions Générales d'Utilisation (CGU)</a>
       <div class="Contenu_CGU">
         <a>Merci de lire attentivement les présentes conditions générales d'utilisation avant d'utiliser le site et les services proposés par Metric Care. En accédant ou en utilisant le site et les services, vous reconnaissez avoir lu, compris et accepté, sans limitation ni réserve, les présentes conditions générales d'utilisation. Si vous n'acceptez pas ces conditions, vous ne devez pas utiliser le site et les services proposés par Metric Care.<br><br>
         1. Objet du site et du boitier :<br><br>
@@ -51,15 +51,15 @@
         Le site se réserve le droit de modifier les présentes conditions générales d'utilisation à tout moment. Les utilisateurs seront informés des modifications via une notification sur le site ou par e-mail. Les utilisateurs doivent régulièrement vérifier les présentes conditions générales d'utilisation pour se tenir informés des éventuelles modifications.<br><br>
         Loi applicable et juridiction compétente :<br>
         Les présentes conditions générales d'utilisation sont soumises au droit français. Tout litige relatif à l'utilisation du site ou du boitier sera de la compétence exclusive des tribunaux français.
-      </div>
-    </div>
+      </div></div>
+    
     <div class="Menu_principal">
       <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
     </div>
 
 
     </main>
-    <footer class = "Footer">
+    <footer class = "Footer" >
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
           <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
@@ -70,7 +70,7 @@
         <div class="Footer_contenu_texte">
           <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
           <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
       </div>
     </footer>

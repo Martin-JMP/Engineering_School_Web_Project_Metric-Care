@@ -44,29 +44,22 @@
         <a class="co2">Taux de CO2</a>
       </div>
 
-<<<<<<< HEAD
-      <input class="temperatureButton" type="button" value="15°C">
-      <input class="humiditeButton" type="button" value="80%">
-      <input class="sonButton" type="button" value="83 dB">
-      <input class="cardioButton" type="button" value="75 bpm">
-      <input class="co2Button" type="button" value="60 μg/m³">
-=======
       <a href="../Capteur_Temperature/Capteur_Temperature.PHP">
-      <input class="temperatureButton" type="button" value="°C">
+      <input class="temperatureButton" type="button" value="15°C">
       </a>
       <a href="../Capteur_Humidité/Capteur_humidite.PHP">
-      <input class="humiditeButton" type="button" value="%">
+      <input class="humiditeButton" type="button" value="80%">
       </a>
       <a href="../Capteur_Sonore/Capteur_Sonore.PHP">
-      <input class="sonButton" type="button" value="dB">
+      <input class="sonButton" type="button" value="83 dB">
       </a>
       <a href="../Capteur_Cardiaque/Capteur_Cardiaque.PHP">
-      <input class="cardioButton" type="button" value="bpm">
+      <input class="cardioButton" type="button" value="75 bpm">
       </a>
       <a href="../Capteur_CO2/Capteur_CO2.PHP">
-      <input class="co2Button" type="button" value="μg/m³">
+      <input class="co2Button" type="button" value="60 μg/m³">
       </a>
->>>>>>> 2a04d4d35ab3771131dbd843e3c697de94dfe957
+
 
     </main>
     <footer class = "Footer">

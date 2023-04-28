@@ -34,8 +34,8 @@
     <main>
         <div class="main-container">
             <h1>Gestionnaire</h1>
-            <button type="button"  onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Gestion_des_donn%c3%a9es/Gestionnaire_des_donn%c3%a9es.PHP';">Gestion des données</button>
-            <button type="button"  onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP';">Profil</button>
+            <button type="button"  onclick="window.location.href = '../Gestionnaire/Gestion_des_donn%c3%a9es/Gestionnaire_des_donn%c3%a9es.PHP';">Gestion des données</button>
+            <button type="button"  onclick="window.location.href = '../Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP';">Profil</button>
         </div>
 
     </main>

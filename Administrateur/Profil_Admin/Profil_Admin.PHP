@@ -100,7 +100,7 @@
           <p><?php echo $email; ?><p>
           </div>
           <div class="Editer">
-            <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
+            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
           </div>
         </div>
         <div class="MDP">
@@ -115,22 +115,22 @@
           </div>
         </div>
         <div class="Tableau">
-          <p><a href="http://localhost/Metric_Care/Metric_Care/Administrateur/Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.PHP">◂ Tableau de bord</a><p>
+          <p><a href="../../Administrateur/Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.PHP">◂ Tableau de bord</a><p>
         </div>
         <div class="Deconnexion">
-          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">Déconnexion</a><p>
+          <p><a href="../../Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">Déconnexion</a><p>
         </div>
         <div>
-          <img id="Photo" src="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">
+          <img id="Photo" src="../../Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">
         </div>
         <div class="Photo">
           <p>Importer une photo<p>
         </div>
         <div class="Enregistrer">
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
+        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
         </div>
         <div class="Supprimer">
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
+        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
         </div>
       </main>
       <footer class="Footer">

@@ -115,7 +115,7 @@
           <p><?php echo $age['DateDeNaissance']; ?><p>
           </div>
           <div class="Editer">
-            <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
+            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
           </div>
         </div>
         <div class="Numéro">
@@ -134,7 +134,7 @@
           <p><?php echo $email; ?><p>
           </div>
           <div class="Editer">
-            <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
+            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
           </div>
         </div>
         <div class="MDP">
@@ -161,10 +161,10 @@
           <p>Importer une photo<p>
         </div>
         <div class="Enregistrer">
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
+        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
         </div>
         <div class="Supprimer">
-        <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
+        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
         </div>
       </main>
       <footer class="Footer">

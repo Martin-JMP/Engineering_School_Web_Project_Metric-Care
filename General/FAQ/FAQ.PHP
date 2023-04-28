@@ -21,9 +21,8 @@
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>
           <div class="contenuNav">
-            <a>🌐Français</a>
-            <a href="Contact.PHP">Contact</a>
-            <a href="../FAQ/Page_FAQ.PHP">FAQ</a>
+          <a href="../Contact/Contact.PHP">Contact</a>
+            <a href="FAQ.PHP">FAQ</a>
             <a href="../AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
             <a href="../../Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
@@ -31,9 +30,9 @@
       </div>
     </header>
     <main>
-    <a href = "../../Metric_Care.PHP" id = "retour">◄ Menu Principal</a>
+    <a id = "retour">◄ Tableau de bord</a>
 
-    <p id = "FAQ"> FAQ </p>
+  <p id = "FAQ"> FAQ </p>
 
   <div id = "Question">
     <h1 id = "Text_Question" class = "text-3xl">Quelle est votre Question ?  </h1>
@@ -66,11 +65,11 @@
     <div class="mx-auto w-2/5">
       <details id = "details-question" class="border-2 rounded-lg mb-4 mt-4 ml-16 -mr-15">
         <summary id ="Summary" class = "text-xl cursor-pointer p-3">Compte et informations de connexion</summary>
-       <div class = "bg-gray-100 text-lg"> Aide et Informations générale sur les comptes et informations de connexions</div>
+       <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
       </details>
       <details id = "details-question" class="border-2 rounded-lg mb-4 ml-16 -mr-15">
         <summary id ="Summary" class = "text-xl cursor-pointer p-3">Boitiers et capteurs</summary>
-        <div class = "bg-gray-100 text-lg"> Aide et Informations générale sur les Boitiers et capteurs</div>
+        <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
       </details>
     </div>
 

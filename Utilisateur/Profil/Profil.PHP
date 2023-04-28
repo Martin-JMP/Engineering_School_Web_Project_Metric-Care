@@ -19,7 +19,7 @@
 
 
 
-  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
+  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
 
 
     if (!empty($email && $password)){
@@ -149,13 +149,13 @@
           </div>
         </div>
         <div class="Tableau">
-          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">◂ Tableau de bord</a><p>
+          <p><a href="../Tableau de bord/Tableau_de_Bord.PHP">◂ Tableau de bord</a><p>
         </div>
         <div class="Deconnexion">
-          <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">Déconnexion</a><p>
+          <p><a href="../../Metric_Care.PHP">Déconnexion</a><p>
         </div>
         <div>
-          <img id="Photo" src="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">
+          <img id="Photo" src="Images/photo.jpg" alt="Utilisateur" width="258" height="240">
         </div>
         <div class="Photo">
           <p>Importer une photo<p>

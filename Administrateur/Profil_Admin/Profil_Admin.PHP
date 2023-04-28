@@ -20,7 +20,7 @@
 
 
 
-  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
+  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
 
 
     if (!empty($email && $password)){

@@ -30,7 +30,7 @@
                     $pos3 = $upd->fetch();
                     if($post1 && $post2 && $upd){
                       
-                      header('Location: http://localhost/Metric_Care/Authentification/Connexion/Connexion.PHP');
+                      header('Location: http://localhost/METRIC_CARE/Authentification/Connexion/Connexion.PHP');
                       exit();
               
                     }

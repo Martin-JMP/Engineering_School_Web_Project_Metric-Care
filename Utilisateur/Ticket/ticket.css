@@ -5,6 +5,13 @@
     font-weight: 400;
   }
 
+  main {
+    margin: 0;
+    padding-top: 80px; /* height of the footer */
+    min-height: 100%;
+    background:#FBFCFA;
+    overflow-x: hidden;
+  }
 
   #retour {
     font-family: 'Carme';
@@ -25,7 +32,7 @@
     color: #36706D;
     text-align: center;
     font-size: 50px;
-    margin-top: -5px;
+    padding-top: 80px;
 }
 
 #Choix {

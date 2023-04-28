@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Ticket/Ticket.css">
+    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Ticket/ticket.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
     <script>  

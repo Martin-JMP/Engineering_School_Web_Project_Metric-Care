@@ -12,7 +12,7 @@ body {
     padding-top: 80px;
     min-height: 100%;
     background:#FBFCFA;
-    overflow-x: hidden;
+    overflow-x: scroll;
     min-height: calc(100vh - 80px - 800px);
     
   }
@@ -38,8 +38,8 @@ body {
     position: absolute;
     width: 603px;
     height: 84px;
-    left: 97px;
-    top: 338px;
+    left: 6.7%;
+    top: 42%;
 
     font-family: 'Carme';
     font-style: normal;
@@ -48,4 +48,41 @@ body {
     line-height: 48px;
 
     color: #368A86;
+}
+
+.Nos_Enjeux{
+    position: absolute;
+    width: 603px;
+    height: 84px;
+    left: 6.7%;
+    top: 95%;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #368A86;
+}
+
+.Contenu_Mission a{
+    position: absolute;
+    width: 800px;
+    height: 84px;
+    left: 6.7%;
+    top: 51%;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 22px;
+    color: black;
+    line-height: 28px;
+}
+
+.Image_boitier img{
+    top: 51%;
+    left: 30%;
 }

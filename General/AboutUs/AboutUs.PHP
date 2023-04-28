@@ -30,26 +30,38 @@
         </nav>
       </div>
     </header>
+
+
     <main>
     
 
-    <div class="Contenu_A_Propos">
       <div class="Titre">
         <a>Qui sommes-nous ?</a>
       </div>
       <div class="Notre_Mission">
         <a>Notre mission</a>
       </div>
+        <div class="Contenu_Mission">
+            <a>Metric Care vise à contribuer au bien être de ses utilisateurs.
+            <br><br>Nous voulons que les conducteurs et chauffeurs de métro,<br>bus et tram,
+            soient dans les meilleurs conditions de travail possible.
+            <br>C'est notre boîtier Metric Care qui va permettre une étude<br>de différents facteur,
+            pour mettre en place par la suite des solutions.
+        </div>
+        <div class="Image_boitier">
+            <img id="boitier" src="" alt="Boitier Metric Metro">
+        </div>
       <div class="Nos_Enjeux">
         <a>Nos enjeux</a>
       </div>
     </div>
     <div class="Menu_principal">
       <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
-    </div>
 
 
     </main>
+
+
     <footer class = "Footer">
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">

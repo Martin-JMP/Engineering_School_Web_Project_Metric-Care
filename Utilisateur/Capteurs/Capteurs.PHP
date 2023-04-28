@@ -44,13 +44,6 @@
         <a class="co2">Taux de CO2</a>
       </div>
 
-<<<<<<< HEAD
-      <input class="temperatureButton" type="button" value="15°C">
-      <input class="humiditeButton" type="button" value="80%">
-      <input class="sonButton" type="button" value="83 dB">
-      <input class="cardioButton" type="button" value="75 bpm">
-      <input class="co2Button" type="button" value="60 μg/m³">
-=======
       <a href="../Capteur_Temperature/Capteur_Temperature.PHP">
       <input class="temperatureButton" type="button" value="°C">
       </a>
@@ -66,7 +59,6 @@
       <a href="../Capteur_CO2/Capteur_CO2.PHP">
       <input class="co2Button" type="button" value="μg/m³">
       </a>
->>>>>>> 2a04d4d35ab3771131dbd843e3c697de94dfe957
 
     </main>
     <footer class = "Footer">
@@ -78,9 +70,9 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a>CGU</a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
       </div>
     </footer>

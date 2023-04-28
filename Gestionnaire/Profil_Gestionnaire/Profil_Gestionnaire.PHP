@@ -109,7 +109,7 @@
               <p>Réinitialiser<p>
             </div>
           </div>
-          <div class="Tableau" onclick="window.location.href = 'http://localhost/Metric_Care/Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP';">
+          <div class="Tableau" onclick="window.location.href = '../Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP';">
             <p>◂ Tableau de bord<p>
           </div>
           <div>
@@ -119,10 +119,10 @@
             <p>Importer une photo<p>
           </div>
           <div class="Enregistrer">
-          <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
+          <button onclick="window.location.href = '../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
           </div>
           <div class="Supprimer">
-          <button onclick="window.location.href = 'http://localhost/Metric_Care/Metric_Care/Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
+          <button onclick="window.location.href = '../Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
           </div>
 
     </main>

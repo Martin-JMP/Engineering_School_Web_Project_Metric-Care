@@ -31,7 +31,7 @@
     <main>
     
 
-    <img id="MainPageImage" src="Origine/Image_main_accueil/Main_page.jpg" alt="Photo_bus_driver", width=100%, height="448">
+    <img id="MainPageImage" src="Origine/Image_main_accueil/Main_page.jpg" alt="Photo_bus_driver" width=100% height="448">
     <div id="Rectangle_Blanc_1"></div>
     <div id="Metric_Metro_Container">
       <div id="Title_Metric_Metro">

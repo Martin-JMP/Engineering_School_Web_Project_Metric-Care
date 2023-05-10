@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="Connexion.css"> 
+    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
+    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -46,14 +48,26 @@
         }
     ?>
     <header>
-        <div>
-            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="100", height="55"> 
-            <div class="Langue">
-                <a>🌐Français</a>
-            </div>
-        </div>  
+      <div id="Rectangle_Debut">
+        <nav>
+          <div>
+            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
+            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
+            <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+            <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+          </div>      
+          <div class="contenuNav">
+          <a>🌐Français</a>
+            <a href="../Contact/Contact.PHP">Contact</a>
+            <a href="../FAQ/FAQ.PHP">FAQ</a>
+            <a href="../AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="Connexion.PHP">Connexion</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main method="post" form="login-form">
+      <div class="tot">
         <div class="Connexion">
             <a>Connexion</a>
         </div>
@@ -79,6 +93,7 @@
                 <div><a href="../Inscription/Inscription.PHP">vous</a></div>
             </div>
         </div>
+      </div>
     </main>
   </body>
 </html>

@@ -94,76 +94,61 @@
         <div class="Intitule">
           <p>Naissance<p>
         </div>
-        <div class="Prénom">
-          <div class="Intitule">
-            <p>Prénom<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $prenom['Prenom']; ?><p>
-          </div>
-          <div class="Editer">
+        <div class="Entrée">
+        <p><?php echo $age['DateDeNaissance']; ?><p>
+        </div>
+        <div class="Editer">
           <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
         </div>
-        <div class="Age">
-          <div class="Intitule">
-            <p>Naissance<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $age['DateDeNaissance']; ?><p>
-          </div>
-          <div class="Editer">
-            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
+      </div>
+      <div class="Numéro">
+        <div class="Intitule">
+          <p>Numéro d'identification<p>
         </div>
-        <div class="Numéro">
-          <div class="Intitule">
-            <p>Numéro d'identification<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $numero['AuthentificationId']; ?><p>
-          </div>
+        <div class="Entrée">
+        <p><?php echo $numero['AuthentificationId']; ?><p>
         </div>
-        <div class="Email">
-          <div class="Intitule">
-            <p>E-mail<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $email; ?><p>
-          </div>
-          <div class="Editer">
-            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
+      </div>
+      <div class="Email">
+        <div class="Intitule">
+          <p>E-mail<p>
         </div>
-        <div class="MDP">
-          <div class="Intitule">
-            <p>Mot de passe<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $password; ?><p>
-          </div>
-          <div class="Reinitialiser">
-            <p><a href="../../Gestionnaire/Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
-          </div>
+        <div class="Entrée">
+        <p><?php echo $email; ?><p>
         </div>
-        <div class="Tableau">
-          <p><a href="../Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP">◂ Tableau de bord</a><p>
+        <div class="Editer">
+          <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
         </div>
-        <div class="Deconnexion">
-          <p><a href="../../Metric_Care.PHP">Déconnexion</a><p>
+      </div>
+      <div class="MDP">
+        <div class="Intitule">
+          <p>Mot de passe<p>
         </div>
-        <div>
-          <img id="Photo" src="Images/photo.jpg" alt="Utilisateur" width="258" height="240">
+        <div class="Entrée">
+        <p><?php echo $password; ?><p>
         </div>
-        <div class="Photo">
-          <p>Importer une photo<p>
+        <div class="Reinitialiser">
+          <p><a href="../../Gestionnaire/Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
         </div>
-        <div class="Enregistrer">
-        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
-        </div>
-        <div class="Supprimer">
-        <button onclick="window.location.href = '../../Gestionnaire/Supression%20du%20compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
-        </div>
+      </div>
+      <div class="Tableau">
+        <p><a href="../Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP">◂ Tableau de bord</a><p>
+      </div>
+      <div class="Deconnexion">
+        <p><a href="../../Metric_Care.PHP">Déconnexion</a><p>
+      </div>
+      <div>
+        <img id="Photo" src="Images/photo.jpg" alt="Utilisateur" width="258" height="240">
+      </div>
+      <div class="Photo">
+        <p>Importer une photo<p>
+      </div>
+      <div class="Enregistrer">
+      <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
+      </div>
+      <div class="Supprimer">
+      <button onclick="window.location.href = '../../Gestionnaire/Supression%20du%20compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
+      </div>
       </main>
       <footer class="Footer">
         <div class="contenu_Footer">

@@ -78,7 +78,7 @@
           <p><?php echo $nom['Nom']; ?><p>
         </div>
         <div class="Editer">
-          <p>Éditer<p>
+        <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
         </div>
       </div>
       <div class="Prénom">
@@ -89,7 +89,7 @@
         <p><?php echo $prenom['Prenom']; ?><p>
         </div>
         <div class="Editer">
-          <p>Éditer<p>
+        <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
         </div>
       </div>
       <div class="Age">
@@ -104,7 +104,7 @@
           <p><?php echo $prenom['Prenom']; ?><p>
           </div>
           <div class="Editer">
-            <p>Éditer<p>
+          <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
           </div>
         </div>
         <div class="Age">
@@ -145,7 +145,7 @@
           <p><?php echo $password; ?><p>
           </div>
           <div class="Reinitialiser">
-            <p>Réinitialiser<p>
+            <p><a href="../../Utilisateur/Réinitialiser%20mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
           </div>
         </div>
         <div class="Tableau">
@@ -164,7 +164,7 @@
         <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
         </div>
         <div class="Supprimer">
-        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
+        <button onclick="window.location.href = '../../Utilisateur/Suppression%20du%20compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
         </div>
       </main>
       <footer class="Footer">

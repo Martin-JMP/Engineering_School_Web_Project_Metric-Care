@@ -20,9 +20,9 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Tableau de bord</a> <!--Gestion des données, gestion des tickets, gestion des contacts-->
-            <a>Forum</a>
-            <a>Profil</a>
+            <a href="Tableau_de_bord_Gestionnaire.PHP">Tableau de bord</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Profil_Gestionnaire/Profil_Gestionnaire.PHP">Profil</a>
           </div>
         </nav>
       </div>

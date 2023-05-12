@@ -58,9 +58,9 @@
           </div>      
           <div class="contenuNav">
           <a>🌐Français</a>
-            <a href="../Contact/Contact.PHP">Contact</a>
-            <a href="../FAQ/FAQ.PHP">FAQ</a>
-            <a href="../AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="../../General/Contact/Contact.PHP">Contact</a>
+            <a href="../../General/FAQ/FAQ.PHP">FAQ</a>
+            <a href="../../General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
             <a href="Connexion.PHP">Connexion</a>
           </div>
         </nav>
@@ -95,5 +95,20 @@
         </div>
       </div>
     </main>
+    <footer class = "Footer">
+      <div class = "contenu_Footer">
+        <div class="Footer_contenu_Logo">
+          <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
+          <p>Metric Care © 2023 - Tous droits réservés</p>
+          <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+          <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+        </div>
+        <div class="Footer_contenu_texte">
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

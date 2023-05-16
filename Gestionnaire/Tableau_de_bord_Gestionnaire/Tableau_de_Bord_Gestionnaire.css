@@ -1,39 +1,39 @@
 @font-face {
-    font-family: 'Carme';
-    src: url('../fonts/carme-regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 400;
+  font-family: 'Carme';
+  src: url('../fonts/carme-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
 }
 
 
 .box {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    
-    
-    left: 40%;
-    top: 15%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  
+  
+  left: 40%;
+  top: 15%;
 
-  }
-  button {
-    display: inline-block;
-    background-color: #BAE6E4;
-    border-radius: 5px;
-    color: #36706D;
-    text-align: center;
-    font-size: 15px;
-    padding: 15px 25px;
-    width: 220px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 0px;
-  }
-  p {
-    margin: 40px 0;
-  }
- 
-    
+}
+button {
+  display: inline-block;
+  background-color: #BAE6E4;
+  border-radius: 5px;
+  color: #36706D;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px 25px;
+  width: 220px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+p {
+  margin: 40px 0;
+}
+
+  

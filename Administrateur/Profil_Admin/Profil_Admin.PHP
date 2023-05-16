@@ -164,7 +164,7 @@
         <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
         </div>
         <div class="Supprimer">
-        <button onclick="window.location.href = '../../Administrateur/Supression%20du%20compte/Suppression_du_compte_administrateur.PHP';">Supprimer le compte</button>
+        <button onclick="window.location.href = '../../Administrateur/Suppresion_du_compte/Suppression_du_compte_administrateur.php';">Supprimer le compte</button>
         </div>
       </main>
       <footer class="Footer">

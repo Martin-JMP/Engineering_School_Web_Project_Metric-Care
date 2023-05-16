@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="Réinitialiser_mot_de_passe.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -21,33 +21,41 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a href="Tableau_de_bord_Admin.PHP">Tableau de bord</a>
+            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
             <a href ="../FAQ/FAQ.PHP">FAQ</a>
             <a href ="../Forum/Forum.PHP">Forum</a>
             <a href ="../Ticket/Ticket.PHP">Ticket</a>
-            <a href ="../Profil_Admin/Profil_Admin.PHP">Profil</a>
+            <a href ="../Profil/Profil.PHP">Profil</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
-    
+      <div class="Profil">
+        <p><a href="../Utilisateur/Profil/Profil.PHP">◂ Profil</a></p>
+      </div>
+      <div class="main-container">
+            <h1>Réinitialisation du mot de passe</h1>
+            <input type="password" id="AncienMotDePasse" placeholder="Ancien mot de passe" name="fname"><br><br>
+            <input type="password" id="NouveauMotDePasse" placeholder="Nouveau mot de passe" name="fname"><br><br>
+            <input type="password" id="ConfirmerMotDePasse" placeholder="Confirmer votre mot de passe" name="fname"><br><br>
+            <button>Enregistrer</button>
+      </div>
     </main>
-    <footer class = "Footer">
-      <div class = "contenu_Footer">
-        <div class="Footer_contenu_Logo">
-          <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
-          <p>Metric Care © 2023 - Tous droits réservés</p>
-          <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-          <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
-        </div>
-        <div class="Footer_contenu_texte">
+        <footer class = "Footer">
+          <div class = "contenu_Footer">
+            <div class="Footer_contenu_Logo">
+              <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
+              <p>Metric Care © 2023 - Tous droits réservés</p>
+              <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+              <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+            </div>
+            <div class="Footer_contenu_texte">
           <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
           <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
           <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
-      </div>
-    </footer>
-  </body>
-
-</html>
+          </div>
+        </footer>
+    </body>
+  </html>

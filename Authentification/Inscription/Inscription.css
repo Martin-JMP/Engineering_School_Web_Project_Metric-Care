@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 200px; /* Adjust the value as needed */
+    margin-top: 150px; /* Adjust the value as needed */
   }
 
 .Inscription a{
@@ -62,7 +62,7 @@ input[type="email"] {
     display: block;
     width: 400px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -74,7 +74,7 @@ input[type="password"] {
     display: block;
     width: 400px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -86,7 +86,7 @@ input[type="text"] {
     display: block;
     width: 185px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -99,7 +99,7 @@ input[type="number"] {
     display: block;
     width: 400px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -140,7 +140,7 @@ input[type="number"] {
 
 .rectangle-creer {
     position: absolute;
-    top: 700px;
+    top: 650px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;

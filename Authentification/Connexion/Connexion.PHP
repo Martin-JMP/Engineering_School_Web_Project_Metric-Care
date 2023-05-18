@@ -28,7 +28,7 @@
                 
                 session_start();
                 $_SESSION['email'] = $email;
-                include "../../General/Contact/Tableau_de_Bord.PHP";
+                include "localhost/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP";
                 exit();
         
               }else{

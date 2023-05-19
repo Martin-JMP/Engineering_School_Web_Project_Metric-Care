@@ -5,6 +5,14 @@
     font-weight: 400;
 }
 
+body {
+    padding-top: 90px;
+    margin: 0;
+    padding-bottom: 80px; /* height of the footer */
+    min-height: 100%;
+    background:#FBFCFA;
+    overflow-x: hidden;
+}
 
 #Logo{
 position: absolute;

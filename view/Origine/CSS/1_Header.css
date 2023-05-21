@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Carme';
+    src: url('../fonts/carme-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.contenuNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+}
+
+.contenuNav a {
+    display: flex;
+    align-items: center;   
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 10px;
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #36706D;
+}
+
+#Rectangle_Debut{
+    position: fixed;
+    width: 100%;
+    height: 7px;
+    left: 0px;
+    top: 0px;
+    background: #82BBBA;
+    z-index: 2;
+}
+
+
+nav {
+    position:fixed;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 7px;
+    background: #BAE6E4;
+}
+
+#Logo{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+#Logo_Texte{
+    position: absolute;
+    left: 80px;
+    top: 12px;   
+}
+
+#Logo_Infinite_Measures{
+    position: absolute;
+    left: 280px;
+    top: 7px;
+}

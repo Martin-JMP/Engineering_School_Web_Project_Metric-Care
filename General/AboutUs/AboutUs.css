@@ -17,12 +17,29 @@ body {
     
   }
 
+.Titre {
+    opacity: 0; /* Définit l'opacité initiale à 0 pour masquer le texte */
+    transform: translateX(-100%); /* Définit la position initiale en dehors de l'écran à gauche */
+    animation: slideIn 1.2s forwards; /* Applique l'animation "slideIn" pendant 1 seconde */
+}
+
+@keyframes slideIn {
+    0% {
+    opacity: 0;
+    transform: translateX(-100%); /* Définit la position initiale en dehors de l'écran à gauche */
+    }
+    100% {
+    opacity: 1;
+    transform: translateX(0); /* Définit la position finale à gauche */
+    }
+}
+
 
 .Titre a{
     position: relative;
     width: 811px;
     height: 90px;
-    left: 97px;
+    left:  6.7%;
     top: 100px;
     
     font-family: 'Carme';
@@ -55,7 +72,7 @@ body {
     width: 603px;
     height: 84px;
     left: 6.7%;
-    top: 95%;
+    top: 84%;
 
     font-family: 'Carme';
     font-style: normal;
@@ -83,6 +100,33 @@ body {
 }
 
 .Image_boitier img{
-    top: 51%;
-    left: 30%;
+    position: relative;
+    margin-top: -24px; /* Ajustez cette valeur selon vos besoins */
+    left: 62%; /* Ajustez cette valeur selon vos besoins */
+    width: 30%; /* Ajustez cette valeur selon vos besoins */
+    height: 30%; /* Ajustez cette valeur selon vos besoins */
+}
+
+.Contenu_Enjeux a{
+    position: absolute;
+    width: 800px;
+    height: 84px;
+    left: 6.7%;
+    top: 93%;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 22px;
+    color: black;
+    line-height: 28px;
+}
+
+.Femme_Volant img{
+    position: relative;
+    margin-top: -10px; /* Ajustez cette valeur selon vos besoins */
+    left: 62%; /* Ajustez cette valeur selon vos besoins */
+    width: 32%; /* Ajustez cette valeur selon vos besoins */
+    height: 32%; /* Ajustez cette valeur selon vos besoins */
 }

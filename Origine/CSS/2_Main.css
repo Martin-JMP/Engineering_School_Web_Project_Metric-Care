@@ -7,13 +7,13 @@
 
 .conteneur-page {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
 body {
     margin: 0;
     padding-bottom: 80px; /* height of the footer */
-    min-height: 100%;
+    min-height: 90%;
     background:#FBFCFA;
     overflow-x: hidden;
 }
@@ -22,7 +22,8 @@ body {
 #MainPageImage{
     position:relative;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 190px;
+
 }
 
 
@@ -56,8 +57,9 @@ body {
     width: 494px;
     height: 150px;
 
-    left: 64%;
-    top: 30%;
+    left: 61.7%;
+    top: 40%;
+
 
 
     font-family: 'Carme';
@@ -75,7 +77,7 @@ body {
     position: absolute;
     width: 1278px;
     height: 125px;
-    top: 674px;
+    top: 93%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -99,7 +101,7 @@ body {
     position: absolute;
     width: 118px;
     height: 0px;
-    top: 798px;
+    top: 109%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -114,7 +116,7 @@ body {
     width: 1183px;
     height: 75px;
 
-    top: 835px;
+    top: 113%;
 
     left: 50%;
     transform: translateX(-50%);

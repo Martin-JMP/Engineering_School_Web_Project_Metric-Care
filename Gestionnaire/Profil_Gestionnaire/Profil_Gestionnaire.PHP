@@ -75,9 +75,7 @@
         <div class="Entrée">
           <p><?php echo $nom['Nom']; ?><p>
         </div>
-        <div class="Editer">
-        <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-        </div>
+        
       </div>
       <div class="Prénom">
         <div class="Intitule">
@@ -86,9 +84,7 @@
         <div class="Entrée">
         <p><?php echo $prenom['Prenom']; ?><p>
         </div>
-        <div class="Editer">
-        <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-        </div>
+        
       </div>
       <div class="Age">
         <div class="Intitule">
@@ -97,9 +93,7 @@
         <div class="Entrée">
         <p><?php echo $age['DateDeNaissance']; ?><p>
         </div>
-        <div class="Editer">
-          <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-        </div>
+        
       </div>
       <div class="Numéro">
         <div class="Intitule">
@@ -116,9 +110,7 @@
         <div class="Entrée">
         <p><?php echo $email; ?><p>
         </div>
-        <div class="Editer">
-          <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-        </div>
+        
       </div>
       <div class="MDP">
         <div class="Intitule">
@@ -148,6 +140,9 @@
       </div>
       <div class="Supprimer">
       <button onclick="window.location.href = '../../Gestionnaire/Supression%20du%20compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
+      </div>
+      <div class="Editer">
+      <button onclick="window.location.href = '../../Gestionnaire/Editer_Profil/Editer_Profil.PHP';">Editer</button>
       </div>
       </main>
       <footer class="Footer">

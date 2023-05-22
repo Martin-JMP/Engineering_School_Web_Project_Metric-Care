@@ -63,27 +63,6 @@ transform: rotate(0.17deg);
   
   transform: rotate(0.17deg);
 }
-.Nom > .Editer{
-  position: absolute;
-width: 147px;
-height: 52px;
-left: 563.61px;
-top: 210px;
-
-font-family: 'Carme';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 29px;
-display: flex;
-align-items: center;
-text-decoration-line: underline;
-
-color: #368A86;
-
-transform: rotate(0.17deg);
-  
-}
 
 .Prénom{
   display:block;
@@ -129,26 +108,7 @@ transform: rotate(0.17deg);
   transform: rotate(0.17deg);
   
 }
-.Prénom > .Editer{
-  position: absolute;
-  width: 147px;
-  height: 52px;
-  left: 457.16px;
-  top: 210px;
-  
-  font-family: 'Carme';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  text-decoration-line: underline;
-  
-  color: #368A86;
-  
-  transform: rotate(0.17deg);
-}
+
 
 .Age{
   display:block;
@@ -192,26 +152,7 @@ color: #368A86;
 
 transform: rotate(0.17deg);
 }
-.Age > .Editer{
-  position: absolute;
-width: 147px;
-height: 52px;
-left: 670.65px;
-top: 210px;
 
-font-family: 'Carme';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 29px;
-display: flex;
-align-items: center;
-text-decoration-line: underline;
-
-color: #368A86;
-
-transform: rotate(0.17deg);
-}
 
 
 .Numéro{
@@ -303,26 +244,7 @@ transform: rotate(0.17deg);
   transform: rotate(0.17deg);
 }
 
-.Email > .Editer{
-  position: absolute;
-  width: 147px;
-  height: 52px;
-  left: 454.16px;
-  top: 400px;
-  
-  font-family: 'Carme';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  text-decoration-line: underline;
-  
-  color: #368A86;
-  
-  transform: rotate(0.17deg);
-}
+
 
 .MDP{
   display:block;
@@ -488,6 +410,28 @@ line-height: 20px;
 
 color: #368A86;
 
+
+}
+.Editer button{
+  position: absolute;
+  width: 114.95px;
+  height: 28.635px;
+  left: 805.18px;
+  top: 460px;
+  background: #82BBBA;
+  border-radius: 10px;
+  text-align: center;
+  border-style: none;
+  
+  font-family: 'Carme';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  
+  
+  color: #FFFFFF;
+  
 
 }
 a:link{

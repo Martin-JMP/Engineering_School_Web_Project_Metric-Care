@@ -77,9 +77,6 @@
         <div class="Entrée">
           <p><?php echo $nom['Nom']; ?><p>
         </div>
-        <div class="Editer">
-        <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-        </div>
       </div>
       <div class="Prénom">
         <div class="Intitule">
@@ -88,37 +85,24 @@
         <div class="Entrée">
         <p><?php echo $prenom['Prenom']; ?><p>
         </div>
-        <div class="Editer">
-        <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-        </div>
       </div>
-      <div class="Age">
-        <div class="Intitule">
-          <p>Naissance<p>
-        </div>
-        <div class="Prénom">
+      <div class="Prénom">
           <div class="Intitule">
             <p>Prénom<p>
           </div>
           <div class="Entrée">
           <p><?php echo $prenom['Prenom']; ?><p>
           </div>
-          <div class="Editer">
-          <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
         </div>
-        <div class="Age">
+      <div class="Age">
           <div class="Intitule">
             <p>Naissance<p>
           </div>
           <div class="Entrée">
           <p><?php echo $age['DateDeNaissance']; ?><p>
           </div>
-          <div class="Editer">
-            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
         </div>
-        <div class="Numéro">
+      <div class="Numéro">
           <div class="Intitule">
             <p>Numéro d'identification<p>
           </div>
@@ -126,18 +110,15 @@
           <p><?php echo $numero['AuthentificationId']; ?><p>
           </div>
         </div>
-        <div class="Email">
+      <div class="Email">
           <div class="Intitule">
             <p>E-mail<p>
           </div>
           <div class="Entrée">
           <p><?php echo $email; ?><p>
           </div>
-          <div class="Editer">
-            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
         </div>
-        <div class="MDP">
+      <div class="MDP">
           <div class="Intitule">
             <p>Mot de passe<p>
           </div>
@@ -148,23 +129,26 @@
             <p><a href="../../Utilisateur/Réinitialiser%20mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
           </div>
         </div>
-        <div class="Tableau">
+      <div class="Tableau">
           <p><a href="../Tableau de bord/Tableau_de_Bord.PHP">◂ Tableau de bord</a><p>
         </div>
-        <div class="Deconnexion">
+      <div class="Deconnexion">
           <p><a href="../../Metric_Care.PHP">Déconnexion</a><p>
         </div>
         <div>
           <img id="Photo" src="Images/photo.jpg" alt="Utilisateur" width="258" height="240">
         </div>
-        <div class="Photo">
+      <div class="Photo">
           <p>Importer une photo<p>
         </div>
-        <div class="Enregistrer">
+      <div class="Enregistrer">
         <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
         </div>
-        <div class="Supprimer">
+      <div class="Supprimer">
         <button onclick="window.location.href = '../../Utilisateur/Suppression%20du%20compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
+        </div>
+      <div class="Editer">
+        <button onclick="window.location.href = '../../Utilisateur/Editer_Profil/Editer_Profil.PHP';">Editer</button>
         </div>
       </main>
       <footer class="Footer">

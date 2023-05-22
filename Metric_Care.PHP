@@ -21,7 +21,7 @@
           <div class="contenuNav">
             <a>🌐Français</a>
             <a href="General/Contact/Contact.PHP">Contact</a>
-            <a href="General/FAQ/Page_FAQ.PHP">FAQ</a>
+            <a href="General/FAQ/FAQ.PHP">FAQ</a>
             <a href="General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
             <a href="Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
@@ -105,9 +105,9 @@
         </div>
         <div class="Footer_contenu_texte">
         <div class="Footer_contenu_texte">
-          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
-          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
-          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
+          <a href="General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
         </div>
       </div>

@@ -7,7 +7,7 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
-    <?php
+    /*<?php
         function alert($msg) {
             echo "<script type='text/javascript'>alert('$msg');</script>";
         }
@@ -40,7 +40,7 @@
                 alert("Le problème de la création. Veuillez remplir les champs obligatoires");
             }
         }
-    ?>
+    ?>*/
     <header>
         <div>
             <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="100", height="55"> 
@@ -80,9 +80,10 @@
         
             </div>
             <div class="rectangle-creer">
-            <button type="submit" name="button">Créer mon compte</button>
+            <button type="submit" name="button" id="submit_button">Créer mon compte</button>
             </div>
         </form>
     </main>
+    <script src="Inscription.js"></script>
   </body>
 </html>

@@ -14,24 +14,24 @@ document.getElementById("inscription-form").addEventListener("submit", function(
     var isValid = true;
 
     // Validate prenom (first name)
-    if (prenom === "") {
+    if (prenom.length < 3 ) {
         isValid = false;
         // Display an error message or highlight the field
-        alert("Please enter your first name.");
+        alert("Please enter your first name. It should be at least 3 characters long.");
     }
 
     // Validate nom (last name)
-    if (nom === "") {
+    if (nom.length < 3) {
         isValid = false;
         // Display an error message or highlight the field
-        alert("Please enter your last name.");
+        alert("Please enter your last name.It should be at least 3 characters long.");
     }
 
     // Validate email
-    if (email === "") {
+    if (!email.includes("@")) {
         isValid = false;
         // Display an error message or highlight the field
-        alert("Please enter your email.");
+        alert("Please enter your valid email. ");
     }
 
     // Validate identification
@@ -54,7 +54,11 @@ document.getElementById("inscription-form").addEventListener("submit", function(
         // Display an error message or highlight the field
         alert("Please confirm your password.");
     }
-
+    if (password != password1) {
+        isValid = false;
+        // Display an error message or highlight the field
+        alert("Your passwords are not the same. Please, verify it.");
+    }
     // Validate terms acceptance
     if (!cgu) {
         isValid = false;

@@ -2,42 +2,33 @@ SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-CREATE DATABASE IF NOT EXISTS 'my_metric_care' DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE 'metric_care';
+CREATE DATABASE IF NOT EXISTS metriccare DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE mymetriccare;
 
-CREATE TABLE  `entreprises` (
-  `EntrepriseId` int(11) NOT NULL,
-  `Nom` varchar(255) DEFAULT NULL,
-  `NombreDeSalarie` int(11) DEFAULT NULL
+CREATE TABLE IF NOT EXISTS  entreprises (
+  EntrepriseId int(11) AUTO_INCREMENT NOT NULL  PRIMARY KEY,
+  Nom varchar(255) DEFAULT NULL,
+  NombreDeSalarie int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-ALTER TABLE `entreprises`
-  ADD PRIMARY KEY (`EntrepriseId`);
-ALTER TABLE `entreprises`
-  MODIFY IF NOT EXISTS`EntrepriseId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 
-INSERT INTO `entreprises` (`EntrepriseId`, `Nom`, `NombreDeSalarie`) VALUES
+
+INSERT INTO entreprises (EntrepriseId, Nom, NombreDeSalarie) VALUES
 (1, 'RATP', 2000),
 (2, 'SNCF', 1500),
 (3, 'Noctilien', 1500),
 (4, 'Optile	', 500);
 
 CREATE TABLE IF NOT EXISTS `metro` (
-  `MetroId` int(11) NOT NULL,
+  `MetroId` int(11) NOT NULL PRIMARY KEY,
   `TypeDeTrain` varchar(255) DEFAULT NULL,
   `NumeroLigne` int(11) DEFAULT NULL,
-  `EntrepriseId` int(11) NOT NULL
+  `EntrepriseId` int(11) NOT NULL,
+  FOREIGN KEY (EntrepriseId) REFERENCES Entreprises(EntrepriseId) 
+    ON DELETE CASCADE 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-ALTER TABLE `metro`
-  ADD PRIMARY KEY (`MetroId`),
-  ADD KEY `EntrepriseId` (`EntrepriseId`);
 
-ALTER TABLE `metro`
-  MODIFY `MetroId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
-ALTER TABLE `metro`
-  ADD CONSTRAINT `metro_ibfk_1` FOREIGN KEY (`EntrepriseId`) REFERENCES `entreprises` (`EntrepriseId`) ON DELETE CASCADE;
 
 INSERT INTO `metro` (`MetroId`, `TypeDeTrain`, `NumeroLigne`, `EntrepriseId`) VALUES
 (1, 'Alstom2007', 1, 1),
@@ -50,7 +41,7 @@ INSERT INTO `metro` (`MetroId`, `TypeDeTrain`, `NumeroLigne`, `EntrepriseId`) VA
 (8, 'Alstom2001', 4, 2);
 
 CREATE TABLE IF NOT EXISTS `personnes` (
-  `PersonneId` int(11) NOT NULL,
+  `PersonneId` int(11) AUTO_INCREMENT NOT NULL  PRIMARY KEY ,
   `Prenom` varchar(255) DEFAULT NULL,
   `Nom` varchar(255) DEFAULT NULL,
   `AdressMail` varchar(255) DEFAULT NULL,
@@ -58,18 +49,11 @@ CREATE TABLE IF NOT EXISTS `personnes` (
   `Poids` double DEFAULT NULL,
   `Taille` int(11) DEFAULT NULL,
   `Fonction` varchar(255) DEFAULT NULL,
-  `MetroId` int(11) DEFAULT NULL
+  `MetroId` int(11) DEFAULT NULL, 
+  FOREIGN KEY (MetroId) REFERENCES Metro(MetroId) 
+    ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-ALTER TABLE `personnes`
-  ADD PRIMARY KEY (`PersonneId`),
-  ADD KEY `MetroId` (`MetroId`);
-
-ALTER TABLE `personnes`
-  MODIFY `PersonneId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
-ALTER TABLE `personnes`
-  ADD CONSTRAINT `personnes_ibfk_1` FOREIGN KEY (`MetroId`) REFERENCES `metro` (`MetroId`) ON DELETE CASCADE;
 
 INSERT INTO `personnes` (`PersonneId`, `Prenom`, `Nom`, `AdressMail`, `DateDeNaissance`, `Poids`, `Taille`, `Fonction`, `MetroId`) VALUES
 (1, 'Virginie', 'Baudin', 'vbaudin@ratp.fr', '1959-11-21', 63, 160, 'conducteur', 1),
@@ -81,58 +65,38 @@ INSERT INTO `personnes` (`PersonneId`, `Prenom`, `Nom`, `AdressMail`, `DateDeNai
 (7, 'Inter', 'Ert', 'yui@google.com', NULL, NULL, NULL, NULL, NULL);
 
 CREATE TABLE IF NOT EXISTS `capteurs` (
-  `CapteurId` int(11) NOT NULL,
+  `CapteurId` int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   `CapteurNom` varchar(255) DEFAULT NULL,
   `Valeur` double DEFAULT NULL,
   `Temp` date DEFAULT NULL,
   `Lieu` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-ALTER TABLE `capteurs`
-  ADD PRIMARY KEY (`CapteurId`);
-
-ALTER TABLE `capteurs`
-  MODIFY `CapteurId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 INSERT INTO `capteurs` (`CapteurId`, `CapteurNom`, `Valeur`, `Temp`, `Lieu`) VALUES
 (1, 'CO2', 44.3, '2023-03-12', 'R8J7+MH Paris');
 
 CREATE TABLE IF NOT EXISTS `boitiers` (
-  `BoitierId` int(11) NOT NULL,
+  `BoitierId` int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   `CapteurId` int(11) DEFAULT NULL,
-  `PersonneId` int(11) NOT NULL
+  FOREIGN KEY (CapteurId) REFERENCES Capteurs(CapteurId) 
+    ON DELETE CASCADE, 
+  `PersonneId` int(11) NOT NULL, 
+  FOREIGN KEY (PersonneId) REFERENCES Personnes(PersonneId) 
+   ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-ALTER TABLE `boitiers`
-  ADD PRIMARY KEY (`BoitierId`),
-  ADD KEY `CapteurId` (`CapteurId`),
-  ADD KEY `PersonneId` (`PersonneId`);
-
-ALTER TABLE `boitiers`
-  ADD CONSTRAINT `boitiers_ibfk_1` FOREIGN KEY (`CapteurId`) REFERENCES `capteurs` (`CapteurId`) ON DELETE CASCADE,
-  ADD CONSTRAINT `boitiers_ibfk_2` FOREIGN KEY (`PersonneId`) REFERENCES `personnes` (`PersonneId`) ON DELETE CASCADE;
-
-ALTER TABLE `boitiers`
-  MODIFY `BoitierId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;  
 
 INSERT INTO `boitiers` (`BoitierId`, `CapteurId`, `PersonneId`) VALUES
 (1, 1, 1);
 
 CREATE TABLE IF NOT EXISTS `logins` (
-  `LoginId` int(11) NOT NULL,
+  `LoginId` int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   `MotDePas` varchar(255) DEFAULT NULL,
-  `PersonneId` int(11) NOT NULL
+  `PersonneId` int(11) NOT NULL, 
+  FOREIGN KEY (PersonneId) REFERENCES Personnes(PersonneId) 
+    ON DELETE CASCADE 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-ALTER TABLE `logins`
-  ADD PRIMARY KEY (`LoginId`),
-  ADD KEY `PersonneId` (`PersonneId`);
-
-ALTER TABLE `logins`
-  MODIFY `LoginId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
-ALTER TABLE `logins`
-  ADD CONSTRAINT `logins_ibfk_1` FOREIGN KEY (`PersonneId`) REFERENCES `personnes` (`PersonneId`) ON DELETE CASCADE;
 
 INSERT INTO `logins` (`LoginId`, `MotDePas`, `PersonneId`) VALUES
 (1, '!icgWdyuwvmcJbcj1', 1),
@@ -144,60 +108,39 @@ INSERT INTO `logins` (`LoginId`, `MotDePas`, `PersonneId`) VALUES
 (7, 'asdfg', 7);
 
 CREATE TABLE IF NOT EXISTS `tickets` (
-  `TicketId` int(11) NOT NULL,
+  `TicketId` int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   `PersonneId` int(11) NOT NULL,
+  FOREIGN KEY (PersonneId) REFERENCES Personnes(PersonneId) 
+    ON DELETE CASCADE,
   `Description` varchar(255) DEFAULT NULL,
   `Temp` date DEFAULT NULL,
   `Statut` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-ALTER TABLE `tickets`
-  ADD PRIMARY KEY (`TicketId`),
-  ADD KEY `PersonneId` (`PersonneId`);
-
-ALTER TABLE `tickets`
-  MODIFY `TicketId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
-ALTER TABLE `tickets`
-  ADD CONSTRAINT `tickets_ibfk_1` FOREIGN KEY (`PersonneId`) REFERENCES `personnes` (`PersonneId`) ON DELETE CASCADE;
     
 INSERT INTO `tickets` (`TicketId`, `PersonneId`, `Description`, `Temp`, `Statut`) VALUES
 (1, 1, ' Le capteur ne fonctionne pas', '2022-12-31', 'OK');
 
 CREATE TABLE IF NOT EXISTS `demandes` (
-  `DemandeId` int(11) NOT NULL,
+  `DemandeId` int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   `PersonneId` int(11) NOT NULL,
+  FOREIGN KEY (PersonneId) REFERENCES Personnes(PersonneId) 
+    ON DELETE CASCADE,
   `Description` varchar(255) DEFAULT NULL,
   `Temp` date DEFAULT NULL,
   `Statut` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-ALTER TABLE `demandes`
-  ADD PRIMARY KEY (`DemandeId`),
-  ADD KEY `PersonneId` (`PersonneId`);
-
-ALTER TABLE `demandes`
-  MODIFY `DemandeId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
-ALTER TABLE `demandes`
-  ADD CONSTRAINT `demandes_ibfk_1` FOREIGN KEY (`PersonneId`) REFERENCES `personnes` (`PersonneId`) ON DELETE CASCADE;
 
 INSERT INTO `demandes` (`DemandeId`, `PersonneId`, `Description`, `Temp`, `Statut`) VALUES
 (1, 2, ' La durée de vie de la batterie', '2022-10-01', 'OK');
 
 
 CREATE TABLE IF NOT EXISTS `authentificationprimaire` (
-  `AuthentificationId` int(11) NOT NULL,
-  `PersonneId` int(11) DEFAULT NULL
+  `AuthentificationId` int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  `PersonneId` int(11) DEFAULT NULL, FOREIGN KEY (PersonneId) REFERENCES Personnes(PersonneId) 
+    ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-ALTER TABLE `authentificationprimaire`
-  ADD PRIMARY KEY (`AuthentificationId`),
-  ADD KEY `PersonneId` (`PersonneId`);
-
-ALTER TABLE `authentificationprimaire`
-  ADD CONSTRAINT `authentificationprimaire_ibfk_1` FOREIGN KEY (`PersonneId`) REFERENCES `personnes` (`PersonneId`);  
-
 
 INSERT INTO `authentificationprimaire` (`AuthentificationId`, `PersonneId`) VALUES
 (221209, NULL),
@@ -206,7 +149,23 @@ INSERT INTO `authentificationprimaire` (`AuthentificationId`, `PersonneId`) VALU
 (390551, 2),
 (572381, 3),
 (573832, 4),
-authentificationprimaire(402313, 5),
+(402313, 5),
 (479338, 6),
 (383969, 7);
+
+CREATE USER 'vapr@metric.care'@'localhost' IDENTIFIED BY 'vapr333!';
+CREATE USER 'abmo@metric.care'@'localhost' IDENTIFIED BY 'abmo111?';
+CREATE USER 'majo@metric.care'@'localhost' IDENTIFIED BY 'majo444/';
+CREATE USER 'pisi@metric.care'@'localhost' IDENTIFIED BY 'pisi555.';
+CREATE USER 'alsi@metric.care'@'localhost' IDENTIFIED BY 'alsi222*';
+CREATE USER 'gupa@metric.care'@'localhost' IDENTIFIED BY 'gupa777-';
+
+
+GRANT ALL PRIVILEGES ON *.* TO 'vapr@metric.care'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'abmo@metric.care'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'majo@metric.care'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'pisi@metric.care'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'alsi@metric.care'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'gupa@metric.care'@'localhost';
+
 SET FOREIGN_KEY_CHECKS=1;

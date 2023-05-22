@@ -5,8 +5,10 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="../../Utilisateur/FAQ/FAQ.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -17,22 +19,23 @@
             <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
             <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
-          </div>      
+          </div>
           <div class="contenuNav">
-            <a>🌐Français</a>
-            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
-            <a href ="../FAQ/FAQ.PHP">FAQ</a>
-            <a href ="Forum.PHP">Forum</a>
-            <a href ="../Ticket/Ticket.PHP">Ticket</a>
-            <a href ="../Profil/Profil.PHP">Profil</a>
+          <a href="../Contact/Contact.PHP">Contact</a>
+            <a href="FAQ.PHP">FAQ</a>
+            <a href="../AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="../../Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
-      
-        <a id = "retour">◄ Tableau de bord</a>
-    <p id = "Forum"> Forum </p>
+    <a id = "retour">◄ Tableau de bord</a>
+
+  <p id = "FAQ"> FAQ </p>
+
+  <div id = "Question">
+    <h1 id = "Text_Question" class = "text-3xl">Quelle est votre Question ?  </h1>
     <div class="searchbar">
      <div class="searchbar-wrapper">
         <div class="searchbar-center">
@@ -51,7 +54,36 @@
         </div>
       </div>
     </div>
+  </div>
+  
+    <h1 id = "oui" class ="text-3xl">
+     Catégories
+    </h1>
+
     
+  <div id = "row">
+    <div class="mx-auto w-2/5">
+      <details id = "details-question" class="border-2 rounded-lg mb-4 mt-4 ml-16 -mr-15">
+        <summary id ="Summary" class = "text-xl cursor-pointer p-3">Compte et informations de connexion</summary>
+       <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
+      </details>
+      <details id = "details-question" class="border-2 rounded-lg mb-4 ml-16 -mr-15">
+        <summary id ="Summary" class = "text-xl cursor-pointer p-3">Boitiers et capteurs</summary>
+        <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
+      </details>
+    </div>
+
+
+    <div id = "column" class = "w-1/3 mr-auto -ml-24">
+      <div class="pr-50 rounded-lg">
+        <a href = "" id ="text_rubrique">Comment je peux réinitialiser mon mot de passe ? </a><br>
+        <a href = "" id ="text_rubrique">Comment accéder à mes données personnelles ? </a><br>
+        <a href = "" id ="text_rubrique">Comment je peux réinitialiser mon mot de passe ? </a><br>
+      </div>
+    </div>
+  </div>
+
+
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

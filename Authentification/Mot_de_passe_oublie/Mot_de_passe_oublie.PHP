@@ -77,6 +77,7 @@ $new_pass = rand();
       </div>
     </header>
     <main>
+        <div class="ens">
         <div class="MDP">
             <a>Mot de passe oublié</a>
         </div>
@@ -91,6 +92,7 @@ $new_pass = rand();
         <button type="submit" name="oublie">Envoyer</button>
 
         </div>
+</div>
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

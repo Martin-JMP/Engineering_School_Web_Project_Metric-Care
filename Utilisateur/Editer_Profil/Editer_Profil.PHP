@@ -43,6 +43,38 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
 
 
 ?>
+<?php
+// Récupération des données du formulaire
+$nom = $_POST['nom'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+// Connexion à la base de données
+$servername = "localhost";
+$username = "abdelmoad";
+$password = "123456";
+$dbname = "metric_care";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Vérification de la connexion
+if ($conn->connect_error) {
+    die("Erreur de connexion à la base de données : " . $conn->connect_error);
+}
+
+// Requête d'insertion des données
+$sql = "INSERT INTO nom_table (nom, email, message) VALUES ('$nom', '$email', '$message')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Données enregistrées avec succès.";
+} else {
+    echo "Erreur lors de l'enregistrement des données : " . $conn->error;
+}
+
+// Fermeture de la connexion à la base de données
+$conn->close();
+?>
+
 
     <header>
       <div id="Rectangle_Debut">

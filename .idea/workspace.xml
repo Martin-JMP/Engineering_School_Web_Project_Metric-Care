@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6ecaf84-968e-4433-a622-23026f9dc52c" name="Changes" comment="MVC model works">
+    <list default="true" id="d6ecaf84-968e-4433-a622-23026f9dc52c" name="Changes" comment="Database changing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/metric_care.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/metric_care.sql" afterDir="false" />
     </list>
@@ -58,7 +58,7 @@
       <updated>1684693786394</updated>
       <workItem from="1684693787564" duration="1659000" />
       <workItem from="1684741040619" duration="7173000" />
-      <workItem from="1685540556619" duration="2415000" />
+      <workItem from="1685540556619" duration="3057000" />
     </task>
     <task id="LOCAL-00001" summary="MVC model works">
       <created>1684694011053</created>
@@ -88,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684752310231</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Database changing">
+      <created>1685550538190</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685550538190</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MVC model works" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVC model works" />
+    <MESSAGE value="Database changing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database changing" />
   </component>
 </project>

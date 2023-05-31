@@ -62,7 +62,12 @@ INSERT INTO `personnes` (`PersonneId`, `Prenom`, `Nom`, `AdressMail`, `DateDeNai
 (4, 'Simon', 'Traverse', 'straverse@yahoo.com', NULL, NULL, NULL, NULL, NULL),
 (5, 'Valentyna', 'Pronina', 'valentyna.pronina@eleve.isep.fr', NULL, NULL, NULL, NULL, NULL),
 (6, 'Ihor', 'Pronin', 'k_sqats@ukr.net', NULL, NULL, NULL, NULL, NULL),
-(7, 'Inter', 'Ert', 'yui@google.com', NULL, NULL, NULL, NULL, NULL);
+(7, 'Inter', 'Ert', 'yui@google.com', NULL, NULL, NULL, NULL, NULL),
+(8, 'Adrian', 'Chalamet', 'ad@metric.care', NULL, NULL, NULL, NULL, NULL),
+(9, 'Jana', 'Romain', 'gest1@metric.care', NULL, NULL, NULL, NULL, NULL),
+(10, 'Luka', 'Wolf', 'gest2@metric.care', NULL, NULL, NULL, NULL, NULL),
+(11, 'Max', 'Fern', 'gest3@metric.care', NULL, NULL, NULL, NULL, NULL),
+(12, 'Anastasiia', 'Nuxe', 'gest4@metric.care', NULL, NULL, NULL, NULL, NULL);
 
 CREATE TABLE IF NOT EXISTS `capteurs` (
   `CapteurId` int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -105,7 +110,12 @@ INSERT INTO `logins` (`LoginId`, `MotDePas`, `PersonneId`) VALUES
 (4, 'jdnwbfbwefkjjkefw', 4),
 (5, 'qwerty', 5),
 (6, '12345', 6),
-(7, 'asdfg', 7);
+(7, 'asdfg', 7),
+(8, 'hr*!AqLn2', 8),
+(9, 'gest80non!', 9),
+(10, 'gest81non!', 10),
+(11, 'gest82non!', 11),
+(12, 'gest83non', 12);
 
 CREATE TABLE IF NOT EXISTS `tickets` (
   `TicketId` int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -145,6 +155,11 @@ CREATE TABLE IF NOT EXISTS `authentificationprimaire` (
 INSERT INTO `authentificationprimaire` (`AuthentificationId`, `PersonneId`) VALUES
 (221209, NULL),
 (314806, NULL),
+(111111, 8),
+(222220, 9),
+(222221, 10),
+(222222, 11),
+(222223, 12),
 (874805, 1),
 (390551, 2),
 (572381, 3),

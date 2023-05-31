@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6ecaf84-968e-4433-a622-23026f9dc52c" name="Changes" comment="MVC model works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/metric_care.sql" beforeDir="false" afterPath="$PROJECT_DIR$/models/metric_care.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Authentification/Connexion/Connexion.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/view/Authentification/Connexion/Connexion.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/metric_care.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/metric_care.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +43,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Metric_Care\database" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,7 +57,8 @@
       <option name="presentableId" value="Default" />
       <updated>1684693786394</updated>
       <workItem from="1684693787564" duration="1659000" />
-      <workItem from="1684741040619" duration="7012000" />
+      <workItem from="1684741040619" duration="7173000" />
+      <workItem from="1685540556619" duration="2415000" />
     </task>
     <task id="LOCAL-00001" summary="MVC model works">
       <created>1684694011053</created>
@@ -78,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684741336595</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="MVC model works">
+      <created>1684752310231</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684752310231</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

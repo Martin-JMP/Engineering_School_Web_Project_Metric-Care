@@ -21,7 +21,7 @@ ini_set("smtp_port", "465");
 ini_set("sendmail_from", "metric.care@gmail.com");
 
 if(mail($to, $subject, $message, $header)){
-    echo 'mail sent';
+    echo 'mail senttt';
 } else{
     echo 'nope';
 }

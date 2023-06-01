@@ -36,6 +36,10 @@ class ConnectionController
                 // Check if a matching user was found
                 $user = $query->fetch(PDO::FETCH_ASSOC);
                 if ($user) {
+                    if ($email == "ad@metric.care"){
+                        
+                    }
+
                     // Connection successful, redirect to a different page
                     header('Location: http://localhost/Metric_Care/view/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP');
                     exit;

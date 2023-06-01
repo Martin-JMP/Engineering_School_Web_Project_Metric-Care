@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6ecaf84-968e-4433-a622-23026f9dc52c" name="Changes" comment="Database changing">
+    <list default="true" id="d6ecaf84-968e-4433-a622-23026f9dc52c" name="Changes" comment="MVC works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/Connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Authentification/Connexion/Connexion.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/view/Authentification/Connexion/Connexion.PHP" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,7 @@
       <workItem from="1684693787564" duration="1659000" />
       <workItem from="1684741040619" duration="7173000" />
       <workItem from="1685540556619" duration="4403000" />
+      <workItem from="1685618505675" duration="1250000" />
     </task>
     <task id="LOCAL-00001" summary="MVC model works">
       <created>1684694011053</created>
@@ -101,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685550563446</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="MVC works">
+      <created>1685618568153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685618568153</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MVC model works" />
     <MESSAGE value="Database changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database changing" />
+    <MESSAGE value="MVC works" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC works" />
   </component>
 </project>

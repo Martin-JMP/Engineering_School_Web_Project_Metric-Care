@@ -8,45 +8,41 @@
   </head>
   <body>
     <?php
-       /*function alert($msg) {
+       function alert($msg) {
         echo "<script type='text/javascript'>alert('$msg');</script>";
       }
       if (isset($_POST['button'])){
-  
-
         $email = $_POST['email'];
         $password = $_POST['password'];
-        
-        
         $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
         
           if (!empty($email && $password)){
             try{
               $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
               $post = $sth->fetch();
-        
               if($post){
-                
                 session_start();
+                if ($email == "ad@metric.care"){
+                  header('Location: ../../Administrateur/Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.PHP');
+                } else 
+                if($email == "gest1@metric.care" || $email == "gest2@metric.care" || $email == "gest3@metric.care" || $email == "gest4@metric.care"){
+                  header('Location: ../../Gestionnaire/Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP');
+                }
+                else {
+                  header('Location: ../../Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP');
+                }
                 $_SESSION['email'] = $email;
-                header('Location: http://localhost/Metric_Care/view/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP');
                 exit();
-        
               }else{
                 alert("Utilisateur inconnu");
               }
-              
-        
             }catch(PDOException $e){
               $erreur = $e->getMessage();
             }
-        
-        
           }else{
             alert('Veuillez remplir les champs obligatoires');
           }
-        
-        }*/
+        }
     ?>
     <header>
         <div>

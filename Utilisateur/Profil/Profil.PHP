@@ -11,27 +11,35 @@
   </head>
   <body>
     <?php
-
-  $email = 'vbaudin@ratp.fr';
-  $password = '!icgWdyuwvmcJbcj1';
-  #$_SESSION['email'] = $email;
-  #$_SESSION['password'] = $password;
+session_start(); 
+ $u=$_SESSION['PPJ'];
+ $id=1;
 
 
 
-  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
+ $host = 'localhost'; 
+ $username = 'abdelmoad';
+ $dbpassword = '123456';
+ $dbName = 'metric_care'; 
+ 
+ 
+ $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
 
 
-    if (!empty($email && $password)){
+    if (!empty($id)){
       try{
-        $n = $bdd->query("SELECT personnes.Nom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $nom = $n -> fetch();
-        $p = $bdd->query("SELECT personnes.Prenom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $prenom = $p -> fetch();
-        $a = $bdd->query("SELECT personnes.DateDeNaissance FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $age = $a -> fetch();
-        $auth = $bdd->query("SELECT * from personnes, authentificationprimaire, logins where personnes.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $numero = $auth -> fetch();
+        $n = $mysqli->query("SELECT Nom FROM personnes  WHERE PersonneId =$id");
+        $nom = $n -> fetch_assoc();
+        $p = $mysqli->query("SELECT Prenom FROM personnes  WHERE PersonneId =$id");
+        $prenom = $p -> fetch_assoc();
+        $a = $mysqli->query("SELECT DateDeNaissance FROM personnes  WHERE PersonneId =$id");
+        $age = $a -> fetch_assoc();
+        $auth = $mysqli->query("SELECT AuthentificationId from authentificationprimaire where PersonneId =$id");
+        $numero = $auth -> fetch_assoc();
+        $e = $mysqli->query("SELECT AdressMail FROM personnes  WHERE PersonneId =$id");
+        $email = $e -> fetch_assoc();
+        $pwd = $mysqli->query("SELECT MotDePas FROM logins  WHERE PersonneId = $id");
+        $password = $pwd -> fetch_assoc();
       }catch(PDOException $e){
         $erreur = $e->getMessage();
       }
@@ -115,7 +123,7 @@
             <p>E-mail<p>
           </div>
           <div class="Entrée">
-          <p><?php echo $email; ?><p>
+          <p><?php echo $email['AdressMail']; ?><p>
           </div>
         </div>
       <div class="MDP">
@@ -123,7 +131,8 @@
             <p>Mot de passe<p>
           </div>
           <div class="Entrée">
-          <p><?php echo $password; ?><p>
+          <p><?php echo $password['MotDePas']; ?><p>
+
           </div>
           <div class="Reinitialiser">
             <p><a href="../../Utilisateur/Réinitialiser%20mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>

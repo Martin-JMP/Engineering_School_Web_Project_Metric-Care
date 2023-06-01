@@ -8,13 +8,13 @@
   </head>
   <body>
     <?php
-       function alert($msg) {
+       /*function alert($msg) {
         echo "<script type='text/javascript'>alert('$msg');</script>";
       }
       if (isset($_POST['button'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+        $bdd = new PDO("mysql:host=localhost;dbname=metric_care","vapr@metric.care","vapr333!");
         
           if (!empty($email && $password)){
             try{
@@ -42,7 +42,7 @@
           }else{
             alert('Veuillez remplir les champs obligatoires');
           }
-        }
+        }*/
     ?>
     <header>
         <div>

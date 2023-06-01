@@ -72,7 +72,7 @@ body {
     width: 603px;
     height: 84px;
     left: 6.7%;
-    top: 84%;
+    top: 88%;
 
     font-family: 'Carme';
     font-style: normal;
@@ -105,6 +105,8 @@ body {
     left: 62%; /* Ajustez cette valeur selon vos besoins */
     width: 30%; /* Ajustez cette valeur selon vos besoins */
     height: 30%; /* Ajustez cette valeur selon vos besoins */
+
+    transform: translateY(-1%); /* Déplace l'image de 2% vers le haut */
 }
 
 .Contenu_Enjeux a{
@@ -112,7 +114,7 @@ body {
     width: 800px;
     height: 84px;
     left: 6.7%;
-    top: 93%;
+    top: 97%;
 
     font-family: 'Carme';
     font-style: normal;
@@ -125,8 +127,29 @@ body {
 
 .Femme_Volant img{
     position: relative;
-    margin-top: -10px; /* Ajustez cette valeur selon vos besoins */
-    left: 62%; /* Ajustez cette valeur selon vos besoins */
-    width: 32%; /* Ajustez cette valeur selon vos besoins */
-    height: 32%; /* Ajustez cette valeur selon vos besoins */
+    top: 20%; /* Ajustez cette valeur selon vos besoins */
+    left: 63%; /* Ajustez cette valeur selon vos besoins */
+    width: 30%; /* Ajustez cette valeur selon vos besoins */
+    height: 30%; /* Ajustez cette valeur selon vos besoins */
+
+    transform: translateY(-32%); /* Déplace l'image de 30% vers le haut */
+}
+
+.Capteur_CO2 img {
+    position: absolute;
+    top: 30%; /* Ajustez cette valeur selon vos besoins */
+    left: 85%; /* Ajustez cette valeur selon vos besoins */
+    width: 7%; /* Ajustez cette valeur selon vos besoins */
+    height: 14%; /* Ajustez cette valeur selon vos besoins */
+
+    transform: translateY(30%); /* Déplace l'image de 30% vers le haut */
+
+    transition: transform 0.8s; /* Ajoute une transition pour un mouvement fluide */
+    opacity: 0; /* Masque l'image par défaut */
+}
+
+.Image_boitier:hover + .Capteur_CO2,
+.Capteur_CO2:hover {
+    opacity: 1; /* Révèle l'image lors du survol de l'Image_boitier ou du Capteur_CO2 */
+    transform: translate(30%, -30%); /* Déplace l'image en diagonale vers la droite et le haut */
 }

@@ -8,7 +8,7 @@
   </head>
   <body>
     <?php
-       function alert($msg) {
+       /*function alert($msg) {
         echo "<script type='text/javascript'>alert('$msg');</script>";
       }
       if (isset($_POST['button'])){
@@ -46,7 +46,7 @@
             alert('Veuillez remplir les champs obligatoires');
           }
         
-        }
+        }*/
     ?>
     <header>
         <div>

@@ -7,8 +7,8 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
-    /*<?php
-        function alert($msg) {
+    <?php
+        /*function alert($msg) {
             echo "<script type='text/javascript'>alert('$msg');</script>";
         }
         if (isset($_POST['button'])){
@@ -39,8 +39,8 @@
             else{
                 alert("Le problème de la création. Veuillez remplir les champs obligatoires");
             }
-        }
-    ?>*/
+        }*/
+    ?>
     <header>
         <div>
             <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="100", height="55"> 

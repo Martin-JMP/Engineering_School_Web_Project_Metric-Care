@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6ecaf84-968e-4433-a622-23026f9dc52c" name="Changes" comment="Database changing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/metric_care.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/metric_care.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <updated>1684693786394</updated>
       <workItem from="1684693787564" duration="1659000" />
       <workItem from="1684741040619" duration="7173000" />
-      <workItem from="1685540556619" duration="3057000" />
+      <workItem from="1685540556619" duration="4403000" />
     </task>
     <task id="LOCAL-00001" summary="MVC model works">
       <created>1684694011053</created>
@@ -95,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685550538190</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Database changing">
+      <created>1685550563446</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685550563446</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

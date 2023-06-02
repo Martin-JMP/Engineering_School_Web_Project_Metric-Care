@@ -8,7 +8,7 @@
   </head>
   <body>
     <?php
-       /*function alert($msg) {
+      function alert($msg) {
         echo "<script type='text/javascript'>alert('$msg');</script>";
       }
       if (isset($_POST['button'])){
@@ -42,7 +42,7 @@
           }else{
             alert('Veuillez remplir les champs obligatoires');
           }
-        }*/
+        }
     ?>
     <header>
         <div>
@@ -74,8 +74,8 @@
                 <div><a>compte ?</a></div>
             </div>
             <div class="Inscrivez-vous" href="#">
-                <div><a href="http://localhost/Metric_Care/Authentification/Inscription/Inscription.PHP">Inscrivez</a></div>
-                <div><a href="http://localhost/Metric_Care/Authentification/Inscription/Inscription.PHP">vous</a></div>
+                <div><a href="Authentification/Inscription/view/Inscription.PHP">Inscrivez</a></div>
+                <div><a href="http://localhost/Metric_Care/view/Authentification/Inscription/Inscription.PHP">vous</a></div>
             </div>
         </div>
     </main>

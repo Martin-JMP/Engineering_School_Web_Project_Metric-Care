@@ -12,7 +12,8 @@
   <body>
     <?php
 session_start(); 
- $u=$_SESSION['PPJ'];
+
+
  $id=1;
 
 

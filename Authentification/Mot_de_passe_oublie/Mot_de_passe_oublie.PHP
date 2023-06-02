@@ -9,54 +9,6 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
-
-  <?php
-if (isset($_POST['oublie'])){
-$email = htmlentities(strtolower(trim($mail))); // On récupère le mail afin d envoyer le mail pour la récupèration du mot de passe 
-    
-if(empty($email)){
-     $valid = false;
-$er_mail = "Il faut mettre un mail";
-}
- 
- else{
- $verification_mail = $bdd->query("SELECT personnes.AdressMail FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email'");
- array($email);
- $verification_mail = $verification_mail->fetch();
- 
-if(isset($verification_mail['email'])){
-// On génère un mot de passe à l'aide de la fonction RAND de PHP
-$new_pass = rand();
-// $new_pass_crypt = crypt($new_pass, "VOTRE CLÉ UNIQUE DE CRYPTAGE DU MOT DE PASSE");
- 
- $objet = 'Nouveau mot de passe';
- $to = "martinjoncourt@outlook.com";
- 
-//===== Création du header du mail.
- $header = "From: <martinjoncourt1@gmail.com> \n";
- $header .= "Reply-To:  \n";
- $header .= "MIME-version: 1.0\n";
- $header .= "Content-type: text/html; charset=utf-8\n";
- $header .= "Content-Transfer-Encoding: 8bit";
- 
-//===== Contenu de votre message
- $contenu = "<html>".
- "<body>".
- "<p style='text-align: center; font-size: 18px'><b>Bonjour Mr, Mme</b>,</p><br/>".
- "<p style='text-align: justify'><i><b>Nouveau mot de passe : </b></i></p><br/>".
- "</body>".
- "</html>";
-//===== Envoi du mail
- mail($to, $objet, $contenu, $header);
- $bdd->insert("UPDATE logins SET MotDePas = ?, email = ?",
- array($new_pass, $verification_mail['email']));
-}
-}
- header('Location: Mot_de_passe_oublie.php');
- exit;
- }
-?>
-
 <header>
       <div id="Rectangle_Debut">
         <nav>
@@ -78,22 +30,92 @@ $new_pass = rand();
     </header>
     <main>
         <div class="ens">
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <div class="MDP">
             <a>Mot de passe oublié</a>
         </div>
         <div class="MDP_nouveau">
-            <a>Nous vous enverrons un e-mail pour créer un nouveau mot de passe :</a>
+            <a>Nous vous enverrons un e-mail contenant un mot de passe provisoir :</a>
         </div>
         <div class="container">
             <input type="email" placeholder="Email" name="mail" value="<?php if(isset($mail)){ echo $mail; }?>" required><br></br>
         </div>
-        <div class="rectangle-envoye">
+        <div class="rectangle-envoye" name="button">
 
         <button type="submit" name="oublie">Envoyer</button>
 
         </div>
+        </form>
 </div>
     </main>
+    <?php
+    require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\Exception.php';
+    require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\PHPMailer.php';
+    require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\SMTP.php';
+    
+    //Import PHPMailer classes into the global namespace
+    //These must be at the top of your script, not inside a function
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+
+    //Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+function genererMotDePasse() {
+  $caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  $motDePasse = '';
+  
+  for ($i = 0; $i < 8; $i++) {
+      $indexAleatoire = mt_rand(0, strlen($caracteres) - 1);
+      $motDePasse .= $caracteres[$indexAleatoire];
+  }
+  
+  return $motDePasse;
+}
+
+if (isset($_POST['oublie'])) {
+  $email=$_POST['mail'];
+  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+
+  if (!empty($mail)){
+      $sth = $bdd->query("SELECT personnes.PersonneId FROM personnes  WHERE personnes.AdressMail = '$email'");
+      $post = $sth->fetch();
+      if($post){
+try {
+    //Server settings
+    $mail->SMTPDebug = false;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'metric.care@gmail.com';                     //SMTP username
+    $mail->Password   = 'vhtkppwvnatnckgb';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail->setFrom('metric.care@gmail.com', 'Metric Care');
+    $mail->addAddress($_POST['mail']);     //Add a recipient
+
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'Votre nouveau mot de passe';
+    $mail->Body    = 'Voici votre mot de passe temporaire : <b> ' . genererMotDePasse() . '';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}}
+else {
+  echo "utilisateur introuvable";
+}
+}
+else{
+
+}}
+
+?>
     <footer class = "Footer">
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">

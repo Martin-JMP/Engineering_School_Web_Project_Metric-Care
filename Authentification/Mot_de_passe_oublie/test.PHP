@@ -8,9 +8,9 @@
 <body>
 <?php
 
-require 'D:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\Exception.php';
-require 'D:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\PHPMailer.php';
-require 'D:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\SMTP.php';
+require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\Exception.php';
+require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\PHPMailer.php';
+require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\SMTP.php';
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
@@ -34,7 +34,7 @@ try {
 
     //Recipients
     $mail->setFrom('metric.care@gmail.com', 'Metric Care');
-    $mail->addAddress('martinjoncourt@outlook.com', 'Joe User');     //Add a recipient
+    $mail->addAddress('giuliettapancari@gmail.com', 'Joe User');     //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML

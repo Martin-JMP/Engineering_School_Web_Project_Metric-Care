@@ -103,7 +103,7 @@ input[type="email"] {
     margin: auto;
 }
   
-.rectangle-envoye a {
+.rectangle-envoye button{
     font-family: 'Carme';
     font-style: normal;
     font-weight: 400;

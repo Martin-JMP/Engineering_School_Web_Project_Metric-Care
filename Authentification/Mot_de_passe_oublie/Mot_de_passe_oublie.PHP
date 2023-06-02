@@ -111,7 +111,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Votre nouveau mot de passe';
-    $mail->Body    = 'Voici votre mot de passe temporaire : <b> ' . $motdepasspre . '';
+    $mail->Body    = 'Voici votre mot de passe temporaire : <b> ' . $motdepasspre . ' <br><br>  En cas de problème veuillez répondre à ce mail directement.';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

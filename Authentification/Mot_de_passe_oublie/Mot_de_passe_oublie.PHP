@@ -81,6 +81,7 @@ if (isset($_POST['oublie'])) {
       $sth = $bdd->query("SELECT personnes.PersonneId FROM personnes  WHERE personnes.AdressMail = '$email'");
       $post = $sth->fetch();
       if($post){
+        $query = "UPDATE logins SET MotDePas='$npwd' WHERE PersonneId=$id";    
 try {
     //Server settings
     $mail->SMTPDebug = false;                      //Enable verbose debug output

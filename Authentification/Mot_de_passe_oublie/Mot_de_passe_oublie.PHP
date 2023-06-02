@@ -7,6 +7,11 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
+    <script>
+    function showAlert(message) {
+      alert(message);
+    }
+  </script>
   </head>
   <body>
 <header>
@@ -81,7 +86,13 @@ if (isset($_POST['oublie'])) {
       $sth = $bdd->query("SELECT personnes.PersonneId FROM personnes  WHERE personnes.AdressMail = '$email'");
       $post = $sth->fetch();
       if($post){
-        $query = "UPDATE logins SET MotDePas='$npwd' WHERE PersonneId=$id";    
+        $motdepasspre = genererMotDePasse();
+        $query = "UPDATE logins SET MotDePas = :motdepassetest WHERE PersonneId = :personneid";
+        $stmt = $bdd->prepare($query);
+        $stmt->bindValue(':motdepassetest', $motdepasspre);
+        $stmt->bindValue(':personneid', $post['PersonneId']);
+        $stmt->execute();
+            
 try {
     //Server settings
     $mail->SMTPDebug = false;                      //Enable verbose debug output
@@ -100,16 +111,16 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Votre nouveau mot de passe';
-    $mail->Body    = 'Voici votre mot de passe temporaire : <b> ' . genererMotDePasse() . '';
+    $mail->Body    = 'Voici votre mot de passe temporaire : <b> ' . $motdepasspre . '';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
+    echo '<script>showAlert("Message has been sent");</script>';
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+  echo '<script>showAlert("Message could not be sent. Mailer Error: ' . $mail->ErrorInfo . '");</script>';
 }}
 else {
-  echo "utilisateur introuvable";
+  echo '<script>showAlert("Utilisateur introuvable");</script>';
 }
 }
 else{

@@ -22,7 +22,7 @@
           <div class="contenuNav">
           <a>🌐Français</a>
             <a href="../Contact/Contact.PHP">Contact</a>
-            <a href="../FAQ/Page_FAQ.PHP">FAQ</a>
+            <a href="../FAQ/FAQ.PHP">FAQ</a>
             <a href="../AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
             <a href="../../Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>

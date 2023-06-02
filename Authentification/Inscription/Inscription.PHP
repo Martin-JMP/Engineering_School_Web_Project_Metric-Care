@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="Inscription.css"> 
+    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
+    <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -30,7 +32,7 @@
                     $pos3 = $upd->fetch();
                     if($post1 && $post2 && $upd){
                       
-                      header('Location: http://localhost/Metric_Care/Authentification/Connexion/Connexion.PHP');
+                      header('Location: ../Connexion/Connexion.PHP');
                       exit();
               
                     }
@@ -48,14 +50,26 @@
         }
     ?>
     <header>
-        <div>
-            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="100", height="55"> 
-            <div class="Langue">
-                <a>🌐Français</a>
-            </div>
-        </div>  
+      <div id="Rectangle_Debut">
+        <nav>
+          <div>
+            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
+            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
+            <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+            <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+          </div>      
+          <div class="contenuNav">
+          <a>🌐Français</a>
+            <a href="../../General/Contact/Contact.PHP">Contact</a>
+            <a href="../../General/FAQ/FAQ.PHP">FAQ</a>
+            <a href="../../General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="../Connexion/Connexion.PHP">Connexion</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main method="post" form="inscription-form">
+        <div class="tot">
         <div class="Inscription">
             <a>Inscription</a>
         </div>
@@ -84,11 +98,27 @@
                 <label for="cgu">J'accepte les <span><a  href="../../General/CGU/CGU.PHP">conditions générales d'utilisation</a></span></label>
             </div>
         
-            </div>
             <div class="rectangle-creer">
             <button type="submit" name="button">Créer mon compte</button>
             </div>
+        </div>
         </form>
+    </div>
     </main>
+    <footer class = "Footer">
+      <div class = "contenu_Footer">
+        <div class="Footer_contenu_Logo">
+          <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
+          <p>Metric Care © 2023 - Tous droits réservés</p>
+          <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+          <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+        </div>
+        <div class="Footer_contenu_texte">
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -18,10 +18,12 @@ body {
     overflow-x: hidden;
 }
 
+
 #MainPageImage{
     position:relative;
     width: 100%;
     margin-top: 190px;
+
 }
 
 
@@ -30,8 +32,8 @@ body {
     width: 514px;
     height: 100px;
 
-    left: 61.7%;
-    top: 25%;
+    left: 64%;
+    top: 20%;
 
     
     font-family: 'Carme';
@@ -57,6 +59,7 @@ body {
 
     left: 61.7%;
     top: 40%;
+
 
 
     font-family: 'Carme';
@@ -346,7 +349,7 @@ body {
     position: absolute;
     width: 400px;
     height: 0px;
-    top: 660px;
+    top: 680px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -361,7 +364,7 @@ body {
     width: 444px;
     height: 218px;
     left: 498px;
-    top: 670px;
+    top: 700px;
 }
 
 #Last_elements {
@@ -373,6 +376,7 @@ body {
     position: absolute;
     left: 10%;
     top: 910px;
+    
     
     font-family: 'Carme';
     font-style: normal;

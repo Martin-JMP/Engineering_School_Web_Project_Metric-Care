@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   } else {
     // Mettre à jour les données utilisateur dans la base de données ou tout autre système de stockage
       // Exemple de requête de mise à jour avec MySQLi
-$query = "UPDATE personnes SET Nom = '$nom', Prenom = '$prenom', DateDeNaissance = '$ddn',AdressMail = '$email' WHERE AdressMail = '$email1'";
+$query = "UPDATE personnes SET Nom = '$nom', Prenom = '$prenom', DateDeNaissance = '$ddn',AdressMail = '$email' WHERE PersonneId='$id'";
 $result = mysqli_query($mysqli, $query);
 
     // Afficher un message de confirmation à l'utilisateur

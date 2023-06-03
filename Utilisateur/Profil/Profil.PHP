@@ -11,10 +11,11 @@
   </head>
   <body>
     <?php
-session_start(); 
 
 
- $id=1;
+
+
+ $id='1';
 
 
 

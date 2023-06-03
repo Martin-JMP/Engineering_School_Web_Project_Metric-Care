@@ -12,6 +12,90 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
+  <?php 
+
+
+  
+
+$id='1';
+
+
+$host = 'localhost'; 
+$username = 'abdelmoad';
+$dbpassword = '123456';
+$dbName = 'metric_care'; 
+
+
+$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
+$numero = null;    
+  if (!empty($id)){
+    try{
+      $pwd = $mysqli-> query("SELECT MotDePas from logins where PersonneId =$id");
+      $password = $pwd->fetch_assoc();
+      $e = $mysqli-> query("SELECT AdressMail from personnes where PersonneId =$id");
+      $email = $e->fetch_assoc();
+      $n = $mysqli-> query("SELECT AuthentificationId from authentificationprimaire where PersonneId =$id");
+      $auth = $e->fetch_assoc();
+    }catch(PDOException $e){
+      $erreur = $e->getMessage();
+    }
+
+
+  }else{
+    echo 'Veuillez vous connecter.';
+  }
+
+
+
+
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  
+  $ps = $_POST['ps'];
+  $na = $_POST['na'];
+  $em = $_POST['em'];
+  $cs = $_POST['cs'];
+
+  
+  $erreurs = array(); 
+
+if (empty($ps)) {
+    $erreurs[] = "Veuillez saisir le mot de passe";
+} elseif ($ps != $password['MotDePas']) {
+    $erreurs[] = "Mot de passe incorrect";
+}
+
+if (empty($na)) {
+  $erreurs[] = "Veuillez saisir le numéro d'authentification";
+} elseif ($na != $auth['AuthentificationId']) {
+  $erreurs[] = "Numéro d'authentification incorrect";
+}
+
+if (empty($em)) {
+  $erreurs[] = "Veuillez saisir l'email";
+} elseif ($na != $auth['AdressMail']) {
+  $erreurs[] = "Email incorrect";
+}
+
+if (!empty($erreurs)) {
+    foreach ($erreurs as $erreur) {
+        echo $erreur . "<br>";
+    }
+} else {
+    
+    $query = "UPDATE logins SET MotDePas='$npwd' WHERE PersonneId=$id";
+    $result = mysqli_query($mysqli, $query);
+    if ($result) {
+        echo "Les données ont été enregistrées avec succès.";
+    } else {
+        echo "Une erreur s'est produite lors de l'enregistrement des données.";
+    }
+}
+
+}
+?>
     <header>
       <div id="Rectangle_Debut">
         <nav>
@@ -34,17 +118,19 @@
 
         <div class="main-container">
         <h1>Suppression du compte</h1>
-        <input type="input" id="NumAuth" name="fname" placeholder="Numéro d'identification"><br><br>
-        <input type="password" id="MotDePasse" name="fname" placeholder="Mot de passe"><br><br>
-        <div class="email-container">
-            <input type="input" id="Email" name="fname" placeholder="Email">
-            <div class="SendCode">
-                <button>Code</button>
-            </div>
-        </div>
-        <br><br>
-        <input type="password" id="CodeSupp" name="fname" placeholder="Code de suppression"><br><br>
-        <button>Valider</button>
+        <form action="" method="POST">
+          <input type="input" id="NumAuth" name="na" placeholder="Numéro d'identification"><br><br>
+          <input type="password" id="MotDePasse" name="ps" placeholder="Mot de passe"><br><br>
+          <div class="email-container">
+              <input type="input" id="Email" name="em" placeholder="Email">
+              <div class="SendCode">
+                  <button>Code</button>
+              </div>
+          </div>
+          <br><br>
+          <input type="password" id="CodeSupp" name="cs" placeholder="Code de suppression"><br><br>
+          <button>Valider</button>
+      </form>
     </div>
 
     </main>

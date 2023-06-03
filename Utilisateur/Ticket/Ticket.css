@@ -4,7 +4,9 @@
     font-style: normal;
     font-weight: 400;
   }
-
+ body{
+  padding-top: 90px;
+ }
 
   #retour {
     font-style: normal;
@@ -22,7 +24,8 @@
     text-align: center;
     margin: auto;
     font-size: 50px;
-    margin-top: -5px;
+    margin-top: 70px;
+    transform: translate(-50%, -50%);
 }
 
 #Choix {

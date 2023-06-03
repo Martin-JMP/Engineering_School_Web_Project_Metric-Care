@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="../../Administrateur/Profil_Admin/Profil_Admin.css">
+    <link rel="stylesheet" type="text/css" href="Profil_Admin.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -20,7 +19,7 @@
 
 
 
-  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
 
 
     if (!empty($email && $password)){
@@ -46,64 +45,82 @@
 
   ?>
 
-      <header>
-        <div id="Rectangle_Debut">
-          <nav>
-            <div>
-              <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro" width="75" height="40">
-              <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro" width="200" height="50">
-              <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-                <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures" width="60" height="60">
-              </a>
-            </div>
-            <div class="contenuNav">
-              <a>🌐Français</a>
-              <a>Contact</a>
-              <a>FAQ</a>
-              <a>Qui sommes nous ?</a>
-              <a>Connexion</a>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <div class="title">
-          <p>Gestion de profil Administrateur<p>
-        </div>
-        <div class="Nom">
-          <div class="Intitule">
-            <p>Nom<p>
+
+    <header>
+      <div id="Rectangle_Debut">
+        <nav>
+          <div>
+            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
+            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
+            <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+            <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+          </div>      
+          <div class="contenuNav">
+            <a>🌐Français</a>
+            <a href="Tableau_de_bord_Admin.PHP">Tableau de bord</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Ticket/Ticket.PHP">Ticket</a>
+            <a href ="../Profil_Admin/Profil_Admin.PHP">Profil</a>
           </div>
-          <div class="Entrée">
-            <p><?php echo $nom['Nom']; ?><p>
-          </div>
-          <div class="Editer">
-            <p>Éditer<p>
-          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="title">
+        <p>Gestion de profil<p>
+      </div>
+      <div class="Nom">
+        <div class="Intitule">
+          <p>Nom<p>
         </div>
-        <div class="Prénom">
+        <div class="Entrée">
+          <p><?php echo $nom['Nom']; ?><p>
+        </div>
+      </div>
+      <div class="Prénom">
+        <div class="Intitule">
+          <p>Prénom<p>
+        </div>
+        <div class="Entrée">
+        <p><?php echo $prenom['Prenom']; ?><p>
+        </div>
+      </div>
+      
+      <div class="Prénom">
           <div class="Intitule">
             <p>Prénom<p>
           </div>
           <div class="Entrée">
           <p><?php echo $prenom['Prenom']; ?><p>
           </div>
-          <div class="Editer">
-            <p>Éditer<p>
+        </div>
+      <div class="Age">
+          <div class="Intitule">
+            <p>Naissance<p>
+          </div>
+          <div class="Entrée">
+          <p><?php echo $age['DateDeNaissance']; ?><p>
+          </div>
+          
+        </div>
+      <div class="Numéro">
+          <div class="Intitule">
+            <p>Numéro d'identification<p>
+          </div>
+          <div class="Entrée">
+          <p><?php echo $numero['AuthentificationId']; ?><p>
           </div>
         </div>
-        <div class="Email">
+      <div class="Email">
           <div class="Intitule">
             <p>E-mail<p>
           </div>
           <div class="Entrée">
           <p><?php echo $email; ?><p>
           </div>
-          <div class="Editer">
-            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
         </div>
-        <div class="MDP">
+      <div class="MDP">
           <div class="Intitule">
             <p>Mot de passe<p>
           </div>
@@ -111,26 +128,29 @@
           <p><?php echo $password; ?><p>
           </div>
           <div class="Reinitialiser">
-            <p>Réinitialiser<p>
+            <p><a href="../../Administrateur/Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
           </div>
         </div>
-        <div class="Tableau">
-          <p><a href="../../Administrateur/Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.PHP">◂ Tableau de bord</a><p>
+      <div class="Tableau">
+          <p><a href="../Tableau_de_bord_Admin/Tableau_de_Bord_Admin.PHP">◂ Tableau de bord</a><p>
         </div>
-        <div class="Deconnexion">
-          <p><a href="../../Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP">Déconnexion</a><p>
+      <div class="Deconnexion">
+          <p><a href="../../Metric_Care.PHP">Déconnexion</a><p>
         </div>
         <div>
-          <img id="Photo" src="../../Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">
+          <img id="Photo" src="Images/photo.jpg" alt="Utilisateur" width="258" height="240">
         </div>
-        <div class="Photo">
+      <div class="Photo">
           <p>Importer une photo<p>
         </div>
-        <div class="Enregistrer">
+      <div class="Enregistrer">
         <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
         </div>
-        <div class="Supprimer">
-        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Supprimer le compte</button>
+      <div class="Supprimer">
+        <button onclick="window.location.href = '../../Administrateur/Suppresion_du_compte/Suppression_du_compte_administrateur.php';">Supprimer le compte</button>
+        </div>
+      <div class="Editer">
+        <button onclick="window.location.href = '../../Administrateur/Editer_Profil/Editer_Profil.PHP';">Editer</button>
         </div>
       </main>
       <footer class="Footer">

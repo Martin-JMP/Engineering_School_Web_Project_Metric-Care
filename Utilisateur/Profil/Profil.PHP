@@ -10,40 +10,54 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
-    <?php
+  <?php
+session_start(); // Démarrer la session
 
-  $email = 'vbaudin@ratp.fr';
-  $password = '!icgWdyuwvmcJbcj1';
-  #$_SESSION['email'] = $email;
-  #$_SESSION['password'] = $password;
+if (isset($_SESSION['email'])) {
+  $email = $_SESSION['email']; // Récupérer la valeur de la variable
+  // Utilisez la variable comme nécessaire dans la page Profil.PHP
+} else {
+  // La variable n'est pas définie
+}
+
+$host = 'localhost';
+$username = 'abdelmoad';
+$dbpassword = '123456';
+$dbName = 'metric_care';
+
+$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
+if (!$mysqli) {
+  die('Erreur de connexion à la base de données: ' . mysqli_connect_error());
+}
+
+$i = $mysqli->query("SELECT PersonneId FROM personnes  WHERE AdressMail ='$email'");
+$id = $i->fetch_assoc();
+
+if (!empty($id)) {
+  try {
+    $n = $mysqli->query("SELECT Nom FROM personnes  WHERE PersonneId =" . $id['PersonneId']);
+    $nom = $n->fetch_assoc();
+    $p = $mysqli->query("SELECT Prenom FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
+    $prenom = $p->fetch_assoc();
+    $a = $mysqli->query("SELECT DateDeNaissance FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
+    $age = $a->fetch_assoc();
+    $auth = $mysqli->query("SELECT AuthentificationId from authentificationprimaire WHERE PersonneId=" . $id['PersonneId']);
+    $numero = $auth->fetch_assoc();
+    $e = $mysqli->query("SELECT AdressMail FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
+    $email = $e->fetch_assoc();
+    $pwd = $mysqli->query("SELECT MotDePas FROM logins  WHERE PersonneId=" . $id['PersonneId']);
+    $password = $pwd->fetch_assoc();
+  } catch (PDOException $e) {
+    $erreur = $e->getMessage();
+  }
+} else {
+  echo 'Veuillez vous connecter.';
+}
+?>
 
 
 
-  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
-
-
-    if (!empty($email && $password)){
-      try{
-        $n = $bdd->query("SELECT personnes.Nom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $nom = $n -> fetch();
-        $p = $bdd->query("SELECT personnes.Prenom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $prenom = $p -> fetch();
-        $a = $bdd->query("SELECT personnes.DateDeNaissance FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $age = $a -> fetch();
-        $auth = $bdd->query("SELECT * from personnes, authentificationprimaire, logins where personnes.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $numero = $auth -> fetch();
-      }catch(PDOException $e){
-        $erreur = $e->getMessage();
-      }
-
-
-    }else{
-      echo 'Veuillez vous connecter.';
-    }
-
-
-
-  ?>
 
 
     <header>
@@ -77,9 +91,6 @@
         <div class="Entrée">
           <p><?php echo $nom['Nom']; ?><p>
         </div>
-        <div class="Editer">
-          <p>Éditer<p>
-        </div>
       </div>
       <div class="Prénom">
         <div class="Intitule">
@@ -88,37 +99,24 @@
         <div class="Entrée">
         <p><?php echo $prenom['Prenom']; ?><p>
         </div>
-        <div class="Editer">
-          <p>Éditer<p>
-        </div>
       </div>
-      <div class="Age">
-        <div class="Intitule">
-          <p>Naissance<p>
-        </div>
-        <div class="Prénom">
+      <div class="Prénom">
           <div class="Intitule">
             <p>Prénom<p>
           </div>
           <div class="Entrée">
           <p><?php echo $prenom['Prenom']; ?><p>
           </div>
-          <div class="Editer">
-            <p>Éditer<p>
-          </div>
         </div>
-        <div class="Age">
+      <div class="Age">
           <div class="Intitule">
             <p>Naissance<p>
           </div>
           <div class="Entrée">
           <p><?php echo $age['DateDeNaissance']; ?><p>
           </div>
-          <div class="Editer">
-            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
-          </div>
         </div>
-        <div class="Numéro">
+      <div class="Numéro">
           <div class="Intitule">
             <p>Numéro d'identification<p>
           </div>
@@ -126,45 +124,48 @@
           <p><?php echo $numero['AuthentificationId']; ?><p>
           </div>
         </div>
-        <div class="Email">
+      <div class="Email">
           <div class="Intitule">
             <p>E-mail<p>
           </div>
           <div class="Entrée">
-          <p><?php echo $email; ?><p>
-          </div>
-          <div class="Editer">
-            <p><a href="../../Utilisateur/Editer_Profil/Editer_Profil.PHP">Editer</a><p>
+          <p><?php echo $email['AdressMail']; ?><p>
           </div>
         </div>
-        <div class="MDP">
+      <div class="MDP">
           <div class="Intitule">
             <p>Mot de passe<p>
           </div>
           <div class="Entrée">
-          <p><?php echo $password; ?><p>
+          <p><?php echo $password['MotDePas']; ?><p>
+
           </div>
           <div class="Reinitialiser">
-            <p>Réinitialiser<p>
+            <p><a href="../../Utilisateur/Réinitialiser%20mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
           </div>
         </div>
-        <div class="Tableau">
+      <div class="Tableau">
           <p><a href="../Tableau de bord/Tableau_de_Bord.PHP">◂ Tableau de bord</a><p>
         </div>
-        <div class="Deconnexion">
+      <div class="Deconnexion">
           <p><a href="../../Metric_Care.PHP">Déconnexion</a><p>
         </div>
         <div>
           <img id="Photo" src="Images/photo.jpg" alt="Utilisateur" width="258" height="240">
         </div>
-        <div class="Photo">
+      <div class="Photo">
           <p>Importer une photo<p>
         </div>
-        <div class="Enregistrer">
-        <button onclick="window.location.href = 'Profil.PHP';">Enregistrer</button>
+
+      <div class="Enregistrer">
+        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
         </div>
-        <div class="Supprimer">
-        <button onclick="window.location.href = '../../Utilisateur/Suppression du compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
+      <div class="Supprimer">
+        <button onclick="window.location.href = '../../Utilisateur/Suppression%20du%20compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
+        </div>
+      <div class="Editer">
+        <button onclick="window.location.href = '../../Utilisateur/Editer_Profil/Editer_Profil.PHP';">Editer</button>
+
         </div>
       </main>
       <footer class="Footer">

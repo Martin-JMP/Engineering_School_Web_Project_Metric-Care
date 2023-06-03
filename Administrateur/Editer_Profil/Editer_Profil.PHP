@@ -9,32 +9,24 @@
     <title>Metric Care</title>
   </head>
   <body>
-
-  <?php 
-
-
-  
-
-$id='1';
+<?php
+$email = 'vbaudin@ratp.fr';
+$password = '!icgWdyuwvmcJbcj1';
 
 
-$host = 'localhost'; 
-$username = 'abdelmoad';
-$dbpassword = '123456';
-$dbName = 'metric_care'; 
+$bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
 
-
-
-$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
-
-
-$numero = null;    
-  if (!empty($id)){
+    
+  if (!empty($email && $password)){
     try{
-      $auth = $mysqli-> query("SELECT AuthentificationId from authentificationprimaire where PersonneId =$id");
-      $numero = $auth->fetch_assoc();
-      $e = $mysqli-> query("SELECT AdressMail from personnes where PersonneId =$id");
-      $email = $e->fetch_assoc();
+      $n = $bdd->query("SELECT personnes.Nom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+      $nom = $n -> fetch();
+      $p = $bdd->query("SELECT personnes.Prenom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+      $prenom = $p -> fetch();
+      $a = $bdd->query("SELECT personnes.DateDeNaissance FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+      $age = $a -> fetch();
+      $auth = $bdd->query("SELECT * from personnes, authentificationprimaire, logins where personnes.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+      $numero = $auth -> fetch();
     }catch(PDOException $e){
       $erreur = $e->getMessage();
     }
@@ -46,52 +38,7 @@ $numero = null;
 
 
 
-
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  
-  $nom = $_POST['nom'];
-  $prenom = $_POST['prenom'];
-  $ddn = $_POST['ddn'];
-  
-
-  
-  $erreurs = array(); 
-
-  if (empty($nom)) {
-    $erreurs[] = "Le champ Nom est obligatoire.";
-  }
-
-  if (empty($prenom)) {
-    $erreurs[] = "Le champ Prénom est obligatoire.";
-  }
-
-  if (empty($ddn)) {
-    $erreurs[] = "Le champ Naissance est obligatoire.";
-  }
-
-  
-
-  // Vérifier s'il y a des erreurs de validation
-  if (!empty($erreurs)) {
-    // Afficher les erreurs à l'utilisateur
-    foreach ($erreurs as $erreur) {
-      echo $erreur . "<br>";
-    }
-  } else {
-    // Mettre à jour les données utilisateur dans la base de données ou tout autre système de stockage
-      // Exemple de requête de mise à jour avec MySQLi
-$query = "UPDATE personnes SET Nom = '$nom', Prenom = '$prenom', DateDeNaissance = '$ddn' WHERE PersonneId='$id'";
-$result = mysqli_query($mysqli, $query);
-
-    // Afficher un message de confirmation à l'utilisateur
-    echo "Les données ont été enregistrées avec succès.";
-  }
-}
 ?>
-
-
-
 
     <header>
       <div id="Rectangle_Debut">
@@ -118,49 +65,44 @@ $result = mysqli_query($mysqli, $query);
       <div class="title">
         <p>Edition de profil<p>
       </div>
-      <form method="POST" action="Editer_Profil.php">
-        <div class="Nom">
-          <div class="Intitule">
-            <p>Nom<p>
-          </div>
-          <div class="Entrée">
-            <p><input type="text" id="nom" name="nom" required size="10"><p>
-          </div>
+      <div class="Nom">
+        <div class="Intitule">
+          <p>Nom<p>
         </div>
-        <div class="Prénom">
-          <div class="Intitule">
-            <p>Prénom<p>
-          </div>
-          <div class="Entrée">
-          <p><input type="text" id="prenom" name="prenom" required size="10"><p>
-          </div>
+        <div class="Entrée">
+          <p><input type="text" id="nom" name="nom" required size="10"><p>
         </div>
-        <div class="Age">
-          <div class="Intitule">
-            <p>Naissance<p>
-          </div>
-          <div class="Entrée">
-          <p><input type="date" id="ddn" name="ddn" required size="10"><p>
-          </div>
+      </div>
+      <div class="Prénom">
+        <div class="Intitule">
+          <p>Prénom<p>
         </div>
-        <div class="Email">
-          <div class="Intitule">
-            <p>E-mail<p>
-          </div>
-          <div class="Entrée">
-          <p><p><?php echo $email['AdressMail']; ?><p><p>
-          </div>
+        <div class="Entrée">
+        <p><input type="text" id="prenom" name="prenom" required size="10"><p>
         </div>
-        <div class="Enregistrer">
-          <button type="submit">Enregistrer</button>
+      </div>
+      <div class="Age">
+        <div class="Intitule">
+          <p>Naissance<p>
         </div>
-      </form>
+        <div class="Entrée">
+        <p><input type="text" id="ddn" name="ddn" required size="10"><p>
+        </div>
+      </div>
       <div class="Numéro">
         <div class="Intitule">
           <p>Numéro d'identification<p>
         </div>
         <div class="Entrée">
         <p><?php echo $numero['AuthentificationId']; ?><p>
+        </div>
+      </div>
+      <div class="Email">
+        <div class="Intitule">
+          <p>E-mail<p>
+        </div>
+        <div class="Entrée">
+        <p><input type="text"  id="email" name="email" required size="10"><p>
         </div>
       </div>
       <div class="Tableau">
@@ -171,6 +113,9 @@ $result = mysqli_query($mysqli, $query);
       </div>
       <div class="Photo">
         <p>Importer une photo<p>
+      </div>
+      <div class="Enregistrer">
+      <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
       </div>
     </main>
     <footer class="Footer">

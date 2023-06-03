@@ -10,6 +10,82 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
+  <?php 
+
+
+  
+
+$id='1';
+
+
+$host = 'localhost'; 
+$username = 'abdelmoad';
+$dbpassword = '123456';
+$dbName = 'metric_care'; 
+
+
+$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
+$numero = null;    
+  if (!empty($id)){
+    try{
+      $pwd = $mysqli-> query("SELECT MotDePas from logins where PersonneId =$id");
+      $password = $pwd->fetch_assoc();
+    }catch(PDOException $e){
+      $erreur = $e->getMessage();
+    }
+
+
+  }else{
+    echo 'Veuillez vous connecter.';
+  }
+
+
+
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  
+  $npwd = $_POST['np'];
+  $apwd = $_POST['ap'];
+  $cpwd = $_POST['cp'];
+
+  
+  $erreurs = array(); 
+
+  if (empty($npwd)) {
+    $erreurs[] = "Veuillez saisir le nouveau mot de passe";
+}
+
+if (empty($apwd)) {
+    $erreurs[] = "Veuillez saisir l'ancien mot de passe";
+} elseif ($apwd != $password['MotDePas']) {
+    $erreurs[] = "Mot de passe incorrect";
+}
+
+if (empty($cpwd)) {
+    $erreurs[] = "Veuillez confirmer le mot de passe";
+} elseif ($npwd != $cpwd) {
+    $erreurs[] = "Les mots de passe ne correspondent pas";
+}
+
+if (!empty($erreurs)) {
+    foreach ($erreurs as $erreur) {
+        echo $erreur . "<br>";
+    }
+} else {
+    
+    $query = "UPDATE logins SET MotDePas='$npwd' WHERE PersonneId=$id";
+    $result = mysqli_query($mysqli, $query);
+    if ($result) {
+        echo "Les données ont été enregistrées avec succès.";
+    } else {
+        echo "Une erreur s'est produite lors de l'enregistrement des données.";
+    }
+}
+
+}
+?>
     <header>
       <div id="Rectangle_Debut">
         <nav>
@@ -32,14 +108,28 @@
     </header>
     <main>
       <div class="Profil">
-        <p><a href="../Utilisateur/Profil/Profil.PHP">◂ Profil</a></p>
+        <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Profil.PHP">◂ Profil</a></p>
       </div>
       <div class="main-container">
-            <h1>Réinitialisation du mot de passe</h1>
-            <input type="password" id="AncienMotDePasse" placeholder="Ancien mot de passe" name="fname"><br><br>
-            <input type="password" id="NouveauMotDePasse" placeholder="Nouveau mot de passe" name="fname"><br><br>
-            <input type="password" id="ConfirmerMotDePasse" placeholder="Confirmer votre mot de passe" name="fname"><br><br>
-            <button>Enregistrer</button>
+        <h1>Réinitialisation du mot de passe</h1>
+        <?php
+    if (!empty($erreurs)) {
+      echo '<div class="erreur-container">';
+      foreach ($erreurs as $erreur) {
+        echo '<p>' . $erreur . '</p>';
+      }
+      echo '</div>';
+    }
+    else {
+      echo 'Enregistré avec succès';
+    }
+    ?>
+        <form action="" method="POST">
+          <input type="password" id="AncienMotDePasse" placeholder="Ancien mot de passe" name="ap"><br><br>
+          <input type="password" id="NouveauMotDePasse" placeholder="Nouveau mot de passe" name="np"><br><br>
+          <input type="password" id="ConfirmerMotDePasse" placeholder="Confirmer votre mot de passe" name="cp"><br><br>
+          <button type="submit">Enregistrer</button>
+        </form>
       </div>
     </main>
         <footer class = "Footer">

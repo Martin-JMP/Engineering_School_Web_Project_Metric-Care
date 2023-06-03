@@ -1,9 +1,8 @@
-
 .title {
   position: absolute;
 width: 39%;
-height:  149px;
-left: 500px;
+height: 149px;
+left: 565px;
 top: 40px;
 
 font-family: 'Carme';
@@ -29,7 +28,7 @@ transform: rotate(0.17deg);
   position: absolute;
   width: 170.82px;
   height: 58.48px;
-  left: 670.65px;
+  left: 563.61px;
   top: 140px;
   
   font-family: 'Carme';
@@ -49,7 +48,7 @@ transform: rotate(0.17deg);
   position: absolute;
   width: 147.02px;
   height: 47.55px;
-  left: 670.65px;
+  left: 563.61px;
   top: 180px;
   
   font-family: 'Carme';
@@ -63,27 +62,6 @@ transform: rotate(0.17deg);
   color: #368A86;
   
   transform: rotate(0.17deg);
-}
-.Nom > .Editer{
-  position: absolute;
-width: 147px;
-height: 52px;
-left: 670.65px;
-top: 210px;
-
-font-family: 'Carme';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 29px;
-display: flex;
-align-items: center;
-text-decoration-line: underline;
-
-color: #368A86;
-
-transform: rotate(0.17deg);
-  
 }
 
 .Prénom{
@@ -130,26 +108,97 @@ transform: rotate(0.17deg);
   transform: rotate(0.17deg);
   
 }
-.Prénom > .Editer{
+
+
+.Age{
+  display:block;
+  margin :0;
+}
+.Age > .Intitule{
   position: absolute;
-  width: 147px;
-  height: 52px;
-  left: 457.16px;
-  top: 210px;
+width: 170.82px;
+height: 58.48px;
+left: 670.65px;
+top: 140px;
+
+font-family: 'Carme';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 38px;
+display: flex;
+align-items: center;
+
+color: #82BBBA;
+
+transform: rotate(0.17deg);
+}
+.Age > .Entrée{
+  position: absolute;
+width: 113.94px;
+height: 41.65px;
+left: 670.65px;
+top: 180px;
+
+font-family: 'Carme';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 38px;
+display: flex;
+align-items: center;
+
+color: #368A86;
+
+transform: rotate(0.17deg);
+}
+
+
+
+.Numéro{
+  display:block;
+  margin :0;
+}
+
+.Numéro > .Intitule{
+  position: absolute;
+  width: 372.96px;
+  height: 45.87px;
+  left: 454.18px;
+  top: 250px;
   
   font-family: 'Carme';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 38px;
   display: flex;
   align-items: center;
-  text-decoration-line: underline;
+  
+  color: #82BBBA;
+  
+  transform: rotate(0.17deg);
+}
+.Numéro > .Entrée{
+  position: absolute;
+  width: 385px;
+  height: 62px;
+  left: 454.19px;
+  top: 280px;
+  
+  font-family: 'Carme';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
   
   color: #368A86;
   
   transform: rotate(0.17deg);
 }
+
 .Email{
   display:block;
   margin :0;
@@ -160,7 +209,7 @@ transform: rotate(0.17deg);
   width: 197.92px;
   height: 40.4px;
   left: 454.12px;
-  top: 250px;
+  top: 330px;
   
   font-family: 'Carme';
   font-style: normal;
@@ -180,7 +229,7 @@ transform: rotate(0.17deg);
   width: 480px;
   height: 60px;
   left: 454.18px;
-  top: 280px;
+  top: 360px;
   
   font-family: 'Carme';
   font-style: normal;
@@ -195,26 +244,7 @@ transform: rotate(0.17deg);
   transform: rotate(0.17deg);
 }
 
-.Email > .Editer{
-  position: absolute;
-  width: 147px;
-  height: 52px;
-  left: 454.16px;
-  top: 320px;
-  
-  font-family: 'Carme';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 29px;
-  display: flex;
-  align-items: center;
-  text-decoration-line: underline;
-  
-  color: #368A86;
-  
-  transform: rotate(0.17deg);
-}
+
 
 .MDP{
   display:block;
@@ -226,7 +256,7 @@ transform: rotate(0.17deg);
   width: 223.81px;
   height: 41.32px;
   left: 670.65px;
-  top: 250px;
+  top: 330px;
   
   font-family: 'Carme';
   font-style: normal;
@@ -246,7 +276,7 @@ transform: rotate(0.17deg);
 width: 385px;
 height: 62px;
 left: 670.65px;
-top: 280px;
+top: 360px;
 
 font-family: 'Carme';
 font-style: normal;
@@ -267,7 +297,7 @@ transform: rotate(0.17deg);
   width: 192px;
   height: 52px;
   left: 670.65px;
-  top: 320px;
+  top: 400px;
   
   font-family: 'Carme';
   font-style: normal;
@@ -342,7 +372,7 @@ border: 2px solid #ffffff;
   width: 114.95px;
   height: 28.635px;
   left: 485.18px;
-  top: 380px;
+  top: 460px;
   background: #82BBBA;
   border-radius: 10px;
   text-align: center;
@@ -364,7 +394,7 @@ border: 2px solid #ffffff;
   width: 115px;
   height: 29.15px;
 left: 645.16px;
-top: 380px;
+top: 460px;
 background: #EEEEEE;
 border: 0.5px solid #000000;
 border-radius: 10px;
@@ -380,6 +410,28 @@ line-height: 20px;
 
 color: #368A86;
 
+
+}
+.Editer button{
+  position: absolute;
+  width: 114.95px;
+  height: 28.635px;
+  left: 805.18px;
+  top: 460px;
+  background: #82BBBA;
+  border-radius: 10px;
+  text-align: center;
+  border-style: none;
+  
+  font-family: 'Carme';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  
+  
+  color: #FFFFFF;
+  
 
 }
 a:link{
@@ -417,5 +469,4 @@ a:active{
   color: #36706D;
   
   transform: rotate(0.17deg);
-
 }

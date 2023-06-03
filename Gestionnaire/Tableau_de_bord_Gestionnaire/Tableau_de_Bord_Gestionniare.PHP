@@ -23,9 +23,9 @@
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a>Tableau de bord</a> <!--Gestion des données, gestion des tickets, gestion des contacts-->
-            <a>Forum</a>
-            <a>Profil</a>
+            <a href="Tableau_de_bord_Gestionnaire.PHP">Tableau de bord</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Profil_Gestionnaire/Profil_Gestionnaire.PHP">Profil</a>
           </div>
         </nav>
       </div>
@@ -34,8 +34,8 @@
     <main>
         <div class="main-container">
             <h1>Gestionnaire</h1>
-            <button type="button"  onclick="window.location.href = '../Gestionnaire/Gestion_des_donn%c3%a9es/Gestionnaire_des_donn%c3%a9es.PHP';">Gestion des données</button>
-            <button type="button"  onclick="window.location.href = '../Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP';">Profil</button>
+            <button type="button"  onclick="window.location.href = '../../Gestionnaire/Gestion_des_donn%c3%a9es/Gestionnaire_des_donn%c3%a9es.PHP';">Gestion des données</button>
+            <button type="button"  onclick="window.location.href = '../../Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP';">Profil</button>
         </div>
 
     </main>

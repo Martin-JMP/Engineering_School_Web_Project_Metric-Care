@@ -112,12 +112,13 @@ try {
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Votre nouveau mot de passe';
     $mail->Body    = 'Voici votre mot de passe temporaire : <b> ' . $motdepasspre . ' <br><br>  En cas de problème veuillez répondre à ce mail directement.';
+    $mail->Body = utf8_decode($mail->Body);
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo '<script>showAlert("Message has been sent");</script>';
+    echo '<script>showAlert("Le mail a bien été envoyé");</script>';
 } catch (Exception $e) {
-  echo '<script>showAlert("Message could not be sent. Mailer Error: ' . $mail->ErrorInfo . '");</script>';
+  echo '<script>showAlert("Il y a eu un problème, veuillez réitérer");</script>';
 }}
 else {
   echo '<script>showAlert("Utilisateur introuvable");</script>';

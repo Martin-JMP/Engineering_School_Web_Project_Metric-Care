@@ -37,7 +37,7 @@
         <div>
             <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="100", height="55"> 
             <div class="Langue">
-                <a>🌐Français</a>
+                <a href="Mot_de_passe_oublieA.php">🌐Français</a>
             </div>
         </div>  
     </header>

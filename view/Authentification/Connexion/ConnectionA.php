@@ -81,7 +81,7 @@
               <input type="password" id='password' name="password" placeholder="Password">
           </div>
           <div class="MDP_OUBLIE">
-              <a href = "../Mot_de_passe_oublie/Mot_de_passe_oublie.PHP">Forgot your password ?</a>
+              <a href = "../Mot_de_passe_oublie/Mot_de_passe_oublieA.php">Forgot your password ?</a>
           </div>
           <div class="rectangle-connecter" name="button">
             <button type="submit" name="button">Log in</button>

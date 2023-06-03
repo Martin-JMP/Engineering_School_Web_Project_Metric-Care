@@ -3,7 +3,7 @@
 
 class ConnectionController
 {
-    public function connect()
+    /*public function connect()
     {
         function alert($msg) {
             echo "<script type='text/javascript'>alert('$msg');</script>";
@@ -41,7 +41,7 @@ class ConnectionController
               }
             }
         // Check if the form was submitted
-        /*if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Get the email and password inputs
             $email = $_POST['email'];
             $password = $_POST['password'];
@@ -95,6 +95,6 @@ class ConnectionController
             // Render the initial connection view
             require 'view/Connexion/Connexion.PHP';
         }*/
-    }
 }
+  
 ?>

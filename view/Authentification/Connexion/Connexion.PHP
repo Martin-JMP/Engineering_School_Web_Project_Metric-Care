@@ -15,11 +15,16 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         $bdd = new PDO("mysql:host=localhost;dbname=metric_care","vapr@metric.care","vapr333!");
-        
           if (!empty($email && $password)){
             try{
-              $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
+              /*$method = "aes-256-cbc";
+              $key = "secretkeyofmetriccare";
+              $options = 0;
+              $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));*/
+              $sth = $bdd->query("SELECT logins.MotDePas FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email'");
+              //$sth = implode($bdd->query("SELECT logins.MotDePas FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email'")->fetch());
               $post = $sth->fetch();
+              //$decrypted = openssl_decrypt($sth, $method, $key, $options, $iv);
               if($post){
                 session_start();
                 if ($email == "ad@metric.care"){
@@ -48,7 +53,7 @@
         <div>
             <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="100", height="55"> 
             <div class="Langue">
-                <a>🌐Français</a>
+                <a href="ConnectionA.php">🌐Français</a>
             </div>
         </div>  
     </header>
@@ -62,7 +67,7 @@
               <input type="password" id='password' name="password" placeholder="Mot de passe">
           </div>
           <div class="MDP_OUBLIE">
-              <a>Mot de passe oublié ?</a>
+              <a href="http://localhost/Metric_Care/view/Authentification/Mot_de_passe_oublie/Mot_de_passe_oublie.PHP">Mot de passe oublié ?</a>
           </div>
           <div class="rectangle-connecter" name="button">
             <button type="submit" name="button">Se Connecter</button>
@@ -74,7 +79,7 @@
                 <div><a>compte ?</a></div>
             </div>
             <div class="Inscrivez-vous" href="#">
-                <div><a href="Authentification/Inscription/view/Inscription.PHP">Inscrivez</a></div>
+                <div><a href="http://localhost/Metric_Care/view/Authentification/Inscription/Inscription.PHP">Inscrivez</a></div>
                 <div><a href="http://localhost/Metric_Care/view/Authentification/Inscription/Inscription.PHP">vous</a></div>
             </div>
         </div>

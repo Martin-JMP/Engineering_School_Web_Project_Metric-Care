@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6ecaf84-968e-4433-a622-23026f9dc52c" name="Changes" comment="MVC works" />
+    <list default="true" id="d6ecaf84-968e-4433-a622-23026f9dc52c" name="Changes" comment="English version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/Connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/Inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Authentification/Connexion/Connexion.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/view/Authentification/Connexion/Connexion.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +64,8 @@
       <workItem from="1684741040619" duration="7173000" />
       <workItem from="1685540556619" duration="4403000" />
       <workItem from="1685618505675" duration="4730000" />
+      <workItem from="1685709899953" duration="1434000" />
+      <workItem from="1685807196948" duration="1245000" />
     </task>
     <task id="LOCAL-00001" summary="MVC model works">
       <created>1684694011053</created>
@@ -121,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685637487095</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="MVC works">
+      <created>1685709916469</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685709916469</updated>
+    </task>
+    <task id="LOCAL-00011" summary="English version">
+      <created>1685808468838</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685808468838</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +154,7 @@
     <MESSAGE value="MVC model works" />
     <MESSAGE value="Database changing" />
     <MESSAGE value="MVC works" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVC works" />
+    <MESSAGE value="English version" />
+    <option name="LAST_COMMIT_MESSAGE" value="English version" />
   </component>
 </project>

@@ -31,6 +31,8 @@ $numero = null;
     try{
       $auth = $mysqli-> query("SELECT AuthentificationId from authentificationprimaire where PersonneId =$id");
       $numero = $auth->fetch_assoc();
+      $e = $mysqli-> query("SELECT AdressMail from personnes where PersonneId =$id");
+      $email = $e->fetch_assoc();
     }catch(PDOException $e){
       $erreur = $e->getMessage();
     }
@@ -49,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $nom = $_POST['nom'];
   $prenom = $_POST['prenom'];
   $ddn = $_POST['ddn'];
-  $email = $_POST['email'];
+  
 
   
   $erreurs = array(); 
@@ -66,11 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $erreurs[] = "Le champ Naissance est obligatoire.";
   }
 
-  if (empty($email)) {
-    $erreurs[] = "Le champ E-mail est obligatoire.";
-  } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $erreurs[] = "L'e-mail saisi n'est pas valide.";
-  }
+  
 
   // Vérifier s'il y a des erreurs de validation
   if (!empty($erreurs)) {
@@ -81,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   } else {
     // Mettre à jour les données utilisateur dans la base de données ou tout autre système de stockage
       // Exemple de requête de mise à jour avec MySQLi
-$query = "UPDATE personnes SET Nom = '$nom', Prenom = '$prenom', DateDeNaissance = '$ddn',AdressMail = '$email' WHERE PersonneId='$id'";
+$query = "UPDATE personnes SET Nom = '$nom', Prenom = '$prenom', DateDeNaissance = '$ddn' WHERE PersonneId='$id'";
 $result = mysqli_query($mysqli, $query);
 
     // Afficher un message de confirmation à l'utilisateur
@@ -148,7 +146,7 @@ $result = mysqli_query($mysqli, $query);
             <p>E-mail<p>
           </div>
           <div class="Entrée">
-          <p><input type="text"  id="email" name="email" required size="10"><p>
+          <p><p><?php echo $email['AdressMail']; ?><p><p>
           </div>
         </div>
         <div class="Enregistrer">

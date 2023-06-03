@@ -10,50 +10,54 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
-    <?php
+  <?php
+session_start(); // Démarrer la session
+
+if (isset($_SESSION['email'])) {
+  $email = $_SESSION['email']; // Récupérer la valeur de la variable
+  // Utilisez la variable comme nécessaire dans la page Profil.PHP
+} else {
+  // La variable n'est pas définie
+}
+
+$host = 'localhost';
+$username = 'abdelmoad';
+$dbpassword = '123456';
+$dbName = 'metric_care';
+
+$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
+if (!$mysqli) {
+  die('Erreur de connexion à la base de données: ' . mysqli_connect_error());
+}
+
+$i = $mysqli->query("SELECT PersonneId FROM personnes  WHERE AdressMail ='$email'");
+$id = $i->fetch_assoc();
+
+if (!empty($id)) {
+  try {
+    $n = $mysqli->query("SELECT Nom FROM personnes  WHERE PersonneId =" . $id['PersonneId']);
+    $nom = $n->fetch_assoc();
+    $p = $mysqli->query("SELECT Prenom FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
+    $prenom = $p->fetch_assoc();
+    $a = $mysqli->query("SELECT DateDeNaissance FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
+    $age = $a->fetch_assoc();
+    $auth = $mysqli->query("SELECT AuthentificationId from authentificationprimaire WHERE PersonneId=" . $id['PersonneId']);
+    $numero = $auth->fetch_assoc();
+    $e = $mysqli->query("SELECT AdressMail FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
+    $email = $e->fetch_assoc();
+    $pwd = $mysqli->query("SELECT MotDePas FROM logins  WHERE PersonneId=" . $id['PersonneId']);
+    $password = $pwd->fetch_assoc();
+  } catch (PDOException $e) {
+    $erreur = $e->getMessage();
+  }
+} else {
+  echo 'Veuillez vous connecter.';
+}
+?>
 
 
 
-
- $id='1';
-
-
-
- $host = 'localhost'; 
- $username = 'abdelmoad';
- $dbpassword = '123456';
- $dbName = 'metric_care'; 
- 
- 
- $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
-
-
-    if (!empty($id)){
-      try{
-        $n = $mysqli->query("SELECT Nom FROM personnes  WHERE PersonneId =$id");
-        $nom = $n -> fetch_assoc();
-        $p = $mysqli->query("SELECT Prenom FROM personnes  WHERE PersonneId =$id");
-        $prenom = $p -> fetch_assoc();
-        $a = $mysqli->query("SELECT DateDeNaissance FROM personnes  WHERE PersonneId =$id");
-        $age = $a -> fetch_assoc();
-        $auth = $mysqli->query("SELECT AuthentificationId from authentificationprimaire where PersonneId =$id");
-        $numero = $auth -> fetch_assoc();
-        $e = $mysqli->query("SELECT AdressMail FROM personnes  WHERE PersonneId =$id");
-        $email = $e -> fetch_assoc();
-        $pwd = $mysqli->query("SELECT MotDePas FROM logins  WHERE PersonneId = $id");
-        $password = $pwd -> fetch_assoc();
-      }catch(PDOException $e){
-        $erreur = $e->getMessage();
-      }
-
-
-    }else{
-      echo 'Veuillez vous connecter.';
-    }
-
-
-
-  ?>
 
 
     <header>

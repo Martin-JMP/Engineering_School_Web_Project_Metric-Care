@@ -65,6 +65,7 @@
       </div>
     </header>
     <main>
+
       <div class="title">
         <p>Gestion de profil<p>
       </div>
@@ -118,6 +119,7 @@
         </div>
         <div class="Entrée">
         <p><?php echo $password; ?><p>
+
         </div>
         <div class="Reinitialiser">
           <p><a href="../../Gestionnaire/Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
@@ -159,7 +161,9 @@
           <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
           <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
+
         </div>
       </footer>
     </body>
   </html>
+

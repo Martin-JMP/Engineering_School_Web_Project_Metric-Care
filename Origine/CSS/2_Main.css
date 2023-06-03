@@ -7,21 +7,23 @@
 
 .conteneur-page {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
 body {
     margin: 0;
     padding-bottom: 80px; /* height of the footer */
-    min-height: 100%;
+    min-height: 90%;
     background:#FBFCFA;
     overflow-x: hidden;
 }
 
+
 #MainPageImage{
     position:relative;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 190px;
+
 }
 
 
@@ -30,8 +32,8 @@ body {
     width: 514px;
     height: 100px;
 
-    left: 61.7%;
-    top: 25%;
+    left: 64%;
+    top: 20%;
 
     
     font-family: 'Carme';
@@ -56,7 +58,8 @@ body {
     height: 150px;
 
     left: 61.7%;
-    top: 38%;
+    top: 40%;
+
 
 
     font-family: 'Carme';
@@ -74,7 +77,7 @@ body {
     position: absolute;
     width: 1278px;
     height: 125px;
-    top: 674px;
+    top: 93%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -98,7 +101,7 @@ body {
     position: absolute;
     width: 118px;
     height: 0px;
-    top: 798px;
+    top: 109%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -113,7 +116,7 @@ body {
     width: 1183px;
     height: 75px;
 
-    top: 835px;
+    top: 113%;
 
     left: 50%;
     transform: translateX(-50%);
@@ -346,7 +349,7 @@ body {
     position: absolute;
     width: 400px;
     height: 0px;
-    top: 660px;
+    top: 680px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -361,7 +364,7 @@ body {
     width: 444px;
     height: 218px;
     left: 498px;
-    top: 670px;
+    top: 700px;
 }
 
 #Last_elements {

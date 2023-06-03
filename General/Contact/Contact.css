@@ -43,7 +43,7 @@ input[type="email"] {
     display: block;
     width: 400px;
     padding: 10px;
-    border: 3px solid #000000;
+    border:  1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -54,7 +54,7 @@ input[type="email"] {
     display: block;
     width: 400px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -65,7 +65,7 @@ input[type="password"] {
     display: block;
     width: 400px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -85,7 +85,7 @@ input[type="password"] {
   margin: auto;
 }
 
-.rectangle-connecter a {
+.rectangle-connecter button{
   font-family: 'Carme';
   font-style: normal;
   font-weight: 400;
@@ -93,6 +93,8 @@ input[type="password"] {
   line-height: 1;
   text-align: center;
   color: #FFFFFF;
+  background-color:#82BBBA ;
+  border-color: transparent;
 }
 
 textarea {
@@ -100,7 +102,7 @@ textarea {
   max-width: 100%;
   line-height: 1.5;
   border-radius: 15px;
-  border: 3px solid #000000;
+  border: 1px solid #000000;
 }
 
 .titrebox{

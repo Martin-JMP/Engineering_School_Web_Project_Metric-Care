@@ -23,7 +23,7 @@
           <div class="contenuNav">
           <a>🌐Français</a>
           <a href="../Contact/Contact.PHP">Contact</a>
-            <a href="../FAQ/Page_FAQ.PHP">FAQ</a>
+            <a href="../FAQ/FAQ.PHP">FAQ</a>
             <a href="AboutUs.PHP">Qui sommes nous ?</a>
             <a href="../../Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
@@ -31,6 +31,7 @@
       </div>
     </header>
 
+    
 
     <main>
     
@@ -49,12 +50,21 @@
             pour mettre en place par la suite des solutions.
         </div>
         <div class="Image_boitier">
-            <img id="boitier" src="" alt="Boitier Metric Metro">
+            <img id="boitier" src="../../General/AboutUs/boitier.png" alt="Boitier Metric Metro">
         </div>
       <div class="Nos_Enjeux">
         <a>Nos enjeux</a>
       </div>
-    </div>
+      <div class="Contenu_Enjeux">
+            <a>Les enjeux du boîtier Metric Metro sont portés sur l'étude
+            <br>de la santé de ses utilisateurs, tout en respectant une utilisation
+            <br>simple et accessible. 
+            <br><br>Nous proposons donc un outil de mesure qui vise à améliorer<br>le bien être 
+            ainsi que la santé des conducteurs et conductrices.
+        </div>
+      <div class="Femme_Volant">
+            <img id="conductrice" src="../../General/AboutUs/femme-volant.png" alt="Femme chauffeuse bus">
+      </div>
     <div class="Menu_principal">
       <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
 

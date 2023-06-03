@@ -24,7 +24,9 @@ $dbpassword = '123456';
 $dbName = 'metric_care'; 
 
 
+
 $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
 
 $numero = null;    
   if (!empty($id)){

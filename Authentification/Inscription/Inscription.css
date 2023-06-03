@@ -6,27 +6,13 @@
 }
 
 
-#Logo{
-position: absolute;
-left: 20px;
-top: 15px; }
-
-.Langue a {
+.tot {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    height: 70px;  
-    text-decoration: none;
-    padding-left: 25px;
-    padding-right: 25px;
-    top: 10px;
-    font-family: 'Carme';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
-    color: #36706D;
-}
+    flex-direction: column;
+    margin-top: 150px; /* Adjust the value as needed */
+  }
 
 .Inscription a{
     display: flex;
@@ -76,7 +62,7 @@ input[type="email"] {
     display: block;
     width: 400px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -88,7 +74,7 @@ input[type="password"] {
     display: block;
     width: 400px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -100,7 +86,7 @@ input[type="text"] {
     display: block;
     width: 185px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -113,7 +99,7 @@ input[type="number"] {
     display: block;
     width: 400px;
     padding: 10px;
-    border: 3px solid #000000;
+    border: 1px solid #000000;
     border-radius: 360px;
     font-size: 16px;
     font-family: 'Carme';
@@ -154,7 +140,7 @@ input[type="number"] {
 
 .rectangle-creer {
     position: absolute;
-    top: 580px;
+    top: 650px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;

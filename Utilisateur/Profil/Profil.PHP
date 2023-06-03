@@ -156,6 +156,7 @@ if (!empty($id)) {
       <div class="Photo">
           <p>Importer une photo<p>
         </div>
+
       <div class="Enregistrer">
         <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
         </div>
@@ -164,6 +165,7 @@ if (!empty($id)) {
         </div>
       <div class="Editer">
         <button onclick="window.location.href = '../../Utilisateur/Editer_Profil/Editer_Profil.PHP';">Editer</button>
+
         </div>
       </main>
       <footer class="Footer">

@@ -21,8 +21,8 @@ $id='1';
 
 
 $host = 'localhost'; 
-$username = 'abdelmoad';
-$dbpassword = '123456';
+$username = 'valentyna';
+$dbpassword = '12345';
 $dbName = 'metric_care'; 
 
 

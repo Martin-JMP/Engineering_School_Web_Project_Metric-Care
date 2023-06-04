@@ -5,13 +5,6 @@
   font-weight: 400;
 }
 
-body {
-  margin: 0;
-  padding-top: 80px; /* height of the footer */
-  min-height: 100%;
-  background:#FBFCFA;
-  overflow-x: hidden;
-}
 #retour {
   font-family: 'Carme';
   src: url('../fonts/carme-regular.ttf') format('truetype');
@@ -31,6 +24,8 @@ body {
     color: #36706D;
     text-align: center;
     font-size: 50px;
+    margin-top: -5px;
+    margin-bottom: 50px;
 }
 
 #Question {
@@ -50,6 +45,7 @@ body {
     font-style: normal;
     font-weight: 400;
     padding: 15px;
+    padding-bottom: 30px;
 }
 
 #oui {
@@ -215,5 +211,3 @@ body {
   background-color: #EEEEEE ;
   color : #36706D ;
 }
-
-

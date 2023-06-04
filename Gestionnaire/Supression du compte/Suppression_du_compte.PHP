@@ -49,7 +49,7 @@
           </div>
           <br><br>
           <input type="password" id="CodeSupp" name="cs" placeholder="Code de suppression"><br><br>
-          <button>Valider</button>
+          <button type="submit" name = "valider">Valider</button>
       </form>
     </div>
     </main>
@@ -122,6 +122,46 @@ try {
 } catch (Exception $e) {
   echo '<script>Alert("Il y a eu un problème, veuillez réitérer");</script>';
 }}
+else {
+  echo '<script>Alert("Utilisateur introuvable");</script>';
+}
+}
+else{
+
+}}
+
+if (isset($_POST['valider'])) {
+  $codesuprri =$_POST['cs']
+  $motpass=$_POST['ps']
+  $numid = $_POST['na']
+  $email=$_POST['mail'];
+  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+
+  if (!empty($mail)&&!empty($cs)&&!empty($ps)&&!empty($na)){
+      $sth = $bdd->query("SELECT personnes.PersonneId FROM personnes, authentificationprimaire, logins  WHERE personnes.PersonneId = authentificationprimaire.PersonneId and personnes.PersonneId = logins.PersonneId and personnes.AdressMail = '$email' and authentificationprimaire.AuthentificationId = '$numid' and logins.MotDePas = '$motpass' and logins.codesuprr = '$codesuprri'");
+      $post = $sth->fetch();
+      if($post){
+        $queryLogins = "DELETE FROM logins WHERE PersonneId = :personneid";
+        $stmtLogins = $bdd->prepare($queryLogins);
+        $stmtLogins->bindValue(':personneid', $post['PersonneId']);
+        $stmtLogins->execute();
+
+        // Suppression dans la table authentificationprimaire
+        $queryAuthentification = "DELETE FROM authentificationprimaire WHERE PersonneId = :personneid";
+        $stmtAuthentification = $bdd->prepare($queryAuthentification);
+        $stmtAuthentification->bindValue(':personneid', $post['PersonneId']);
+        $stmtAuthentification->execute();
+
+        // Suppression dans la table personnes
+        $queryPersonnes = "DELETE FROM personnes WHERE PersonneId = :personneid";
+        $stmtPersonnes = $bdd->prepare($queryPersonnes);
+        $stmtPersonnes->bindValue(':personneid', $post['PersonneId']);
+        $stmtPersonnes->execute();
+        echo '<script>Alert("");</script>';
+
+        header('Location: http://localhost/Metric_Care/Metric_Care.PHP');
+            
+}
 else {
   echo '<script>Alert("Utilisateur introuvable");</script>';
 }

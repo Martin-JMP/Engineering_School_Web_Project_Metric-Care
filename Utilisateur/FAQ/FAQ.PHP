@@ -40,7 +40,7 @@
     <div class="mx-auto w-4/5">
       <details id = "details-question" class="border-2 rounded-lg mb-4 mt-4 m-auto">
         <summary id ="Summary" class = "text-xl cursor-pointer p-3">Comment ça marche ?</summary>
-       <div class = "bg-gray-100 text-lg"> Metric Metro est un boitier composé de 4 capteurs qui mesurent la température, la qualité de l’air, le niveau sonore et le rythme cardiaque. les données sont ensuite envoyés à notre site via Bluetooth pour que vous puissiez les consulter en temps réels.</div>
+       <div class = "bg-gray-100 text-lg"> Metric Metro est un boitier composé de 4 capteurs qui mesurent la température, la qualité de l’air, le niveau sonore et le rythme cardiaque.<br> Les données sont ensuite envoyés à notre site via Bluetooth pour que vous puissiez les consulter en temps réels.</div>
       </details>
       <details id = "details-question" class="border-2 rounded-lg mb-4 m-auto">
         <summary id ="Summary" class = "text-xl cursor-pointer p-3">Quels est l'objectif de notre produit ?</summary>
@@ -51,20 +51,8 @@
         <div class = "bg-gray-100 text-lg"> Oui, les informations fournies par Metric Metro sont confidentielles et protégées par la loi sur la protection des données.</div>
       </details>
       <details id = "details-question" class="border-2 rounded-lg mb-4 m-auto">
-        <summary id ="Summary" class = "text-xl cursor-pointer p-3">Boitiers et capteurs</summary>
-        <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
-      </details>
-      <details id = "details-question" class="border-2 rounded-lg mb-4 m-auto">
-        <summary id ="Summary" class = "text-xl cursor-pointer p-3">Boitiers et capteurs</summary>
-        <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
-      </details>
-      <details id = "details-question" class="border-2 rounded-lg mb-4 m-auto">
-        <summary id ="Summary" class = "text-xl cursor-pointer p-3">Boitiers et capteurs</summary>
-        <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
-      </details>
-      <details id = "details-question" class="border-2 rounded-lg mb-4 m-auto">
-        <summary id ="Summary" class = "text-xl cursor-pointer p-3">Boitiers et capteurs</summary>
-        <div class = "bg-gray-100 text-lg"> arà_harnarapoirna</div>
+        <summary id ="Summary" class = "text-xl cursor-pointer p-3">Comment créer un compte ?</summary>
+        <div class = "bg-gray-100 text-lg"> Pour créer un compte vous devez, dans un premier temps, être membre d'une entreprise cliente et dans un second temps, posséder un boitier avec son numéro d'identification </div>
       </details>
     </div>
 

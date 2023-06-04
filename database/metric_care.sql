@@ -117,6 +117,15 @@ INSERT INTO `logins` (`LoginId`, `MotDePas`, `PersonneId`) VALUES
 (11, 'gest82non!', 11),
 (12, 'gest83non', 12);
 
+CREATE TABLE IF NOT EXISTS photos (
+  id INT AUTO_INCREMENT NOT NULL  PRIMARY KEY,
+  photoName VARCHAR(255),
+  image BLOB,
+  `PersonneId` int(11) NOT NULL, 
+  FOREIGN KEY (PersonneId) REFERENCES Personnes(PersonneId) 
+    ON DELETE CASCADE 
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 CREATE TABLE IF NOT EXISTS `tickets` (
   `TicketId` int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   `PersonneId` int(11) NOT NULL,

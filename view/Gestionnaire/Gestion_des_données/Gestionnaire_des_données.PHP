@@ -29,7 +29,49 @@
       </div>
     </header>
     <main>
-    
+    <?php
+      $host = 'localhost';
+      $username = 'vapr@metric.care';
+      $password = 'vapr333!';
+      $dbname = 'metric_care';
+      
+      $connection = mysqli_connect($host, $username, $password, $dbname);
+      
+      // Check connection
+      if (!$connection) {
+          die("Connection failed: " . mysqli_connect_error());
+      }
+      
+      // Step 2: Execute the SQL query
+      $query = "select personnes.PersonneId, personnes.Prenom, personnes.Nom, personnes.AdressMail, personnes.Poids, personnes.Taille, personnes.Fonction, authentificationprimaire.AuthentificationId from personnes, authentificationprimaire where personnes.PersonneId = authentificationprimaire.PersonneId";
+      $result = mysqli_query($connection, $query);
+      
+      // Step 3: Fetch the results
+      if (mysqli_num_rows($result) > 0) {
+          // Step 4: Display the results in a table
+          echo "<table>";
+          echo "<tr><th>PersonneId</th><th>Prenom</th><th>Nom</th><th>AdressMail</th><th>Poids</th><th>Taille</th><th>Fonction</th><th>AuthentificationId</th></tr>";
+      
+          while ($row = mysqli_fetch_assoc($result)) {
+              echo "<tr>";
+              echo "<td>".$row['PersonneId']."</td>";
+              echo "<td>".$row['Prenom']."</td>";
+              echo "<td>".$row['Nom']."</td>";
+              echo "<td>".$row['AdressMail']."</td>";
+              echo "<td>".$row['Poids']."</td>";
+              echo "<td>".$row['Taille']."</td>";
+              echo "<td>".$row['Fonction']."</td>";
+              echo "<td>".$row['AuthentificationId']."</td>";
+              echo "</tr>";
+          }
+          echo "</table>";
+      } else {
+          echo "No results found.";
+      }
+      
+      // Close the database connection
+      mysqli_close($connection);
+    ?>
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

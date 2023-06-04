@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Ticket/Ticket.css">
+    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Ticket/ticket.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
     <script>  
@@ -37,7 +37,7 @@
     </header>
     <main>
     
-    <a id = "retour">◄ Tableau de bord</a>
+    <a href = "../../Utilisateur/Tableau de bord/Tableau_de_bord.PHP" id = "retour">◄ Tableau de bord</a>
 
     <p id = "Signaler"> Signaler un incident </p>
 
@@ -55,8 +55,8 @@
 
     <select id = "Choix">
     <group>
-    <option value="arv">Choisir un incident</option>
-    <option value="gin">Le boitier ne communique plus les informations</option>
+    <option value="incident">Choisir un incident</option>
+    <option value="pas_communiquant">Le boitier ne communique plus les informations</option>
     </group>
     </select>
 
@@ -82,9 +82,9 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a>CGU</a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
       </div>
     </footer>

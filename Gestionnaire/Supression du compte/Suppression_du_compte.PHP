@@ -12,90 +12,10 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
-  <?php 
-
-
-  
-
-$id='1';
-
-
-$host = 'localhost'; 
-$username = 'valentyna';
-$dbpassword = '12345';
-$dbName = 'metric_care'; 
-
-
-$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
-
-$numero = null;    
-  if (!empty($id)){
-    try{
-      $pwd = $mysqli-> query("SELECT MotDePas from logins where PersonneId =$id");
-      $password = $pwd->fetch_assoc();
-      $e = $mysqli-> query("SELECT AdressMail from personnes where PersonneId =$id");
-      $email = $e->fetch_assoc();
-      $n = $mysqli-> query("SELECT AuthentificationId from authentificationprimaire where PersonneId =$id");
-      $auth = $e->fetch_assoc();
-    }catch(PDOException $e){
-      $erreur = $e->getMessage();
-    }
-
-
-  }else{
-    echo 'Veuillez vous connecter.';
-  }
 
 
 
 
-
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  
-  $ps = $_POST['ps'];
-  $na = $_POST['na'];
-  $em = $_POST['em'];
-  $cs = $_POST['cs'];
-
-  
-  $erreurs = array(); 
-
-if (empty($ps)) {
-    $erreurs[] = "Veuillez saisir le mot de passe";
-} elseif ($ps != $password['MotDePas']) {
-    $erreurs[] = "Mot de passe incorrect";
-}
-
-if (empty($na)) {
-  $erreurs[] = "Veuillez saisir le numéro d'authentification";
-} elseif ($na != $auth['AuthentificationId']) {
-  $erreurs[] = "Numéro d'authentification incorrect";
-}
-
-if (empty($em)) {
-  $erreurs[] = "Veuillez saisir l'email";
-} elseif ($na != $auth['AdressMail']) {
-  $erreurs[] = "Email incorrect";
-}
-
-if (!empty($erreurs)) {
-    foreach ($erreurs as $erreur) {
-        echo $erreur . "<br>";
-    }
-} else {
-    
-    $query = "UPDATE logins SET MotDePas='$npwd' WHERE PersonneId=$id";
-    $result = mysqli_query($mysqli, $query);
-    if ($result) {
-        echo "Les données ont été enregistrées avec succès.";
-    } else {
-        echo "Une erreur s'est produite lors de l'enregistrement des données.";
-    }
-}
-
-}
-?>
     <header>
       <div id="Rectangle_Debut">
         <nav>
@@ -118,13 +38,13 @@ if (!empty($erreurs)) {
 
         <div class="main-container">
         <h1>Suppression du compte</h1>
-        <form action="" method="POST">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
           <input type="input" id="NumAuth" name="na" placeholder="Numéro d'identification"><br><br>
           <input type="password" id="MotDePasse" name="ps" placeholder="Mot de passe"><br><br>
           <div class="email-container">
-              <input type="input" id="Email" name="em" placeholder="Email">
+              <input type="email" id="Email" name="mail" placeholder="Email" value="<?php if(isset($mail)){ echo $mail; }?>" required>
               <div class="SendCode">
-                  <button>Code</button>
+                  <button type="submit" name ="CodeSub">Code</button>
               </div>
           </div>
           <br><br>
@@ -132,8 +52,84 @@ if (!empty($erreurs)) {
           <button>Valider</button>
       </form>
     </div>
-
     </main>
+
+    <?php 
+      require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\Exception.php';
+      require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\PHPMailer.php';
+      require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\SMTP.php';
+      
+      //Import PHPMailer classes into the global namespace
+      //These must be at the top of your script, not inside a function
+      use PHPMailer\PHPMailer\PHPMailer;
+      use PHPMailer\PHPMailer\SMTP;
+      use PHPMailer\PHPMailer\Exception;
+  
+      //Create an instance; passing `true` enables exceptions
+  $mail = new PHPMailer(true);
+
+function generercode() {
+  $caracteres = '0123456789';
+  $code = '';
+  
+  for ($i = 0; $i < 8; $i++) {
+      $indexAleatoire = mt_rand(0, strlen($caracteres) - 1);
+      $code .= $caracteres[$indexAleatoire];
+  }
+  
+  return $code;
+}
+
+if (isset($_POST['CodeSub'])) {
+  $email=$_POST['mail'];
+  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+
+  if (!empty($mail)){
+      $sth = $bdd->query("SELECT personnes.PersonneId FROM personnes  WHERE personnes.AdressMail = '$email'");
+      $post = $sth->fetch();
+      if($post){
+        $codeds = generercode();
+        $query = "UPDATE logins SET codesuprr = :codesuprtest WHERE PersonneId = :personneid";
+        $stmt = $bdd->prepare($query);
+        $stmt->bindValue(':codesuprtest', $codeds);
+        $stmt->bindValue(':personneid', $post['PersonneId']);
+        $stmt->execute();
+            
+try {
+    //Server settings
+    $mail->SMTPDebug = false;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'metric.care@gmail.com';                     //SMTP username
+    $mail->Password   = 'vhtkppwvnatnckgb';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail->setFrom('metric.care@gmail.com', 'Metric Care');
+    $mail->addAddress($_POST['mail']);     //Add a recipient
+
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'Code Suppression';
+    $mail->Body    = 'Voici votre code pour la suppression du compte : <b> ' . $codeds . ' <br><br>  En cas de problème veuillez répondre à ce mail directement.';
+    $mail->Body = utf8_decode($mail->Body);
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo '<script>showAlert("Le mail a bien été envoyé");</script>';
+} catch (Exception $e) {
+  echo '<script>Alert("Il y a eu un problème, veuillez réitérer");</script>';
+}}
+else {
+  echo '<script>Alert("Utilisateur introuvable");</script>';
+}
+}
+else{
+
+}}
+?>
         <footer class = "Footer">
           <div class = "contenu_Footer">
             <div class="Footer_contenu_Logo">

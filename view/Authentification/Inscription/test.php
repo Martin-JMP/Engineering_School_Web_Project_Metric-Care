@@ -19,14 +19,20 @@
           $prenom = $_POST['prenom'];
           $nom = $_POST['nom'];
           $identification = $_POST['identification'];
+          $h = md5($password);
+          // $method = "aes-256-cbc";
+          // $key = "secretkeyofmetriccare";
+          // $options = 0;
+          // $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
           
+
           $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
           $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE authentificationprimaire.AuthentificationId = '$identification' and authentificationprimaire.PersonneId IS NULL");
           $sthf = $sth->fetch();
           if (!empty($email && $password && $password1 && $prenom && $nom && $identification) && !empty($sthf) == 1){
               try{
                   $ins1 = $bdd->query("INSERT INTO personnes(Prenom, Nom, Adressmail) VALUES ('$prenom','$nom','$email')");
-                  $ins2 = $bdd->query("INSERT INTO logins(PersonneId, MotDePas) VALUES((SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email'),'$password')");
+                  $ins2 = $bdd->query("INSERT INTO logins(PersonneId, MotDePas) VALUES((SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email'),'$h')");
                   $upd = $bdd->query("UPDATE authentificationprimaire SET authentificationprimaire.PersonneId = (SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email') where authentificationprimaire.AuthentificationId = $identification"); 
                   $post1 = $ins1->fetch();
                   $post2 = $ins2->fetch();

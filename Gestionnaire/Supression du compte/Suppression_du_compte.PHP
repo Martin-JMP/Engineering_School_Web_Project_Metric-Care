@@ -10,6 +10,11 @@
 
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
+    <script>
+    function showAlert(message) {
+      alert(message);
+    }
+  </script>
   </head>
   <body>
 
@@ -39,8 +44,8 @@
         <div class="main-container">
         <h1>Suppression du compte</h1>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-          <input type="input" id="NumAuth" name="na" placeholder="Numéro d'identification"><br><br>
-          <input type="password" id="MotDePasse" name="ps" placeholder="Mot de passe"><br><br>
+          <input type="input" id="NumAuth" name="na" placeholder="Numéro d'identification" value="<?php if(isset($na)){ echo $na; }?>" required><br><br>
+          <input type="password" id="MotDePasse" name="ps" placeholder="Mot de passe" value="<?php if(isset($ps)){ echo $ps; }?>" required><br><br>
           <div class="email-container">
               <input type="email" id="Email" name="mail" placeholder="Email" value="<?php if(isset($mail)){ echo $mail; }?>" required>
               <div class="SendCode">
@@ -120,10 +125,10 @@ try {
     $mail->send();
     echo '<script>showAlert("Le mail a bien été envoyé");</script>';
 } catch (Exception $e) {
-  echo '<script>Alert("Il y a eu un problème, veuillez réitérer");</script>';
+  echo '<script>showAlert("Il y a eu un problème, veuillez réitérer");</script>';
 }}
 else {
-  echo '<script>Alert("Utilisateur introuvable");</script>';
+  echo '<script>showAlert("Utilisateur introuvable");</script>';
 }
 }
 else{
@@ -131,14 +136,14 @@ else{
 }}
 
 if (isset($_POST['valider'])) {
-  $codesuprri =$_POST['cs']
-  $motpass=$_POST['ps']
-  $numid = $_POST['na']
+  $codesuprri =$_POST['cs'];
+  $motpass=$_POST['ps'];
+  $numid = $_POST['na'];
   $email=$_POST['mail'];
   $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
 
-  if (!empty($mail)&&!empty($cs)&&!empty($ps)&&!empty($na)){
-      $sth = $bdd->query("SELECT personnes.PersonneId FROM personnes, authentificationprimaire, logins  WHERE personnes.PersonneId = authentificationprimaire.PersonneId and personnes.PersonneId = logins.PersonneId and personnes.AdressMail = '$email' and authentificationprimaire.AuthentificationId = '$numid' and logins.MotDePas = '$motpass' and logins.codesuprr = '$codesuprri'");
+  if (!empty($codesuprri)){
+      $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes, authentificationprimaire  WHERE logins.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId and personnes.AdressMail = '$email' and authentificationprimaire.AuthentificationId = '$numid' and logins.MotDePas = '$motpass' and logins.codesuprr = '$codesuprri'");
       $post = $sth->fetch();
       if($post){
         $queryLogins = "DELETE FROM logins WHERE PersonneId = :personneid";
@@ -157,17 +162,19 @@ if (isset($_POST['valider'])) {
         $stmtPersonnes = $bdd->prepare($queryPersonnes);
         $stmtPersonnes->bindValue(':personneid', $post['PersonneId']);
         $stmtPersonnes->execute();
-        echo '<script>Alert("");</script>';
 
-        header('Location: http://localhost/Metric_Care/Metric_Care.PHP');
+
+        echo '<script>showAlert("ton compte est suprrimée");</script>';
+        
+        header('Location: http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP');
             
 }
 else {
-  echo '<script>Alert("Utilisateur introuvable");</script>';
+  echo '<script>showAlert("Utilisateur introuvable");</script>';
 }
 }
 else{
-
+echo '<script>showAlert("Erreur");</script>';
 }}
 ?>
         <footer class = "Footer">

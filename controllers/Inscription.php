@@ -1,7 +1,7 @@
 <?php
 class InscriptionController
 {
-    public function inscripte()
+    /*public function inscripte()
     {   
         function alert($msg) {
             echo "<script type='text/javascript'>alert('$msg');</script>";
@@ -21,10 +21,10 @@ class InscriptionController
             $sthf = $sth->fetch();
             if ((!empty($email && $password && $prenom && $nom && $identification && $cgu)) && $password == $password1 && !empty($sthf)){
                 try{
-                    $ins1 = $bdd->query("INSERT INTO personnes(Prenom, Nom, Adressmail) VALUES ('$prenom','$nom','$email')");
-                    $ins2 = $bdd->query("INSERT INTO logins(PersonneId, MotDePas) VALUES((SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email'),'$password')");
-                    $upd = $bdd->query("UPDATE authentificationprimaire SET authentificationprimaire.PersonneId = (SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email') where authentificationprimaire.AuthentificationId = $identification"); 
-                    header('Location: http://localhost/Metric_Care/Authentification/Connexion/Connexion.PHP');
+                    //$ins1 = $bdd->query("INSERT INTO personnes(Prenom, Nom, Adressmail) VALUES ('$prenom','$nom','$email')");
+                    //$ins2 = $bdd->query("INSERT INTO logins(PersonneId, MotDePas) VALUES((SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email'),'$password')");
+                    //$upd = $bdd->query("UPDATE authentificationprimaire SET authentificationprimaire.PersonneId = (SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email') where authentificationprimaire.AuthentificationId = $identification"); 
+                    header('Location: ../Connexion/Connexion.PHP');
                     exit();
                 }catch(PDOException $e){
                     $erreur = $e->getMessage();
@@ -35,5 +35,5 @@ class InscriptionController
                 alert("Le problème de la création. Veuillez remplir les champs obligatoires");
             }
         }
-    }
+    }*/
 }

@@ -10,44 +10,50 @@
   </head>
   <body>
     <?php
-        if (isset($_POST['button'])){
+       if (isset($_POST['button'])){
 
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-            $password1 = $_POST['password1'];
-            $prenom = $_POST['prenom'];
-            $nom = $_POST['nom'];
-            $identification = $_POST['identification'];
+         $email = $_POST['email'];
+         $password = $_POST['password'];
+         $password1 = $_POST['password1'];
+         $prenom = $_POST['prenom'];
+         $nom = $_POST['nom'];
+         $identification = $_POST['identification'];
+         $h = md5($password);
+         // $method = "aes-256-cbc";
+         // $key = "secretkeyofmetriccare";
+         // $options = 0;
+         // $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
+         
 
-            $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
-            $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE authentificationprimaire.AuthentificationId = '$identification'");
-            $sthf = $sth->fetch();
-            if (!empty($email && $password && $prenom && $nom && $identification) /*&& $password == $password1 && $sthf.rowCount() > 0*/){
-                try{
-                    $ins1 = $bdd->query("INSERT INTO personnes(Prenom, Nom, Adressmail) VALUES ('$prenom','$nom','$email')");
-                    $ins2 = $bdd->query("INSERT INTO logins(PersonneId, MotDePas) VALUES((SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email'),'$password')");
-                    $upd = $bdd->query("UPDATE authentificationprimaire SET authentificationprimaire.PersonneId = (SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email') where authentificationprimaire.AuthentificationId = $identification"); 
-                    $post1 = $ins1->fetch();
-                    $post2 = $ins2->fetch();
-                    $pos3 = $upd->fetch();
-                    if($post1 && $post2 && $upd){
-                      
-                      header('Location: ../Connexion/Connexion.PHP');
-                      exit();
-              
-                    }
-                    else{
-                      echo "Le problème de la création";
-                    }
-                }catch(PDOException $e){
-                    $erreur = $e->getMessage();
-                }
+         $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+         $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE authentificationprimaire.AuthentificationId = '$identification' and authentificationprimaire.PersonneId IS NULL");
+         $sthf = $sth->fetch();
+         if (!empty($email && $password && $password1 && $prenom && $nom && $identification) && !empty($sthf) == 1){
+             try{
+                 $ins1 = $bdd->query("INSERT INTO personnes(Prenom, Nom, Adressmail) VALUES ('$prenom','$nom','$email')");
+                 $ins2 = $bdd->query("INSERT INTO logins(PersonneId, MotDePas) VALUES((SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email'),'$h')");
+                 $upd = $bdd->query("UPDATE authentificationprimaire SET authentificationprimaire.PersonneId = (SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email') where authentificationprimaire.AuthentificationId = $identification"); 
+                 $post1 = $ins1->fetch();
+                 $post2 = $ins2->fetch();
+                 $pos3 = $upd->fetch();
+                 //if($post1 && $post2 && $post3){
+                   
+                   header('Location: ../Connexion/Connexion.PHP');
+                 //   exit();
+           
+                 // }
+                 // else{
+                 //   echo "Le problème de la création";
+                 // }
+             }catch(PDOException $e){
+                 $erreur = $e->getMessage();
+             }
 
-            }
-            else{
-                echo 'Veuillez remplir les champs obligatoires';
-            }
-        }
+         }
+         // else{
+         //     echo 'Veuillez remplir les champs obligatoires';
+         // }
+     }
     ?>
     <header>
       <div id="Rectangle_Debut">

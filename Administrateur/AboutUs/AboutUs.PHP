@@ -67,7 +67,7 @@
             <img id="conductrice" src="../../Utilisateur/AboutUs/femme-volant.png" alt="Femme chauffeuse bus">
       </div>
     <div class="Menu_principal">
-      <a href="../Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionnaire.PHP"> ◂ Tableau de bord</a>
+      <a href="../Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.PHP"> ◂ Tableau de bord</a>
 
 
     </main>
@@ -83,8 +83,8 @@
         </div>
         <div class="Footer_contenu_texte">
         <div class="Footer_contenu_texte">
-          <a href="../../Gestionnaire/CGU/CGU.PHP">CGU</a> <a>|</a>
-          <a href="../../Gestionnaire/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="../../Administrateur/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../Adlinistrateur/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
           <a >Préférences des cookies</a>
         </div>
         </div>

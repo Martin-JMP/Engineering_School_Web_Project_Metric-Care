@@ -12,6 +12,7 @@
 
 
     <style>
+      /* COOKIES */
       .modal {
         display: flex;
         align-items: center;
@@ -27,9 +28,65 @@
 
       .modal-content {
         background-color: #fff;
-        padding: 20px;
+        padding-top: 5px;
+        padding-left: 20px;
         border-radius: 5px;
-        max-width: 400px;
+        max-width: 800px; /* Ajustez la largeur souhaitée */
+        max-height: 500px; /* Ajustez la hauteur souhaitée */
+        width: 80%; /* Ajoutez cette ligne pour ajuster la largeur en pourcentage */
+        height: 60%; /* Ajoutez cette ligne pour ajuster la hauteur en pourcentage */
+        font-family: 'Carme';
+        color: #545454;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .modal-content button {
+        align-self: flex-end;
+        margin-right: 20px;
+        margin-top: 320px;
+
+        padding: 5px 5px; /* Ajustez les valeurs pour augmenter la taille du bouton */
+        font-size: 16px; /* Ajustez la taille de la police du bouton si nécessaire */
+
+        background-color: transparent;
+        border: 2px solid #82BBBA;
+        border-radius: 12px;
+        box-sizing: border-box;
+        color: #82BBBA;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-weight: 600;
+        line-height: normal;
+        min-height: 40px;
+        min-width: 0;
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 17%;
+        will-change: transform;
+      }
+
+      .modal-content button:disabled {
+        pointer-events: none;
+      }
+
+      .modal-content button:hover {
+        color: #fff;
+        background-color: #82BBBA;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+
+      .modal-content button:active {
+        box-shadow: none;
+        transform: translateY(0);
       }
     </style>
 
@@ -75,9 +132,16 @@
         <br>C'est notre boîtier Metric Care qui va permettre une étude<br>de différents facteur,
         pour mettre en place par la suite des solutions.
       </div>
+
+      <!-- Images qui bougent -->
       <div class="Capteur_CO2">
         <img id="Capteur_CO2" src="../../General/AboutUs/capteur_CO2.png" alt="Capteur de CO2">
       </div>
+      <!--<div class="Capteur_Micro_Particules">
+        <img id="Capteur_CO2" src="../../General/AboutUs/capteur_micro_particules.png" alt="Capteur de micro particules">
+      </div>
+      -->
+
       <div class="Image_boitier">
         <img id="boitier" src="../../General/AboutUs/boitier.png" alt="Boitier Metric Metro">
       </div>
@@ -119,9 +183,8 @@
   </body>
 </html>
 
-
-
 <script>
+    //capteur co2
     const imageBoitier = document.getElementById("boitier");
     const capteurCO2 = document.getElementById("Capteur_CO2");
 
@@ -134,6 +197,20 @@
         capteurCO2.style.opacity = "0";
         capteurCO2.style.transform = "translateY(30%)";
     });
+
+    //capteur micro particules
+    /*const imageBoitier = document.getElementById("boitier");
+    const capteurCO2 = document.getElementById("Capteur_Micro_Particules");
+
+    imageBoitier.addEventListener("mouseover", () => {
+        capteurCO2.style.opacity = "1";
+        capteurCO2.style.transform = "translate(30%, 30%)";
+    });
+
+    imageBoitier.addEventListener("mouseout", () => {
+        capteurCO2.style.opacity = "0";
+        capteurCO2.style.transform = "translateY(-30%)";
+    }); */
 </script>
 
 
@@ -153,12 +230,22 @@
     modalContent.classList.add('modal-content');
 
     var heading = document.createElement('h2');
-    heading.textContent = 'Préférences des cookies';
+    heading.textContent = 'Gérez vos préférences';
+
+    var acceptButton = document.createElement('acceptbutton');
+    acceptButton.classList.add('acceptbutton');
+    acceptButton.textContent = 'Tout accepter';
+    
+    var rejectButton = document.createElement('rejectbutton');
+    rejectButton.classList.add('rejectbutton');
+    rejectButton.textContent = 'Tout refuser';
 
     var closeButton = document.createElement('button');
-    closeButton.textContent = 'Fermer';
+    closeButton.textContent = 'Sauvegarder';
 
     modalContent.appendChild(heading);
+    modalContent.appendChild(acceptButton);
+    modalContent.appendChild(rejectButton);
     modalContent.appendChild(closeButton);
     modal.appendChild(modalContent);
 

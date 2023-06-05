@@ -127,20 +127,20 @@ body {
 
 .Femme_Volant img{
     position: relative;
-    top: 20%; /* Ajustez cette valeur selon vos besoins */
-    left: 63%; /* Ajustez cette valeur selon vos besoins */
-    width: 30%; /* Ajustez cette valeur selon vos besoins */
-    height: 30%; /* Ajustez cette valeur selon vos besoins */
+    top: 20%; 
+    left: 63%; 
+    width: 30%; 
+    height: 30%;
 
     transform: translateY(-32%); /* Déplace l'image de 30% vers le haut */
 }
 
 .Capteur_CO2 img {
     position: absolute;
-    top: 30%; /* Ajustez cette valeur selon vos besoins */
-    left: 85%; /* Ajustez cette valeur selon vos besoins */
-    width: 7%; /* Ajustez cette valeur selon vos besoins */
-    height: 14%; /* Ajustez cette valeur selon vos besoins */
+    top: 30%; 
+    left: 85%; 
+    width: 7%;
+    height: 14%;
 
     transform: translateY(30%); /* Déplace l'image de 30% vers le haut */
 
@@ -153,3 +153,22 @@ body {
     opacity: 1; /* Révèle l'image lors du survol de l'Image_boitier ou du Capteur_CO2 */
     transform: translate(30%, -30%); /* Déplace l'image en diagonale vers la droite et le haut */
 }
+
+/*.Capteur_Micro_Particules img {
+    position: absolute;
+    top: 30%;
+    left: 85%;
+    width: 7%;
+    height: 14%;
+
+    /*transform: translateY(-30%); 
+
+    transition: transform 0.8s;
+    opacity: 0;
+}
+
+.Image_boitier:hover + .Capteur_CO2,
+.Capteur_CO2:hover {
+    opacity: 1; 
+    /*transform: translate(30%, 30%); 
+} */

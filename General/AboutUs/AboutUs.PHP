@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <link rel="stylesheet" type="text/css" href="../../General/CGU/CGU.css">
-    <link rel="stylesheet" type="text/css" href="../../General/AboutUs/AboutUs.css">
+    <link rel="stylesheet" type="text/css" href="AboutUs.css">
 
     <title>Metric Care</title>
     <link rel="icon" href="Origine/Images/Logo.png">
@@ -135,7 +135,7 @@
 
       <!-- Images qui bougent -->
       <div class="Capteur_CO2">
-        <img id="Capteur_CO2" src="../../General/AboutUs/capteur_CO2.png" alt="Capteur de CO2">
+        <img id="Capteur_CO2" src="../../General/AboutUs/capteur_CO2.png" alt="Capteur de CO2" height= 14%  width= 7%>
       </div>
       <!--<div class="Capteur_Micro_Particules">
         <img id="Capteur_CO2" src="../../General/AboutUs/capteur_micro_particules.png" alt="Capteur de micro particules">

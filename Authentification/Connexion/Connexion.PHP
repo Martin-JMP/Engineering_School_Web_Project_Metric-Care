@@ -17,7 +17,7 @@
         $password = $_POST['password'];
         
         
-        $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
+        $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
         
           if (!empty($email && $password)){
             try{
@@ -29,7 +29,7 @@
                 session_start();
                 $_SESSION['email'] = $email;
 
-                header('Location: http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP');
+                header('Location: http://localhost/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP');
 
                 exit();
         

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Carme';
+    src: url('../fonts/carme-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+body {
+    margin: 0;
+    /* height of the footer */
+    padding-top: 80px;
+    min-height: 100%;
+    background:#FBFCFA;
+    overflow-x: hidden;
+    
+    
+  }
+
+
+
+.titre{
+    position: relative;
+    top: 3%;
+    left: 17%;
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 24px;
+    display: flex;
+    
+    color: #36706D;
+}
+
+.Rectangle_CGU {
+    position: relative;
+    width: 812px;
+    height: 1700px;
+    left: 27%;
+    top: -5px;
+
+    align-items: center;
+  
+
+    background: #F5F5F5;
+}
+
+.Contenu_CGU a{
+    position: relative;
+    width:  500px;
+    height: 772px;
+    
+    top: 80px;
+
+    align-items: center;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+
+    color: #000000;
+    
+  
+}
+
+.Menu_principal a{
+    position: absolute;
+    width: 314px;
+    height: 52px;
+    left: 25px;
+    top: 88px;
+
+    font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #36706D;
+
+    text-decoration: none; /*cette instruction permet que le texte ne soit pas souligné même avec un lien*/
+}

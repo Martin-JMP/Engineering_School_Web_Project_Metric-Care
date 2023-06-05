@@ -19,21 +19,19 @@ if (isset($_SESSION['email'])) {
     
 }
 
-$host = 'localhost';
-$username = 'abdelmoad';
-$dbpassword = '123456';
-$dbName = 'metric_care';
 
-$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
+$mysqli = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
 
 if (!$mysqli) {
     die('Erreur de connexion à la base de données: ' . mysqli_connect_error());
 }
 
 $i = $mysqli->query("SELECT PersonneId FROM personnes  WHERE AdressMail ='$email'");
-$id = $i->fetch_assoc();
+$id = $i->fetch();
 
 if (!empty($id)) {
+
     try {
         $n = $mysqli->query("SELECT Nom FROM personnes  WHERE PersonneId =" . $id['PersonneId']);
         $nom = $n->fetch_assoc();
@@ -50,6 +48,7 @@ if (!empty($id)) {
         $query = "SELECT 'image' FROM photos WHERE PersonneId=" . $id['PersonneId'];
         $result = mysqli_query($mysqli, $query);
         $row = mysqli_fetch_assoc($result);
+
 
         $imageData = $row['image'];
 
@@ -100,61 +99,47 @@ if (!empty($id)) {
         <div class="Entrée">
             <p><?php echo $prenom['Prenom']; ?><p>
         </div>
-    </div>
-    <div class="Prénom">
-        <div class="Intitule">
-            <p>Prénom<p>
-        </div>
-        <div class="Entrée">
-            <p><?php echo $prenom['Prenom']; ?><p>
-        </div>
-    </div>
-    <div class="Age">
-        <div class="Intitule">
+  </div>
+
+
+      <div class="Age">
+          <div class="Intitule">
             <p>Naissance<p>
+          </div>
+          <div class="Entrée">
+          <p><?php echo $age['DateDeNaissance']; ?><p>
+          </div>
         </div>
-        <div class="Entrée">
-            <p><?php echo $age['DateDeNaissance']; ?><p>
-        </div>
-    </div>
-    <div class="Numéro">
-        <div class="Intitule">
+      <div class="Numéro">
+          <div class="Intitule">
             <p>Numéro d'identification<p>
+          </div>
+          <div class="Entrée">
+          <p><?php echo $numero['AuthentificationId']; ?><p>
+          </div>
         </div>
-        <div class="Entrée">
-            <p><?php echo $numero['AuthentificationId']; ?><p>
-        </div>
-    </div>
-    <div class="Email">
+      
+      <div class="Email">
         <div class="Intitule">
             <p>E-mail<p>
         </div>
         <div class="Entrée">
             <p><?php echo $email['AdressMail']; ?><p>
         </div>
-<<<<<<< HEAD
     </div>
+
     <div class="MDP">
         <div class="Intitule">
             <p>Mot de passe<p>
-=======
+      </div>  
 
-      <div class="Enregistrer">
-        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
->>>>>>> b1b2640860f3f1cc3871e7bccb1f1f76cd2ee0cf
-        </div>
         <div class="Entrée">
             <p><?php echo $password['MotDePas']; ?><p>
         </div>
-<<<<<<< HEAD
+
         <div class="Reinitialiser">
             <p><a href="../../Utilisateur/Réinitialiser%20mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
-=======
-      <div class="Editer">
-        <button onclick="window.location.href = '../../Utilisateur/Editer_Profil/Editer_Profil.PHP';">Editer</button>
-
->>>>>>> b1b2640860f3f1cc3871e7bccb1f1f76cd2ee0cf
-        </div>
+        </div>      
     </div>
     <div class="Tableau">
         <p><a href="../Tableau de bord/Tableau_de_Bord.PHP">◂ Tableau de bord</a><p>

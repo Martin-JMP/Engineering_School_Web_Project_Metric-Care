@@ -40,7 +40,7 @@
             <a>Mot de passe oublié</a>
         </div>
         <div class="MDP_nouveau">
-            <a>Nous vous enverrons un e-mail contenant un mot de passe provisoir :</a>
+            <a>Nous vous enverrons un e-mail contenant un mot de passe provisoire :</a>
         </div>
         <div class="container">
             <input type="email" placeholder="Email" name="mail" value="<?php if(isset($mail)){ echo $mail; }?>" required><br></br>

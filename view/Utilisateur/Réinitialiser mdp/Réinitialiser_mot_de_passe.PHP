@@ -141,19 +141,21 @@ if (!empty($erreurs)) {
       </div>
     </main>
         <footer class = "Footer">
-          <div class = "contenu_Footer">
-            <div class="Footer_contenu_Logo">
-              <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
-              <p>Metric Care © 2023 - Tous droits réservés</p>
-              <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-              <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
-            </div>
-            <div class="Footer_contenu_texte">
-          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
-          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
-          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
+      <div class = "contenu_Footer">
+        <div class="Footer_contenu_Logo">
+          <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
+          <p>Metric Care © 2023 - Tous droits réservés</p>
+          <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+          <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
-          </div>
-        </footer>
+        <div class="Footer_contenu_texte">
+        <div class="Footer_contenu_texte">
+          <a href="../../Utilisateur/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../Utilisateur/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a >Préférences des cookies</a>
+        </div>
+        </div>
+      </div>
+    </footer>
     </body>
   </html>

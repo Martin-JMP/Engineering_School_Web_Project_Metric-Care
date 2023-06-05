@@ -20,17 +20,17 @@
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
-            <a href="Gestionnaire_des_donneesA.php">🌐Français</a>
+            <a href="Gestionnaire_des_données.PHP">🌐English</a>
             <a>Contact</a>
             <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="../AboutUs/AboutUs.PHP">About us</a>
+            <a>Deconnection</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
-      <h1>Les utilisateurs du système</h1>
+      <h1>System users</h1>
     <?php
       $host = 'localhost';
       $username = 'martin';
@@ -52,17 +52,15 @@
       if (mysqli_num_rows($result) > 0) {
           // Step 4: Display the results in a table
           echo "<table>";
-          echo "<tr><th>PersonneId</th><th>Prenom</th><th>Nom</th><th>AdressMail</th><th>Poids</th><th>Taille</th><th>Fonction</th><th>AuthentificationId</th></tr>";
+          echo "<tr><th>PersonId</th><th>Name</th><th>Surname</th><th>eMail</th><th>Weight</th><th>Height</th><th>Function</th><th>AuthentificationId</th></tr>";
       
           while ($row = mysqli_fetch_assoc($result)) {
               echo "<tr>";
-              echo "<td>".$row['PersonneId']."</td>";
+              echo "<td>".$row['PersonId']."</td>";
               echo "<td>".$row['Prenom']."</td>";
               echo "<td>".$row['Nom']."</td>";
               echo "<td>".$row['AdressMail']."</td>";
               echo "<td>".$row['Poids']."</td>";
-              echo "<td>".$row['Taille']."</td>";
-              echo "<td>".$row['Fonction']."</td>";
               echo "<td>".$row['AuthentificationId']."</td>";
               echo "</tr>";
           }
@@ -79,14 +77,14 @@
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
           <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
-          <p>Metric Care © 2023 - Tous droits réservés</p>
+          <p>Metric Care © 2023 - All rights reserved</p>
           <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a href="General/CGU/CGU.PHP">CGU</a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../AboutUs/AboutUs.PHP">About us</a> <a>|</a>
+          <a>Cookie preferences</a>
         </div>
       </div>
     </footer>

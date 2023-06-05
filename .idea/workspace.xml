@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d6ecaf84-968e-4433-a622-23026f9dc52c" name="Changes" comment="English version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/Inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/view/Authentification/Inscription/Inscription.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/metric_care.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/metric_care.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Administrateur/Gestion_des_utilisateurs/Gestion_des_utilisateurs.PHP" beforeDir="false" afterPath="$PROJECT_DIR$/view/Administrateur/Gestion_des_utilisateurs/Gestion_des_utilisateurs.PHP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Administrateur/Gestion_des_utilisateurs/Gestion_des_utilisateurs.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/Administrateur/Gestion_des_utilisateurs/Gestion_des_utilisateurs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Authentification/Connexion/hashtest.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Authentification/Connexion/hashtest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +65,7 @@
       <workItem from="1685618505675" duration="4730000" />
       <workItem from="1685709899953" duration="1434000" />
       <workItem from="1685807196948" duration="1968000" />
+      <workItem from="1685950381791" duration="3285000" />
     </task>
     <task id="LOCAL-00001" summary="MVC model works">
       <created>1684694011053</created>
@@ -148,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685810617146</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="English version">
+      <created>1685951136187</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685951136187</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

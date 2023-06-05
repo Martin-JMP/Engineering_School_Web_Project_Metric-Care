@@ -72,11 +72,11 @@ if (!empty($id)) {
             </div>
             <div class="contenuNav">
                 <a>🌐Français</a>
-                <a href="../Tableau_de_bord_Admin/Tableau_de_bord_Admin.PHP">Tableau de bord</a>
-                <a href ="../FAQ/FAQ.PHP">FAQ</a>
-                <a href ="../Forum/Forum.PHP">Forum</a>
-                <a href ="../Ticket/Ticket.PHP">Ticket</a>
-                <a href ="Profil_Gestionnaire.PHP">Profil</a>
+                <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Gestionnaire_des_utilisateurs/Gestion_des_utilisateur.PHP">Gestion des utilisateurs</a>
+            <a href ="../Profil/Profil.PHP">Profil</a>
             </div>
         </nav>
     </div>

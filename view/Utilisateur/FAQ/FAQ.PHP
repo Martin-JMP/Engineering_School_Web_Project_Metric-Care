@@ -19,7 +19,7 @@
             <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
             <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
-          </div>
+          </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
             <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
@@ -66,9 +66,11 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a>CGU</a> <a>|</a>
-          <a>À propos</a> <a>|</a>
-          <a>Préférences des cookies</a>
+        <div class="Footer_contenu_texte">
+          <a href="../../Utilisateur/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../../Utilisateur/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a >Préférences des cookies</a>
+        </div>
         </div>
       </div>
     </footer>

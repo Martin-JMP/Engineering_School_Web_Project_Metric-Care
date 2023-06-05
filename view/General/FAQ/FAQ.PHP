@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
     <link rel="stylesheet" type="text/css" href="../../Utilisateur/FAQ/FAQ.css">
+    <link rel="stylesheet" type="text/css" href="../../General/CGU/CGU.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -54,7 +55,9 @@
         <div class = "bg-gray-100 text-lg"> Pour créer un compte vous devez, dans un premier temps, être membre d'une entreprise cliente et dans un second temps, posséder un boitier avec son numéro d'identification </div>
       </details>
     </div>
-
+    <div class="Menu_principal">
+        <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
+      </div>
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

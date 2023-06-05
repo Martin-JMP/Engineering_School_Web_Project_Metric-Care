@@ -10,7 +10,6 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
-
   <?php
 session_start(); 
 
@@ -21,6 +20,7 @@ if (isset($_SESSION['email'])) {
 }
 
 $host = 'localhost';
+
 $username = 'valentyna';
 $dbpassword = '12345';
 $dbName = 'metric_care';
@@ -55,7 +55,6 @@ if (!empty($id)) {
         $imageData = $row['image'];
 
     } catch (PDOException $e) {
-
         $erreur = $e->getMessage();
     }
 } else {
@@ -74,19 +73,17 @@ if (!empty($id)) {
             </div>
             <div class="contenuNav">
                 <a>🌐Français</a>
-                <a href="../Tableau_de_bord_Gestionnaire/Tableau_de_bord_Gestionnaire.PHP">Tableau de bord</a>
+                <a href="../Tableau_de_bord_Gestionnaire.PHP/Tableau_de_bord_Gestionnaire.PHP">Tableau de bord</a>
                 <a href ="../FAQ/FAQ.PHP">FAQ</a>
                 <a href ="../Forum/Forum.PHP">Forum</a>
                 <a href ="../Ticket/Ticket.PHP">Ticket</a>
                 <a href ="Profil_Gestionnaire.PHP">Profil</a>
             </div>
         </nav>
-
     </div>
 </header>
 <main>
     <div class="title">
-
         <p>Gestion de profil<p>
     </div>
     <div class="Nom">
@@ -142,9 +139,7 @@ if (!empty($id)) {
             <p>Mot de passe<p>
         </div>
         <div class="Entrée">
-
             <p><?php echo $password['MotDePas']; ?><p>
-
         </div>
         <div class="Reinitialiser">
             <p><a href="../Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
@@ -187,9 +182,7 @@ if (!empty($id)) {
           <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
           <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
-
         </div>
       </footer>
     </body>
   </html>
-

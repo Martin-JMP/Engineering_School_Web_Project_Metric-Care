@@ -28,10 +28,8 @@ $username = 'abdelmoad';
 $dbpassword = '123456';
 $dbName = 'metric_care';
 
-
 $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
 
-<<<<<<< HEAD
 if (!$mysqli) {
     die('Erreur de connexion à la base de données: ' . mysqli_connect_error());
 }
@@ -39,8 +37,6 @@ if (!$mysqli) {
 $i = $mysqli->query("SELECT PersonneId FROM personnes  WHERE AdressMail ='$email'");
 $id = $i->fetch_assoc();
 
-=======
->>>>>>> b1b2640860f3f1cc3871e7bccb1f1f76cd2ee0cf
 
 $numero = null;    
   if (!empty($id)){
@@ -97,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $query = "UPDATE personnes SET Nom = '$nom', Prenom = '$prenom', DateDeNaissance = '$ddn' WHERE PersonneId={$id['PersonneId']}";
 $result = mysqli_query($mysqli, $query);
 
-    
+    // Afficher un message de confirmation à l'utilisateur
     echo "Les données ont été enregistrées avec succès.";
   }
 }

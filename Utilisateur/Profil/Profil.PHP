@@ -11,12 +11,13 @@
 </head>
 <body>
 <?php
-session_start(); 
+session_start(); // Démarrer la session
 
 if (isset($_SESSION['email'])) {
-    $email = $_SESSION['email']; 
+    $email = $_SESSION['email']; // Récupérer la valeur de la variable
+    // Utilisez la variable comme nécessaire dans la page Profil.PHP
 } else {
-    
+    // La variable n'est pas définie
 }
 
 $host = 'localhost';
@@ -128,28 +129,16 @@ if (!empty($id)) {
         <div class="Entrée">
             <p><?php echo $email['AdressMail']; ?><p>
         </div>
-<<<<<<< HEAD
     </div>
     <div class="MDP">
         <div class="Intitule">
             <p>Mot de passe<p>
-=======
-
-      <div class="Enregistrer">
-        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
->>>>>>> b1b2640860f3f1cc3871e7bccb1f1f76cd2ee0cf
         </div>
         <div class="Entrée">
             <p><?php echo $password['MotDePas']; ?><p>
         </div>
-<<<<<<< HEAD
         <div class="Reinitialiser">
             <p><a href="../../Utilisateur/Réinitialiser%20mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
-=======
-      <div class="Editer">
-        <button onclick="window.location.href = '../../Utilisateur/Editer_Profil/Editer_Profil.PHP';">Editer</button>
-
->>>>>>> b1b2640860f3f1cc3871e7bccb1f1f76cd2ee0cf
         </div>
     </div>
     <div class="Tableau">
@@ -160,7 +149,7 @@ if (!empty($id)) {
     </div>
     <div class='Photo'>
         <?php
-        
+        // Affichage de l'image si elle est disponible
         if (!empty($imageData)) {
             echo '<img src="data:image/jpeg;base64,' . base64_encode($imageData) . '" alt="Photo de profil">';
         }

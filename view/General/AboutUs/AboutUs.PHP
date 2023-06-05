@@ -99,7 +99,7 @@
         <nav>
           <div>
             <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
-            <a href="view/Metric_Care.php">
+            <a href="../../Metric_Care.php">
               <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
             </a>
             <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">

@@ -23,11 +23,10 @@
           </div>
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
-            <a href ="../FAQ/FAQ.PHP">FAQ</a>
-            <a href ="../Forum/Forum.PHP">Forum</a>
-            <a href ="../Ticket/Ticket.PHP">Ticket</a>
-            <a href ="../Profil/Profil.PHP">Profil</a>
+            <a href="Contact.PHP">Contact</a>
+            <a href="../FAQ/FAQ.PHP">FAQ</a>
+            <a href="../AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
+            <a href="../../Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
         </nav>
       </div>

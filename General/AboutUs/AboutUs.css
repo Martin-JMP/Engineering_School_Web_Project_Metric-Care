@@ -135,7 +135,7 @@ body {
     transform: translateY(-32%); /* Déplace l'image de 30% vers le haut */
 }
 
-.Capteur_CO2 img {
+.Capteur_CO2 img{
     position: absolute;
     top: 30%; 
     left: 85%; 

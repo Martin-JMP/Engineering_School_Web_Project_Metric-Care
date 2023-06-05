@@ -101,11 +101,6 @@
                 <div><a href="../Inscription/Inscription.PHP">vous</a></div>
             </div>
         </div>
-<<<<<<< HEAD
-=======
-    <div class="Menu_principal">
-        <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
->>>>>>> 3a657c94c7f7418ca913c4766150dcea7e1bd7ae
       </div>
     </main>
 

@@ -52,7 +52,7 @@
       </details>
       <details id = "details-question" class="border-2 rounded-lg mb-4 m-auto">
         <summary id ="Summary" class = "text-xl cursor-pointer p-3">Comment créer un compte ?</summary>
-        <div class = "bg-gray-100 text-lg"> Pour créer un compte vous devez, dans un premier temps, être membre d'une entreprise cliente et dans un second temps, posséder un boitier avec son numéro d'identification </div>
+        <div class = "bg-gray-100 text-lg"> Pour créer un compte vous devez, dans un premier temps, être membre d'une entreprise cliente et dans un second temps, posséder un boitier avec son numéro d'identification. Vous pourrez ensuite procéder à la création de votre compte. </div>
       </details>
     </div>
 

@@ -69,9 +69,9 @@
         </div>
         <div class="Footer_contenu_texte">
         <div class="Footer_contenu_texte">
-          <a href="../../Administrateur/CGU/CGU.PHP">CGU</a> <a>|</a>
-          <a href="../../Administrateur/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
-          <a >Préférences des cookies</a>
+          <a href="../CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="../AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="">Préférences des cookies</a> 
         </div>
         </div>
       </div>

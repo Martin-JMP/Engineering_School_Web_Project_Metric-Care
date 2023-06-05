@@ -21,7 +21,7 @@ if (isset($_SESSION['email'])) {
 }
 
 $host = 'localhost';
-$username = 'velentyna';
+$username = 'valentyna';
 $dbpassword = '12345';
 $dbName = 'metric_care';
 

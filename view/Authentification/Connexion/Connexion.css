@@ -104,7 +104,7 @@ input[type="password"] {
     border-color: transparent;
 }
 
-.Pas_compte {
+.Pas_compte{
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -113,7 +113,7 @@ input[type="password"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 580px; /* décalage de 10 pixels */
+    top: 600px; /* décalage de 10 pixels */
 }
 
 .Inscrivez-vous {

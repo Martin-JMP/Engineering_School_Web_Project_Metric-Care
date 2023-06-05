@@ -9,51 +9,75 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
-    <?php
-       if (isset($_POST['button'])){
+  <?php
+      function alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+      }
+        if (isset($_POST['button'])){
 
-         $email = $_POST['email'];
-         $password = $_POST['password'];
-         $password1 = $_POST['password1'];
-         $prenom = $_POST['prenom'];
-         $nom = $_POST['nom'];
-         $identification = $_POST['identification'];
-         $h = md5($password);
-         // $method = "aes-256-cbc";
-         // $key = "secretkeyofmetriccare";
-         // $options = 0;
-         // $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
-         
+          $email = $_POST['email'];
+          $password = $_POST['password'];
+          $password1 = $_POST['password1'];
+          $prenom = $_POST['prenom'];
+          $nom = $_POST['nom'];
+          $identification = $_POST['identification'];
+          //$cgu = $_GET['cgu'];
+          $h = md5($password);
+          // $method = "aes-256-cbc";
+          // $key = "secretkeyofmetriccare";
+          // $options = 0;
+          // $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
+          if (strlen($nom) < 2){
+            alert("Please enter your last name. It should be at least 2 characters long.");
+          }
+          if (strlen($prenom) < 3){
+            alert("Please enter your name. It should be at least 3 characters long.");
+          }
+          if (!strpos($email, "@")) {
+            alert("Please enter your valid email."); 
+          }
+          if ($identification < 100000 || $identification > 1000000){
+            alert("Please enter a valid six-digit identification number.");
+          }
+          if ($password1 === "") {
+            alert("Please confirm your password.");
+          }
+          if ($password != $password1) {
+            alert("Your passwords are not the same. Please verify it.");
+          }
+          // if (empty($cgu)) {
+          //   alert("Please accept the terms and conditions.");
+          // }
 
-         $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
-         $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE authentificationprimaire.AuthentificationId = '$identification' and authentificationprimaire.PersonneId IS NULL");
-         $sthf = $sth->fetch();
-         if (!empty($email && $password && $password1 && $prenom && $nom && $identification) && !empty($sthf) == 1){
-             try{
-                 $ins1 = $bdd->query("INSERT INTO personnes(Prenom, Nom, Adressmail) VALUES ('$prenom','$nom','$email')");
-                 $ins2 = $bdd->query("INSERT INTO logins(PersonneId, MotDePas) VALUES((SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email'),'$h')");
-                 $upd = $bdd->query("UPDATE authentificationprimaire SET authentificationprimaire.PersonneId = (SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email') where authentificationprimaire.AuthentificationId = $identification"); 
-                 $post1 = $ins1->fetch();
-                 $post2 = $ins2->fetch();
-                 $pos3 = $upd->fetch();
-                 //if($post1 && $post2 && $post3){
-                   
-                   header('Location: ../Connexion/Connexion.PHP');
-                 //   exit();
-           
-                 // }
-                 // else{
-                 //   echo "Le problème de la création";
-                 // }
-             }catch(PDOException $e){
-                 $erreur = $e->getMessage();
-             }
+          $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+          $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE authentificationprimaire.AuthentificationId = '$identification' and authentificationprimaire.PersonneId IS NULL");
+          $sthf = $sth->fetch();
+          if (!empty($email && $password && $password1 && $prenom && $nom && $identification) && !empty($sthf) == 1){
+              try{
+                  $ins1 = $bdd->query("INSERT INTO personnes(Prenom, Nom, Adressmail) VALUES ('$prenom','$nom','$email')");
+                  $ins2 = $bdd->query("INSERT INTO logins(PersonneId, MotDePas) VALUES((SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email'),'$h')");
+                  $upd = $bdd->query("UPDATE authentificationprimaire SET authentificationprimaire.PersonneId = (SELECT personnes.PersonneId FROM personnes where personnes.AdressMail = '$email') where authentificationprimaire.AuthentificationId = $identification"); 
+                  $post1 = $ins1->fetch();
+                  $post2 = $ins2->fetch();
+                  $pos3 = $upd->fetch();
+                  //if($post1 && $post2 && $post3){
+                    
+                    header('Location: ../Connexion/Connexion.PHP');
+                  //   exit();
+            
+                  // }
+                  // else{
+                  //   echo "Le problème de la création";
+                  // }
+              }catch(PDOException $e){
+                  $erreur = $e->getMessage();
+              }
 
-         }
-         // else{
-         //     echo 'Veuillez remplir les champs obligatoires';
-         // }
-     }
+          }
+          // else{
+          //     echo 'Veuillez remplir les champs obligatoires';
+          // }
+      }
     ?>
     <header>
       <div id="Rectangle_Debut">
@@ -105,11 +129,12 @@
             </div>
         
             <div class="rectangle-creer">
-            <button type="submit" name="button">Create my account</button>
+            <button type="submit" name="button" id="inscription-form">Create my account</button>
             </div>
         </div>
         </form>
     </div>
+    <script src="Inscription.js"></script>
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

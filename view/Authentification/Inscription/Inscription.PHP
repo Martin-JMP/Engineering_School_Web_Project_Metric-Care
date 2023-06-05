@@ -11,6 +11,9 @@
   <body>
   
     <?php
+      function alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+      }
         if (isset($_POST['button'])){
 
           $email = $_POST['email'];
@@ -19,12 +22,33 @@
           $prenom = $_POST['prenom'];
           $nom = $_POST['nom'];
           $identification = $_POST['identification'];
+          //$cgu = $_GET['cgu'];
           $h = md5($password);
           // $method = "aes-256-cbc";
           // $key = "secretkeyofmetriccare";
           // $options = 0;
           // $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
-          
+          if (strlen($nom) < 2){
+            alert("Please enter your last name. It should be at least 2 characters long.");
+          }
+          if (strlen($prenom) < 3){
+            alert("Please enter your name. It should be at least 3 characters long.");
+          }
+          if (!strpos($email, "@")) {
+            alert("Please enter your valid email."); 
+          }
+          if ($identification < 100000 || $identification > 1000000){
+            alert("Please enter a valid six-digit identification number.");
+          }
+          if ($password1 === "") {
+            alert("Please confirm your password.");
+          }
+          if ($password != $password1) {
+            alert("Your passwords are not the same. Please verify it.");
+          }
+          // if (empty($cgu)) {
+          //   alert("Please accept the terms and conditions.");
+          // }
 
           $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
           $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE authentificationprimaire.AuthentificationId = '$identification' and authentificationprimaire.PersonneId IS NULL");

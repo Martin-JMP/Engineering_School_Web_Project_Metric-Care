@@ -65,9 +65,4 @@ document.getElementById("inscription-form").addEventListener("submit", function(
         // Display an error message or highlight the checkbox
         alert("Please accept the terms and conditions.");
     }
-
-    if (isValid) {
-        // Proceed with form submission
-        event.target.submit();
-    }
 });

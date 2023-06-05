@@ -17,16 +17,19 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         $bdd = new PDO("mysql:host=localhost;dbname=metric_care","vapr@metric.care","vapr333!");
+        // $method = "aes-256-cbc";
+        // $key = "secretkeyofmetriccare";
+        // $options = 0;
+        // $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
           if (!empty($email && $password)){
             try{
-              /*$method = "aes-256-cbc";
-              $key = "secretkeyofmetriccare";
-              $options = 0;
-              $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));*/
-              $sth = $bdd->query("SELECT logins.MotDePas FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email'");
-              //$sth = implode($bdd->query("SELECT logins.MotDePas FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email'")->fetch());
+              $h = md5($password);
+              $sth = $bdd->query("SELECT * FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$h'");
+              ///$sth1 = implode($bdd->query("SELECT logins.MotDePas FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email'")->fetch());
+              
               $post = $sth->fetch();
-              //$decrypted = openssl_decrypt($sth, $method, $key, $options, $iv);
+              //$decrypted = openssl_decrypt($sth1, $method, $key, $options, $iv);
+
               if($post){
                 session_start();
                 if ($email == "ad@metric.care"){

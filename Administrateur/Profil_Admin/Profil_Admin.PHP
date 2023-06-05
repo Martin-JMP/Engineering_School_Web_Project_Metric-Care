@@ -20,8 +20,8 @@ if (isset($_SESSION['email'])) {
 }
 
 $host = 'localhost';
-$username = 'abdelmoad';
-$dbpassword = '123456';
+$username = 'valentyna';
+$dbpassword = '12345';
 $dbName = 'metric_care';
 
 $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
@@ -162,9 +162,6 @@ if (!empty($id)) {
 </div>
 <div class="Enregistrer">
     <button onclick="window.location.href = '../../Administrateur/Editer_Profil/Editer_Profil.PHP';">Editer</button>
-</div>
-<div class="Supprimer">
-    <button onclick="window.location.href = '../../Administrateur/Suppresion_du_compte/Suppression_du_compte_administrateur.php';">Supprimer le compte</button>
 </div>
 </main>
       <footer class="Footer">

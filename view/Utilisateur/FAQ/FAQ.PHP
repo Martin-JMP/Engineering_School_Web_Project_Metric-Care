@@ -54,6 +54,10 @@
         <summary id ="Summary" class = "text-xl cursor-pointer p-3">Comment créer un compte ?</summary>
         <div class = "bg-gray-100 text-lg"> Pour créer un compte vous devez, dans un premier temps, être membre d'une entreprise cliente et dans un second temps, posséder un boitier avec son numéro d'identification. Vous pourrez ensuite procéder à la création de votre compte. </div>
       </details>
+      <details id = "details-question" class="border-2 rounded-lg mb-4 m-auto">
+        <summary id ="Summary" class = "text-xl cursor-pointer p-3">Comment connecter son boitier à son compte ?</summary>
+        <div class = "bg-gray-100 text-lg"> Le boitier communique directement les données qu'il prélève vers notre site. Lors de votre connexion vous indiquez l'identifiant du boitier en question, cela permet alors d'afficher vos données une fois que vous êtes connecté. </div>
+      </details>
     </div>
 
     </main>

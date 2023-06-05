@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="Contact.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="../../General/CGU/CGU.css">
     <title>Metric Care</title>
     <link rel="icon" href="Origine/Images/Logo.png">
   </head>
@@ -110,6 +111,9 @@ else{
 }
 
 ?>
+      <div class="Menu_principal">
+        <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
+      </div>
 
     </main>
     <footer class = "Footer">

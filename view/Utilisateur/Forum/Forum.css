@@ -111,3 +111,117 @@
 .searchbar-clear-icon {
   margin-right: 12px
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #36706D;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: #36706D;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.conteneur {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  /* cacher certaines colonnes sur les petits écrans */
+  table th:nth-child(3),
+  table td:nth-child(3) {
+      display: flex;
+  }
+}
+
+h1 {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-around;
+  align-items: center;
+  color: #36706D;
+  font-family: "roboto", sans-serif;
+  padding: 2rem;
+}
+
+form {
+  font-size: 1.2em;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+label[for="user"] {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+label[for="message"] {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+label[for="titre"] {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea#message {
+  width: 50%;
+  height: 150px;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+textarea#message1 {
+  width: 700px;
+  height: 80px;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+textarea#titre {
+  width: 330px;
+  height: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+.vide {
+  height: 60px;
+}

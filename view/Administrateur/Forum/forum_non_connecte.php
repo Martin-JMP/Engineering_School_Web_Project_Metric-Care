@@ -22,26 +22,17 @@
           <div class="contenuNav">
             <a>🌐Français</a>
             <a>Contact</a>
-            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a>FAQ</a>
             <a>Qui sommes nous ?</a>
-            <a href ="../Connexion/Connexion.PHP">Connexion</a>
+            <a>Connexion</a>
           </div>
         </nav>
       </div>
     </header>
-    <main>
 
-    <h1>Forum</h1>
+<h1>Forum</h1>
 <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
-<form action="forum_cree_article.php" method="post">
-    <label for="titre">Titre:</label>
-    <textarea id="titre" name="titre"></textarea>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message"></textarea>
-    <br>
-    <input type="submit" name="submit" value="Ajouter">
-</form>
-<div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
+
 <table>
     <thead>
     <tr>
@@ -60,7 +51,7 @@
             <td><?php echo htmlspecialchars($row['nom'] . " " . $row['prenom']); ?></td>
             <td><?php echo htmlspecialchars($row['date']); ?></td>
             <td><?php echo htmlspecialchars($row['titre']); ?></td>
-            <td><a href='./sujet.php?numero_article=<?php echo $row['numero_article']; ?>'><input type="submit"
+            <td><a href='./sujet_non_connecte.php?numero_article=<?php echo $row['numero_article']; ?>'><input type="submit"
                                                                                                   name="submit"
                                                                                                   value="Lire"></a>
         </tr>
@@ -70,9 +61,7 @@
 </table>
 <div class="vide">
 </div>
-    
-    </main>
-    <footer class = "Footer">
+<footer class = "Footer">
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
           <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">

@@ -22,57 +22,63 @@
           <div class="contenuNav">
             <a>🌐Français</a>
             <a>Contact</a>
-            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a>FAQ</a>
             <a>Qui sommes nous ?</a>
-            <a href ="../Connexion/Connexion.PHP">Connexion</a>
+            <a>Connexion</a>
           </div>
         </nav>
       </div>
     </header>
-    <main>
 
-    <h1>Forum</h1>
+<h1>Sujet</h1>
+
 <div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
-<form action="forum_cree_article.php" method="post">
-    <label for="titre">Titre:</label>
-    <textarea id="titre" name="titre"></textarea>
+
+
+<div class=sujet>
+    <table>
+        <thead>
+        <tr>
+            <th>Auteur</th>
+            <th>Message</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        $numero_article = $_GET['numero_article'];
+        include("read_forum_premier_message.php");
+        $row = $stmt->fetch(PDO::FETCH_ASSOC)
+            ?>
+            <tr>
+                <td><?php echo htmlspecialchars($row['nom'] . " " . $row['prenom']); ?></td>
+                <td><?php echo htmlspecialchars($row['message']); ?></td>
+                <td><?php echo htmlspecialchars($row['date']); ?></td>
+
+            </tr>
+
+        <?php
+        include('read_forum_message.php');
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) :
+            ?>
+            <tr>
+                <td><?php echo htmlspecialchars($row['nom'] . " " . $row['prenom']); ?></td>
+                <td><?php echo htmlspecialchars($row['message']); ?></td>
+                <td><?php echo htmlspecialchars($row['date']); ?></td>
+            </tr>
+        <?php endwhile; ?>
+        </tbody>
+    </table>
+</div>
+<form action="forum_cree_message.php?numero_article=<?php echo $numero_article; ?>" method="post">
     <label for="message">Message:</label>
     <textarea id="message" name="message"></textarea>
     <br>
-    <input type="submit" name="submit" value="Ajouter">
+    <input type="submit" name="submit" value="Valider">
 </form>
-<div style="height: 2px; background: black; width: 95%; margin-left: auto; margin-right: auto;"></div>
-<table>
-    <thead>
-    <tr>
-        <th>Auteur</th>
-        <th>Date</th>
-        <th>Titre</th>
-        <th>Lien</th>
-    </tr>
-    </thead>
-    <tbody>
-    <?php
-    include('read_forum.php');
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) :
-        ?>
-        <tr>
-            <td><?php echo htmlspecialchars($row['nom'] . " " . $row['prenom']); ?></td>
-            <td><?php echo htmlspecialchars($row['date']); ?></td>
-            <td><?php echo htmlspecialchars($row['titre']); ?></td>
-            <td><a href='./sujet.php?numero_article=<?php echo $row['numero_article']; ?>'><input type="submit"
-                                                                                                  name="submit"
-                                                                                                  value="Lire"></a>
-        </tr>
-    <?php endwhile; ?>
-    </tbody>
-
-</table>
 <div class="vide">
 </div>
-    
-    </main>
-    <footer class = "Footer">
+<footer class = "Footer">
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
           <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">

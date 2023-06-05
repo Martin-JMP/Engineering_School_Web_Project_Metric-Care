@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" href="Connexion.css"> 
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="../../General/CGU/CGU.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -65,7 +64,7 @@
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
-          <a>🌐Français</a>
+          <a href ="ConnectionA.php">🌐Français</a>
             <a href="../../General/Contact/Contact.PHP">Contact</a>
             <a href="../../General/FAQ/FAQ.PHP">FAQ</a>
             <a href="../../General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>

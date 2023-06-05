@@ -76,7 +76,7 @@
     <main method="post" form="login-form">
       <div class="tot">
         <div class="Connexion">
-            <a>Connexion</a>
+            <a>Connection</a>
         </div>
         <form id="login-form"  method="post">
           <div class="container">

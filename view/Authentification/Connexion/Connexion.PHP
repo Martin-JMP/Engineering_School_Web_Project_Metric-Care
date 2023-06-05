@@ -74,6 +74,7 @@
       </div>
     </header>
     <main method="post" form="login-form">
+      <div class = "tot">
         <div class="Connexion">
             <a>Connexion</a>
         </div>
@@ -99,6 +100,7 @@
                 <div><a href="../Inscription/Inscription.PHP">vous</a></div>
             </div>
         </div>
+      </div>
     </main>
 
     <footer class = "Footer">

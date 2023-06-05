@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="Gestion_des_utilisateurs.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -30,7 +30,83 @@
       </div>
     </header>
     <main>
-    
+    <main>
+      <h1>Les utilisateurs du système</h1>
+    <?php
+      function alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+      }
+      $host = 'localhost';
+      $username = 'vapr@metric.care';
+      $password = 'vapr333!';
+      $dbname = 'metric_care';
+      
+      $bdd = mysqli_connect($host, $username, $password, $dbname);
+      
+      // Check connection
+      if (!$bdd) {
+          die("Connection failed: " . mysqli_connect_error());
+      }
+      
+      // Step 2: Execute the SQL query
+      $query = "select personnes.PersonneId, personnes.Prenom, personnes.Nom, personnes.AdressMail, personnes.Poids, personnes.Taille, personnes.Fonction, authentificationprimaire.AuthentificationId from personnes, authentificationprimaire where personnes.PersonneId = authentificationprimaire.PersonneId";
+      $result = mysqli_query($bdd, $query);
+      
+      // Step 3: Fetch the results
+      if (mysqli_num_rows($result) > 0) {
+          // Step 4: Display the results in a table
+          echo "<table>";
+          echo "<tr><th>PersonneId</th><th>Prenom</th><th>Nom</th><th>AdressMail</th><th>Poids</th><th>Taille</th><th>Fonction</th><th>AuthentificationId</th></tr>";
+      
+          while ($row = mysqli_fetch_assoc($result)) {
+              echo "<tr>";
+              echo "<td>".$row['PersonneId']."</td>";
+              echo "<td>".$row['Prenom']."</td>";
+              echo "<td>".$row['Nom']."</td>";
+              echo "<td>".$row['AdressMail']."</td>";
+              echo "<td>".$row['Poids']."</td>";
+              echo "<td>".$row['Taille']."</td>";
+              echo "<td>".$row['Fonction']."</td>";
+              echo "<td>".$row['AuthentificationId']."</td>";
+              echo "</tr>";
+          }
+          echo "</table>";
+      } else {
+          echo "No results found.";
+      }
+      if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['button1'])){
+          $id = $_POST['number'];
+          if (!empty($id) && $id != 8){
+            try{
+              $ins1 = $bdd->query("DELETE FROM authentificationprimaire where authentificationprimaire.PersonneId = '$id'");
+              $ins2 = $bdd->query("DELETE from personnes where personnes.PersonneId = '$id'");
+              // $post1 = $ins1->fetch();
+              // $post2 = $ins2->fetch();
+              //if ($ins1 && $ins2){
+                alert("L'utilisateur a été supprimé");
+              // }
+              // else {
+                
+              // }
+            }
+            catch(PDOException $e){
+              $erreur = $e->getMessage();
+              alert("L'utilisateur n'a pas été supprimé");
+            }
+          } else {
+            alert("Vous ne pouvez pas supprimer cet utilisateur.");
+          }
+        }
+    }
+      // Close the database connection
+      mysqli_close($bdd);
+    ?>
+      <h1>Vous souhaitez supprimer un utilisateur ?</h1>
+      <form method="post" id="delete-user">
+        <input type="number" name="number" placeholder="PersonneId">
+        <button type="submit" name="button1" id="delete" >Supprimer l'utilisateur</button>
+      </form>
     </main>
     <footer class = "Footer">
       <div class = "contenu_Footer">

@@ -363,7 +363,7 @@ height: 140px;
 left: 250px;
 top: 160px;
 
-background: url(photo.jpg);
+
 border: 2px solid #ffffff;
 
 }
@@ -471,3 +471,4 @@ a:active{
   
   transform: rotate(0.17deg);
 }
+

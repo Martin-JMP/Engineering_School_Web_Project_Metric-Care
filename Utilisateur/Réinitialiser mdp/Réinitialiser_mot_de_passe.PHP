@@ -11,25 +11,33 @@
   </head>
   <body>
   <?php 
+session_start(); // Démarrer la session
 
+if (isset($_SESSION['email'])) {
+    $email = $_SESSION['email']; // Récupérer la valeur de la variable
+    // Utilisez la variable comme nécessaire dans la page Profil.PHP
+} else {
+    // La variable n'est pas définie
+}
 
-  
-
-$id='1';
-
-
-$host = 'localhost'; 
+$host = 'localhost';
 $username = 'abdelmoad';
 $dbpassword = '123456';
-$dbName = 'metric_care'; 
-
+$dbName = 'metric_care';
 
 $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
+if (!$mysqli) {
+    die('Erreur de connexion à la base de données: ' . mysqli_connect_error());
+}
+
+$i = $mysqli->query("SELECT PersonneId FROM personnes  WHERE AdressMail ='$email'");
+$id = $i->fetch_assoc();
 
 $numero = null;    
   if (!empty($id)){
     try{
-      $pwd = $mysqli-> query("SELECT MotDePas from logins where PersonneId =$id");
+      $pwd = $mysqli->query("SELECT MotDePas FROM logins WHERE PersonneId = {$id['PersonneId']}");
       $password = $pwd->fetch_assoc();
     }catch(PDOException $e){
       $erreur = $e->getMessage();
@@ -75,7 +83,8 @@ if (!empty($erreurs)) {
     }
 } else {
     
-    $query = "UPDATE logins SET MotDePas='$npwd' WHERE PersonneId=$id";
+  $query = "UPDATE logins SET MotDePas = '$npwd' WHERE PersonneId = {$id['PersonneId']}";
+
     $result = mysqli_query($mysqli, $query);
     if ($result) {
         echo "Les données ont été enregistrées avec succès.";
@@ -121,8 +130,7 @@ if (!empty($erreurs)) {
       echo '</div>';
     }
     else {
-      echo 'Enregistré avec succès';
-    }
+      echo 'Enregistré avec succès';}
     ?>
         <form action="" method="POST">
           <input type="password" id="AncienMotDePasse" placeholder="Ancien mot de passe" name="ap"><br><br>

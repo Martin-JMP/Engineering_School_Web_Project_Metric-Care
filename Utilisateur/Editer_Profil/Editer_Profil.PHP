@@ -15,23 +15,35 @@
 
   
 
-$id='1';
+session_start(); 
 
+if (isset($_SESSION['email'])) {
+    $email = $_SESSION['email']; 
+} else {
+    
+}
 
-$host = 'localhost'; 
+$host = 'localhost';
 $username = 'abdelmoad';
 $dbpassword = '123456';
-$dbName = 'metric_care'; 
-
+$dbName = 'metric_care';
 
 $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
+if (!$mysqli) {
+    die('Erreur de connexion à la base de données: ' . mysqli_connect_error());
+}
+
+$i = $mysqli->query("SELECT PersonneId FROM personnes  WHERE AdressMail ='$email'");
+$id = $i->fetch_assoc();
+
 
 $numero = null;    
   if (!empty($id)){
     try{
-      $auth = $mysqli-> query("SELECT AuthentificationId from authentificationprimaire where PersonneId =$id");
+      $auth = $mysqli-> query("SELECT AuthentificationId from authentificationprimaire where PersonneId ={$id['PersonneId']}");
       $numero = $auth->fetch_assoc();
-      $e = $mysqli-> query("SELECT AdressMail from personnes where PersonneId =$id");
+      $e = $mysqli-> query("SELECT AdressMail from personnes where PersonneId ={$id['PersonneId']}");
       $email = $e->fetch_assoc();
     }catch(PDOException $e){
       $erreur = $e->getMessage();
@@ -70,19 +82,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   
 
-  // Vérifier s'il y a des erreurs de validation
+  
   if (!empty($erreurs)) {
-    // Afficher les erreurs à l'utilisateur
+    
     foreach ($erreurs as $erreur) {
       echo $erreur . "<br>";
     }
   } else {
-    // Mettre à jour les données utilisateur dans la base de données ou tout autre système de stockage
-      // Exemple de requête de mise à jour avec MySQLi
-$query = "UPDATE personnes SET Nom = '$nom', Prenom = '$prenom', DateDeNaissance = '$ddn' WHERE PersonneId='$id'";
+    
+$query = "UPDATE personnes SET Nom = '$nom', Prenom = '$prenom', DateDeNaissance = '$ddn' WHERE PersonneId={$id['PersonneId']}";
 $result = mysqli_query($mysqli, $query);
 
-    // Afficher un message de confirmation à l'utilisateur
+    
     echo "Les données ont été enregistrées avec succès.";
   }
 }

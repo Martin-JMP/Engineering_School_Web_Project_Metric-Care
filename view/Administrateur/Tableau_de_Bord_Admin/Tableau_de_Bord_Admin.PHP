@@ -22,10 +22,9 @@
           </div>
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a href="Tableau_de_bord_Admin.PHP">Tableau de bord</a>
-            <a href ="../FAQ/FAQ.PHP">FAQ</a>
+            <a href="../Tableau_de_Bord_Admin/Tableau_de_Bord_Admin.PHP">Tableau de bord</a>
             <a href ="../Forum/Forum.PHP">Forum</a>
-            <a href ="../Ticket/Ticket.PHP">Ticket</a>
+            <a href ="../Gestion_des_utilisateurs/Gestion_des_utilisateurs.PHP">Gestion des utilisateurs</a>
             <a href ="../Profil_Admin/Profil_Admin.PHP">Profil</a>
           </div>
         </nav>

@@ -99,7 +99,7 @@ try {
     $mail->send();
     echo '<script>alert("votre demande a bien été envoyée");</script>';
 } catch (Exception $e) {
-  echo '<script>showAlert("Il y a eu un problème, veuillez réitérer");</script>';
+  echo '<script>showAlert("Il y à eu un problème, veuillez réitérer");</script>';
 }}
 else {
   echo '<script>showAlert("Utilisateur introuvable");</script>';

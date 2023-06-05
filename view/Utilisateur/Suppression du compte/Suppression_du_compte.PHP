@@ -56,10 +56,9 @@
     </main>
 
     <?php 
-      require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\Exception.php';
-      require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\PHPMailer.php';
-      require 'C:\xampp\htdocs\Metric_Care\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\SMTP.php';
-      
+       require 'C:\xampp\htdocs\Metric_Care\view\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\Exception.php';
+       require 'C:\xampp\htdocs\Metric_Care\view\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\PHPMailer.php';
+       require 'C:\xampp\htdocs\Metric_Care\view\Authentification\Mot_de_passe_oublie\PHPMailer-master\src\SMTP.php';      
       //Import PHPMailer classes into the global namespace
       //These must be at the top of your script, not inside a function
       use PHPMailer\PHPMailer\PHPMailer;

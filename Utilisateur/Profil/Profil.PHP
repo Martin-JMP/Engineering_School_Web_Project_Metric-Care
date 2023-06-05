@@ -20,34 +20,31 @@ if (isset($_SESSION['email'])) {
   // La variable n'est pas définie
 }
 
-$host = 'localhost';
-$username = 'valentyna';
-$dbpassword = '12345';
-$dbName = 'metric_care';
 
-$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
+$mysqli = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
 
 if (!$mysqli) {
   die('Erreur de connexion à la base de données: ' . mysqli_connect_error());
 }
 
 $i = $mysqli->query("SELECT PersonneId FROM personnes  WHERE AdressMail ='$email'");
-$id = $i->fetch_assoc();
+$id = $i->fetch();
 
 if (!empty($id)) {
   try {
     $n = $mysqli->query("SELECT Nom FROM personnes  WHERE PersonneId =" . $id['PersonneId']);
-    $nom = $n->fetch_assoc();
+    $nom = $n->fetch();
     $p = $mysqli->query("SELECT Prenom FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
-    $prenom = $p->fetch_assoc();
+    $prenom = $p->fetch();
     $a = $mysqli->query("SELECT DateDeNaissance FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
-    $age = $a->fetch_assoc();
+    $age = $a->fetch();
     $auth = $mysqli->query("SELECT AuthentificationId from authentificationprimaire WHERE PersonneId=" . $id['PersonneId']);
-    $numero = $auth->fetch_assoc();
+    $numero = $auth->fetch();
     $e = $mysqli->query("SELECT AdressMail FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
-    $email = $e->fetch_assoc();
+    $email = $e->fetch();
     $pwd = $mysqli->query("SELECT MotDePas FROM logins  WHERE PersonneId=" . $id['PersonneId']);
-    $password = $pwd->fetch_assoc();
+    $password = $pwd->fetch();
   } catch (PDOException $e) {
     $erreur = $e->getMessage();
   }
@@ -100,14 +97,6 @@ if (!empty($id)) {
         <p><?php echo $prenom['Prenom']; ?><p>
         </div>
       </div>
-      <div class="Prénom">
-          <div class="Intitule">
-            <p>Prénom<p>
-          </div>
-          <div class="Entrée">
-          <p><?php echo $prenom['Prenom']; ?><p>
-          </div>
-        </div>
       <div class="Age">
           <div class="Intitule">
             <p>Naissance<p>
@@ -141,7 +130,7 @@ if (!empty($id)) {
 
           </div>
           <div class="Reinitialiser">
-            <p><a href="../../Utilisateur/Réinitialiser%20mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
+            <p><a href="../../Utilisateur/Réinitialiser mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
           </div>
         </div>
       <div class="Tableau">

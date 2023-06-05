@@ -13,24 +13,14 @@
   <?php 
 
 
-  
 
-$id='1';
-
-
-$host = 'localhost'; 
-$username = 'abdelmoad';
-$dbpassword = '123456';
-$dbName = 'metric_care'; 
-
-
-$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+$mysqli = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
 
 $numero = null;    
-  if (!empty($id)){
+  if (!empty($idper)){
     try{
-      $pwd = $mysqli-> query("SELECT MotDePas from logins where PersonneId =$id");
-      $password = $pwd->fetch_assoc();
+      $pwd = $mysqli-> query("SELECT MotDePas from logins where PersonneId =$idper");
+      $password = $pwd->fetch();
     }catch(PDOException $e){
       $erreur = $e->getMessage();
     }
@@ -44,7 +34,7 @@ $numero = null;
 
 
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (isset($_POST['enregi'])) {
   
   $npwd = $_POST['np'];
   $apwd = $_POST['ap'];
@@ -73,16 +63,19 @@ if (!empty($erreurs)) {
     foreach ($erreurs as $erreur) {
         echo $erreur . "<br>";
     }
-} else {
-    
-    $query = "UPDATE logins SET MotDePas='$npwd' WHERE PersonneId=$id";
-    $result = mysqli_query($mysqli, $query);
-    if ($result) {
+}    
+
+    $query = "UPDATE logins SET MotDePas = :motdepassetest WHERE PersonneId = :personneid";
+    $stmt = $mysqli->prepare($query);
+    $stmt->bindValue(':motdepassetest', $npwd);
+    $stmt->bindValue(':personneid', $post['PersonneId']);
+    $stmt->execute();
+
+    if ($stmt) {
         echo "Les données ont été enregistrées avec succès.";
     } else {
         echo "Une erreur s'est produite lors de l'enregistrement des données.";
     }
-}
 
 }
 ?>
@@ -108,7 +101,7 @@ if (!empty($erreurs)) {
     </header>
     <main>
       <div class="Profil">
-        <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Profil.PHP">◂ Profil</a></p>
+        <p><a href="http://localhost/Metric_Care/Utilisateur/Profil/Profil.PHP">◂ Profil</a></p>
       </div>
       <div class="main-container">
         <h1>Réinitialisation du mot de passe</h1>
@@ -124,11 +117,11 @@ if (!empty($erreurs)) {
       echo 'Enregistré avec succès';
     }
     ?>
-        <form action="" method="POST">
-          <input type="password" id="AncienMotDePasse" placeholder="Ancien mot de passe" name="ap"><br><br>
-          <input type="password" id="NouveauMotDePasse" placeholder="Nouveau mot de passe" name="np"><br><br>
-          <input type="password" id="ConfirmerMotDePasse" placeholder="Confirmer votre mot de passe" name="cp"><br><br>
-          <button type="submit">Enregistrer</button>
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+          <input type="password" id="AncienMotDePasse" placeholder="Ancien mot de passe" name="ap" value="<?php if(isset($mail)){ echo $mail; }?>" required><br><br>
+          <input type="password" id="NouveauMotDePasse" placeholder="Nouveau mot de passe" name="np" value="<?php if(isset($mail)){ echo $mail; }?>" required><br><br>
+          <input type="password" id="ConfirmerMotDePasse" placeholder="Confirmer votre mot de passe" name="cp" value="<?php if(isset($mail)){ echo $mail; }?>" required><br><br>
+          <button type="submit" name="enregi">Enregistrer</button>
         </form>
       </div>
     </main>

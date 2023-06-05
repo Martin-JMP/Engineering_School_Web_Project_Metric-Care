@@ -79,10 +79,18 @@ if (!empty($id)) {
                 <a href ="Profil_Gestionnaire.PHP">Profil</a>
             </div>
         </nav>
+<<<<<<< HEAD
     </div>
 </header>
 <main>
     <div class="title">
+=======
+      </div>
+    </header>
+    <main>
+
+      <div class="title">
+>>>>>>> b1b2640860f3f1cc3871e7bccb1f1f76cd2ee0cf
         <p>Gestion de profil<p>
     </div>
     <div class="Nom">
@@ -138,7 +146,12 @@ if (!empty($id)) {
             <p>Mot de passe<p>
         </div>
         <div class="Entrée">
+<<<<<<< HEAD
             <p><?php echo $password['MotDePas']; ?><p>
+=======
+        <p><?php echo $password; ?><p>
+
+>>>>>>> b1b2640860f3f1cc3871e7bccb1f1f76cd2ee0cf
         </div>
         <div class="Reinitialiser">
             <p><a href="../Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
@@ -181,7 +194,9 @@ if (!empty($id)) {
           <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
           <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
+
         </div>
       </footer>
     </body>
   </html>
+

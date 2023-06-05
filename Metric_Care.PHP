@@ -21,7 +21,7 @@
           <div class="contenuNav">
             <a>🌐Français</a>
             <a href="General/Contact/Contact.PHP">Contact</a>
-            <a href="General/FAQ/Page_FAQ.PHP">FAQ</a>
+            <a href="General/FAQ/FAQ.PHP">FAQ</a>
             <a href="General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
             <a href="Authentification/Connexion/Connexion.PHP">Connexion</a>
           </div>
@@ -29,9 +29,8 @@
       </div>
     </header>
     <main>
-    
 
-    <img id="MainPageImage" src="Origine/Image_main_accueil/Main_page.jpg" alt="Photo_bus_driver", width=100%, height="448">
+    <img id="MainPageImage" src="Origine/Image_main_accueil/Main_page.jpg" alt="Photo_bus_driver" width=100% height="448">
     <div id="Rectangle_Blanc_1"></div>
     <div id="Metric_Metro_Container">
       <div id="Title_Metric_Metro">
@@ -106,9 +105,9 @@
         </div>
         <div class="Footer_contenu_texte">
         <div class="Footer_contenu_texte">
-          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
-          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
-          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
+          <a href="General/CGU/CGU.PHP">CGU</a> <a>|</a>
+          <a href="General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
+          <a href="General/Cookies/Cookies.PHP">Préférences des cookies</a>
         </div>
         </div>
       </div>

@@ -29,7 +29,7 @@
     
 
     .Footer {
-        position: fixed;
+        position: scroll;
         bottom: 0;
         left:0;
         right: 0;
@@ -37,7 +37,7 @@
         height: 80px;
         background-color: #333;
 
-        margin-top: 80px; /*descend un peu le footer*/ /*paramètre différent pour chaque pages*/
+        margin-top: 70%; /*descend un peu le footer*/ /*paramètre différent pour chaque pages*/
        
     }
 

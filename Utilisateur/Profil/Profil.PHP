@@ -132,16 +132,28 @@ if (!empty($id)) {
         <div class="Entrée">
             <p><?php echo $email['AdressMail']; ?><p>
         </div>
+<<<<<<< HEAD
     </div>
     <div class="MDP">
         <div class="Intitule">
             <p>Mot de passe<p>
+=======
+
+      <div class="Enregistrer">
+        <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
+>>>>>>> b1b2640860f3f1cc3871e7bccb1f1f76cd2ee0cf
         </div>
         <div class="Entrée">
             <p><?php echo $password['MotDePas']; ?><p>
         </div>
+<<<<<<< HEAD
         <div class="Reinitialiser">
             <p><a href="../../Utilisateur/Réinitialiser%20mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
+=======
+      <div class="Editer">
+        <button onclick="window.location.href = '../../Utilisateur/Editer_Profil/Editer_Profil.PHP';">Editer</button>
+
+>>>>>>> b1b2640860f3f1cc3871e7bccb1f1f76cd2ee0cf
         </div>
     </div>
     <div class="Tableau">

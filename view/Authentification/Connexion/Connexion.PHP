@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="Connexion.css"> 
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
+    <link rel="stylesheet" type="text/css" href="../../General/CGU/CGU.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
@@ -100,6 +101,11 @@
                 <div><a href="../Inscription/Inscription.PHP">vous</a></div>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+    <div class="Menu_principal">
+        <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
+>>>>>>> 3a657c94c7f7418ca913c4766150dcea7e1bd7ae
       </div>
     </main>
 

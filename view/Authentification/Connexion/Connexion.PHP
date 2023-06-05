@@ -14,7 +14,7 @@
       if (isset($_POST['button'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $bdd = new PDO("mysql:host=localhost;dbname=metric_care","vapr@metric.care","vapr333!");
+        $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
         // $method = "aes-256-cbc";
         // $key = "secretkeyofmetriccare";
         // $options = 0;

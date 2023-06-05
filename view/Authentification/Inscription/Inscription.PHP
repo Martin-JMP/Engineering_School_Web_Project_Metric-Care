@@ -50,7 +50,7 @@
           //   alert("Please accept the terms and conditions.");
           // }
 
-          $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+          $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
           $sth = $bdd->query("SELECT * FROM authentificationprimaire  WHERE authentificationprimaire.AuthentificationId = '$identification' and authentificationprimaire.PersonneId IS NULL");
           $sthf = $sth->fetch();
           if (!empty($email && $password && $password1 && $prenom && $nom && $identification) && !empty($sthf) == 1){

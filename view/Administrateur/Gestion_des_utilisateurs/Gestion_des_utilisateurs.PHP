@@ -37,8 +37,8 @@
         echo "<script type='text/javascript'>alert('$msg');</script>";
       }
       $host = 'localhost';
-      $username = 'vapr@metric.care';
-      $password = 'vapr333!';
+      $username = 'martin';
+      $password = 'test';
       $dbname = 'metric_care';
       
       $bdd = mysqli_connect($host, $username, $password, $dbname);

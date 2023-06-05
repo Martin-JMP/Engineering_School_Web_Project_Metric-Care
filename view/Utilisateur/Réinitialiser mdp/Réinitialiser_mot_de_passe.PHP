@@ -21,8 +21,8 @@ if (isset($_SESSION['email'])) {
 }
 
 $host = 'localhost';
-$username = 'valentyna';
-$dbpassword = '12345';
+$username = 'martin';
+$dbpassword = 'test';
 $dbName = 'metric_care';
 
 $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
@@ -45,7 +45,7 @@ $numero = null;
 
 
   }else{
-    echo 'Veuillez vous connecter.';
+    echo '<script>showAlert("Veuillez vous connecter.");</script>';
   }
 
 
@@ -62,19 +62,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $erreurs = array(); 
 
   if (empty($npwd)) {
-    $erreurs[] = "Veuillez saisir le nouveau mot de passe";
+    echo '<script>showAlert("Veuillez saisir le nouveau mot de passe");</script>';
 }
 
 if (empty($apwd)) {
-    $erreurs[] = "Veuillez saisir l'ancien mot de passe";
+  echo '<script>showAlert("Veuillez saisir l ancien mot de passe");</script>';
 } elseif ($apwd != $password['MotDePas']) {
-    $erreurs[] = "Mot de passe incorrect";
+  echo '<script>showAlert("Mot de passe incorrect");</script>';
 }
 
 if (empty($cpwd)) {
-    $erreurs[] = "Veuillez confirmer le mot de passe";
+  echo '<script>showAlert("Veuillez confirmer le mot de passe");</script>';
 } elseif ($npwd != $cpwd) {
-    $erreurs[] = "Les mots de passe ne correspondent pas";
+  echo '<script>showAlert("Les mots de passe ne correspondent pas");</script>';
 }
 
 if (!empty($erreurs)) {
@@ -87,9 +87,9 @@ if (!empty($erreurs)) {
 
     $result = mysqli_query($mysqli, $query);
     if ($result) {
-        echo "Les données ont été enregistrées avec succès.";
+      echo '<script>showAlert("Les données ont été enregistrées avec succès.");</script>';
     } else {
-        echo "Une erreur s'est produite lors de l'enregistrement des données.";
+      echo '<script>showAlert("Une erreur s est produite lors de l enregistrement des données.");</script>';
     }
 }
 

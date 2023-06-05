@@ -33,8 +33,8 @@
       <h1>Les utilisateurs du système</h1>
     <?php
       $host = 'localhost';
-      $username = 'vapr@metric.care';
-      $password = 'vapr333!';
+      $username = 'martin';
+      $password = 'test';
       $dbname = 'metric_care';
       
       $connection = mysqli_connect($host, $username, $password, $dbname);

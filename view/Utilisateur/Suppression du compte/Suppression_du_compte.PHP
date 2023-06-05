@@ -82,7 +82,7 @@ function generercode() {
 
 if (isset($_POST['CodeSub'])) {
   $email=$_POST['mail'];
-  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
 
   if (!empty($mail)){
       $sth = $bdd->query("SELECT personnes.PersonneId FROM personnes  WHERE personnes.AdressMail = '$email'");

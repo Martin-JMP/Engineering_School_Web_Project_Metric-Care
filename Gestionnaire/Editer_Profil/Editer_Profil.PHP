@@ -9,28 +9,42 @@
     <title>Metric Care</title>
   </head>
   <body>
+  
   <?php 
 
 
   
 
-$email = 'vbaudin@ratp.fr';
-$password = '!icgWdyuwvmcJbcj1';
+session_start(); 
 
-
-$bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
-
+if (isset($_SESSION['email'])) {
+    $email = $_SESSION['email']; 
+} else {
     
-  if (!empty($email && $password)){
+}
+
+$host = 'localhost';
+$username = 'abdelmoad';
+$dbpassword = '123456';
+$dbName = 'metric_care';
+
+$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
+
+if (!$mysqli) {
+    die('Erreur de connexion à la base de données: ' . mysqli_connect_error());
+}
+
+$i = $mysqli->query("SELECT PersonneId FROM personnes  WHERE AdressMail ='$email'");
+$id = $i->fetch_assoc();
+
+
+$numero = null;    
+  if (!empty($id)){
     try{
-      $n = $bdd->query("SELECT personnes.Nom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-      $nom = $n -> fetch();
-      $p = $bdd->query("SELECT personnes.Prenom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-      $prenom = $p -> fetch();
-      $a = $bdd->query("SELECT personnes.DateDeNaissance FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-      $age = $a -> fetch();
-      $auth = $bdd->query("SELECT * from personnes, authentificationprimaire, logins where personnes.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-      $numero = $auth -> fetch();
+      $auth = $mysqli-> query("SELECT AuthentificationId from authentificationprimaire where PersonneId ={$id['PersonneId']}");
+      $numero = $auth->fetch_assoc();
+      $e = $mysqli-> query("SELECT AdressMail from personnes where PersonneId ={$id['PersonneId']}");
+      $email = $e->fetch_assoc();
     }catch(PDOException $e){
       $erreur = $e->getMessage();
     }
@@ -42,7 +56,51 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
 
 
 
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  
+  $nom = $_POST['nom'];
+  $prenom = $_POST['prenom'];
+  $ddn = $_POST['ddn'];
+  
+
+  
+  $erreurs = array(); 
+
+  if (empty($nom)) {
+    $erreurs[] = "Le champ Nom est obligatoire.";
+  }
+
+  if (empty($prenom)) {
+    $erreurs[] = "Le champ Prénom est obligatoire.";
+  }
+
+  if (empty($ddn)) {
+    $erreurs[] = "Le champ Naissance est obligatoire.";
+  }
+
+  
+
+  
+  if (!empty($erreurs)) {
+    
+    foreach ($erreurs as $erreur) {
+      echo $erreur . "<br>";
+    }
+  } else {
+    
+$query = "UPDATE personnes SET Nom = '$nom', Prenom = '$prenom', DateDeNaissance = '$ddn' WHERE PersonneId={$id['PersonneId']}";
+$result = mysqli_query($mysqli, $query);
+
+    
+    echo "Les données ont été enregistrées avec succès.";
+  }
+}
 ?>
+
+
+
 
     <header>
       <div id="Rectangle_Debut">
@@ -69,30 +127,43 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
       <div class="title">
         <p>Edition de profil<p>
       </div>
-      <div class="Nom">
-        <div class="Intitule">
-          <p>Nom<p>
+      <form method="POST" action="Editer_Profil.php">
+        <div class="Nom">
+          <div class="Intitule">
+            <p>Nom<p>
+          </div>
+          <div class="Entrée">
+            <p><input type="text" id="nom" name="nom" required size="10"><p>
+          </div>
         </div>
-        <div class="Entrée">
-          <p><input type="text" id="nom" name="nom" required size="10"><p>
+        <div class="Prénom">
+          <div class="Intitule">
+            <p>Prénom<p>
+          </div>
+          <div class="Entrée">
+          <p><input type="text" id="prenom" name="prenom" required size="10"><p>
+          </div>
         </div>
-      </div>
-      <div class="Prénom">
-        <div class="Intitule">
-          <p>Prénom<p>
+        <div class="Age">
+          <div class="Intitule">
+            <p>Naissance<p>
+          </div>
+          <div class="Entrée">
+          <p><input type="date" id="ddn" name="ddn" required size="10"><p>
+          </div>
         </div>
-        <div class="Entrée">
-        <p><input type="text" id="prenom" name="prenom" required size="10"><p>
+        <div class="Email">
+          <div class="Intitule">
+            <p>E-mail<p>
+          </div>
+          <div class="Entrée">
+          <p><p><?php echo $email['AdressMail']; ?><p><p>
+          </div>
         </div>
-      </div>
-      <div class="Age">
-        <div class="Intitule">
-          <p>Naissance<p>
+        <div class="Enregistrer">
+          <button type="submit">Enregistrer</button>
         </div>
-        <div class="Entrée">
-        <p><input type="text" id="ddn" name="ddn" required size="10"><p>
-        </div>
-      </div>
+      </form>
       <div class="Numéro">
         <div class="Intitule">
           <p>Numéro d'identification<p>
@@ -101,25 +172,14 @@ $bdd = new PDO("mysql:host=localhost;dbname=metric_care","abdelmoad","123456");
         <p><?php echo $numero['AuthentificationId']; ?><p>
         </div>
       </div>
-      <div class="Email">
-        <div class="Intitule">
-          <p>E-mail<p>
-        </div>
-        <div class="Entrée">
-        <p><input type="text"  id="email" name="email" required size="10"><p>
-        </div>
-      </div>
       <div class="Tableau">
-        <p><a href="../../Utilisateur/Profil/Profil.PHP">◂ Profil</a><p>
+        <p><a href="../../Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP">◂ Profil</a><p>
       </div>
       <div>
         <img id="Photo" src="../../Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">
       </div>
       <div class="Photo">
         <p>Importer une photo<p>
-      </div>
-      <div class="Enregistrer">
-      <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
       </div>
     </main>
     <footer class="Footer">

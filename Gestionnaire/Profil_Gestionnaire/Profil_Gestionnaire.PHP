@@ -10,143 +10,169 @@
     <link rel="icon" href="../../Origine/Images/Logo.png">
   </head>
   <body>
-    <?php
 
-  $email = 'vbaudin@ratp.fr';
-  $password = '!icgWdyuwvmcJbcj1';
-  #$_SESSION['email'] = $email;
-  #$_SESSION['password'] = $password;
+  <?php
+session_start(); 
 
+if (isset($_SESSION['email'])) {
+    $email = $_SESSION['email']; 
+} else {
+    
+}
 
+$host = 'localhost';
+$username = 'velentyna';
+$dbpassword = '12345';
+$dbName = 'metric_care';
 
-  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+$mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
 
+if (!$mysqli) {
+    die('Erreur de connexion à la base de données: ' . mysqli_connect_error());
+}
 
-    if (!empty($email && $password)){
-      try{
-        $n = $bdd->query("SELECT personnes.Nom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $nom = $n -> fetch();
-        $p = $bdd->query("SELECT personnes.Prenom FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $prenom = $p -> fetch();
-        $a = $bdd->query("SELECT personnes.DateDeNaissance FROM logins, personnes  WHERE logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $age = $a -> fetch();
-        $auth = $bdd->query("SELECT * from personnes, authentificationprimaire, logins where personnes.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId AND personnes.AdressMail = '$email' AND logins.MotDePas = '$password'");
-        $numero = $auth -> fetch();
-      }catch(PDOException $e){
+$i = $mysqli->query("SELECT PersonneId FROM personnes  WHERE AdressMail ='$email'");
+$id = $i->fetch_assoc();
+
+if (!empty($id)) {
+    try {
+        $n = $mysqli->query("SELECT Nom FROM personnes  WHERE PersonneId =" . $id['PersonneId']);
+        $nom = $n->fetch_assoc();
+        $p = $mysqli->query("SELECT Prenom FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
+        $prenom = $p->fetch_assoc();
+        $a = $mysqli->query("SELECT DateDeNaissance FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
+        $age = $a->fetch_assoc();
+        $auth = $mysqli->query("SELECT AuthentificationId from authentificationprimaire WHERE PersonneId=" . $id['PersonneId']);
+        $numero = $auth->fetch_assoc();
+        $e = $mysqli->query("SELECT AdressMail FROM personnes  WHERE PersonneId=" . $id['PersonneId']);
+        $email = $e->fetch_assoc();
+        $pwd = $mysqli->query("SELECT MotDePas FROM logins  WHERE PersonneId=" . $id['PersonneId']);
+        $password = $pwd->fetch_assoc();
+        $query = "SELECT 'image' FROM photos WHERE PersonneId=" . $id['PersonneId'];
+        $result = mysqli_query($mysqli, $query);
+        $row = mysqli_fetch_assoc($result);
+
+        $imageData = $row['image'];
+
+    } catch (PDOException $e) {
+
         $erreur = $e->getMessage();
-      }
-
-
-    }else{
-      echo 'Veuillez vous connecter.';
     }
+} else {
+    echo 'Veuillez vous connecter.';
+}
 
-
-
-  ?>
-
-
-    <header>
-      <div id="Rectangle_Debut">
+?>
+<header>
+    <div id="Rectangle_Debut">
         <nav>
-          <div>
-            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
-            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
-            <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-            <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
-          </div>      
-          <div class="contenuNav">
-            <a>🌐Français</a>
-            <a href="Tableau_de_bord_Gestionnaire.PHP">Tableau de bord</a>
-            <a href ="../Forum/Forum.PHP">Forum</a>
-            <a href ="../Profil_Gestionnaire/Profil_Gestionnaire.PHP">Profil</a>
-          </div>
+            <div>
+                <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
+                <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
+                <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+                    <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+            </div>
+            <div class="contenuNav">
+                <a>🌐Français</a>
+                <a href="../Tableau_de_bord_Gestionnaire/Tableau_de_bord_Gestionnaire.PHP">Tableau de bord</a>
+                <a href ="../FAQ/FAQ.PHP">FAQ</a>
+                <a href ="../Forum/Forum.PHP">Forum</a>
+                <a href ="../Ticket/Ticket.PHP">Ticket</a>
+                <a href ="Profil_Gestionnaire.PHP">Profil</a>
+            </div>
         </nav>
-      </div>
-    </header>
-    <main>
 
-      <div class="title">
+    </div>
+</header>
+<main>
+    <div class="title">
+
         <p>Gestion de profil<p>
-      </div>
-      <div class="Nom">
+    </div>
+    <div class="Nom">
         <div class="Intitule">
-          <p>Nom<p>
+            <p>Nom<p>
         </div>
         <div class="Entrée">
-          <p><?php echo $nom['Nom']; ?><p>
+            <p><?php echo $nom['Nom']; ?><p>
         </div>
-        
-      </div>
-      <div class="Prénom">
+    </div>
+    <div class="Prénom">
         <div class="Intitule">
-          <p>Prénom<p>
+            <p>Prénom<p>
         </div>
         <div class="Entrée">
-        <p><?php echo $prenom['Prenom']; ?><p>
+            <p><?php echo $prenom['Prenom']; ?><p>
         </div>
-        
-      </div>
-      <div class="Age">
+    </div>
+    <div class="Prénom">
         <div class="Intitule">
-          <p>Naissance<p>
+            <p>Prénom<p>
         </div>
         <div class="Entrée">
-        <p><?php echo $age['DateDeNaissance']; ?><p>
+            <p><?php echo $prenom['Prenom']; ?><p>
         </div>
-        
-      </div>
-      <div class="Numéro">
+    </div>
+    <div class="Age">
         <div class="Intitule">
-          <p>Numéro d'identification<p>
+            <p>Naissance<p>
         </div>
         <div class="Entrée">
-        <p><?php echo $numero['AuthentificationId']; ?><p>
+            <p><?php echo $age['DateDeNaissance']; ?><p>
         </div>
-      </div>
-      <div class="Email">
+    </div>
+    <div class="Numéro">
         <div class="Intitule">
-          <p>E-mail<p>
+            <p>Numéro d'identification<p>
         </div>
         <div class="Entrée">
-        <p><?php echo $email; ?><p>
+            <p><?php echo $numero['AuthentificationId']; ?><p>
         </div>
-        
-      </div>
-      <div class="MDP">
+    </div>
+    <div class="Email">
         <div class="Intitule">
-          <p>Mot de passe<p>
+            <p>E-mail<p>
         </div>
         <div class="Entrée">
-        <p><?php echo $password; ?><p>
+            <p><?php echo $email['AdressMail']; ?><p>
+        </div>
+    </div>
+    <div class="MDP">
+        <div class="Intitule">
+            <p>Mot de passe<p>
+        </div>
+        <div class="Entrée">
+
+            <p><?php echo $password['MotDePas']; ?><p>
 
         </div>
         <div class="Reinitialiser">
-          <p><a href="../../Gestionnaire/Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
+            <p><a href="../Reinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
         </div>
-      </div>
-      <div class="Tableau">
+    </div>
+    <div class="Tableau">
         <p><a href="../Tableau_de_bord_Gestionnaire/Tableau_de_Bord_Gestionniare.PHP">◂ Tableau de bord</a><p>
-      </div>
-      <div class="Deconnexion">
+    </div>
+    <div class="Deconnexion">
         <p><a href="../../Metric_Care.PHP">Déconnexion</a><p>
+    </div>
+    <div class='Photo'>
+        <?php
+        
+        if (!empty($imageData)) {
+            echo '<img src="data:image/jpeg;base64,' . base64_encode($imageData) . '" alt="Photo de profil">';
+        }
+        ?>
       </div>
-      <div>
-        <img id="Photo" src="Images/photo.jpg" alt="Utilisateur" width="258" height="240">
-      </div>
-      <div class="Photo">
-        <p>Importer une photo<p>
-      </div>
-      <div class="Enregistrer">
-      <button onclick="window.location.href = '../../Utilisateur/Capteurs/Capteurs.PHP';">Enregistrer</button>
-      </div>
-      <div class="Supprimer">
-      <button onclick="window.location.href = '../../Gestionnaire/Supression%20du%20compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
-      </div>
-      <div class="Editer">
-      <button onclick="window.location.href = '../../Gestionnaire/Editer_Profil/Editer_Profil.PHP';">Editer</button>
-      </div>
-      </main>
+    
+</div>
+<div class="Enregistrer">
+    <button onclick="window.location.href = '../../Gestionnaire/Editer_Profil/Editer_Profil.PHP';">Editer</button>
+</div>
+<div class="Supprimer">
+    <button onclick="window.location.href = '../../Gestionnaire/Supression du compte/Suppression_du_compte.PHP';">Supprimer le compte</button>
+</div>
+</main>
       <footer class="Footer">
         <div class="contenu_Footer">
           <div class="Footer_contenu_Logo">

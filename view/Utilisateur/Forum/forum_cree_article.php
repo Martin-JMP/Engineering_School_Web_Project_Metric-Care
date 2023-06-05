@@ -18,8 +18,9 @@ if (isset($_POST['titre']) && isset($_POST['message'])) {
 
     if (!empty($_SESSION['email']) ) {
         $email = $_SESSION['email'];
-        $sql = "SELECT Nom,Prenom FROM personnes WHERE AdressMail = :email";
+        $sql = "SELECT PersonneId,Nom,Prenom FROM personnes WHERE AdressMail = :email";
         $stmt = $mysqlInstance->prepare($sql);
+        $stmt->bindValue(':PersonneId', $id);
         $stmt->bindValue(':prenom', $prenom);
         $stmt->bindValue(':nom', $nom);
         $stmt->execute();
@@ -32,8 +33,9 @@ if (isset($_POST['titre']) && isset($_POST['message'])) {
     $titre = filter_var($_POST['titre'], FILTER_SANITIZE_STRING);;
     $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
-    $statement = $mysqlInstance->prepare("INSERT INTO forum (Nom, Prenom, email, date, titre, message) VALUES (:nom,:prenom,:email, :date, :titre, :message)");
+    $statement = $mysqlInstance->prepare("INSERT INTO forum (PersonneId,Nom, Prenom, email, date, titre, message) VALUES (:id, :nom,:prenom,:email, :date, :titre, :message)");
     $statement->execute([
+        'PersonneId' => $id,
         'nom' => $nom,
         'prenom' => $prenom,
         'email' => $email,

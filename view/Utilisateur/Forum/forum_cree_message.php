@@ -19,10 +19,11 @@ if (isset($_POST['message'])) {
     
     if (!empty($_SESSION['email']) ) {
         $email = $_SESSION['email'];
-        $sql = "SELECT Nom,Prenom FROM personnes WHERE AdressMail = :email";
+        $sql = "SELECT PersonneId,Nom,Prenom FROM personnes WHERE AdressMail = :email";
         $stmt = $mysqlInstance->prepare($sql);
-        $stmt->bindValue(':prenom', $prenom);
-        $stmt->bindValue(':nom', $nom);
+        $stmt->bindValue(':PersonneId', $id);
+        $stmt->bindValue(':Prenom', $prenom);
+        $stmt->bindValue(':Nom', $nom);
         $stmt->execute();
     } else {
         header('Location: ./sujet.php?error=missing_data');
@@ -33,8 +34,9 @@ if (isset($_POST['message'])) {
     $date = (new DateTime('now', new DateTimeZone('Europe/Paris')))->format('Y-m-d H:i:s');
     $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
-    $statement = $mysqlInstance->prepare("INSERT INTO forum_message (Nom, Prenom, email, date, message,numero_article) VALUES (:nom,:prenom,:email, :date, :message,:numero_article)");
+    $statement = $mysqlInstance->prepare("INSERT INTO forum_message (PersonneId, Nom, Prenom, email, date, message,numero_article) VALUES (:id, :nom,:prenom,:email, :date, :message,:numero_article)");
     $statement->execute([
+        'PersonneId' => $id,
         'nom' => $nom,
         'prenom' => $prenom,
         'email' => $email,

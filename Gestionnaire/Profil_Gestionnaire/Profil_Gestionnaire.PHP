@@ -20,8 +20,9 @@ if (isset($_SESSION['email'])) {
 }
 
 $host = 'localhost';
-$username = 'abdelmoad';
-$dbpassword = '123456';
+
+$username = 'valentyna';
+$dbpassword = '12345';
 $dbName = 'metric_care';
 
 $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);

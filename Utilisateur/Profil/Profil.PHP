@@ -21,8 +21,8 @@ if (isset($_SESSION['email'])) {
 }
 
 $host = 'localhost';
-$username = 'abdelmoad';
-$dbpassword = '123456';
+$username = 'valentyna';
+$dbpassword = '12345';
 $dbName = 'metric_care';
 
 $mysqli = mysqli_connect($host, $username, $dbpassword, $dbName);
@@ -48,11 +48,7 @@ if (!empty($id)) {
         $email = $e->fetch_assoc();
         $pwd = $mysqli->query("SELECT MotDePas FROM logins  WHERE PersonneId=" . $id['PersonneId']);
         $password = $pwd->fetch_assoc();
-        $query = "SELECT 'image' FROM photos WHERE PersonneId=" . $id['PersonneId'];
-        $result = mysqli_query($mysqli, $query);
-        $row = mysqli_fetch_assoc($result);
 
-        $imageData = $row['image'];
 
     } catch (PDOException $e) {
         $erreur = $e->getMessage();

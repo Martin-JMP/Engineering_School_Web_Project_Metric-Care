@@ -135,7 +135,7 @@ if (isset($_POST['valider'])) {
   $motpass=$_POST['ps'];
   $numid = $_POST['na'];
   $email=$_POST['mail'];
-  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
+  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
 
   if (!empty($codesuprri)){
       $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes, authentificationprimaire  WHERE logins.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId and personnes.AdressMail = '$email' and authentificationprimaire.AuthentificationId = '$numid' and logins.MotDePas = '$motpass' and logins.codesuprr = '$codesuprri'");

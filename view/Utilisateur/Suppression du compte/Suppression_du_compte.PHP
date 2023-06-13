@@ -136,9 +136,9 @@ if (isset($_POST['valider'])) {
   $numid = $_POST['na'];
   $email=$_POST['mail'];
   $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
-
+  $h = md5($motpass);
   if (!empty($codesuprri)){
-      $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes, authentificationprimaire  WHERE logins.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId and personnes.AdressMail = '$email' and authentificationprimaire.AuthentificationId = '$numid' and logins.MotDePas = '$motpass' and logins.codesuprr = '$codesuprri'");
+      $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes, authentificationprimaire  WHERE logins.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId and personnes.AdressMail = '$email' and authentificationprimaire.AuthentificationId = '$numid' and logins.MotDePas = '$h' and logins.codesuprr = '$codesuprri'");
       $post = $sth->fetch();
       if($post){
         $queryLogins = "DELETE FROM logins WHERE PersonneId = :personneid";
@@ -161,7 +161,7 @@ if (isset($_POST['valider'])) {
 
         echo '<script>showAlert("ton compte est suprrimée");</script>';
         
-        header('Location: http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP');
+        header('Location: ../Tableau%20de%20bord/Tableau_de_Bord.PHP');
             
 }
 else {

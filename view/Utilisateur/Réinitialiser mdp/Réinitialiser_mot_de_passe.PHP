@@ -64,10 +64,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (empty($npwd)) {
     echo '<script>showAlert("Veuillez saisir le nouveau mot de passe");</script>';
 }
-
+$amdph = md5($apwd);
 if (empty($apwd)) {
   echo '<script>showAlert("Veuillez saisir l ancien mot de passe");</script>';
-} elseif ($apwd != $password['MotDePas']) {
+} elseif ($amdph != $password['MotDePas']) {
   echo '<script>showAlert("Mot de passe incorrect");</script>';
 }
 
@@ -82,8 +82,8 @@ if (!empty($erreurs)) {
         echo $erreur . "<br>";
     }
 } else {
-    
-  $query = "UPDATE logins SET MotDePas = '$npwd' WHERE PersonneId = {$id['PersonneId']}";
+  $h = md5($npwd);
+  $query = "UPDATE logins SET MotDePas = '$h' WHERE PersonneId = {$id['PersonneId']}";
 
     $result = mysqli_query($mysqli, $query);
     if ($result) {

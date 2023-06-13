@@ -64,10 +64,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (empty($npwd)) {
     $erreurs[] = "Veuillez saisir le nouveau mot de passe";
 }
-
+$amdph = md5($apwd);
 if (empty($apwd)) {
     $erreurs[] = "Veuillez saisir l'ancien mot de passe";
-} elseif ($apwd != $password['MotDePas']) {
+} elseif ($amdph != $password['MotDePas']) {
     $erreurs[] = "Mot de passe incorrect";
 }
 
@@ -82,8 +82,8 @@ if (!empty($erreurs)) {
         echo $erreur . "<br>";
     }
 } else {
-    
-  $query = "UPDATE logins SET MotDePas = '$npwd' WHERE PersonneId = {$id['PersonneId']}";
+  $h = md5($npwd);
+  $query = "UPDATE logins SET MotDePas = '$h' WHERE PersonneId = {$id['PersonneId']}";
 
     $result = mysqli_query($mysqli, $query);
     if ($result) {

@@ -130,7 +130,7 @@ if (!empty($erreurs)) {
       echo '</div>';
     }
     else {
-      echo 'Enregistré avec succès';}
+      echo '<script>showAlert("Le mot de passe a bien été modifié");</script>';}
     ?>
         <form action="" method="POST">
           <input type="password" id="AncienMotDePasse" placeholder="Ancien mot de passe" name="ap"><br><br>

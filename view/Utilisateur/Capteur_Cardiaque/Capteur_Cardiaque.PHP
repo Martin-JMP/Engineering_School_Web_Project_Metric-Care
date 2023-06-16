@@ -33,7 +33,7 @@
       </div>
     </header>
     <main>
-    
+
 
     <title>Capteur cardiaque</title>
       <div class="text">
@@ -47,7 +47,20 @@
       <div class="graph">
         <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/Capteur_Cardia/" width="100%" height="100%" frameborder="0"></iframe>
       </div>
-      <input class="rect0" type="button" value="75 bpm">
+      <input class="rect0" type="button" value="<?php 
+    $ch = curl_init();
+    curl_setopt(
+        $ch,
+        CURLOPT_URL,
+        "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=0003");
+curl_setopt($ch, CURLOPT_HEADER, FALSE);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+$data = curl_exec($ch);
+curl_close($ch);
+
+echo "Raw Data:";
+echo("$data");
+?> ">
       <input class="rect1" type="button" value="60 bpm">
       <input class="rect2" type="button" value="85 bpm">
       <input class="rect3" type="button" value="77 bpm">

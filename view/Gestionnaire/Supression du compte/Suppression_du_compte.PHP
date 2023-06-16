@@ -44,8 +44,8 @@
         <div class="main-container">
         <h1>Suppression du compte</h1>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-          <input type="input" id="NumAuth" name="na" placeholder="Numéro d'identification" value="<?php if(isset($na)){ echo $na; }?>" required><br><br>
-          <input type="password" id="MotDePasse" name="ps" placeholder="Mot de passe" value="<?php if(isset($ps)){ echo $ps; }?>" required><br><br>
+          <input type="input" id="NumAuth" name="na" placeholder="Numéro d'identification"><br><br>
+          <input type="password" id="MotDePasse" name="ps" placeholder="Mot de passe"><br><br>
           <div class="email-container">
               <input type="email" id="Email" name="mail" placeholder="Email" value="<?php if(isset($mail)){ echo $mail; }?>" required>
               <div class="SendCode">
@@ -139,8 +139,8 @@ if (isset($_POST['valider'])) {
   $motpass=$_POST['ps'];
   $numid = $_POST['na'];
   $email=$_POST['mail'];
-  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","valentyna","12345");
-
+  $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
+  $h = md5($motpass);
   if (!empty($codesuprri)){
       $sth = $bdd->query("SELECT personnes.PersonneId FROM logins, personnes, authentificationprimaire  WHERE logins.PersonneId = authentificationprimaire.PersonneId and logins.PersonneId = personnes.PersonneId and personnes.AdressMail = '$email' and authentificationprimaire.AuthentificationId = '$numid' and logins.MotDePas = '$motpass' and logins.codesuprr = '$codesuprri'");
       $post = $sth->fetch();
@@ -165,8 +165,7 @@ if (isset($_POST['valider'])) {
 
         echo '<script>showAlert("ton compte est suprrimée");</script>';
         
-        header('Location: http://localhost/Metric_Care/Metric_Care/Utilisateur/Tableau%20de%20bord/Tableau_de_Bord.PHP');
-            
+        header('Location: ../../../Metric_Care.php');
 }
 else {
   echo '<script>showAlert("Utilisateur introuvable");</script>';

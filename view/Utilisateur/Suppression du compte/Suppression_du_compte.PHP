@@ -161,7 +161,7 @@ if (isset($_POST['valider'])) {
 
         echo '<script>showAlert("ton compte est suprrimée");</script>';
         
-        header('Location: ../Tableau%20de%20bord/Tableau_de_Bord.PHP');
+        header('Location: ../../../Metric_Care.php');
             
 }
 else {

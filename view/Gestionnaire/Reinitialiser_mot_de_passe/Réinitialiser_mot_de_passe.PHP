@@ -110,7 +110,7 @@ if (!empty($erreurs)) {
             <a href ="../FAQ/FAQ.PHP">FAQ</a>
             <a href ="../Forum/Forum.PHP">Forum</a>
             <a href ="../Ticket/Ticket.PHP">Ticket</a>
-            <a href ="../Profil/Profil.PHP">Profil</a>
+            <a href ="../Profil_Gestionnaire/Profil_Gestionnaire.PHP">Profil</a>
           </div>
         </nav>
       </div>

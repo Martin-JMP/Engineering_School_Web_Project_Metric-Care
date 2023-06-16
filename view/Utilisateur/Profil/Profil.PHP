@@ -135,7 +135,7 @@ if (!empty($id)) {
             <p>Mot de passe<p>
         </div>
         <div class="Entrée">
-            <p><?php echo $password['MotDePas']; ?><p>
+            <p>******<p>
         </div>
         <div class="Reinitialiser">
             <p><a href="../../Utilisateur/Réinitialiser%20mdp/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>

@@ -1,7 +1,7 @@
 <?php
  
     // connect with database
-    $conn = new PDO("mysql:port=3307;host=localhost;dbname=test", "root", "");
+    $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
  
     // check if insert form is submitted
     if (isset($_POST["submit"]))
@@ -13,12 +13,12 @@
             answer TEXT NULL,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP
         )";
-        $statement = $conn->prepare($sql);
+        $statement = $bdd->prepare($sql);
         $statement->execute();
  
         // insert in faqs table
         $sql = "INSERT INTO faqs (question, answer) VALUES (?, ?)";
-        $statement = $conn->prepare($sql);
+        $statement = $bdd->prepare($sql);
         $statement->execute([
             $_POST["question"],
             $_POST["answer"]
@@ -27,7 +27,7 @@
  
     // get all faqs from latest to oldest
     $sql = "SELECT * FROM faqs ORDER BY id DESC";
-    $statement = $conn->prepare($sql);
+    $statement = $bdd->prepare($sql);
     $statement->execute();
     $faqs = $statement->fetchAll();
  

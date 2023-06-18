@@ -1,11 +1,11 @@
 <?php
  
     // connect database
-    $conn = new PDO("mysql:port=3307;host=localhost;dbname=test", "root", "");
+    $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
  
     // check if FAQ existed
     $sql = "SELECT * FROM faqs WHERE id = ?";
-    $statement = $conn->prepare($sql);
+    $statement = $bdd->prepare($sql);
     $statement->execute([
         $_REQUEST["id"]
     ]);
@@ -18,7 +18,7 @@
  
     // delete from database
     $sql = "DELETE FROM faqs WHERE id = ?";
-    $statement = $conn->prepare($sql);
+    $statement = $bdd->prepare($sql);
     $statement->execute([
         $_POST["id"]
     ]);

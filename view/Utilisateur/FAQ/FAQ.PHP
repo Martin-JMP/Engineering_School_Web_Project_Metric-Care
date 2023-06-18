@@ -1,11 +1,11 @@
 <?php
  
     // connect with database
-    $conn = new PDO("mysql:port=3307;host=localhost;dbname=test", "root", "");
+    $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
  
     // fetch all FAQs from database
     $sql = "SELECT * FROM faqs";
-    $statement = $conn->prepare($sql);
+    $statement = $bdd->prepare($sql);
     $statement->execute();
     $faqs = $statement->fetchAll();
  

@@ -1,11 +1,11 @@
 <?php
  
     // connect with database
-    $conn = new PDO("mysql:port=3307;host=localhost;dbname=test", "root", "");
+    $bdd = new PDO("mysql:host=localhost;dbname=metric_care","martin","test");
  
     // check if FAQ exists
     $sql = "SELECT * FROM faqs WHERE id = ?";
-    $statement = $conn->prepare($sql);
+    $statement = $bdd->prepare($sql);
     $statement->execute([
         $_REQUEST["id"]
     ]);
@@ -20,7 +20,7 @@
     if (isset($_POST["submit"])){
     // update the FAQ in database
         $sql = "UPDATE faqs SET question = ?, answer = ? WHERE id = ?";
-        $statement = $conn->prepare($sql);
+        $statement = $bdd->prepare($sql);
         $statement->execute([
         $_POST["question"],
         $_POST["answer"],

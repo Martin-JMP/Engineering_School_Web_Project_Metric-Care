@@ -1,18 +1,7 @@
 <?php
- 
-    // connect with database
-    $conn = new PDO("mysql:port=3307;host=localhost;dbname=test", "root", "");
- 
-    // fetch all FAQs from database
-    $sql = "SELECT * FROM faqs";
-    $statement = $conn->prepare($sql);
-    $statement->execute();
-    $faqs = $statement->fetchAll();
- 
+require('../Forum/publier-question-Action.php');
+//require('../Forum/securityAction.php');
 ?>
-<link rel="stylesheet" type="text/css" href="../../Utilisateur/FAQ/FAQ.css">
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,13 +9,11 @@
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/1_Header.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/2_Main.css">
     <link rel="stylesheet" type="text/css" href="../../Origine/CSS/3_Footer.css">
-    <link rel="stylesheet" type="text/css" href="../../Utilisateur/FAQ/FAQ.css">
+    <link rel="stylesheet" type="text/css" href="../../Utilisateur/Forum/Forum.css">
     <title>Metric Care</title>
     <link rel="icon" href="../../Origine/Images/Logo.png">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
+  <header>
       <div id="Rectangle_Debut">
         <nav>
           <div>
@@ -38,7 +25,7 @@
           <div class="contenuNav">
             <a>🌐Français</a>
             <a href="../Tableau de bord/Tableau_de_bord.PHP">Tableau de bord</a>
-            <a href ="../FAQ/FAQ.php">FAQ</a>
+            <a href ="../FAQ/FAQ.PHP">FAQ</a>
             <a href ="../Forum/Forum.PHP">Forum</a>
             <a href ="../Ticket/Ticket.PHP">Ticket</a>
             <a href ="../Profil/Profil.PHP">Profil</a>
@@ -46,22 +33,48 @@
         </nav>
       </div>
     </header>
+  <body>
     <main>
-    <a id = "retour" href="../Tableau de bord/Tableau_de_bord.PHP">◄ Tableau de bord</a>
 
-  <p id = "FAQ" style="margin-bottom: 30px;"> FAQ </p>
+    <h1>Publier une Question </h1>
+
+    <form id="publication-question"  method="post">
+            <?php 
+              if(isset($errormsg)){
+                echo '<p>'.$errormsg.'<p>';
+              } elseif(isset($successMsg)) {
+                echo '<p>'.$successMsg.'<p>';
+              }
+            ?>
+
+            <div class="title-question">
+                <label for="exampleInputEmail" class="form-label">Titre de la question</label><br>
+                <input id="title-input" type="text" name="title" >
+            </div>
+            <div class="content-question">
+                <label for="exampleInputEmail" class="form-label">Contenu de la question</label><br>
+                <textarea id="content-input" class="form-control" name="content"></textarea>
+            </div>
+
+            <button type="submit" name="validate" id="publier">Publier</button>
+        </form>
 
 
 
 
-<?php foreach ($faqs as $faq): ?>
-    <details id = "details-question" class="border-2 rounded-lg mb-4 m-auto" style="margin-left: 10%; margin-right:10%;">
-        <summary id ="Summary" class = "text-xl cursor-pointer p-3"><?php echo $faq["question"]; ?></summary>
-        <div class = "bg-gray-100 text-lg"> <?php echo $faq["answer"]; ?> </div>
-    </details>
-<?php endforeach; ?>
 
-<footer class = "Footer">
+
+
+
+
+
+
+
+
+    
+    
+    </main>
+    <footer class = "Footer">
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
           <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">

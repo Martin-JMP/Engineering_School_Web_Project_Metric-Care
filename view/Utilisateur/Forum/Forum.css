@@ -146,6 +146,62 @@ input[type="submit"] {
   justify-content: space-around;
 }
 
+.title-question{
+  
+  margin-bottom: 2%;
+  padding: auto;	
+  font-family: 'Carme';
+    src: url('../fonts/carme-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    color: #36706D;
+    font-size: 24px;
+}
+
+.content-question{
+  margin-bottom: 2%;
+  padding: auto;
+  resize: none;
+  font-family: 'Carme';
+    src: url('../fonts/carme-regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    color: #36706D;
+    font-size: 24px;
+    
+}
+
+input#title-input{	
+  margin-top: 1%;
+  width: 800px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+textarea#content-input{
+  margin-top: 1%;
+  border-radius: 10px;
+  padding: 10px;
+  width: 800px;
+  height: 300px;
+  resize: none;
+}
+
+button#publier{
+  font-family: 'Carme';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:#82BBBA ;
+    border-color: transparent;
+}
+
 @media (max-width: 600px) {
   /* cacher certaines colonnes sur les petits écrans */
   table th:nth-child(3),

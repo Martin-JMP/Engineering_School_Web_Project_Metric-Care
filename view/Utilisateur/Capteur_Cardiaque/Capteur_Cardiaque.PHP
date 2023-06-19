@@ -55,6 +55,7 @@
         "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=007A");
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 $data = curl_exec($ch);
 curl_close($ch);
 

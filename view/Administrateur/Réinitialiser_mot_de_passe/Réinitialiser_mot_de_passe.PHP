@@ -116,7 +116,7 @@ if (!empty($erreurs)) {
     </header>
     <main>
       <div class="Profil">
-        <p><a href="../../Administrateur/Profil_Admin/Profil_Admin.PHP">◂ Profil</a></p>
+        <p><a href="../Profil_Admin/Profil_Admin.PHP">◂ Profil</a></p>
       </div>
       <div class="main-container">
         <h1>Réinitialisation du mot de passe</h1>

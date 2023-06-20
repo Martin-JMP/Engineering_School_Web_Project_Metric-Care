@@ -86,7 +86,7 @@
               <input type="password" id='password' name="password" placeholder="Mot de passe">
           </div>
           <div class="MDP_OUBLIE">
-              <a href="http://localhost/Metric_Care/view/Authentification/Mot_de_passe_oublie/Mot_de_passe_oublie.PHP">Mot de passe oublié ?</a>
+              <a href=".../Mot_de_passe_oublie/Mot_de_passe_oublie.PHP">Mot de passe oublié ?</a>
           </div>
           <div class="rectangle-connecter" name="button">
             <button type="submit" name="button">Se Connecter</button>

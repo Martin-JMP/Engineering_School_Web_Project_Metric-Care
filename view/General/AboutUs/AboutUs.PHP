@@ -135,14 +135,21 @@
         pour mettre en place par la suite des solutions.
       </div>
 
-      <!-- Images qui bougent -->
+       <!-- Images qui bougent -->
       <div class="Capteur_CO2">
-        <img id="Capteur_CO2" src="../AboutUs/capteur_CO2.png" alt="Capteur de CO2" height= 14%  width= 7%>
+        <img id="Capteur_CO2" src="../../General/AboutUs/capteur_CO2.png" alt="Capteur de CO2">
       </div>
-      <!--<div class="Capteur_Micro_Particules">
-        <img id="Capteur_CO2" src="../AboutUs/capteur_micro_particules.png" alt="Capteur de micro particules">
+      <div class="Capteur_Temp_Humid">
+        <img id="Capteur_Temp_Humid" src="../../General/AboutUs/capteur_temperature_humidite.png" alt="Capteur de température et humidité">
       </div>
-      -->
+      <div class="Capteur_Sonore">
+        <img id="Capteur_Sonore" src="../../General/AboutUs/capteur_sonore.png" alt="Capteur sonore">
+      </div>
+      <div class="Capteur_Rythme_Cardiaque">
+        <img id="Capteur_Rythme_Cardiaque" src="../../General/AboutUs/capteur_rythme_cardiaque.png" alt="Capteur rythme cardiaque">
+      </div>
+      
+      <!-- FIN images -->
 
       <div class="Image_boitier">
         <img id="boitier" src="../AboutUs/boitier.png" alt="Boitier Metric Metro">
@@ -187,32 +194,61 @@
 
 <script>
     //capteur co2
-    const imageBoitier = document.getElementById("boitier");
+    const imageBoitierCO2 = document.getElementById("boitier");
     const capteurCO2 = document.getElementById("Capteur_CO2");
 
-    imageBoitier.addEventListener("mouseover", () => {
+    imageBoitierCO2.addEventListener("mouseover", () => {
         capteurCO2.style.opacity = "1";
         capteurCO2.style.transform = "translate(30%, -30%)";
     });
 
-    imageBoitier.addEventListener("mouseout", () => {
+    imageBoitierCO2.addEventListener("mouseout", () => {
         capteurCO2.style.opacity = "0";
         capteurCO2.style.transform = "translateY(30%)";
     });
 
-    //capteur micro particules
-    /*const imageBoitier = document.getElementById("boitier");
-    const capteurCO2 = document.getElementById("Capteur_Micro_Particules");
+    //capteur température et humidité
+    const imageBoitierTempHumid = document.getElementById("boitier");
+    const capteurTempHumid = document.getElementById("Capteur_Temp_Humid");
 
-    imageBoitier.addEventListener("mouseover", () => {
-        capteurCO2.style.opacity = "1";
-        capteurCO2.style.transform = "translate(30%, 30%)";
+    imageBoitierTempHumid.addEventListener("mouseover", () => {
+        capteurTempHumid.style.opacity = "1";
+        capteurTempHumid.style.transform = "translateY(-100%)";
     });
 
-    imageBoitier.addEventListener("mouseout", () => {
-        capteurCO2.style.opacity = "0";
-        capteurCO2.style.transform = "translateY(-30%)";
-    }); */
+    imageBoitierTempHumid.addEventListener("mouseout", () => {
+        capteurTempHumid.style.opacity = "0";
+        capteurTempHumid.style.transform = "translateY(0%)";
+    });
+
+    //capteur sonore
+    const imageBoitierSonore = document.getElementById("boitier");
+    const capteurSonore = document.getElementById("Capteur_Sonore");
+
+    imageBoitierSonore.addEventListener("mouseover", () => {
+        capteurSonore.style.opacity = "1";
+        capteurSonore.style.transform = "translate(-30%, -30%)";
+    });
+
+    imageBoitierSonore.addEventListener("mouseout", () => {
+        capteurSonore.style.opacity = "0";
+        capteurSonore.style.transform = "translateY(30%)";
+    });
+
+    //capteur rythme cardiaque
+    const imageBoitierRythmeCardiaque = document.getElementById("boitier");
+    const capteurRythmeCardiaque = document.getElementById("Capteur_Rythme_Cardiaque");
+
+    imageBoitierRythmeCardiaque.addEventListener("mouseover", () => {
+        capteurRythmeCardiaque.style.opacity = "1";
+        capteurRythmeCardiaque.style.transform = "translate(-30%, -30%)";
+    });
+
+    imageBoitierRythmeCardiaque.addEventListener("mouseout", () => {
+        capteurRythmeCardiaque.style.opacity = "0";
+        capteurRythmeCardiaque.style.transform = "translateY(30%)";
+    });
+
 </script>
 
 

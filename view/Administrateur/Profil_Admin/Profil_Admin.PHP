@@ -140,7 +140,7 @@ if (!empty($id)) {
             <p>******<p>
         </div>
         <div class="Reinitialiser">
-            <p><a href="../../Administrateur/Réinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
+            <p><a href="../Réinitialiser_mot_de_passe/Réinitialiser_mot_de_passe.PHP">Réinitialiser<p>
         </div>
     </div>
     <div class="Tableau">
@@ -160,7 +160,7 @@ if (!empty($id)) {
     
 </div>
 <div class="Enregistrer">
-    <button onclick="window.location.href = '../../Administrateur/Editer_Profil/Editer_Profil.PHP';">Editer</button>
+    <button onclick="window.location.href = '../Editer_Profil/Editer_Profil.PHP';">Editer</button>
 </div>
 </main>
       <footer class="Footer">

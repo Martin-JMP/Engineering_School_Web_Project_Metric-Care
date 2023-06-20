@@ -117,7 +117,7 @@ if (!empty($erreurs)) {
     </header>
     <main>
       <div class="Profil">
-        <p><a href="http://localhost/Metric_Care/Metric_Care/Utilisateur/Profil/Profil.PHP">◂ Profil</a></p>
+        <p><a href="../Profil/Profil.PHP">◂ Profil</a></p>
       </div>
       <div class="main-container">
         <h1>Réinitialisation du mot de passe</h1>

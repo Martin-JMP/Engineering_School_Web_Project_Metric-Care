@@ -32,7 +32,7 @@ list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
         "%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s"
     );
 
-if($c==3){
+if($c==9){
 
 $dec = hexdec($v);
 echo"$dec";
@@ -49,7 +49,7 @@ list($t2, $o2, $r2, $c2, $n2, $v2, $a2, $x2, $year2, $month2, $day2, $hour2, $mi
         "%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s"
     );
 
-if($c2==3){
+if($c2==9){
 
 $dec = hexdec($v2);
 echo"$dec";
@@ -66,7 +66,7 @@ echo"$dec";
             "%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s"
         );
     
-    if($c3==3){
+    if($c3==9){
     
     $dec = hexdec($v3);
     echo"$dec";

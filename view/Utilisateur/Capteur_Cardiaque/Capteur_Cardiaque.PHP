@@ -54,7 +54,7 @@
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("rect0").value = this.responseText + "°C";
+        document.getElementById("rect0").value = this.responseText + "dB";
       }
     };
     xhttp.open("GET", "value_cardia.php", true);

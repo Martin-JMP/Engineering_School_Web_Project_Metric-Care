@@ -24,7 +24,7 @@
             <a>Contact</a>
             <a>FAQ</a>
             <a>Qui sommes nous ?</a>
-            <a>Connexion</a>
+            <a href="../../../Metric_Care.PHP">Deconnexion</a>
           </div>
         </nav>
       </div>

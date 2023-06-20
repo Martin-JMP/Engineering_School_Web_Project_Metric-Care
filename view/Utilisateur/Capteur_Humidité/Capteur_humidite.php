@@ -44,7 +44,7 @@
        <div class="graph">
         <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/humid_capt_/" width="100%" height="100%" frameborder="0"></iframe>
       </div>
-        <<input class="rect0" id="rect0" type="button" value="Loading...">
+        <input class="rect0" id="rect0" type="button" value="Loading...">
         <script>
   // JavaScript
   function updateRect0Value() {

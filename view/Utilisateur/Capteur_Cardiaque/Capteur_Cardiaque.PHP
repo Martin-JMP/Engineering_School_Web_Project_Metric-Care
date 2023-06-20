@@ -47,35 +47,22 @@
       <div class="graph">
         <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/Capteur_Cardia/" width="100%" height="100%" frameborder="0"></iframe>
       </div>
-      <input class="rect0" type="button" value="<?php 
-    $ch = curl_init();
-    curl_setopt(
-        $ch,
-        CURLOPT_URL,
-        "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=007A");
-curl_setopt($ch, CURLOPT_HEADER, FALSE);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-$data = curl_exec($ch);
-curl_close($ch);
+      <input class="rect0" id="rect0" type="button" value="Loading...">
+<script>
+  // JavaScript
+  function updateRect0Value() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("rect0").value = this.responseText + "°C";
+      }
+    };
+    xhttp.open("GET", "value_temp.php", true);
+    xhttp.send();
+  }
 
-
-$data_tab = str_split($data,33);
-echo "Tabular Data:<br />";
-for($i=0, $size=count($data_tab); $i<$size; $i++){
-echo "Trame $i: $data_tab[$i]<br />";
-}
-
-$trame = $data_tab[1];
-// décodage avec des substring
-$t = substr($trame,0,1);
-$o = substr($trame,1,4);
-// …
-// décodage avec sscanf
-list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
-sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
-echo("<br />$t,$o,$r,$c,$n,$v,$a,$x,$year,$month,$day,$hour,$min,$sec<br />");
-?> ">
+  setInterval(updateRect0Value, 500); // Refresh every 0.5 seconds
+</script>
       <input class="rect1" type="button" value="60 bpm">
       <input class="rect2" type="button" value="85 bpm">
       <input class="rect3" type="button" value="77 bpm">

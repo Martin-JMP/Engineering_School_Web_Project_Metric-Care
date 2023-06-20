@@ -30,7 +30,6 @@
       </div>
     </header>
     <main>
-    <main>
       <h1>Les utilisateurs du système</h1>
     <?php
       function alert($msg) {

@@ -34,9 +34,9 @@
     <main>
       <div class="title">
         <h1>Tableau de bord</h1>
-        <button onclick="window.location.href = '../../Administrateur/Gestion_des_utilisateurs/Gestion_des_utilisateurs.PHP';">Gestion des utilisateurs</button>
-        <button onclick="window.location.href = '../../Administrateur/Profil_Admin/Profil_Admin.PHP';">Profil</button>
-        <button onclick="window.location.href = '../../Administrateur/Forum/Forum.PHP';">Forum</button>
+        <button onclick="window.location.href = '../Gestion_des_utilisateurs/Gestion_des_utilisateurs.PHP';">Gestion des utilisateurs</button>
+        <button onclick="window.location.href = '../Profil_Admin/Profil_Admin.PHP';">Profil</button>
+        <button onclick="window.location.href = '../Forum/Forum.PHP';">Forum</button>
       </div>
     </main>
     <footer class="Footer">

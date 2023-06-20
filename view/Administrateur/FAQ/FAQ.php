@@ -73,6 +73,7 @@
     </details>
 <?php endforeach; ?>
 </div>
+    </main>
 <footer class = "Footer">
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">

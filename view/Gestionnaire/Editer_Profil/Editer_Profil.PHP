@@ -173,7 +173,7 @@ $result = mysqli_query($mysqli, $query);
         </div>
       </div>
       <div class="Tableau">
-        <p><a href="../../Gestionnaire/Profil_Gestionnaire/Profil_Gestionnaire.PHP">◂ Profil</a><p>
+        <p><a href="../Profil_Gestionnaire/Profil_Gestionnaire.PHP">◂ Profil</a><p>
       </div>
       <div>
         <img id="Photo" src="../../Utilisateur/Profil/Images/photo.jpg" alt="Utilisateur" width="258" height="240">

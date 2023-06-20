@@ -137,15 +137,15 @@
 
       <!-- Images qui bougent -->
       <div class="Capteur_CO2">
-        <img id="Capteur_CO2" src="../../General/AboutUs/capteur_CO2.png" alt="Capteur de CO2" height= 14%  width= 7%>
+        <img id="Capteur_CO2" src="../AboutUs/capteur_CO2.png" alt="Capteur de CO2" height= 14%  width= 7%>
       </div>
       <!--<div class="Capteur_Micro_Particules">
-        <img id="Capteur_CO2" src="../../General/AboutUs/capteur_micro_particules.png" alt="Capteur de micro particules">
+        <img id="Capteur_CO2" src="../AboutUs/capteur_micro_particules.png" alt="Capteur de micro particules">
       </div>
       -->
 
       <div class="Image_boitier">
-        <img id="boitier" src="../../General/AboutUs/boitier.png" alt="Boitier Metric Metro">
+        <img id="boitier" src="../AboutUs/boitier.png" alt="Boitier Metric Metro">
       </div>
       <div class="Nos_Enjeux">
         <a>Nos enjeux</a>
@@ -158,7 +158,7 @@
           ainsi que la santé des conducteurs et conductrices.
       </div>
       <div class="Femme_Volant">
-            <img id="conductrice" src="../../General/AboutUs/femme-volant.png" alt="Femme chauffeuse bus">
+            <img id="conductrice" src="../AboutUs/femme-volant.png" alt="Femme chauffeuse bus">
       </div>
       <div class="Menu_principal">
         <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>

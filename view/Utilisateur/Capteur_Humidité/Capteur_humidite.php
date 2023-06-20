@@ -44,7 +44,22 @@
        <div class="graph">
         <iframe src="https://g28jpj-martin-joncourt.shinyapps.io/humid_capt_/" width="100%" height="100%" frameborder="0"></iframe>
       </div>
-        <input class="rect0" type="button" value="80%">
+        <<input class="rect0" id="rect0" type="button" value="Loading...">
+        <script>
+  // JavaScript
+  function updateRect0Value() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("rect0").value = this.responseText + "%";
+      }
+    };
+    xhttp.open("GET", "value_humid.php", true);
+    xhttp.send();
+  }
+
+  setInterval(updateRect0Value, 500); // Refresh every 0.5 seconds
+</script>
         <input class="rect1" type="button" value="76%">
         <input class="rect2" type="button" value="82%">
         <input class="rect3" type="button" value="79%">

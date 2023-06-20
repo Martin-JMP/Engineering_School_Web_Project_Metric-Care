@@ -20,7 +20,7 @@ $last_last_last_trame = $data_tab[$last_last_last_trame_index]; // Last trame
 
 $trame = $last_trame;
 $trame2 = $last_last_trame;
-$trame3 = $last_last_last_trame
+$trame3 = $last_last_last_trame;
 // décodage avec des substring
 $t = substr($trame, 0, 1);
 $o = substr($trame, 1, 4);

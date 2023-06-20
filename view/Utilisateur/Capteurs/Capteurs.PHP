@@ -45,19 +45,64 @@
       </div>
 
       <a href="../Capteur_Temperature/Capteur_Temperature.PHP">
-      <input class="temperatureButton" type="button" value="15°C">
+      <input id="temperatureButton" class="temperatureButton" type="button" value="Loading...">
+<script>
+  // JavaScript
+  function updateRect0Value() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("temperatureButton").value = this.responseText + "°C";
+      }
+    };
+    xhttp.open("GET", "../Capteur_Temperature/value_temp.php", true);
+    xhttp.send();
+  }
+
+  setInterval(updateRect0Value, 500); // Refresh every 0.5 seconds
+</script>
       </a>
       <a href="../Capteur_Humidité/Capteur_humidite.PHP">
-      <input class="humiditeButton" type="button" value="80%">
+      <input id="humiditeButton" class="humiditeButton" type="button" value="Loading...">
+<script>
+  // JavaScript
+  function updateRect0Value() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("humiditeButton").value = this.responseText + "%";
+      }
+    };
+    xhttp.open("GET", "../Capteur_Humidité/value_humid.php", true);
+    xhttp.send();
+  }
+
+  setInterval(updateRect0Value, 500); // Refresh every 0.5 seconds
+</script>
       </a>
       <a href="../Capteur_Sonore/Capteur_Sonore.PHP">
-      <input class="sonButton" type="button" value="83 dB">
+      <input class="sonButton" type="button" value="NA dB">
       </a>
       <a href="../Capteur_Cardiaque/Capteur_Cardiaque.PHP">
-      <input class="cardioButton" type="button" value="75 bpm">
+      <input class="cardioButton" id="cardioButton" type="button" value="Loading...">
+<script>
+  // JavaScript
+  function updateRect0Value() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("cardioButton").value = this.responseText + " bpm";
+      }
+    };
+    xhttp.open("GET", "../Capteur_Cardiaque/value_cardia.php", true);
+    xhttp.send();
+  }
+
+  setInterval(updateRect0Value, 500); // Refresh every 0.5 seconds
+</script>
       </a>
       <a href="../Capteur_CO2/Capteur_CO2.PHP">
-      <input class="co2Button" type="button" value="60 μg/m³">
+      <input class="co2Button" type="button" value="NA μg/m³">
       </a>
 
     </main>

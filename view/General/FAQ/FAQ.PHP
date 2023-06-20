@@ -59,6 +59,7 @@
         <div class = "bg-gray-100 text-lg"> <?php echo $faq["answer"]; ?> </div>
     </details>
 <?php endforeach; ?>
+</main>
 
 <footer class = "Footer">
       <div class = "contenu_Footer">

@@ -32,6 +32,9 @@
     <main>
       <h1>Les utilisateurs du système</h1>
     <?php
+      function alert($msg) {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+      }
       $host = 'localhost';
       $username = 'martin';
       $password = 'test';
@@ -70,11 +73,49 @@
       } else {
           echo "No results found.";
       }
-      
+      if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['button1'])){
+          $nom = $_POST['surname'];
+          if (!empty($nom)){
+            try{
+              $ins1 = $connection->query("SELECT personnes.PersonneId, personnes.Prenom, personnes.Nom, personnes.AdressMail, personnes.Poids, personnes.Taille, personnes.Fonction, authentificationprimaire.AuthentificationId from personnes, authentificationprimaire where personnes.PersonneId = authentificationprimaire.PersonneId AND (personnes.Nom = '$nom' OR personnes.Prenom = '$nom')");
+              if (mysqli_num_rows($ins1) > 0) {
+                // Step 4: Display the results in a table
+                echo "<table>";
+                echo "<tr><th>PersonneId</th><th>Prenom</th><th>Nom</th><th>AdressMail</th><th>Poids</th><th>Taille</th><th>Fonction</th><th>AuthentificationId</th></tr>";
+            
+                while ($row = mysqli_fetch_assoc($ins1)) {
+                    echo "<tr>";
+                    echo "<td>".$row['PersonneId']."</td>";
+                    echo "<td>".$row['Prenom']."</td>";
+                    echo "<td>".$row['Nom']."</td>";
+                    echo "<td>".$row['AdressMail']."</td>";
+                    echo "<td>".$row['Poids']."</td>";
+                    echo "<td>".$row['Taille']."</td>";
+                    echo "<td>".$row['Fonction']."</td>";
+                    echo "<td>".$row['AuthentificationId']."</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+              } 
+            }
+            catch(PDOException $e){
+              $erreur = $e->getMessage();
+              alert("Nous n'avons pas trouvé cet utilisateur.");
+            }
+          } else {
+            alert("Nous n'avons pas cet utilisateur.");
+          }
+        }
+      }
       // Close the database connection
       mysqli_close($connection);
     ?>
     </main>
+    <form method="post" id="user-surname">
+        <input type="text" name="surname" placeholder="Nom ou prénom" id="surname">
+        <button type="submit" name="button1" id="search" >Chercher un utilisateur par son nom ou prénom</button>
+    </form>
     <footer class = "Footer">
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">

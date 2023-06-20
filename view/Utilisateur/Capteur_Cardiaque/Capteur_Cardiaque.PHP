@@ -57,7 +57,7 @@
         document.getElementById("rect0").value = this.responseText + "°C";
       }
     };
-    xhttp.open("GET", "value_temp.php", true);
+    xhttp.open("GET", "value_cardia.php", true);
     xhttp.send();
   }
 

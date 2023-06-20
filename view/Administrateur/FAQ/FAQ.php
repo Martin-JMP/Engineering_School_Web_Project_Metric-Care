@@ -42,7 +42,7 @@
             <a href ="../FAQ/FAQ.php">FAQ</a>
             <a href ="../Forum/Forum.PHP">Forum</a>
             <a href ="../Ticket/Ticket.PHP">Ticket</a>
-            <a href ="../Profil/Profil.PHP">Profil</a>
+            <a href ="../Profil_Admin/Profil_Admin.PHP">Profil</a>
           </div>
         </nav>
       </div>

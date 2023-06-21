@@ -21,9 +21,9 @@
           </div>      
           <div class="contenuNav">
             <a href="Gestionnaire_des_donneesA.php">🌐Français</a>
-            <a>Contact</a>
-            <a>FAQ</a>
-            <a>Qui sommes nous ?</a>
+            <a href="../../General/Contact/Contact.PHP">Contact</a>
+            <a href="../../General/AboutUs/FAQ.PHP">FAQ</a>
+            <a href="../../General/Contact/Contact.PHP">Qui sommes nous ?</a>
             <a href="../../../Metric_Care.PHP">Deconnexion</a>
           </div>
         </nav>

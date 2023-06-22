@@ -67,7 +67,7 @@
           </div>      
           <div class="contenuNav">
           <a href="Connexion.PHP">🌐English</a>
-            <a href="../../General/Contact/ContactA.PHP">Contact</a>
+            <a href="../../General/Contact/ContactA.PHP">Contact us</a>
             <a href="../../General/FAQ/FAQA.PHP">FAQ</a>
             <a href="../../General/AboutUs/AboutUsA.PHP">About us</a>
             

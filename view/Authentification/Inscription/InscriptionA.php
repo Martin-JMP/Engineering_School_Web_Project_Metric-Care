@@ -90,10 +90,10 @@
           </div>      
           <div class="contenuNav">
           <a href="Connexion.PHP">🌐English</a>
-            <a href="../../General/Contact/Contact.PHP">Contact</a>
-            <a href="../../General/FAQ/FAQ.PHP">FAQ</a>
-            <a href="../../General/AboutUs/AboutUs.PHP">About us</a>
-            <a href="../Connexion/ConnectionA.php">Connection</a>
+            <a href="../../General/Contact/ContactA.PHP">Contact us</a>
+            <a href="../../General/FAQ/FAQA.PHP">FAQ</a>
+            <a href="../../General/AboutUs/AboutUsA.PHP">About us</a>
+            <a href="../Connexion/ConnectionA.php">Sing in</a>
           </div>
         </nav>
       </div>
@@ -101,7 +101,7 @@
     <main method="post" form="inscription-form">
         <div class="tot">
         <div class="Inscription">
-            <a>Inscription</a>
+            <a>Sing up</a>
         </div>
         <form id="inscription-form"  method="post">
             <div class="Prenom_Nom">
@@ -125,7 +125,7 @@
             <br></br>
             <div class="CGU">
                 <input type="checkbox" name="cgu" id="cgu">
-                <label for="cgu">I accept the <span><a  href="../../General/CGU/CGU.PHP">general terms of use</a></span></label>
+                <label for="cgu">I accept the <span><a  href="../../General/CGU/CGUA.PHP">general terms of use</a></span></label>
             </div>
         
             <div class="rectangle-creer">
@@ -145,9 +145,9 @@
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a href="../../General/CGU/CGU.PHP">GTU</a> <a>|</a>
-          <a href="../../General/AboutUs/AboutUs.PHP">About us</a> <a>|</a>
-          <a href="../../General/Cookies/Cookies.PHP">Cookie preferences</a>
+          <a href="../../General/CGU/CGUA.PHP">GTU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUsA.PHP">About us</a> <a>|</a>
+          <a href="../../General/Cookies/CookiesA.PHP">Cookie preferences</a>
         </div>
       </div>
     </footer>

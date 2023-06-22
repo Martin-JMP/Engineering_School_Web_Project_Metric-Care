@@ -20,7 +20,7 @@
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
-            <a href="Gestionnaire_des_donneesA.php">🌐Français</a>
+            <a href="Gestionnaire_des_donneesA.php" id="google_translate_element">🌐Français</a>
             <a href="../../General/Contact/Contact.PHP">Contact</a>
             <a href="../../General/FAQ/FAQ.PHP">FAQ</a>
             <a href="../../General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
@@ -132,4 +132,12 @@
       </div>
     </footer>
   </body>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </html>

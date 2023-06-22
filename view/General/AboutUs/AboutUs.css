@@ -137,7 +137,7 @@ body {
 
 .Capteur_CO2 img {
     position: absolute;
-    top: 40%; 
+    top: 38%; 
     left: 84%; 
     width: 10%;
     height: 16.8%;
@@ -156,8 +156,8 @@ body {
 
 .Capteur_Temp_Humid img {
     position: absolute;
-    top: 35%; 
-    left: 75%; 
+    top: 37%; 
+    left: 76%; 
     width: 10%;
     height: 16.8%;
 
@@ -173,7 +173,7 @@ body {
 
 .Capteur_Sonore img {
     position: absolute;
-    top: 28%; 
+    top: 26%; 
     left: 67%; 
     width: 10%;
     height: 16.8%;

@@ -106,11 +106,11 @@
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
-          <a href="AboutUsA.PHP">🌐Français</a>
-          <a href="../Contact/Contact.PHP">Contact</a>
-            <a href="../FAQ/FAQ.PHP">FAQ</a>
-            <a href="AboutUs.PHP">Qui sommes nous ?</a>
-            <a href="../../Authentification/Connexion/Connexion.PHP">Connexion</a>
+          <a href="AboutUs.PHP">🌐English</a>
+          <a href="../Contact/ContactA.PHP">Contact Us</a>
+            <a href="../FAQ/FAQA.PHP">FAQ</a>
+            <a href="AboutUsA.PHP">About us</a>
+            <a href="../../Authentification/Connexion/ConnectionA.php">Sing in</a>
           </div>
         </nav>
       </div>
@@ -122,31 +122,31 @@
     
 
       <div class="Titre">
-        <a>Qui sommes-nous ?</a>
+        <a>About us</a>
       </div>
       <div class="Notre_Mission">
-        <a>Notre mission</a>
+        <a>Our mission</a>
       </div>
       <div class="Contenu_Mission">
-        <a>Metric Care vise à contribuer au bien être de ses utilisateurs.
-        <br><br>Nous voulons que les conducteurs et chauffeurs de métro,<br>bus et tram,
-        soient dans les meilleurs conditions de travail possible.
-        <br>C'est notre boîtier Metric Care qui va permettre une étude<br>de différents facteur,
-        pour mettre en place par la suite des solutions.
+        <a>Metric Care aims to contribute to the well-being of its users.
+        <br><br>We want metro drivers and conductors to,<br>bus and streetcar,
+        be in the best possible working conditions.
+        <br>Our Metric Care box will enable us to study<br> various factors,
+        in order to implement solutions..
       </div>
 
        <!-- Images qui bougent -->
       <div class="Capteur_CO2">
-        <img id="Capteur_CO2" src="../../General/AboutUs/capteur_CO2.png" alt="Capteur de CO2">
+        <img id="Capteur_CO2" src="../../General/AboutUs/capteur_CO2.png" alt="CO2 sensor">
       </div>
       <div class="Capteur_Temp_Humid">
-        <img id="Capteur_Temp_Humid" src="../../General/AboutUs/capteur_temperature_humidite.png" alt="Capteur de température et humidité">
+        <img id="Capteur_Temp_Humid" src="../../General/AboutUs/capteur_temperature_humidite.png" alt="Temperature and humidity sensor">
       </div>
       <div class="Capteur_Sonore">
-        <img id="Capteur_Sonore" src="../../General/AboutUs/capteur_sonore.png" alt="Capteur sonore">
+        <img id="Capteur_Sonore" src="../../General/AboutUs/capteur_sonore.png" alt="Sound sensor">
       </div>
       <div class="Capteur_Rythme_Cardiaque">
-        <img id="Capteur_Rythme_Cardiaque" src="../../General/AboutUs/capteur_rythme_cardiaque.png" alt="Capteur rythme cardiaque">
+        <img id="Capteur_Rythme_Cardiaque" src="../../General/AboutUs/capteur_rythme_cardiaque.png" alt="Heart rate sensor">
       </div>
       
       <!-- FIN images -->
@@ -158,17 +158,17 @@
         <a>Nos enjeux</a>
       </div>
       <div class="Contenu_Enjeux">
-          <a>Les enjeux du boîtier Metric Metro sont portés sur l'étude
-          <br>de la santé de ses utilisateurs, tout en respectant une utilisation
-          <br>simple et accessible. 
-          <br><br>Nous proposons donc un outil de mesure qui vise à améliorer<br>le bien être 
-          ainsi que la santé des conducteurs et conductrices.
+          <a>The challenges of the Metric Metro box are to study
+          <br>the health of its users, while maintaining a simple, accessible
+          <br>simple and accessible. 
+          <br><br>We therefore propose a measurement tool designed to improve<br>the well-being 
+          and health of drivers.
       </div>
       <div class="Femme_Volant">
             <img id="conductrice" src="../AboutUs/femme-volant.png" alt="Femme chauffeuse bus">
       </div>
       <div class="Menu_principal">
-        <a href="../../Metric_Care.PHP"> ◂ Menu principal</a>
+        <a href="../../../Metric_Care.PHP"> ◂ Main menu</a>
       </div>
 
     </main>
@@ -178,14 +178,14 @@
       <div class = "contenu_Footer">
         <div class="Footer_contenu_Logo">
           <img id="LogoFooter" src="../../Origine/Images/image.png" alt="Logo Metric Metro", width="80", height="80">
-          <p>Metric Care © 2023 - Tous droits réservés</p>
+          <p>Metric Care © 2023 - All rights reserved</p>
           <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
           <img id="Logo_Infinite_Measures_Footer" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
         </div>
         <div class="Footer_contenu_texte">
-          <a href="../../General/CGU/CGU.PHP">CGU</a> <a>|</a>
-          <a href="../../General/AboutUs/AboutUs.PHP">À propos</a> <a>|</a>
-          <a href="../../General/Cookies/Cookies.PHP">Préférences des cookies</a>
+          <a href="../../General/CGU/CGUA.PHP">GCU</a> <a>|</a>
+          <a href="../../General/AboutUs/AboutUsA.PHP">About Us</a> <a>|</a>
+          <a href="../../General/Cookies/CookiesA.PHP">Cookie preferences</a>
         </div>
       </div>
     </footer>

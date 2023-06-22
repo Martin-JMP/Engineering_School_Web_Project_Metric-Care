@@ -139,7 +139,7 @@ body {
     position: absolute;
     top: 40%; 
     left: 84%; 
-    width: 8.4%;
+    width: 10%;
     height: 16.8%;
 
     transform: translateY(30%); /* Déplace l'image de 30% vers le haut */
@@ -156,9 +156,9 @@ body {
 
 .Capteur_Temp_Humid img {
     position: absolute;
-    top: 40%; 
+    top: 35%; 
     left: 75%; 
-    width: 8.4%;
+    width: 10%;
     height: 16.8%;
 
     transition: transform 0.8s; /* Ajoute une transition pour un mouvement fluide */
@@ -175,7 +175,7 @@ body {
     position: absolute;
     top: 28%; 
     left: 67%; 
-    width: 8.4%;
+    width: 10%;
     height: 16.8%;
 
     transform: translateY(30%); /* Déplace l'image de 30% vers le haut */
@@ -194,7 +194,7 @@ body {
     position: absolute;
     top: 36%; 
     left: 57%; 
-    width: 8.4%;
+    width: 10%;
     height: 16.8%;
 
     transform: translateY(30%); /* Déplace l'image de 30% vers le haut */

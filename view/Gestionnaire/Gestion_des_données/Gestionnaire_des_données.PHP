@@ -20,11 +20,10 @@
             <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
-            <a href="Gestionnaire_des_donneesA.php">🌐Français</a>
-            <a href="../../General/Contact/Contact.PHP">Contact</a>
-            <a href="../../General/FAQ/FAQ.PHP">FAQ</a>
-            <a href="../../General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>
-            <a href="../../../Metric_Care.PHP">Deconnexion</a>
+            <a>🌐Français</a>
+            <a href="../Tableau_de_bord_Gestionnaire/Tableau_de_bord_Gestionniare.PHP">Tableau de bord</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Profil_Gestionnaire/Profil_Gestionnaire.PHP">Profil</a>
           </div>
         </nav>
       </div>

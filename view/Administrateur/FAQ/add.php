@@ -86,7 +86,7 @@
  
                 <!-- question -->
                 <div class="form-group" style="text-align: center;">
-                    <label id = "retour" style="margin-left: -5%; font-size: 25px;">Question</label><br>
+                    <label id = "retour" style="margin-left: -40%; font-size: 25px;">Question</label><br>
                     <input type="text" name="question" class="form-control" required 
                     style="
                     border-color: #9aa0a6; 
@@ -97,14 +97,14 @@
                     padding:10px;
                     margin-top : 15px;
                     margin-bottom: 30px;
-                    margin-left: 40%;
+                    margin-left: 15%;
                     "
                     />
                 </div>
  
                 <!-- answer -->
                 <div class="form-group" style="text-align: center;">
-                    <label id = "retour" style="margin-left: -5%; font-size: 25px;">Réponse</label><br>
+                    <label id = "retour" style="margin-left: -40%; font-size: 25px;">Réponse</label><br>
                     <textarea name="answer" id="answer" class="form-control" required 
                     style="
                     border-color: #9aa0a6; 
@@ -114,7 +114,7 @@
                     width: 800px;
                     padding:10px;
                     margin-top : 15px;
-                    margin-left: 40%;
+                    margin-left: 15%;
                     height: 250px;
                     ">
                     </textarea>
@@ -132,7 +132,7 @@
     background-color:#82BBBA ;
     border-color: transparent;
     border-radius: 10px;
-    margin-left: 35%;
+    margin-left: 15%;
     padding: 10px;"/>
                 </div>
             </form>
@@ -145,7 +145,7 @@
   font-style: normal;
   font-weight: 400;
     margin-top:50px ;
-  margin-left: 40%;
+  margin-left: 20%;
   ">
         <div class="offset-md-2 col-md-8">
             <table class="table table-bordered">

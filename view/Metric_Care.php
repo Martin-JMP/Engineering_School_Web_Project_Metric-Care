@@ -21,7 +21,7 @@
             <img id="Logo_Infinite_Measures" src="Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
           </div>      
           <div class="contenuNav">
-            <a>🌐Français</a>
+            <a href="Metric_CareA.php">🌐Français</a>
             <a href="General/Contact/Contact.PHP">Contact</a>
             <a href="General/FAQ/FAQ.PHP">FAQ</a>
             <a href="General/AboutUs/AboutUs.PHP">Qui sommes nous ?</a>

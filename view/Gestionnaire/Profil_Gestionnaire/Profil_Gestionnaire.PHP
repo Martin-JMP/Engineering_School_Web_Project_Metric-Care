@@ -63,25 +63,23 @@ if (!empty($id)) {
 
 ?>
 <header>
-    <div id="Rectangle_Debut">
+      <div id="Rectangle_Debut">
         <nav>
-            <div>
-                <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
-                <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
-                <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
-                    <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
-            </div>
-            <div class="contenuNav">
-                <a>🌐Français</a>
-                <a href="../Tableau_de_bord_Gestionnaire.PHP/Tableau_de_bord_Gestionnaire.PHP">Tableau de bord</a>
-                <a href ="../FAQ/FAQ.PHP">FAQ</a>
-                <a href ="../Forum/Forum.PHP">Forum</a>
-                <a href ="../Ticket/Ticket.PHP">Ticket</a>
-                <a href ="Profil_Gestionnaire.PHP">Profil</a>
-            </div>
+          <div>
+            <img id="Logo" src="../../Origine/Images/Logo.png" alt="Logo Metric Metro", width="75", height="40">
+            <img id="Logo_Texte" src="../../Origine/Images/Logo_texte.png" alt="Logo Metric Metro", width="200", height="50">
+            <a href="https://infinitemeasures.fr/vues/fr/index.php" target="_blank">
+            <img id="Logo_Infinite_Measures" src="../../Origine/Images/Infinite_logo.png" alt="Logo Infinite Measures", width="60", height="60"> </a>
+          </div>      
+          <div class="contenuNav">
+            <a>🌐Français</a>
+            <a href="../Tableau_de_bord_Gestionnaire/Tableau_de_bord_Gestionnaire.PHP">Tableau de bord</a>
+            <a href ="../Forum/Forum.PHP">Forum</a>
+            <a href ="../Profil_Gestionnaire/Profil_Gestionnaire.PHP">Profil</a>
+          </div>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
 <main>
     <div class="title">
         <p>Gestion de profil<p>

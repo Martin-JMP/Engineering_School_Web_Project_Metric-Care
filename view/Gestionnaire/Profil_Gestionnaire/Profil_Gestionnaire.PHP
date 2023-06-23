@@ -73,7 +73,7 @@ if (!empty($id)) {
           </div>      
           <div class="contenuNav">
             <a>🌐Français</a>
-            <a href="../Tableau_de_bord_Gestionnaire/Tableau_de_bord_Gestionnaire.PHP">Tableau de bord</a>
+            <a href="../Tableau_de_bord_Gestionnaire/Tableau_de_bord_Gestionniare.PHP">Tableau de bord</a>
             <a href ="../Forum/Forum.PHP">Forum</a>
             <a href ="../Profil_Gestionnaire/Profil_Gestionnaire.PHP">Profil</a>
           </div>

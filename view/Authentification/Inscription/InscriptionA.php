@@ -101,7 +101,7 @@
     <main method="post" form="inscription-form">
         <div class="tot">
         <div class="Inscription">
-            <a>Sing up</a>
+            <a>Sing in</a>
         </div>
         <form id="inscription-form"  method="post">
             <div class="Prenom_Nom">
